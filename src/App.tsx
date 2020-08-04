@@ -53,7 +53,7 @@ export const App: React.FC = () => {
             <div style={{ padding: theme.spacing(), flex: 1 }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                     <ScoreCard
-                        headerColor={Colors.orange[500]}
+                        headerColor={Colors.red[500]}
                         headerBackgroundImage={top}
                         headerTitle={'Substation 3'}
                         headerSubtitle={'High Humidity Alarm'}
