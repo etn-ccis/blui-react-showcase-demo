@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { CssBaseline } from '@material-ui/core';
+import { Provider } from 'react-redux';
+import './index.css';
+import { MainRouter } from './router';
+import { store } from './redux/store';
+import { RTLThemeProvider } from './components/RTLProvider';
+require('typeface-open-sans');
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <RTLThemeProvider>
+            <CssBaseline />
+            <MainRouter />
+        </RTLThemeProvider>
+    </Provider>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
