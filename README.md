@@ -19,6 +19,26 @@ It includes:
 -   Right-to-Left support
 
 ## To run the project
+Clone the repository:
+```
+git clone https://github.com/pxblue/react-showcase-demo
+```
+Install the dependencies:
+```
+yarn install
+```
+or 
+```
+npm install
+```
+and run the start command:
+```
+yarn start
+```
+or
+```
+npm run start
+```
 
 ## Contributors
 
