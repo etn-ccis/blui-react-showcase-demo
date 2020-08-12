@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) =>
     createStyles({
         menuButton: {
             marginLeft: '-12px',
-            marginRight: '-12px'
+            marginRight: '-12px',
         },
         iconFlip: {
             transform: 'scaleX(-1)',
@@ -27,35 +27,43 @@ export const SharedAppBar: React.FC = () => {
     const rtl = theme.direction === 'rtl';
     const classes = useStyles();
     const smUp = useMediaQuery(theme.breakpoints.up('sm'));
-    const [subtitleLabel, setSubtitleLabel] = useState("Language")
+    const [subtitleLabel, setSubtitleLabel] = useState('Language');
 
     const clickDropdownMenuItem = (language: string) => {
         setSubtitleLabel(language);
-    }
+    };
 
     const menuItems = [
-        { label: 'English', onClick: () => clickDropdownMenuItem("English") },
-        { label: 'Arabic', onClick: () => clickDropdownMenuItem("Arabic") },
-        { label: 'French', onClick: () => clickDropdownMenuItem("French") }
-    ]
+        { label: 'English', onClick: () => clickDropdownMenuItem('English') },
+        { label: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
+        { label: 'French', onClick: () => clickDropdownMenuItem('French') },
+    ];
 
-    const getNavigationIcon = useCallback(
-        (): JSX.Element | undefined => {
-            if (smUp) { return undefined }
-            else return (
-                <IconButton color={'inherit'} className={classes.menuButton} onClick={(): void => {
-                    dispatch({ type: TOGGLE_DRAWER });
-                }}>
-                    <Menu
-                        className={clsx({ [classes.iconFlip]: rtl })}
-                    />
+    const getNavigationIcon = useCallback((): JSX.Element | undefined => {
+        if (smUp) {
+            return undefined;
+        } else
+            return (
+                <IconButton
+                    color={'inherit'}
+                    className={classes.menuButton}
+                    onClick={(): void => {
+                        dispatch({ type: TOGGLE_DRAWER });
+                    }}
+                >
+                    <Menu className={clsx({ [classes.iconFlip]: rtl })} />
                 </IconButton>
-            )
-        }, [smUp, rtl]);
+            );
+    }, [smUp, rtl]);
 
     return (
         <AppBar position={'sticky'} color={'primary'}>
-            <DropdownToolbar title={"Showcase"} subtitleLabel={subtitleLabel} menuItems={menuItems} navigationIcon={getNavigationIcon()}>
+            <DropdownToolbar
+                title={'Showcase'}
+                subtitleLabel={subtitleLabel}
+                menuItems={menuItems}
+                navigationIcon={getNavigationIcon()}
+            >
                 <Spacer flex={1} />
                 <Tooltip title={'Toggle Theme'} aria-label={'toggle the theme of the current showcase'}>
                     <IconButton
