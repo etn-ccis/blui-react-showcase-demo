@@ -1,10 +1,10 @@
-import { AppBar, Hidden, Toolbar, Typography, IconButton, Tooltip, makeStyles, createStyles } from '@material-ui/core';
+import { AppBar, IconButton, Tooltip, makeStyles, createStyles, useMediaQuery } from '@material-ui/core';
 import { Email, Menu, Settings, InvertColors, SwapHoriz } from '@material-ui/icons';
 import Avatar from '@material-ui/core/Avatar';
 import SendIcon from '@material-ui/icons/Send';
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { useTheme } from '@material-ui/core/styles';
-import { Spacer, UserMenu } from '@pxblue/react-components';
+import { Spacer, UserMenu, DropdownToolbar } from '@pxblue/react-components';
 import clsx from 'clsx';
 import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';
 import { useDispatch } from 'react-redux';
@@ -12,8 +12,8 @@ import { useDispatch } from 'react-redux';
 const useStyles = makeStyles((theme) =>
     createStyles({
         menuButton: {
-            marginRight: theme.spacing(4),
-            cursor: 'pointer',
+            marginLeft: '-12px',
+            marginRight: '-12px'
         },
         iconFlip: {
             transform: 'scaleX(-1)',
@@ -26,19 +26,36 @@ export const SharedAppBar: React.FC = () => {
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
     const classes = useStyles();
+    const smUp = useMediaQuery(theme.breakpoints.up('sm'));
+    const [subtitleLabel, setSubtitleLabel] = useState("Language")
+
+    const clickDropdownMenuItem = (language: string) => {
+        setSubtitleLabel(language);
+    }
+
+    const menuItems = [
+        { label: 'English', onClick: () => clickDropdownMenuItem("English") },
+        { label: 'Arabic', onClick: () => clickDropdownMenuItem("Arabic") },
+        { label: 'French', onClick: () => clickDropdownMenuItem("French") }
+    ]
+
+    const getNavigationIcon = useCallback(
+        (): JSX.Element | undefined => {
+            if (smUp) { return undefined }
+            else return (
+                <IconButton color={'inherit'} className={classes.menuButton} onClick={(): void => {
+                    dispatch({ type: TOGGLE_DRAWER });
+                }}>
+                    <Menu
+                        className={clsx({ [classes.iconFlip]: rtl })}
+                    />
+                </IconButton>
+            )
+        }, [smUp, rtl]);
 
     return (
         <AppBar position={'sticky'} color={'primary'}>
-            <Toolbar style={{ padding: `0 ${theme.spacing(2)}px` }}>
-                <Hidden smUp>
-                    <Menu
-                        className={clsx({ [classes.iconFlip]: rtl }, classes.menuButton)}
-                        onClick={(): void => {
-                            dispatch({ type: TOGGLE_DRAWER });
-                        }}
-                    />
-                </Hidden>
-                <Typography variant={'h6'}>Showcase</Typography>
+            <DropdownToolbar title={"Showcase"} subtitleLabel={subtitleLabel} menuItems={menuItems} navigationIcon={getNavigationIcon()}>
                 <Spacer flex={1} />
                 <Tooltip title={'Toggle Theme'} aria-label={'toggle the theme of the current showcase'}>
                     <IconButton
@@ -95,7 +112,7 @@ export const SharedAppBar: React.FC = () => {
                         },
                     ]}
                 />
-            </Toolbar>
+            </DropdownToolbar>
         </AppBar>
     );
 };
