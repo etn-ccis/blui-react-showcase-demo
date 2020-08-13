@@ -27,17 +27,11 @@ export const SharedAppBar: React.FC = () => {
     const rtl = theme.direction === 'rtl';
     const classes = useStyles();
     const smUp = useMediaQuery(theme.breakpoints.up('sm'));
-    const [subtitleLabel, setSubtitleLabel] = useState('Language');
+    const [subtitle, setSubtitle] = useState('Language');
 
-    const clickDropdownMenuItem = (language: string) => {
-        setSubtitleLabel(language);
-    };
-
-    const menuItems = [
-        { label: 'English', onClick: () => clickDropdownMenuItem('English') },
-        { label: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
-        { label: 'French', onClick: () => clickDropdownMenuItem('French') },
-    ];
+    const clickDropdownMenuItem = useCallback((language: string): void => {
+        setSubtitle(language);
+    }, []);
 
     const getNavigationIcon = useCallback((): JSX.Element | undefined => {
         if (smUp) {
@@ -54,13 +48,19 @@ export const SharedAppBar: React.FC = () => {
                     <Menu className={clsx({ [classes.iconFlip]: rtl })} />
                 </IconButton>
             );
-    }, [smUp, rtl]);
+    }, [smUp, rtl, classes]);
+
+    const menuItems = [
+        { label: 'English', onClick: () => clickDropdownMenuItem('English') },
+        { label: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
+        { label: 'French', onClick: () => clickDropdownMenuItem('French') },
+    ];
 
     return (
         <AppBar position={'sticky'} color={'primary'}>
             <DropdownToolbar
                 title={'Showcase'}
-                subtitleLabel={subtitleLabel}
+                subtitle={subtitle}
                 menuItems={menuItems}
                 navigationIcon={getNavigationIcon()}
             >
