@@ -48,7 +48,7 @@ export const SharedAppBar: React.FC = () => {
                     <Menu className={clsx({ [classes.iconFlip]: rtl })} />
                 </IconButton>
             );
-    }, [smUp, rtl, classes]);
+    }, [smUp, rtl, classes, dispatch]);
 
     const menuItems = [
         { label: 'English', onClick: () => clickDropdownMenuItem('English') },
