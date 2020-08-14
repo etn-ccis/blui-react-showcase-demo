@@ -29,9 +29,12 @@ export const SharedAppBar: React.FC = () => {
     const smUp = useMediaQuery(theme.breakpoints.up('sm'));
     const [subtitle, setSubtitle] = useState('Language');
 
-    const clickDropdownMenuItem = useCallback((language: string): void => {
-        setSubtitle(language);
-    }, [setSubtitle]);
+    const clickDropdownMenuItem = useCallback(
+        (language: string): void => {
+            setSubtitle(language);
+        },
+        [setSubtitle]
+    );
 
     const getNavigationIcon = useCallback((): JSX.Element | undefined => {
         if (smUp) {
