@@ -31,7 +31,7 @@ export const SharedAppBar: React.FC = () => {
 
     const clickDropdownMenuItem = useCallback((language: string): void => {
         setSubtitle(language);
-    }, []);
+    }, [setSubtitle]);
 
     const getNavigationIcon = useCallback((): JSX.Element | undefined => {
         if (smUp) {
