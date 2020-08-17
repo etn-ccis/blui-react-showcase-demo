@@ -54,9 +54,15 @@ export const SharedAppBar: React.FC = () => {
     }, [smUp, rtl, classes, dispatch]);
 
     const menuItems = [
-        { label: 'English', onClick: () => clickDropdownMenuItem('English') },
-        { label: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
-        { label: 'French', onClick: () => clickDropdownMenuItem('French') },
+        { title: 'English', onClick: () => clickDropdownMenuItem('English') },
+        { title: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
+        { title: 'French', onClick: () => clickDropdownMenuItem('French') },
+    ];
+
+    const menuGroups = [
+        {
+            items: menuItems,
+        },
     ];
 
     return (
@@ -64,7 +70,7 @@ export const SharedAppBar: React.FC = () => {
             <DropdownToolbar
                 title={'Showcase'}
                 subtitle={subtitle}
-                menuItems={menuItems}
+                menuGroups={menuGroups}
                 navigationIcon={getNavigationIcon()}
             >
                 <Spacer flex={1} />
