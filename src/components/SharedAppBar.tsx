@@ -72,6 +72,10 @@ export const SharedAppBar: React.FC = () => {
                 subtitle={subtitle}
                 menuGroups={menuGroups}
                 navigationIcon={getNavigationIcon()}
+                MenuProps={{
+                    anchorOrigin: { horizontal: rtl ? 'right' : 'left', vertical: 'bottom' },
+                    transformOrigin: { horizontal: rtl ? 'right' : 'left', vertical: 'top' },
+                }}
             >
                 <Spacer flex={1} />
                 <Tooltip title={'Toggle Theme'} aria-label={'toggle the theme of the current showcase'}>
