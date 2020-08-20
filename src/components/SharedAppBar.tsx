@@ -54,9 +54,9 @@ export const SharedAppBar: React.FC = () => {
     }, [smUp, rtl, classes, dispatch]);
 
     const menuItems = [
-        { title: 'English', onClick: () => clickDropdownMenuItem('English'), itemID: 'english' },
-        { title: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic'), itemID: 'arabic' },
-        { title: 'French', onClick: () => clickDropdownMenuItem('French'), itemID: 'french' },
+        { title: 'English', onClick: () => clickDropdownMenuItem('English') },
+        { title: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
+        { title: 'French', onClick: () => clickDropdownMenuItem('French') },
     ];
 
     const menuGroups = [
