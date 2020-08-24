@@ -244,6 +244,7 @@ export const App: React.FC = () => {
                             statusColor={Colors.green[500]}
                             subtitleSeparator={'/'}
                             icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                            iconAlign={'center'}
                             rightComponent={<ChannelValue fontSize={16} value={'Online, ESS+'} />}
                         />
                         <InfoListItem
@@ -282,6 +283,7 @@ export const App: React.FC = () => {
                             title={'Output Current'}
                             divider={'full'}
                             icon={<CurrentCircled color={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                            iconAlign={'center'}
                             rightComponent={
                                 <span>
                                     <ChannelValue fontSize={16} value={15} units={'A'} />,{' '}
@@ -294,6 +296,7 @@ export const App: React.FC = () => {
                             dense
                             title={'Temperature'}
                             icon={<Temp className={clsx({ [classes.iconFlip]: rtl })} />}
+                            iconAlign={'center'}
                             rightComponent={
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <ListItemTag
