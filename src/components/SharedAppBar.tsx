@@ -9,7 +9,7 @@ import clsx from 'clsx';
 import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';
 import { useDispatch } from 'react-redux';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(() =>
     createStyles({
         menuButton: {
             marginLeft: '-12px',
@@ -39,24 +39,24 @@ export const SharedAppBar: React.FC = () => {
     const getNavigationIcon = useCallback((): JSX.Element | undefined => {
         if (smUp) {
             return undefined;
-        } else
-            return (
-                <IconButton
-                    color={'inherit'}
-                    className={classes.menuButton}
-                    onClick={(): void => {
-                        dispatch({ type: TOGGLE_DRAWER });
-                    }}
-                >
-                    <Menu className={clsx({ [classes.iconFlip]: rtl })} />
-                </IconButton>
-            );
+        }
+        return (
+            <IconButton
+                color={'inherit'}
+                className={classes.menuButton}
+                onClick={(): void => {
+                    dispatch({ type: TOGGLE_DRAWER });
+                }}
+            >
+                <Menu className={clsx({ [classes.iconFlip]: rtl })} />
+            </IconButton>
+        );
     }, [smUp, rtl, classes, dispatch]);
 
     const menuItems = [
-        { title: 'English', onClick: () => clickDropdownMenuItem('English') },
-        { title: 'Arabic', onClick: () => clickDropdownMenuItem('Arabic') },
-        { title: 'French', onClick: () => clickDropdownMenuItem('French') },
+        { title: 'English', onClick: (): void => clickDropdownMenuItem('English') },
+        { title: 'Arabic', onClick: (): void => clickDropdownMenuItem('Arabic') },
+        { title: 'French', onClick: (): void => clickDropdownMenuItem('French') },
     ];
 
     const menuGroups = [
