@@ -128,7 +128,7 @@ export const App: React.FC = () => {
                         headerSubtitle={'Normal'}
                         headerInfo={'4 Devices'}
                         headerFontColor={Colors.white[50]}
-                        actionItems={[<MoreVert key={'action1'} />]}
+                        actionItems={[<MoreVert key={'action1'} className={clsx({ [classes.iconFlip]: false })} />]}
                         badge={
                             <HeroBanner>
                                 <Hero
@@ -364,7 +364,7 @@ export const App: React.FC = () => {
                             {
                                 title: 'Guides',
                                 itemID: 'Guides',
-                                icon: <DevicesIcon />,
+                                icon: <DevicesIcon className={clsx({ [classes.iconFlip]: false })} />,
                                 rightComponent: <ListItemTag label={'new'} />,
                                 expandIcon: <Add className={clsx({ [classes.iconFlip]: false })} />,
                                 collapseIcon: <Remove className={clsx({ [classes.iconFlip]: false })} />,
