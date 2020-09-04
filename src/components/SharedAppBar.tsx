@@ -48,10 +48,10 @@ export const SharedAppBar: React.FC = () => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
             >
-                <Menu className={clsx({ [classes.iconFlip]: rtl })} />
+                <Menu className={clsx({ [classes.iconFlip]: false })} />
             </IconButton>
         );
-    }, [smUp, rtl, classes, dispatch]);
+    }, [smUp, classes, dispatch]);
 
     const menuItems = [
         { title: 'English', onClick: (): void => clickDropdownMenuItem('English') },
@@ -59,18 +59,12 @@ export const SharedAppBar: React.FC = () => {
         { title: 'French', onClick: (): void => clickDropdownMenuItem('French') },
     ];
 
-    const menuGroups = [
-        {
-            items: menuItems,
-        },
-    ];
-
     return (
         <AppBar position={'sticky'} color={'primary'}>
             <DropdownToolbar
                 title={'Showcase'}
                 subtitle={subtitle}
-                menuGroups={menuGroups}
+                menuGroups={[{ items: menuItems }]}
                 navigationIcon={getNavigationIcon()}
                 MenuProps={{
                     anchorOrigin: { horizontal: rtl ? 'right' : 'left', vertical: 'bottom' },
@@ -85,7 +79,7 @@ export const SharedAppBar: React.FC = () => {
                             dispatch({ type: TOGGLE_THEME });
                         }}
                     >
-                        <InvertColors className={clsx({ [classes.iconFlip]: rtl })} />
+                        <InvertColors className={clsx({ [classes.iconFlip]: false })} />
                     </IconButton>
                 </Tooltip>
                 <Spacer width={theme.spacing(1)} flex={0} />
@@ -96,7 +90,7 @@ export const SharedAppBar: React.FC = () => {
                             dispatch({ type: TOGGLE_DIR });
                         }}
                     >
-                        <SwapHoriz className={clsx({ [classes.iconFlip]: rtl })} />
+                        <SwapHoriz className={clsx({ [classes.iconFlip]: false })} />
                     </IconButton>
                 </Tooltip>
                 <Spacer width={theme.spacing(1)} flex={0} />
@@ -113,7 +107,7 @@ export const SharedAppBar: React.FC = () => {
                                 },
                                 {
                                     title: 'Account Settings',
-                                    icon: <Settings className={clsx({ [classes.iconFlip]: rtl })} />,
+                                    icon: <Settings className={clsx({ [classes.iconFlip]: false })} />,
                                     divider: true,
                                 },
                             ],
@@ -127,7 +121,7 @@ export const SharedAppBar: React.FC = () => {
                                 },
                                 {
                                     title: '1-866-905-9988',
-                                    icon: <Email className={clsx({ [classes.iconFlip]: rtl })} />,
+                                    icon: <Email className={clsx({ [classes.iconFlip]: false })} />,
                                 },
                             ],
                         },
