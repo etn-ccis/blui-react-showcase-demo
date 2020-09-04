@@ -63,7 +63,13 @@ export const App: React.FC = () => {
                         badge={
                             <HeroBanner style={{ minWidth: 210 }}>
                                 <Hero
-                                    icon={<Temp fontSize={'inherit'} htmlColor={Colors.gray[500]} />}
+                                    icon={
+                                        <Temp
+                                            fontSize={'inherit'}
+                                            htmlColor={Colors.gray[500]}
+                                            className={clsx({ [classes.iconFlip]: false })}
+                                        />
+                                    }
                                     label={'Temperature'}
                                     iconSize={48}
                                     value={98}
@@ -71,7 +77,13 @@ export const App: React.FC = () => {
                                     fontSize={'normal'}
                                 />
                                 <Hero
-                                    icon={<Humidity fontSize={'inherit'} htmlColor={Colors.blue[300]} />}
+                                    icon={
+                                        <Humidity
+                                            fontSize={'inherit'}
+                                            htmlColor={Colors.blue[300]}
+                                            className={clsx({ [classes.iconFlip]: false })}
+                                        />
+                                    }
                                     label={'Humidity'}
                                     value={54}
                                     units={'%'}
@@ -91,7 +103,7 @@ export const App: React.FC = () => {
                                 fontColor={Colors.red[500]}
                                 iconColor={Colors.red[500]}
                                 title={'1 Alarm'}
-                                icon={<Leaf color={'inherit'} />}
+                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             />
                             <InfoListItem
                                 dense
@@ -99,13 +111,13 @@ export const App: React.FC = () => {
                                 fontColor={Colors.blue[500]}
                                 iconColor={Colors.blue[500]}
                                 title={'1 Event'}
-                                icon={<Leaf color={'inherit'} />}
+                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             />
                             <InfoListItem
                                 dense
                                 style={{ height: 36 }}
                                 title={'Online'}
-                                icon={<Leaf color={'inherit'} />}
+                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             />
                         </List>
                     </ScoreCard>
@@ -120,7 +132,13 @@ export const App: React.FC = () => {
                         badge={
                             <HeroBanner>
                                 <Hero
-                                    icon={<GradeA fontSize={'inherit'} htmlColor={Colors.green[500]} />}
+                                    icon={
+                                        <GradeA
+                                            fontSize={'inherit'}
+                                            htmlColor={Colors.green[500]}
+                                            className={clsx({ [classes.iconFlip]: false })}
+                                        />
+                                    }
                                     iconBackgroundColor={theme.palette.background.paper}
                                     label={'Health'}
                                     iconSize={72}
@@ -139,7 +157,7 @@ export const App: React.FC = () => {
                                 dense
                                 style={{ height: 36 }}
                                 title={'0 Alarms'}
-                                icon={<Leaf color={'inherit'} />}
+                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             />
                             <InfoListItem
                                 dense
@@ -147,13 +165,13 @@ export const App: React.FC = () => {
                                 fontColor={Colors.blue[500]}
                                 iconColor={Colors.blue[500]}
                                 title={'1 Event'}
-                                icon={<Leaf color={'inherit'} />}
+                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             />
                             <InfoListItem
                                 dense
                                 style={{ height: 36 }}
                                 title={'Online'}
-                                icon={<Leaf color={'inherit'} />}
+                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             />
                         </List>
                     </ScoreCard>
@@ -163,7 +181,14 @@ export const App: React.FC = () => {
                     <List style={{ padding: 0 }}>
                         <HeroBanner divider>
                             <Hero
-                                icon={<GradeA fontSize={'inherit'} color={'inherit'} htmlColor={Colors.green[500]} />}
+                                icon={
+                                    <GradeA
+                                        fontSize={'inherit'}
+                                        color={'inherit'}
+                                        htmlColor={Colors.green[500]}
+                                        className={clsx({ [classes.iconFlip]: false })}
+                                    />
+                                }
                                 label={'Healthy'}
                                 value={96}
                                 units={'/100'}
@@ -176,7 +201,7 @@ export const App: React.FC = () => {
                                         percent={65}
                                         size={36}
                                         // @ts-ignore until we publish the updated type definitions
-                                        className={clsx({ [classes.iconFlip]: rtl })}
+                                        className={clsx({ [classes.iconFlip]: false })}
                                     />
                                 }
                                 label={'Load'}
@@ -195,7 +220,13 @@ export const App: React.FC = () => {
                                 />
                             </Hero>
                             <Hero
-                                icon={<Timer fontSize={'inherit'} color={'inherit'} />}
+                                icon={
+                                    <Timer
+                                        fontSize={'inherit'}
+                                        color={'inherit'}
+                                        className={clsx({ [classes.iconFlip]: false })}
+                                    />
+                                }
                                 label={'Estimated'}
                                 fontSize={'normal'}
                             >
@@ -225,7 +256,7 @@ export const App: React.FC = () => {
                             divider={'full'}
                             statusColor={Colors.green[500]}
                             subtitleSeparator={'/'}
-                            icon={<Leaf color={'inherit'} />}
+                            icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             iconAlign={'center'}
                             rightComponent={<ChannelValue fontSize={16} value={'Online, ESS+'} />}
                         />
@@ -234,7 +265,7 @@ export const App: React.FC = () => {
                             divider={'full'}
                             avatar
                             subtitle={['Phase A', 'Phase B', 'Phase C']}
-                            icon={<VoltageCircled />}
+                            icon={<VoltageCircled className={clsx({ [classes.iconFlip]: false })} />}
                             rightComponent={
                                 <span>
                                     <ChannelValue fontSize={16} value={478} units={'V'} />,{' '}
@@ -250,7 +281,7 @@ export const App: React.FC = () => {
                             statusColor={Colors.red[500]}
                             fontColor={Colors.red[500]}
                             subtitle={['Phase A', 'Phase B', 'Phase C']}
-                            icon={<VoltageCircled color={'inherit'} />}
+                            icon={<VoltageCircled color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             rightComponent={
                                 <span style={{ color: Colors.red[500] }}>
                                     <ListItemTag label={'monitored'} classes={{ root: classes.listTag }} />
@@ -264,7 +295,7 @@ export const App: React.FC = () => {
                             dense
                             title={'Output Current'}
                             divider={'full'}
-                            icon={<CurrentCircled color={'inherit'} />}
+                            icon={<CurrentCircled color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             iconAlign={'center'}
                             rightComponent={
                                 <span>
@@ -277,7 +308,7 @@ export const App: React.FC = () => {
                         <InfoListItem
                             dense
                             title={'Temperature'}
-                            icon={<Temp />}
+                            icon={<Temp className={clsx({ [classes.iconFlip]: false })} />}
                             iconAlign={'center'}
                             rightComponent={
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -312,11 +343,15 @@ export const App: React.FC = () => {
                 </Card>
                 <Card style={{ marginTop: theme.spacing(1), padding: theme.spacing(3) }}>
                     <EmptyState
-                        icon={<DevicesIcon fontSize={'inherit'} />}
+                        icon={<DevicesIcon fontSize={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                         title={'No Devices'}
                         description={'Contact your local admin for details'}
                         actions={
-                            <Button variant="contained" color="primary" startIcon={<Add />}>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                startIcon={<Add className={clsx({ [classes.iconFlip]: false })} />}
+                            >
                                 Add Device
                             </Button>
                         }
@@ -331,8 +366,8 @@ export const App: React.FC = () => {
                                 itemID: 'Guides',
                                 icon: <DevicesIcon />,
                                 rightComponent: <ListItemTag label={'new'} />,
-                                expandIcon: <Add />,
-                                collapseIcon: <Remove />,
+                                expandIcon: <Add className={clsx({ [classes.iconFlip]: false })} />,
+                                collapseIcon: <Remove className={clsx({ [classes.iconFlip]: false })} />,
                                 items: [
                                     {
                                         title: 'Installation Manual',
@@ -357,7 +392,7 @@ export const App: React.FC = () => {
                             {
                                 title: 'Quality Control',
                                 itemID: 'Quality Control',
-                                icon: <Settings />,
+                                icon: <Settings className={clsx({ [classes.iconFlip]: false })} />,
                                 items: [
                                     {
                                         title: 'Training',
