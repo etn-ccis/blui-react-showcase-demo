@@ -117,7 +117,7 @@ export const NavigationDrawer: React.FC = () => {
                             title: titleList[1],
                             itemID: titleList[1],
                             subtitle: '2 Alarms',
-                            icon: <NotificationsActive className={clsx({ [classes.iconFlip]: rtl })} />,
+                            icon: <NotificationsActive />,
                             onClick: (): void => {
                                 navigate(1);
                                 if (xsDown) dispatch({ type: CLOSE_DRAWER });
@@ -126,7 +126,7 @@ export const NavigationDrawer: React.FC = () => {
                         {
                             title: titleList[2],
                             itemID: titleList[2],
-                            icon: <Public className={clsx({ [classes.iconFlip]: rtl })} />,
+                            icon: <Public />,
                             onClick: (): void => navigate(2),
                             onItemSelect: (): void => {
                                 /* do nothing, but need the function to prevent auto-collapse on click */
@@ -153,7 +153,7 @@ export const NavigationDrawer: React.FC = () => {
                         {
                             title: titleList[3],
                             itemID: titleList[3],
-                            icon: <Device className={clsx({ [classes.iconFlip]: rtl })} />,
+                            icon: <Device />,
                             onClick: (): void => {
                                 navigate(3);
                                 if (xsDown) dispatch({ type: CLOSE_DRAWER });
@@ -174,7 +174,7 @@ export const NavigationDrawer: React.FC = () => {
                         {
                             title: titleList[4],
                             itemID: titleList[4],
-                            icon: <Settings className={clsx({ [classes.iconFlip]: rtl })} />,
+                            icon: <Settings />,
                             onClick: (): void => {
                                 navigate(4);
                                 if (xsDown) dispatch({ type: CLOSE_DRAWER });
@@ -183,7 +183,7 @@ export const NavigationDrawer: React.FC = () => {
                         {
                             title: titleList[5],
                             itemID: titleList[5],
-                            icon: <Gavel className={clsx({ [classes.iconFlip]: rtl })} />,
+                            icon: <Gavel />,
                             onClick: (): void => {
                                 navigate(5);
                                 if (xsDown) dispatch({ type: CLOSE_DRAWER });

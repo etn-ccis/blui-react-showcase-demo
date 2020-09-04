@@ -85,7 +85,7 @@ export const SharedAppBar: React.FC = () => {
                             dispatch({ type: TOGGLE_THEME });
                         }}
                     >
-                        <InvertColors className={clsx({ [classes.iconFlip]: rtl })} />
+                        <InvertColors />
                     </IconButton>
                 </Tooltip>
                 <Spacer width={theme.spacing(1)} flex={0} />
@@ -96,7 +96,7 @@ export const SharedAppBar: React.FC = () => {
                             dispatch({ type: TOGGLE_DIR });
                         }}
                     >
-                        <SwapHoriz className={clsx({ [classes.iconFlip]: rtl })} />
+                        <SwapHoriz />
                     </IconButton>
                 </Tooltip>
                 <Spacer width={theme.spacing(1)} flex={0} />
@@ -113,7 +113,7 @@ export const SharedAppBar: React.FC = () => {
                                 },
                                 {
                                     title: 'Account Settings',
-                                    icon: <Settings className={clsx({ [classes.iconFlip]: rtl })} />,
+                                    icon: <Settings />,
                                     divider: true,
                                 },
                             ],
@@ -127,7 +127,7 @@ export const SharedAppBar: React.FC = () => {
                                 },
                                 {
                                     title: '1-866-905-9988',
-                                    icon: <Email className={clsx({ [classes.iconFlip]: rtl })} />,
+                                    icon: <Email />,
                                 },
                             ],
                         },
