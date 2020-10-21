@@ -283,12 +283,12 @@ export const App: React.FC = () => {
                             subtitle={['Phase A', 'Phase B', 'Phase C']}
                             icon={<VoltageCircled color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                             rightComponent={
-                                <span style={{ color: Colors.red[500] }}>
+                                <div style={{ display: 'flex', alignItems: 'center', color: Colors.red[500] }}>
                                     <ListItemTag label={'monitored'} classes={{ root: classes.listTag }} />
                                     <ChannelValue fontSize={16} value={480} units={'V'} />,{' '}
                                     <ChannelValue fontSize={16} value={480} units={'V'} />,{' '}
                                     <ChannelValue fontSize={16} value={480} units={'V'} />
-                                </span>
+                                </div>
                             }
                         />
                         <InfoListItem
