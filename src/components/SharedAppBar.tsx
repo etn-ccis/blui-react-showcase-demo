@@ -45,7 +45,6 @@ export const SharedAppBar: React.FC = () => {
             >
                 <Menu className={clsx({ [classes.iconFlip]: false })} />
             </IconButton>
-            // <Menu className={clsx({ [classes.iconFlip]: false })} />
         );
     }, [smUp, classes, dispatch]);
 
