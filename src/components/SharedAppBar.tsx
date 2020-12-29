@@ -11,10 +11,6 @@ import { useDispatch } from 'react-redux';
 
 const useStyles = makeStyles(() =>
     createStyles({
-        menuButton: {
-            marginLeft: '-12px',
-            marginRight: '-12px',
-        },
         iconFlip: {
             transform: 'scaleX(-1)',
         },
@@ -43,7 +39,6 @@ export const SharedAppBar: React.FC = () => {
         return (
             <IconButton
                 color={'inherit'}
-                className={classes.menuButton}
                 onClick={(): void => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
