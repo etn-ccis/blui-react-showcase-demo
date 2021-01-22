@@ -128,9 +128,6 @@ export const NavigationDrawer: React.FC = () => {
                             itemID: titleList[2],
                             icon: <Public className={clsx({ [classes.iconFlip]: false })} />,
                             onClick: (): void => navigate(2),
-                            onItemSelect: (): void => {
-                                /* do nothing, but need the function to prevent auto-collapse on click */
-                            },
                             items: [
                                 {
                                     title: titleList[7],
