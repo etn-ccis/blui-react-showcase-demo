@@ -7,7 +7,7 @@ import './index.css';
 import { MainRouter } from './router';
 import { store } from './redux/store';
 import { RTLThemeProvider } from './components/RTLProvider';
-require('typeface-open-sans');
+import '@fontsource/open-sans';
 
 ReactDOM.render(
     <Provider store={store}>
