@@ -10,7 +10,7 @@
         "@pxblue/icons-mui": "^2.2.1",
         "@pxblue/react-components": "^4.1.1",
         "@pxblue/react-progress-icons": "^2.1.0",
-        "@pxblue/react-themes": "^5.0.3",
+        "@pxblue/react-themes": "^6.0.0-beta.0",
         "@types/jest": "^24.0.0",
         "@types/node": "^12.0.0",
         "@types/react": "^16.9.43",
@@ -26,7 +26,6 @@
         "react-scripts": "3.4.3",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
-        "typeface-open-sans": "^0.0.75",
         "typescript": "^4.0.2"
     },
     "scripts": {
