@@ -1523,13 +1523,13 @@
     color "^3.1.2"
     react-jss "^10.4.0"
 
-"@pxblue/react-themes@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-themes/-/react-themes-5.0.3.tgz#c47e3d931fbe255928c5f0e4b7fc3eb44dd852d2"
-  integrity sha512-I3wP1KcF+cx69SFK+THmcthhFUyLCue4jKnf3HY5WQ7Kt8ley1qJvdZeUl9ZZq2tnCahQ4tplLE8F9t94enu2g==
+"@pxblue/react-themes@^6.0.0-beta.0":
+  version "6.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-themes/-/react-themes-6.0.0-beta.0.tgz#885e861769c9ffebef87fae0546d0bacddaadfe6"
+  integrity sha512-dTYJnt6YJbWgo253sqcpz0sGjyy0+NSEEili45dscszb9iq+9zWpQUtSXIGrLQHHRexJoGxuuiQ7F8Wa22G7Rg==
   dependencies:
+    "@fontsource/open-sans" "^4.1.0"
     "@pxblue/colors" "^3.0.0"
-    typeface-open-sans "^0.0.75"
 
 "@pxblue/types@^2.0.0":
   version "2.0.0"
@@ -11343,11 +11343,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-open-sans@^0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.75.tgz#20d0c330f14c0c40463c334adbedd6005389abe4"
-  integrity sha512-0lLmB7pfj113OP4T78SbpSmC4OCdFQ0vUxdSXQccsSb6qF76F92iEuC/DghFgmPswTyidk8+Hwf+PS/htiJoRQ==
 
 typescript@^4.0.2:
   version "4.1.2"
