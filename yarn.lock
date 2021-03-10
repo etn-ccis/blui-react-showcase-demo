@@ -1506,10 +1506,10 @@
   resolved "https://registry.yarnpkg.com/@pxblue/prettier-config/-/prettier-config-1.0.2.tgz#fb00503df6557b66c3d91d43c9101e614c35d2ec"
   integrity sha512-/3cLBoTjZs3kV1ATPA/Sp0tsL7XmlV/b8HW/qt0jqR/uP5+cdXL2YIhMXQngLRa7PhpSkEiRIYK5sl0rKsXTUg==
 
-"@pxblue/react-components@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-components/-/react-components-4.1.1.tgz#132cac6e49c430f3c35c1e871695bda9cb94b06e"
-  integrity sha512-aaaKXoaNYWKtgOnhdmPNNjtEvz4OCbAuoIqH3ivoLQufLhzRat5bPubH0DKrdbI/Bez3dTPaCQt/weBU0QiJSg==
+"@pxblue/react-components@^5.0.0-beta.0":
+  version "5.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-components/-/react-components-5.0.0-beta.0.tgz#0cdaed36bab56af969f5282ae3d2430493203992"
+  integrity sha512-lN8X63tQTk1G6Ws5cwrRyDwyjxjCHGHzWa5A2OeJcxHDphfesTAgW/sn3apmdRawLScZumqAChKcatbWX+/P2A==
   dependencies:
     "@pxblue/colors" "^3.0.0"
     color "^3.1.2"
