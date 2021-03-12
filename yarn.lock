@@ -1169,9 +1169,9 @@
   integrity sha512-Qv4LTqO11jepd5Qmlp3M1YEjBumoTHcHFdgPTQ+sFlIL5myi/7xu/POwP7IRu6odBdmLXdtIs1D6TuW6kbwbbg==
 
 "@fontsource/open-sans@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.1.0.tgz#d44b4495bd23d78018675e4e79973894e393c0ed"
-  integrity sha512-sWDAAr6ESHJdBKXse6njvZem4sTZLILkugaEfAvpdFiaKBh2RnXTa4DJllDh5LzP0MLMUrfj/JAjMbKxWFo6pQ==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.2.2.tgz#59046f772136a44c5999e0189d33c6a26676630c"
+  integrity sha512-NbsL1a9asJO6N/5kRxYPCy0kNhKMi9T75kl4QfIGtmpd/5IfB+UIAUxd9AICmCLaH4Osc2TImeTJj94xc9MNKg==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -1506,10 +1506,10 @@
   resolved "https://registry.yarnpkg.com/@pxblue/prettier-config/-/prettier-config-1.0.2.tgz#fb00503df6557b66c3d91d43c9101e614c35d2ec"
   integrity sha512-/3cLBoTjZs3kV1ATPA/Sp0tsL7XmlV/b8HW/qt0jqR/uP5+cdXL2YIhMXQngLRa7PhpSkEiRIYK5sl0rKsXTUg==
 
-"@pxblue/react-components@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-components/-/react-components-4.1.1.tgz#132cac6e49c430f3c35c1e871695bda9cb94b06e"
-  integrity sha512-aaaKXoaNYWKtgOnhdmPNNjtEvz4OCbAuoIqH3ivoLQufLhzRat5bPubH0DKrdbI/Bez3dTPaCQt/weBU0QiJSg==
+"@pxblue/react-components@^5.0.1-beta.0":
+  version "5.0.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-components/-/react-components-5.0.1-beta.0.tgz#158fcdb0c3b7d2017ae161c4fc7a7d40f2b3c5f5"
+  integrity sha512-Q5NdFUQ2+RXIIP+FoEisocXmcLQ3yUUq9W1xYlmiZaPY9+KB9ZrmACsBOnvOXFW8EWFp6XDv9oy/F6ReglEa5g==
   dependencies:
     "@pxblue/colors" "^3.0.0"
     color "^3.1.2"
@@ -1523,13 +1523,14 @@
     color "^3.1.2"
     react-jss "^10.4.0"
 
-"@pxblue/react-themes@^6.0.0-beta.0":
-  version "6.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-themes/-/react-themes-6.0.0-beta.0.tgz#885e861769c9ffebef87fae0546d0bacddaadfe6"
-  integrity sha512-dTYJnt6YJbWgo253sqcpz0sGjyy0+NSEEili45dscszb9iq+9zWpQUtSXIGrLQHHRexJoGxuuiQ7F8Wa22G7Rg==
+"@pxblue/react-themes@^6.0.0-beta.1":
+  version "6.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-themes/-/react-themes-6.0.0-beta.1.tgz#46d13a5186527cc3186e8d267d1d8d3ec7b0c8b0"
+  integrity sha512-DWxS0r37KiK0cvkK5SxVmUMK8wmoYxdKPvDu958nmxy4Zu2+Dr1IyCfJVVpcRlOPsiRShbkQtvFIg4jph5eWzQ==
   dependencies:
     "@fontsource/open-sans" "^4.1.0"
     "@pxblue/colors" "^3.0.0"
+    color "^3.1.3"
 
 "@pxblue/types@^2.0.0":
   version "2.0.0"
@@ -3497,7 +3498,7 @@ color-string@^1.5.4:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^3.0.0, color@^3.1.2:
+color@^3.0.0, color@^3.1.2, color@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.3.tgz#ca67fb4e7b97d611dcde39eceed422067d91596e"
   integrity sha512-xgXAcTHa2HeFCGLE9Xs/R82hujGtu9Jd9x4NW3T34+OMs7VoPsjwzRczKHvTAHeJwWFwX5j15+MgAppE8ztObQ==
