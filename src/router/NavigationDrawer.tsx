@@ -89,7 +89,7 @@ export const NavigationDrawer: React.FC = () => {
             <DrawerSubheader>
                 <Select
                     value={location}
-                    onChange={(e: React.ChangeEvent<{ value: unknown }>): void => {
+                    onChange={(e: ChangeEvent<{ value: unknown }>): void => {
                         setLocation(e.target.value as number);
                     }}
                     style={{ height: theme.spacing(7), padding: theme.spacing(2), width: '100%' }}
