@@ -1215,7 +1215,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/open-sans@^4.1.0":
+"@fontsource/open-sans@^4.2.2":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.2.2.tgz#59046f772136a44c5999e0189d33c6a26676630c"
   integrity sha512-NbsL1a9asJO6N/5kRxYPCy0kNhKMi9T75kl4QfIGtmpd/5IfB+UIAUxd9AICmCLaH4Osc2TImeTJj94xc9MNKg==
@@ -1578,10 +1578,10 @@
   resolved "https://registry.yarnpkg.com/@pxblue/prettier-config/-/prettier-config-1.0.2.tgz#fb00503df6557b66c3d91d43c9101e614c35d2ec"
   integrity sha512-/3cLBoTjZs3kV1ATPA/Sp0tsL7XmlV/b8HW/qt0jqR/uP5+cdXL2YIhMXQngLRa7PhpSkEiRIYK5sl0rKsXTUg==
 
-"@pxblue/react-components@^5.0.1-beta.0":
-  version "5.0.1-beta.1"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-components/-/react-components-5.0.1-beta.1.tgz#dffffe7f9352eb9e56f737e1fec874f280cd99df"
-  integrity sha512-RuqD4jkaMfx2SCrFleUijFvdmsZzg0T7lm9qJQ9Mf5EjEQPC5tAxpZ45IAF5AXlMTkoFGa5D0Fl2P8hMQ7fkGw==
+"@pxblue/react-components@^5.0.1-beta.2":
+  version "5.0.1-beta.2"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-components/-/react-components-5.0.1-beta.2.tgz#97dbfd5a5733a291623b55410ac1905e7677aafb"
+  integrity sha512-z6/RHSvlpDjze+RxymfEiMxrxu/PQM0kIgncXSbEsSDexxLik5T3GZzkISw/t5YGhoOd+qk6ixd53iK0Lg3doQ==
   dependencies:
     "@pxblue/colors" "^3.0.0"
     color "^3.1.2"
@@ -1595,12 +1595,12 @@
     color "^3.1.2"
     react-jss "^10.4.0"
 
-"@pxblue/react-themes@^6.0.0-beta.1":
-  version "6.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-themes/-/react-themes-6.0.0-beta.2.tgz#38926da93816bc503e2df73d4084dc192fe0f2cb"
-  integrity sha512-VcVrbWMq/78TtmjOTQI0pE6tpP02gIOGLURzdB4YxmENgWtRS1QH9xNFRxr3YBFQxDaqRMWP1P0Le1vysYjRdA==
+"@pxblue/react-themes@^6.0.0-beta.3":
+  version "6.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-themes/-/react-themes-6.0.0-beta.3.tgz#bb4332d8629789f4ca036203720be5dc32e2ac81"
+  integrity sha512-zFOpRG2Lcr426LPATK3tnGvrOy9m8NHJnznVumEkqcxjh3AS2Z83iFyqr8Ovh2Cvv9x33zpa+WBm1mTC3QCn5A==
   dependencies:
-    "@fontsource/open-sans" "^4.1.0"
+    "@fontsource/open-sans" "^4.2.2"
     "@pxblue/colors" "^3.0.0"
     color "^3.1.3"
 
@@ -2485,9 +2485,9 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4, ajv@^6.12.5:
     uri-js "^4.2.2"
 
 ajv@^7.0.2:
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-7.2.3.tgz#ca78d1cf458d7d36d1c3fa0794dd143406db5772"
-  integrity sha512-idv5WZvKVXDqKralOImQgPM9v6WOdLNa0IY3B3doOjw/YxRGT8I+allIJ6kd7Uaj+SF1xZUSU+nPM5aDNBVtnw==
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-7.2.4.tgz#8e239d4d56cf884bccca8cca362f508446dc160f"
+  integrity sha512-nBeQgg/ZZA3u3SYxyaDvpvDtgZ/EZPF547ARgZBrG9Bhu1vKDwAIjtIf+sDtJUKa2zOcEbmRLBRSyMraS/Oy1A==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
