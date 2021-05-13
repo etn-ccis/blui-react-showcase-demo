@@ -201,14 +201,17 @@ export const NavigationDrawer: React.FC = () => {
                 />
             </DrawerBody>
             <DrawerFooter>
-                <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
+                <div
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        flexDirection: 'row',
+                        padding: 16,
+                    }}
+                >
                     <img
                         src={isDarkMode ? EatonFooterLogoDark : EatonFooterLogoLight}
-                        style={{
-                            margin: theme.spacing(2),
-                            marginRight: theme.spacing(3.75),
-                            marginLeft: theme.spacing(1),
-                        }}
                         alt="Eaton Logo"
                         height={28}
                         width={'auto'}
