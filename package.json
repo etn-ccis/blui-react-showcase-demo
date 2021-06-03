@@ -37,7 +37,8 @@
         "lint:fix": "eslint \"**/**/*.{ts,tsx}\" --fix",
         "prettier": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "prettier:check": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --check",
-        "precommit": "yarn && yarn prettier && yarn lint && yarn test"
+        "precommit": "yarn && yarn prettier && yarn lint && yarn test",
+        "coverage": "yarn test --coverage --watchAll=false"
     },
     "browserslist": {
         "production": [
@@ -66,6 +67,7 @@
         "@typescript-eslint/eslint-plugin": "^4.0.0",
         "@typescript-eslint/parser": "^4.0.0",
         "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
+        "codecov": "^3.8.2",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.0",
         "eslint": "^7.0.0",
