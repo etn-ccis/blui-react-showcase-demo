@@ -66,7 +66,7 @@ export const MaterialTextFieldExample: React.FC = () => {
             <div className={classes.content}>
                 <TextField
                     className={classes.inputField}
-                    id={'email'}
+                    id={'email1'}
                     label={'Enter Your Email'}
                     helperText={emailError || ''}
                     required
@@ -79,7 +79,7 @@ export const MaterialTextFieldExample: React.FC = () => {
 
                 <TextField
                     className={classes.inputField}
-                    id={'email'}
+                    id={'email2'}
                     label={'Enter Your Email'}
                     helperText={emailError || ''}
                     required
@@ -92,7 +92,7 @@ export const MaterialTextFieldExample: React.FC = () => {
 
                 <TextField
                     className={classes.inputField}
-                    id={'email'}
+                    id={'email3'}
                     label={'Enter Your Email'}
                     helperText={emailError || ''}
                     required
