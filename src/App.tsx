@@ -24,6 +24,8 @@ import {
 
 import top from './topology_40.png';
 import clsx from 'clsx';
+import { MaterialSwitchExample } from './components/MaterialSwitchExample';
+import { MaterialTextFieldExample } from './components/MaterialTextFieldExample';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -423,6 +425,8 @@ export const App: React.FC = () => {
                         ]}
                     />
                 </Card>
+                <MaterialSwitchExample />
+                <MaterialTextFieldExample />
             </div>
         </div>
     );
