@@ -14,7 +14,7 @@ import {
 const initialAppState: AppState = {
     theme: 'light',
     direction: 'ltr',
-    drawerOpen: true,
+    drawerOpen: false,
 };
 export const AppReducer = (state = initialAppState, action: any): AppState => {
     switch (action.type) {

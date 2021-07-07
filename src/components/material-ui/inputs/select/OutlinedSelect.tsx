@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const OutlinedSelectExample: React.FC = () => {
-    return <div>Outlined Select Example Works!</div>;
-};
+export const OutlinedSelectExample: React.FC = () => <div>Outlined Select Example Works!</div>;

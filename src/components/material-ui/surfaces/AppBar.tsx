@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const AppBarExample: React.FC = () => {
-    return <div>AppBar Example Works!</div>;
-};
+export const AppBarExample: React.FC = () => <div>AppBar Example Works!</div>;

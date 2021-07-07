@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const CheckboxExample: React.FC = () => {
-    return <div>Checkbox Example Works!</div>;
-};
+export const CheckboxExample: React.FC = () => <div>Checkbox Example Works!</div>;

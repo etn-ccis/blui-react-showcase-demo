@@ -9,6 +9,8 @@ import { store } from './redux/store';
 import { RTLThemeProvider } from './components/RTLProvider';
 import '@pxblue/react-themes/open-sans';
 
+// eslint-disable-arrow-body-style
+
 ReactDOM.render(
     <Provider store={store}>
         <RTLThemeProvider>

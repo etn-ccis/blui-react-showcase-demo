@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const ListExample: React.FC = () => {
-    return <div>List Example Works!</div>;
-};
+export const ListExample: React.FC = () => <div>List Example Works!</div>;

@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const IconButtonExample: React.FC = () => {
-    return <div>Icon Button Example Works!</div>;
-};
+export const IconButtonExample: React.FC = () => <div>Icon Button Example Works!</div>;

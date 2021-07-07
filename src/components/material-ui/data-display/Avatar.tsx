@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const AvatarExample: React.FC = () => {
-    return <div>Avatar Example Works!</div>;
-};
+export const AvatarExample: React.FC = () => <div>Avatar Example Works!</div>;

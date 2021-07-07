@@ -1,5 +1,5 @@
 export * from './Checkbox';
-export * from './DateTimeField';
+export * from './DateTime';
 export * from './FloatingActionButton';
 export * from './Radio';
 export * from './Slider';

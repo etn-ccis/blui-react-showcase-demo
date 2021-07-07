@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const AccordionExample: React.FC = () => {
-    return <div>Accordion Example Works!</div>;
-};
+export const AccordionExample: React.FC = () => <div>Accordion Example Works!</div>;

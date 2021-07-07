@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const TableExample: React.FC = () => {
-    return <div>Table Example Works!</div>;
-};
+export const TableExample: React.FC = () => <div>Table Example Works!</div>;
