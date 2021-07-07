@@ -1,11 +1,11 @@
 import React from 'react';
-import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
-import { Card, CardContent, CardHeader } from '@material-ui/core';
 import {
     CheckboxExample,
+    ComponentExample,
     ContainedButtonExample,
     ContainedButtonGroupExample,
     DateTimeExample,
+    ExampleCardList,
     FilledSelectExample,
     FloatingActionButtonExample,
     IconButtonExample,
@@ -22,30 +22,7 @@ import {
     TextButtonGroupExample,
 } from '../../components';
 
-const useStyles = makeStyles((theme) =>
-    createStyles({
-        container: {
-            display: 'flex',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-            margin: theme.spacing(1),
-        },
-        exampleCard: {
-            margin: theme.spacing(1),
-            width: '100%',
-            maxWidth: '400px',
-            minWidth: '350px',
-        },
-    })
-);
-
-export type ComponentExample = {
-    label: string;
-    component: JSX.Element;
-};
-
 export const Inputs: React.FC = () => {
-    const theme = useTheme();
     const examples: ComponentExample[] = [
         { label: 'Text Button', component: <TextButtonExample /> },
         { label: 'Contained Button', component: <ContainedButtonExample /> },
@@ -67,16 +44,6 @@ export const Inputs: React.FC = () => {
         { label: 'Filled Text Field', component: <StandardTextFieldExample /> },
         { label: 'Outlined Text Field', component: <OutlinedTextFieldExample /> },
     ];
-    const classes = useStyles(theme);
 
-    return (
-        <div className={classes.container}>
-            {examples.map((example) => (
-                <Card key={example.label} className={classes.exampleCard}>
-                    <CardHeader title={example.label} />
-                    <CardContent>{example.component}</CardContent>
-                </Card>
-            ))}
-        </div>
-    );
+    return <ExampleCardList examples={examples} />;
 };
