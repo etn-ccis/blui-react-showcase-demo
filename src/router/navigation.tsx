@@ -25,45 +25,44 @@ export type SimpleNavItem = {
 };
 
 export const pageDefinitions: SimpleNavItem[] = [
-      {
-                title: 'PX Blue Components',
-                url: '/pxblue-components',
-                icon: <PxblueSmall />,
-                component: <PXBlueComponents />,
+    {
+        title: 'PX Blue Components',
+        url: '/pxblue-components',
+        icon: <PxblueSmall />,
+        component: <PXBlueComponents />,
+    },
+    {
+        title: 'Material-UI Components',
+        icon: <Category />,
+        pages: [
+            {
+                title: 'Inputs',
+                url: '/material-input-components',
+                component: <Inputs />,
             },
             {
-                title: 'Material-UI Components',
-                icon: <Category />,
-                pages: [
-                    {
-                        title: 'Inputs',
-                        url: '/material-input-components',
-                        component: <Inputs />,
-                    },
-                    {
-                        title: 'Navigation',
-                        url: '/material-navigation-components',
-                        component: <Navigation />,
-                    },
-                    {
-                        title: 'Surfaces',
-                        url: '/material-surface-components',
-                        component: <Surfaces />,
-                    },
-                    {
-                        title: 'Feedback',
-                        url: '/material-feedback-components',
-                        component: <Feedback />,
-                    },
-                    {
-                        title: 'Data Display',
-                        url: '/material-data-display-components',
-                        component: <DataDisplay />,
-                    },
-                ],
+                title: 'Navigation',
+                url: '/material-navigation-components',
+                component: <Navigation />,
             },
+            {
+                title: 'Surfaces',
+                url: '/material-surface-components',
+                component: <Surfaces />,
+            },
+            {
+                title: 'Feedback',
+                url: '/material-feedback-components',
+                component: <Feedback />,
+            },
+            {
+                title: 'Data Display',
+                url: '/material-data-display-components',
+                component: <DataDisplay />,
+            },
+        ],
+    },
     {
-        
         title: 'Page Templates',
         subtitle: 'Components in an app setting',
         icon: <Layers />,
@@ -90,5 +89,4 @@ export const pageDefinitions: SimpleNavItem[] = [
             },
         ],
     },
-   
 ];

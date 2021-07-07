@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Settings: React.FC = () => <div>Settings Work!</div>
+export const Settings: React.FC = () => <div>Settings Work!</div>;

@@ -1,2 +1,3 @@
 export * from './contextual-page-templates';
-export * from './kitchen-sink';
+export * from './material-ui';
+export * from './PXBlueComponents';

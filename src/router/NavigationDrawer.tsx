@@ -1,19 +1,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import top from '../topology_40.png';
-import {  Menu } from '@material-ui/icons';
-import { useMediaQuery, makeStyles } from '@material-ui/core';
-import EatonLogo from '../EatonLogo.svg';
-import { useHistory, useLocation } from 'react-router-dom';
-import { useTheme } from '@material-ui/core/styles';
 import * as Colors from '@pxblue/colors';
-import {
-    Drawer,
-    DrawerBody,
-    DrawerNavGroup,
-    DrawerFooter,
-    DrawerHeader,
-    NavItem,
-} from '@pxblue/react-components';
+import { useTheme } from '@material-ui/core/styles';
+import { useMediaQuery, makeStyles } from '@material-ui/core';
+import top from '../assets/topology_40.png';
+import EatonLogo from '../assets/EatonLogo.svg';
+import { Menu } from '@material-ui/icons';
+import { useHistory, useLocation } from 'react-router-dom';
+import { Drawer, DrawerBody, DrawerNavGroup, DrawerFooter, DrawerHeader, NavItem } from '@pxblue/react-components';
 import clsx from 'clsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { AppStore } from '../__types__';
@@ -37,7 +30,7 @@ export const NavigationDrawer: React.FC = () => {
     const [activeRoute, setActiveRoute] = useState(location.pathname);
     const xsDown = useMediaQuery(theme.breakpoints.down('xs'));
     const rtl = direction === 'rtl';
-   
+
     const createNavItems = useCallback((navData: SimpleNavItem[], parentUrl: string, depth: number): NavItem[] => {
         const convertedItems: NavItem[] = [];
         for (let i = 0; i < navData.length; i++) {
@@ -63,7 +56,7 @@ export const NavigationDrawer: React.FC = () => {
         return convertedItems;
     }, []);
 
-     useEffect(() => {
+    useEffect(() => {
         setActiveRoute(location.pathname);
     }, [location.pathname]);
 
@@ -93,7 +86,7 @@ export const NavigationDrawer: React.FC = () => {
                 }}
             />
             <DrawerBody>
-               <DrawerNavGroup items={menuItems} />
+                <DrawerNavGroup items={menuItems} />
             </DrawerBody>
             <DrawerFooter>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
