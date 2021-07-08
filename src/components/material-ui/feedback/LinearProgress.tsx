@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
             display: 'flex',
             flexDirection: 'column',
             marginBottom: theme.spacing(2),
+            flex: 1,
         },
         linearProgress: {
             width: '100%',
