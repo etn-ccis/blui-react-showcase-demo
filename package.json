@@ -5,6 +5,7 @@
     "dependencies": {
         "@material-ui/core": "^4.0.0",
         "@material-ui/icons": "^4.0.0",
+        "@material-ui/lab": "^4.0.0-alpha.60",
         "@material-ui/styles": "^4.5.0",
         "@pxblue/colors": "^3.0.0",
         "@pxblue/icons-mui": "^2.2.1",
