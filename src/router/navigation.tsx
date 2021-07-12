@@ -34,6 +34,7 @@ export const pageDefinitions: SimpleNavItem[] = [
     {
         title: 'Material-UI Components',
         icon: <Category />,
+        url: '/material-ui-components',
         pages: [
             {
                 title: 'Inputs',
@@ -65,6 +66,7 @@ export const pageDefinitions: SimpleNavItem[] = [
     {
         title: 'Page Templates',
         subtitle: 'Components in an app setting',
+        url: '/templates',
         icon: <Layers />,
         pages: [
             {
