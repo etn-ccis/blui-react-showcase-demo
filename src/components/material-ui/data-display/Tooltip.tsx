@@ -26,35 +26,33 @@ export const TooltipExample: React.FC = () => {
     const classes = useStyles(theme);
 
     return (
-        <>
-            <div className={classes.container}>
-                <div className={classes.exampleRow}>
-                    <div className={classes.tooltipContainer}>
-                        <Tooltip title="I'm a default tooltip">
-                            <Button variant="outlined">Default</Button>
-                        </Tooltip>
-                    </div>
-                    <div className={classes.tooltipContainer}>
-                        <Tooltip title="I'm an arrow tooltip" arrow>
-                            <Button variant="outlined">Arrow</Button>
-                        </Tooltip>
-                    </div>
-                    <div className={classes.tooltipContainer}>
-                        <Tooltip
-                            title="I'm a tooltip with a fade animation"
-                            TransitionComponent={Fade}
-                            TransitionProps={{ timeout: 600 }}
-                        >
-                            <Button variant="outlined">Fade</Button>
-                        </Tooltip>
-                    </div>
-                    <div className={classes.tooltipContainer}>
-                        <Tooltip title="I'm a tooltip with a zoom animation" TransitionComponent={Zoom}>
-                            <Button variant="outlined">Zoom</Button>
-                        </Tooltip>
-                    </div>
+        <div className={classes.container}>
+            <div className={classes.exampleRow}>
+                <div className={classes.tooltipContainer}>
+                    <Tooltip title="I'm a default tooltip">
+                        <Button variant="outlined">Default</Button>
+                    </Tooltip>
+                </div>
+                <div className={classes.tooltipContainer}>
+                    <Tooltip title="I'm an arrow tooltip" arrow>
+                        <Button variant="outlined">Arrow</Button>
+                    </Tooltip>
+                </div>
+                <div className={classes.tooltipContainer}>
+                    <Tooltip
+                        title="I'm a tooltip with a fade animation"
+                        TransitionComponent={Fade}
+                        TransitionProps={{ timeout: 600 }}
+                    >
+                        <Button variant="outlined">Fade</Button>
+                    </Tooltip>
+                </div>
+                <div className={classes.tooltipContainer}>
+                    <Tooltip title="I'm a tooltip with a zoom animation" TransitionComponent={Zoom}>
+                        <Button variant="outlined">Zoom</Button>
+                    </Tooltip>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
