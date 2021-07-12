@@ -17,7 +17,7 @@ export const Navigation: React.FC = () => {
         { label: 'Breadcrumbs', component: <BreadcrumbsExample /> },
         { label: 'Link', component: <LinkExample /> },
         { label: 'Menu', component: <MenuExample /> },
-        { label: 'Stepper', component: <StepperExample /> },
+        { label: 'Stepper', component: <StepperExample />, fullWidth: true },
         { label: 'Mobile Stepper', component: <MobileStepperExample /> },
         { label: 'Tabs', component: <TabsExample /> },
     ];

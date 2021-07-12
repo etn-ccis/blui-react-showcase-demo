@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
 import { Card, CardContent, CardHeader } from '@material-ui/core';
+import clsx from 'clsx';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -16,12 +17,18 @@ const useStyles = makeStyles((theme) =>
             maxWidth: '416px',
             minWidth: '350px',
         },
+        fullWidthExampleCard: {
+            [theme.breakpoints.up('md')]: {
+                maxWidth: 416 * 2 + theme.spacing(2),
+            },
+        },
     })
 );
 
 export type ComponentExample = {
     label: string;
     component: JSX.Element;
+    fullWidth?: boolean;
 };
 
 export type ExampleCardListProps = {
@@ -36,7 +43,10 @@ export const ExampleCardList = (props: ExampleCardListProps): JSX.Element => {
     return (
         <div className={classes.container}>
             {examples.map((example: ComponentExample) => (
-                <Card key={example.label} className={classes.exampleCard}>
+                <Card
+                    key={example.label}
+                    className={clsx([classes.exampleCard, example.fullWidth ? classes.fullWidthExampleCard : ''])}
+                >
                     <CardHeader title={example.label} />
                     <CardContent>{example.component}</CardContent>
                 </Card>
