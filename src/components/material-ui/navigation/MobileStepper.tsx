@@ -11,9 +11,6 @@ const useStyles = makeStyles((theme: Theme) =>
         sectionTitle: {
             marginBottom: theme.spacing(2),
         },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
     })
 );
 
