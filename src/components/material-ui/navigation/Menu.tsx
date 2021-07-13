@@ -8,6 +8,10 @@ const useStyles = makeStyles(() =>
             display: 'flex',
             flexDirection: 'column',
         },
+        button: {
+            width: 300,
+            margin: '0 auto',
+        },
     })
 );
 
@@ -25,7 +29,7 @@ export const MenuExample: React.FC = () => {
 
     return (
         <div className={classes.container}>
-            <Button onClick={handleClick} color={'primary'} variant={'outlined'}>
+            <Button className={classes.button} onClick={handleClick} color={'primary'} variant={'outlined'}>
                 Open Simple Menu
             </Button>
             <Menu anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
