@@ -57,7 +57,6 @@ export const SharedAppBar: React.FC = () => {
     return (
         <AppBar position={'sticky'} color={'primary'}>
             <DropdownToolbar
-                // @TODO: Update toolbar title to dynamically display the current page title
                 title={'Showcase'}
                 subtitle={subtitle}
                 menuGroups={[{ items: menuItems }]}

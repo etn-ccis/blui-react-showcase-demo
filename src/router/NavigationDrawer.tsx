@@ -71,7 +71,6 @@ export const NavigationDrawer: React.FC = () => {
                     dispatch({ type: CLOSE_DRAWER });
                 },
             }}
-            // @TODO: FIX: When an item in the material-ui components or the page templates is selected, both parent labels have the active styles applied
             activeItem={activeRoute}
             activeItemBackgroundShape={'round'}
             variant={xsDown ? 'temporary' : 'persistent'}
