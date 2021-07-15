@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+    codecov: codecov/codecov@1.1.3
 jobs:
     build_demo:
         docker:
@@ -26,16 +28,39 @@ jobs:
                   command: |
                       yarn lint
             - run:
-                  name: Test
+                  name: Unit Test
                   command: |
-                      yarn test
-            # - run:
-            #       name: Build Demo
-            #       command: |
-            #           yarn build
+                      yarn test --coverage --watchAll=false
+            - run:
+                  name: Build Demo
+                  command: |
+                      yarn build
+            - persist_to_workspace:
+                root: .
+                paths:
+                    - coverage
+
+    coverage_report:
+        working_directory: ~/react-showcase-demo
+        docker:
+            - image: circleci/node:12.9.1-browsers
+        steps:
+            - checkout
+            - attach_workspace:
+                at: .
+            - codecov/upload:
+                file: './coverage/clover.xml'
+                token: e071b5d8-7127-4351-8acd-54f56d36a39c
 
 workflows:
     version: 2
     react_library:
         jobs:
             - build_demo
+            - coverage_report:
+                   requires:
+                        - build_demo
+                #    filters:
+                #         branches:
+                #             only:
+                #                 - master

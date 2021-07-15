@@ -24,8 +24,9 @@ import {
 } from '@material-ui/icons';
 import { Pie, Battery } from '@pxblue/react-progress-icons';
 import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@pxblue/icons-mui';
-import top from '../assets/topology_40.png';
 import clsx from 'clsx';
+
+const top = require('../assets/topology_40.png');
 
 const useStyles = makeStyles((theme) =>
     createStyles({

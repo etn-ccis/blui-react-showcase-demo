@@ -1,10 +1,10 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { Menu } from '@material-ui/icons';
+import { useMediaQuery, makeStyles, Typography } from '@material-ui/core';
+import EatonFooterLogoLight from '../EatonLogoLight.png';
+import EatonFooterLogoDark from '../EatonLogoDark.png';
 import * as Colors from '@pxblue/colors';
 import { useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, makeStyles } from '@material-ui/core';
-import top from '../assets/topology_40.png';
-import EatonLogo from '../assets/EatonLogo.svg';
-import { Menu } from '@material-ui/icons';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Drawer, DrawerBody, DrawerNavGroup, DrawerFooter, DrawerHeader, NavItem } from '@pxblue/react-components';
 import clsx from 'clsx';
@@ -12,6 +12,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { AppStore } from '../__types__';
 import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
+
+const top = require('../assets/topology_40.png');
 
 const useStyles = makeStyles({
     iconFlip: {
@@ -25,6 +27,7 @@ export const NavigationDrawer: React.FC = () => {
     const dispatch = useDispatch();
     const classes = useStyles();
     const theme = useTheme();
+    const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
     const history = useHistory();
     const location = useLocation();
     const [activeRoute, setActiveRoute] = useState(location.pathname);
@@ -89,14 +92,27 @@ export const NavigationDrawer: React.FC = () => {
                 <DrawerNavGroup items={menuItems} />
             </DrawerBody>
             <DrawerFooter>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        flexDirection: 'row',
+                        padding: 16,
+                    }}
+                >
                     <img
-                        src={EatonLogo}
-                        style={{ margin: theme.spacing(1) }}
+                        src={isDarkMode ? EatonFooterLogoDark : EatonFooterLogoLight}
                         alt="Eaton Logo"
-                        height={50}
+                        height={28}
                         width={'auto'}
                     />
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <Typography variant={'caption'}>
+                            {`Copyright \u00A9 Eaton ${new Date().getFullYear()}`}
+                        </Typography>
+                        <Typography variant={'caption'}>All Rights Reserved</Typography>
+                    </div>
                 </div>
             </DrawerFooter>
         </Drawer>
