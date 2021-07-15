@@ -7,6 +7,7 @@ import {
     DateTimeExample,
     ExampleCardList,
     FilledSelectExample,
+    FilledTextFieldExample,
     FloatingActionButtonExample,
     IconButtonExample,
     OutlinedButtonExample,
@@ -41,7 +42,7 @@ export const Inputs: React.FC = () => {
         { label: 'Slider', component: <SliderExample /> },
         { label: 'Switch', component: <SwitchExample /> },
         { label: 'Standard Text Field', component: <StandardTextFieldExample /> },
-        { label: 'Filled Text Field', component: <StandardTextFieldExample /> },
+        { label: 'Filled Text Field', component: <FilledTextFieldExample /> },
         { label: 'Outlined Text Field', component: <OutlinedTextFieldExample /> },
     ];
 

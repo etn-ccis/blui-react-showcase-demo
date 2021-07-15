@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) =>
         label: {
             marginBottom: theme.spacing(1),
         },
-        buttonGroupContainer: {
+        sliderContainer: {
             marginBottom: theme.spacing(1),
         },
     })
@@ -49,7 +49,7 @@ export const SliderExample: React.FC = () => {
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     Default
                 </Typography>
-                <div className={classes.buttonGroupContainer}>
+                <div className={classes.sliderContainer}>
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
@@ -65,7 +65,7 @@ export const SliderExample: React.FC = () => {
                         </Grid>
                     </Grid>
                 </div>
-                <div className={classes.buttonGroupContainer}>
+                <div className={classes.sliderContainer}>
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
@@ -86,7 +86,7 @@ export const SliderExample: React.FC = () => {
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     Primary w/ marks
                 </Typography>
-                <div className={classes.buttonGroupContainer}>
+                <div className={classes.sliderContainer}>
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
@@ -110,7 +110,7 @@ export const SliderExample: React.FC = () => {
                         </Grid>
                     </Grid>
                 </div>
-                <div className={classes.buttonGroupContainer}>
+                <div className={classes.sliderContainer}>
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
@@ -131,7 +131,7 @@ export const SliderExample: React.FC = () => {
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     Secondary w/ valueLabelDisplay auto
                 </Typography>
-                <div className={classes.buttonGroupContainer}>
+                <div className={classes.sliderContainer}>
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
@@ -155,7 +155,7 @@ export const SliderExample: React.FC = () => {
                         </Grid>
                     </Grid>
                 </div>
-                <div className={classes.buttonGroupContainer}>
+                <div className={classes.sliderContainer}>
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
@@ -184,7 +184,7 @@ export const SliderExample: React.FC = () => {
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     Default w/ valueDisplayLabel on
                 </Typography>
-                <div className={classes.buttonGroupContainer} style={{ marginTop: 56 }}>
+                <div className={classes.sliderContainer} style={{ marginTop: 56 }}>
                     <Grid container spacing={2}>
                         <Grid item>
                             <VolumeDown />
