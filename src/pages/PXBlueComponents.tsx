@@ -45,6 +45,10 @@ const useStyles = makeStyles((theme) =>
     })
 );
 
+// @TODO: Move PXBlueComponents page contents to ./contextual-page-templates/Dashboard
+// update this page to include multiple variants/examples of PX Blue components similar to how the material-ui components are laid out.
+// update the drawer/navigation structure if necessary
+
 export const PXBlueComponents: React.FC = () => {
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
