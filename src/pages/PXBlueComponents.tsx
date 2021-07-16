@@ -1,16 +1,6 @@
 import React from 'react';
-
-import { Add, Remove, List as ListIcon, Settings, MoreVert } from '@material-ui/icons';
-import Trend from '@material-ui/icons/TrendingUp';
-import Timer from '@material-ui/icons/Timer';
-import DevicesIcon from '@material-ui/icons/Devices';
-import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
-import { List, Card, Button } from '@material-ui/core';
-
 import * as Colors from '@pxblue/colors';
-import { Pie, Battery } from '@pxblue/react-progress-icons';
-import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@pxblue/icons-mui';
-
+import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
 import {
     Hero,
     HeroBanner,
@@ -21,11 +11,22 @@ import {
     DrawerNavGroup,
     ListItemTag,
 } from '@pxblue/react-components';
-
-import top from './topology_40.png';
+import { List, Card, Button } from '@material-ui/core';
+import {
+    Add,
+    Remove,
+    List as ListIcon,
+    Settings,
+    MoreVert,
+    Timer,
+    TrendingUp,
+    Devices as DevicesIcon,
+} from '@material-ui/icons';
+import { Pie, Battery } from '@pxblue/react-progress-icons';
+import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@pxblue/icons-mui';
 import clsx from 'clsx';
-import { MaterialSwitchExample } from './components/MaterialSwitchExample';
-import { MaterialTextFieldExample } from './components/MaterialTextFieldExample';
+
+const top = require('../assets/topology_40.png');
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) =>
     })
 );
 
-export const App: React.FC = () => {
+export const PXBlueComponents: React.FC = () => {
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
     const classes = useStyles();
@@ -213,7 +214,7 @@ export const App: React.FC = () => {
                                     value={65}
                                     units={'%'}
                                     icon={
-                                        <Trend
+                                        <TrendingUp
                                             htmlColor={Colors.red[500]}
                                             fontSize={'inherit'}
                                             className={clsx({ [classes.iconFlip]: rtl })}
@@ -330,7 +331,7 @@ export const App: React.FC = () => {
                                     <ChannelValue
                                         fontSize={16}
                                         icon={
-                                            <Trend
+                                            <TrendingUp
                                                 htmlColor={Colors.red[500]}
                                                 className={clsx({ [classes.iconFlip]: rtl })}
                                             />
@@ -425,8 +426,6 @@ export const App: React.FC = () => {
                         ]}
                     />
                 </Card>
-                <MaterialSwitchExample />
-                <MaterialTextFieldExample />
             </div>
         </div>
     );
