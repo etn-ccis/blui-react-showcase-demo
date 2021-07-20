@@ -41,7 +41,7 @@ export const MainRouter: React.FC = () => (
                 {buildRoutes(pageDefinitions, '')}
 
                 <Route path="*">
-                    <Redirect to={'pxblue-components'} />
+                    <Redirect to={'/templates/dashboard'} />
                 </Route>
             </Switch>
         </DrawerLayout>

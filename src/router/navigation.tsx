@@ -6,7 +6,8 @@ import {
     Feedback,
     Inputs,
     Navigation,
-    PXBlueComponents,
+    PXBDataDisplay,
+    PXBSurfaces,
     Settings,
     Surfaces,
     Timeline,
@@ -29,7 +30,18 @@ export const pageDefinitions: SimpleNavItem[] = [
         title: 'PX Blue Components',
         url: '/pxblue-components',
         icon: <PxblueSmall />,
-        component: <PXBlueComponents />,
+        pages: [
+            {
+                title: 'Data Display',
+                url: '/data-display-components',
+                component: <PXBDataDisplay />,
+            },
+            {
+                title: 'Surfaces',
+                url: '/surface-components',
+                component: <PXBSurfaces />,
+            },
+        ],
     },
     {
         title: 'Material-UI Components',
@@ -37,29 +49,30 @@ export const pageDefinitions: SimpleNavItem[] = [
         url: '/material-ui-components',
         pages: [
             {
+                title: 'Data Display',
+                url: '/data-display-components',
+                component: <DataDisplay />,
+            },
+
+            {
+                title: 'Feedback',
+                url: '/feedback-components',
+                component: <Feedback />,
+            },
+            {
                 title: 'Inputs',
-                url: '/material-input-components',
+                url: '/input-components',
                 component: <Inputs />,
             },
             {
                 title: 'Navigation',
-                url: '/material-navigation-components',
+                url: '/navigation-components',
                 component: <Navigation />,
             },
             {
                 title: 'Surfaces',
-                url: '/material-surface-components',
+                url: '/surface-components',
                 component: <Surfaces />,
-            },
-            {
-                title: 'Feedback',
-                url: '/material-feedback-components',
-                component: <Feedback />,
-            },
-            {
-                title: 'Data Display',
-                url: '/material-data-display-components',
-                component: <DataDisplay />,
             },
         ],
     },
@@ -69,6 +82,11 @@ export const pageDefinitions: SimpleNavItem[] = [
         url: '/templates',
         icon: <Layers />,
         pages: [
+            {
+                title: 'Alarms',
+                url: '/alarms',
+                component: <Alarms />,
+            },
             {
                 title: 'Dashboard',
                 url: '/dashboard',
@@ -83,11 +101,6 @@ export const pageDefinitions: SimpleNavItem[] = [
                 title: 'Timeline',
                 url: '/timeline',
                 component: <Timeline />,
-            },
-            {
-                title: 'Alarms',
-                url: '/alarms',
-                component: <Alarms />,
             },
         ],
     },
