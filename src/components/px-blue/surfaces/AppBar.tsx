@@ -1,28 +1,41 @@
 import React from 'react';
-import { useTheme, Theme, Typography } from '@material-ui/core';
+import { useTheme, Theme, Toolbar } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/styles';
+import { getBodyFiller } from '../../../utils/utils';
+import { AppBar, ThreeLiner } from '@pxblue/react-components';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
             marginBottom: theme.spacing(2),
+            overflow: 'hidden',
+            height: 400,
         },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
+        title: {},
+        subtitle: {},
+        info: {},
+        liner: {
+            top: 0,
+            position: 'relative',
         },
-        label: {
-            marginBottom: theme.spacing(1),
+        expanded: {
+            '& $liner': {
+                top: 64,
+            },
         },
-        componentContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
+        collapsed: {
+            '& $title': {
+                fontSize: '1.25rem',
+                fontWeight: 600,
+            },
+            '& $subtitle': {
+                fontSize: 0,
+            },
+            '& $info': {
+                fontSize: '1rem',
+                fontWeight: 400,
+                marginTop: '-0.25rem',
+            },
         },
     })
 );
@@ -34,16 +47,44 @@ export const PXBAppBarExample: React.FC = () => {
     return (
         <>
             <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Section Title
-                </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.componentContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Label
-                        </Typography>
-                        {/* component example goes here */}
-                    </div>
+                <AppBar
+                    classes={{ collapsed: classes.collapsed, expanded: classes.expanded }}
+                    scrollContainerId={'appbarBodyFiller1'}
+                    position={'sticky'}
+                >
+                    <Toolbar>
+                        <ThreeLiner
+                            title={'Title'}
+                            animationDuration={300}
+                            classes={{ title: classes.title }}
+                            className={classes.liner}
+                        ></ThreeLiner>
+                    </Toolbar>
+                </AppBar>
+                <div id="appbarBodyFiller1" style={{ height: 400, overflow: 'scroll' }}>
+                    {getBodyFiller()}
+                </div>
+            </div>
+
+            <div className={classes.container}>
+                <AppBar
+                    classes={{ collapsed: classes.collapsed, expanded: classes.expanded }}
+                    scrollContainerId={'appbarBodyFiller2'}
+                    position={'sticky'}
+                >
+                    <Toolbar>
+                        <ThreeLiner
+                            title={'W/ Dynamic Content'}
+                            subtitle={'Subtitle'}
+                            info={'Info'}
+                            animationDuration={300}
+                            classes={{ title: classes.title, subtitle: classes.subtitle, info: classes.info }}
+                            className={classes.liner}
+                        ></ThreeLiner>
+                    </Toolbar>
+                </AppBar>
+                <div id="appbarBodyFiller2" style={{ height: 400, overflow: 'scroll' }}>
+                    {getBodyFiller()}
                 </div>
             </div>
         </>

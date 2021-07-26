@@ -10,8 +10,8 @@ import {
 
 export const PXBSurfaces: React.FC = () => {
     const examples: ComponentExample[] = [
-        { label: 'App Bar', component: <PXBAppBarExample /> },
-        { label: 'Dropdown Toolbar', component: <DropdownToolbarExample /> },
+        { label: 'App Bar', component: <PXBAppBarExample />, fullWidth: true },
+        { label: 'Dropdown Toolbar', component: <DropdownToolbarExample />, fullWidth: true },
         { label: 'Score Card', component: <ScoreCardExample /> },
         { label: 'Spacer', component: <SpacerExample /> },
     ];

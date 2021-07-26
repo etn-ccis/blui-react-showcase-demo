@@ -1,18 +1,12 @@
 import React from 'react';
 import { useTheme, Theme, Typography } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/styles';
+import * as colors from '@pxblue/colors';
+import { Spacer } from '@pxblue/react-components';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
         sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
             marginBottom: theme.spacing(2),
         },
         label: {
@@ -24,6 +18,34 @@ const useStyles = makeStyles((theme: Theme) =>
             alignItems: 'center',
             flex: 1,
         },
+        horizontalFlex: {
+            width: '100%',
+            height: 50,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'stretch',
+            color: colors.black[900],
+            marginBottom: theme.spacing(1),
+        },
+        verticalFlex: {
+            width: '100%',
+            height: 150,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'stretch',
+            color: colors.black[900],
+        },
+        horizontalStatic: {
+            width: '100%',
+            height: 50,
+            display: 'inline',
+            color: colors.black[900],
+            marginBottom: theme.spacing(1),
+        },
+        verticalStatic: {
+            width: '100%',
+            color: colors.black[900],
+        },
     })
 );
 
@@ -33,17 +55,74 @@ export const SpacerExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Section Title
+            <Typography variant={'body1'} className={classes.sectionTitle}>
+                w/ Flex Layout
+            </Typography>
+            <div className={classes.componentContainer}>
+                <Typography variant={'body2'} className={classes.label}>
+                    Horizontal
                 </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.componentContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Label
-                        </Typography>
-                        {/* component example goes here */}
-                    </div>
+                <div className={classes.horizontalFlex}>
+                    <Spacer flex={1} style={{ background: colors.blue[300] }}>
+                        1
+                    </Spacer>
+                    <Spacer flex={1} style={{ background: colors.yellow[300] }}>
+                        2
+                    </Spacer>
+                    <Spacer flex={1} style={{ background: colors.red[300] }}>
+                        3
+                    </Spacer>
+                </div>
+            </div>
+            <div className={classes.componentContainer}>
+                <Typography variant={'body2'} className={classes.label}>
+                    Vertical
+                </Typography>
+                <div className={classes.verticalFlex}>
+                    <Spacer flex={1} style={{ background: colors.blue[300] }}>
+                        1
+                    </Spacer>
+                    <Spacer flex={1} style={{ background: colors.yellow[300] }}>
+                        2
+                    </Spacer>
+                    <Spacer flex={1} style={{ background: colors.red[300] }}>
+                        3
+                    </Spacer>
+                </div>
+            </div>
+            <Typography variant={'body1'} className={classes.sectionTitle} style={{ marginTop: theme.spacing(4) }}>
+                w/ Static Layout
+            </Typography>
+            <div className={classes.componentContainer}>
+                <Typography variant={'body2'} className={classes.label}>
+                    Horizontal
+                </Typography>
+                <div className={classes.horizontalStatic}>
+                    <Spacer width={60} height={50} style={{ background: colors.blue[300], display: 'inline-block' }}>
+                        1
+                    </Spacer>
+                    <Spacer width={60} height={50} style={{ background: colors.yellow[300], display: 'inline-block' }}>
+                        2
+                    </Spacer>
+                    <Spacer width={60} height={50} style={{ background: colors.red[300], display: 'inline-block' }}>
+                        3
+                    </Spacer>
+                </div>
+            </div>
+            <div className={classes.componentContainer}>
+                <Typography variant={'body2'} className={classes.label}>
+                    Vertical
+                </Typography>
+                <div className={classes.verticalStatic}>
+                    <Spacer height={50} style={{ background: colors.blue[300] }}>
+                        1
+                    </Spacer>
+                    <Spacer height={50} style={{ background: colors.yellow[300] }}>
+                        2
+                    </Spacer>
+                    <Spacer height={50} style={{ background: colors.red[300] }}>
+                        3
+                    </Spacer>
                 </div>
             </div>
         </>
