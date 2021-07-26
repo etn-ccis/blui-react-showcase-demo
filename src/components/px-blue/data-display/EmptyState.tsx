@@ -48,21 +48,19 @@ export const EmptyStateExample: React.FC = () => {
                     description={'Enable Location Services via Settings to receive GPS information'}
                 />
             </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    w/ Actions
-                </Typography>
-                <EmptyState
-                    icon={<Devices fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
-                    title={'No Devices'}
-                    description={'Check your network connection or add a new device'}
-                    actions={
-                        <Button variant={'outlined'} color={'primary'} startIcon={<Add />}>
-                            Add Device
-                        </Button>
-                    }
-                />
-            </div>
+            <Typography variant={'body1'} className={classes.sectionTitle}>
+                w/ Actions
+            </Typography>
+            <EmptyState
+                icon={<Devices fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                title={'No Devices'}
+                description={'Check your network connection or add a new device'}
+                actions={
+                    <Button variant={'outlined'} color={'primary'} startIcon={<Add />}>
+                        Add Device
+                    </Button>
+                }
+            />
         </>
     );
 };

@@ -10,9 +10,6 @@ import clsx from 'clsx';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
         sectionTitle: {
             marginBottom: theme.spacing(2),
         },
@@ -35,7 +32,7 @@ export const ChannelValueExample: React.FC = () => {
     const rtl = direction === 'rtl';
 
     return (
-        <div className={classes.container}>
+        <>
             <div className={classes.componentContainer}>
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     Basic Usage
@@ -69,6 +66,6 @@ export const ChannelValueExample: React.FC = () => {
                     icon={<TrendingUp htmlColor={colors.red[500]} className={clsx({ [classes.iconFlip]: rtl })} />}
                 />
             </div>
-        </div>
+        </>
     );
 };
