@@ -1,6 +1,11 @@
 import React from 'react';
-import { useTheme, Theme, Typography } from '@material-ui/core';
+import { useTheme, Theme, Typography, Button } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/styles';
+import { Add, Devices, LocationOff, NotListedLocation } from '@material-ui/icons';
+import { EmptyState } from '@pxblue/react-components';
+import clsx from 'clsx';
+import { useSelector } from 'react-redux';
+import { AppStore } from '../../../__types__';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -10,19 +15,8 @@ const useStyles = makeStyles((theme: Theme) =>
         sectionTitle: {
             marginBottom: theme.spacing(2),
         },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        componentContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
+        iconFlip: {
+            transform: 'scaleX(-1)',
         },
     })
 );
@@ -30,21 +24,44 @@ const useStyles = makeStyles((theme: Theme) =>
 export const EmptyStateExample: React.FC = () => {
     const theme = useTheme();
     const classes = useStyles(theme);
+    const direction = useSelector((store: AppStore) => store.app.direction);
+    const rtl = direction === 'rtl';
 
     return (
         <>
             <div className={classes.container}>
                 <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Section Title
+                    Basic Usage
                 </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.componentContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Label
-                        </Typography>
-                        {/* component example goes here */}
-                    </div>
-                </div>
+                <EmptyState
+                    icon={<NotListedLocation fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                    title={'Location Unknown'}
+                />
+            </div>
+            <div className={classes.container}>
+                <Typography variant={'body1'} className={classes.sectionTitle}>
+                    w/ Description
+                </Typography>
+                <EmptyState
+                    icon={<LocationOff fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                    title={'Location Services Disabled'}
+                    description={'Enable Location Services via Settings to receive GPS information'}
+                />
+            </div>
+            <div className={classes.container}>
+                <Typography variant={'body1'} className={classes.sectionTitle}>
+                    w/ Actions
+                </Typography>
+                <EmptyState
+                    icon={<Devices fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                    title={'No Devices'}
+                    description={'Check your network connection or add a new device'}
+                    actions={
+                        <Button variant={'outlined'} color={'primary'} startIcon={<Add />}>
+                            Add Device
+                        </Button>
+                    }
+                />
             </div>
         </>
     );

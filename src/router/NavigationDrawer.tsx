@@ -13,7 +13,7 @@ import { AppStore } from '../__types__';
 import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 
-const top = require('../assets/topology_40.png');
+const top = require('../assets/topology_40.png').default;
 
 const useStyles = makeStyles({
     iconFlip: {
