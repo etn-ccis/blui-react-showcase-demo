@@ -114,7 +114,6 @@ export const UserMenuExample: React.FC = () => {
                                 items: defaultMenuGroup,
                             },
                         ]}
-                        MenuProps={{ classes: { paper: classes.paper } }}
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
@@ -130,7 +129,6 @@ export const UserMenuExample: React.FC = () => {
                                 items: defaultMenuGroup,
                             },
                         ]}
-                        MenuProps={{ classes: { paper: classes.paper } }}
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                         menuTitle={'Menu Title'}
