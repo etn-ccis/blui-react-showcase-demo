@@ -1,21 +1,17 @@
 import React from 'react';
-import { makeStyles, Theme, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { InfoListItem, ListItemTag } from '@pxblue/react-components';
 import { createStyles } from '@material-ui/styles';
 import { Card } from '@material-ui/core';
 import { ChevronRight, Notifications, NotificationsActive } from '@material-ui/icons';
 import * as colors from '@pxblue/colors';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
     createStyles({
         container: {
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            height: `calc(100vh - ${theme.spacing(8)}px)`,
-            [theme.breakpoints.down('xs')]: {
-                height: `calc(100vh - ${theme.spacing(7)}px)`,
-            },
+            flex: 1,
+            justifyContent: 'center',
         },
     })
 );
@@ -32,7 +28,7 @@ export type TimelineItem = {
 
 export const Timeline: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles(theme);
+    const classes = useStyles();
 
     const getRandomDate = (): Date => {
         const year = 2021 - Math.floor(Math.random() * 2);
@@ -131,8 +127,8 @@ export const Timeline: React.FC = () => {
     ];
 
     const getDisplayTime = (date: Date): string => {
-        const displayHours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-        const displayMinutes = date.getMinutes() >= 9 ? date.getMinutes() : `0${date.getMinutes()}`;
+        const displayHours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours() === 0 ? 12 : date.getHours();
+        const displayMinutes = date.getMinutes() >= 10 ? date.getMinutes() : `0${date.getMinutes()}`;
         const timeAbbreviation = date.getHours() >= 11 ? 'PM' : 'AM';
 
         return `${displayHours}:${displayMinutes} ${timeAbbreviation}`;
@@ -143,7 +139,7 @@ export const Timeline: React.FC = () => {
             case 'active':
                 return colors.white[50];
             case 'inactive':
-                return theme.palette.error.main;
+                return colors.red[500];
             case 'cleared':
             default:
                 return colors.gray[500];
@@ -156,7 +152,7 @@ export const Timeline: React.FC = () => {
 
     return (
         <div className={classes.container}>
-            <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000 }}>
+            <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000, marginBottom: theme.spacing(4) }}>
                 <InfoListItem
                     title={'Timeline'}
                     style={{ color: theme.palette.primary.main }}
@@ -177,9 +173,7 @@ export const Timeline: React.FC = () => {
                         iconAlign={'center'}
                         avatar={data.alarm === 'active'}
                         statusColor={
-                            data.alarm === 'active' || data.alarm === 'inactive'
-                                ? theme.palette.error.main
-                                : 'transparent'
+                            data.alarm === 'active' || data.alarm === 'inactive' ? colors.red[500] : 'transparent'
                         }
                         rightComponent={
                             data.badge ? (
