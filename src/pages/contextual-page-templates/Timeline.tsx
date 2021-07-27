@@ -3,7 +3,8 @@ import { makeStyles, Theme, useTheme } from '@material-ui/core/styles';
 import { InfoListItem, ListItemTag } from '@pxblue/react-components';
 import { createStyles } from '@material-ui/styles';
 import { Card } from '@material-ui/core';
-import { ChevronRight } from '@material-ui/icons';
+import { ChevronRight, Notifications, NotificationsActive } from '@material-ui/icons';
+import * as colors from '@pxblue/colors';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -85,7 +86,6 @@ export const Timeline: React.FC = () => {
             deviceName: 'Ambient Sensor',
             location: 'Gary Steelworks',
             subLocation: 'North Mill',
-            badge: 'active',
         },
         {
             alarm: 'active',
@@ -138,13 +138,31 @@ export const Timeline: React.FC = () => {
         return `${displayHours}:${displayMinutes} ${timeAbbreviation}`;
     };
 
+    const getIconColor = (alarm: string): string => {
+        switch (alarm) {
+            case 'active':
+                return colors.white[50];
+            case 'inactive':
+                return theme.palette.error.main;
+            case 'cleared':
+            default:
+                return colors.gray[500];
+        }
+    };
+
+    // @TODO: Filter these into time bases sections (today, yesterday, last week, earlier)
+    //  add load more events button at the bottom
+    //  add date to items older than "yesterday"
+
     return (
         <div className={classes.container}>
             <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000 }}>
                 <InfoListItem
-                    title={'Today, Yesterday, Last Week, and Earlier'}
+                    title={'Timeline'}
                     style={{ color: theme.palette.primary.main }}
                     hidePadding
+                    dense
+                    divider={'full'}
                 />
                 {timelineData.map((data, index) => (
                     <InfoListItem
@@ -154,6 +172,15 @@ export const Timeline: React.FC = () => {
                         subtitle={[data.subLocation, data.location]}
                         divider={index === timelineData.length - 1 ? undefined : 'partial'}
                         subtitleSeparator={'<'}
+                        icon={data.alarm === 'active' ? <NotificationsActive /> : <Notifications />}
+                        iconColor={getIconColor(data.alarm)}
+                        iconAlign={'center'}
+                        avatar={data.alarm === 'active'}
+                        statusColor={
+                            data.alarm === 'active' || data.alarm === 'inactive'
+                                ? theme.palette.error.main
+                                : 'transparent'
+                        }
                         rightComponent={
                             data.badge ? (
                                 <>
