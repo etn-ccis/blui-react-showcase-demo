@@ -10,6 +10,7 @@ import {
     StepperExample,
     TabsExample,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const Navigation: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -21,6 +22,7 @@ export const Navigation: React.FC = () => {
         { label: 'Mobile Stepper', component: <MobileStepperExample /> },
         { label: 'Tabs', component: <TabsExample /> },
     ];
+    usePageTitle('Material UI Navigation');
 
     return <ExampleCardList examples={examples} />;
 };

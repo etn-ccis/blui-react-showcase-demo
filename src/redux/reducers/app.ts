@@ -9,15 +9,22 @@ import {
     DIR_LTR,
     DIR_RTL,
     TOGGLE_DIR,
+    CHANGE_PAGE_TITLE,
 } from '../actions';
 
 const initialAppState: AppState = {
     theme: 'light',
     direction: 'ltr',
     drawerOpen: false,
+    pageTitle: 'Showcase',
 };
 export const AppReducer = (state = initialAppState, action: any): AppState => {
     switch (action.type) {
+        case CHANGE_PAGE_TITLE:
+            return {
+                ...state,
+                pageTitle: action.payload,
+            };
         case OPEN_DRAWER:
             return {
                 ...state,

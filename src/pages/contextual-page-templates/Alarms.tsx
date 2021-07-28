@@ -5,6 +5,7 @@ import { createStyles } from '@material-ui/styles';
 import { Card } from '@material-ui/core';
 import { Notifications, NotificationsActive } from '@material-ui/icons';
 import * as colors from '@pxblue/colors';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 const useStyles = makeStyles(() =>
     createStyles({
@@ -29,6 +30,7 @@ export type AlarmItem = {
 export const Alarms: React.FC = () => {
     const theme = useTheme();
     const classes = useStyles();
+    usePageTitle('Alarms');
 
     const getRandomDate = (): Date => {
         const year = 2021 - Math.floor(Math.random() * 2);

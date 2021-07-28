@@ -7,6 +7,7 @@ import {
     ScoreCardExample,
     SpacerExample,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const PXBSurfaces: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -15,6 +16,7 @@ export const PXBSurfaces: React.FC = () => {
         { label: 'Score Card', component: <ScoreCardExample /> },
         { label: 'Spacer', component: <SpacerExample /> },
     ];
+    usePageTitle('PX Blue Surfaces');
 
     return <ExampleCardList examples={examples} />;
 };

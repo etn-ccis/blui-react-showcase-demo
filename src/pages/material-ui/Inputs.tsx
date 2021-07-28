@@ -22,6 +22,7 @@ import {
     TextButtonExample,
     TextButtonGroupExample,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const Inputs: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -45,6 +46,7 @@ export const Inputs: React.FC = () => {
         { label: 'Filled Text Field', component: <FilledTextFieldExample /> },
         { label: 'Outlined Text Field', component: <OutlinedTextFieldExample /> },
     ];
+    usePageTitle('Material UI Inputs');
 
     return <ExampleCardList examples={examples} />;
 };

@@ -10,6 +10,7 @@ import {
     ThreeLinerExample,
     UserMenuExample,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const PXBDataDisplay: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -21,6 +22,7 @@ export const PXBDataDisplay: React.FC = () => {
         { label: 'Three Liner', component: <ThreeLinerExample /> },
         { label: 'UserMenu', component: <UserMenuExample /> },
     ];
+    usePageTitle('PX Blue Data Display');
 
     return <ExampleCardList examples={examples} />;
 };

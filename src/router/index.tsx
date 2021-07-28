@@ -4,6 +4,8 @@ import { DrawerLayout } from '@pxblue/react-components';
 import { NavigationDrawer } from './NavigationDrawer';
 import { SharedAppBar } from '../components/SharedAppBar';
 import { SimpleNavItem, pageDefinitions } from './navigation';
+import { useSelector } from 'react-redux';
+import { AppStore } from '../__types__';
 
 const buildRoutes = (routes: SimpleNavItem[], url: string): JSX.Element[] => {
     let ret: any[] = [];
@@ -32,18 +34,22 @@ const ScrollToTop = (): null => {
     return null;
 };
 
-export const MainRouter: React.FC = () => (
-    <Router>
-        <ScrollToTop />
-        <DrawerLayout drawer={<NavigationDrawer />}>
-            <SharedAppBar />
-            <Switch>
-                {buildRoutes(pageDefinitions, '')}
+export const MainRouter: React.FC = () => {
+    const title = useSelector((state: AppStore) => state.app.pageTitle);
 
-                <Route path="*">
-                    <Redirect to={'/templates/dashboard'} />
-                </Route>
-            </Switch>
-        </DrawerLayout>
-    </Router>
-);
+    return (
+        <Router>
+            <ScrollToTop />
+            <DrawerLayout drawer={<NavigationDrawer />}>
+                <SharedAppBar title={title} />
+                <Switch>
+                    {buildRoutes(pageDefinitions, '')}
+
+                    <Route path="*">
+                        <Redirect to={'/templates/dashboard'} />
+                    </Route>
+                </Switch>
+            </DrawerLayout>
+        </Router>
+    );
+};

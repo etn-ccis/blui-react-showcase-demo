@@ -11,7 +11,7 @@ import {
     DrawerNavGroup,
     ListItemTag,
 } from '@pxblue/react-components';
-import { List, Card, Button } from '@material-ui/core';
+import { List, Card, Button, useMediaQuery } from '@material-ui/core';
 import {
     Add,
     Remove,
@@ -27,15 +27,15 @@ import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidit
 import clsx from 'clsx';
 
 import top from '../../assets/topology_40.png';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
         scorecard: {
             flex: '1 1 0px',
-            maxWidth: 400,
-            '&:not(:first-child)': {
-                marginLeft: theme.spacing(2),
-            },
+            width: '100%',
+            maxWidth: '416px',
+            minWidth: '350px',
         },
         listTag: {
             marginRight: theme.spacing(1),
@@ -50,10 +50,21 @@ export const Dashboard: React.FC = () => {
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
     const classes = useStyles();
+    const mdUp = useMediaQuery(theme.breakpoints.up('md'));
+    usePageTitle('Dashboard');
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ padding: theme.spacing(), flex: 1 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div
+                style={{
+                    padding: theme.spacing(2),
+                    flex: 1,
+                    width: '80%',
+                    maxWidth: 1000,
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}
+            >
                 <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                     <ScoreCard
                         headerColor={Colors.red[500]}
@@ -98,6 +109,10 @@ export const Dashboard: React.FC = () => {
                         badgeOffset={0}
                         actionRow={<InfoListItem dense chevron title={'More'} hidePadding />}
                         classes={{ root: classes.scorecard }}
+                        style={{
+                            marginRight: mdUp ? theme.spacing(2) : 0,
+                            marginBottom: theme.spacing(2),
+                        }}
                     >
                         <List style={{ padding: '16px 0' }}>
                             <InfoListItem
@@ -154,6 +169,7 @@ export const Dashboard: React.FC = () => {
                         badgeOffset={-52}
                         actionRow={<InfoListItem dense chevron title={'View Location'} hidePadding />}
                         classes={{ root: classes.scorecard }}
+                        style={{ marginBottom: theme.spacing(2) }}
                     >
                         <List style={{ padding: '16px 0' }}>
                             <InfoListItem
@@ -180,7 +196,7 @@ export const Dashboard: React.FC = () => {
                     </ScoreCard>
                 </div>
 
-                <Card style={{ marginTop: theme.spacing(1) }}>
+                <Card style={{ maxWidth: 416 * 2 + theme.spacing(2) }}>
                     <List style={{ padding: 0 }}>
                         <HeroBanner divider>
                             <Hero
@@ -344,7 +360,13 @@ export const Dashboard: React.FC = () => {
                         />
                     </List>
                 </Card>
-                <Card style={{ marginTop: theme.spacing(1), padding: theme.spacing(3) }}>
+                <Card
+                    style={{
+                        marginTop: theme.spacing(2),
+                        padding: theme.spacing(3),
+                        maxWidth: 416 * 2 + theme.spacing(2),
+                    }}
+                >
                     <EmptyState
                         icon={<DevicesIcon fontSize={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                         title={'No Devices'}
@@ -360,7 +382,7 @@ export const Dashboard: React.FC = () => {
                         }
                     />
                 </Card>
-                <Card style={{ marginTop: theme.spacing(1) }}>
+                <Card style={{ marginTop: theme.spacing(2), maxWidth: 416 * 2 + theme.spacing(2) }}>
                     <DrawerNavGroup
                         title={'Resources'}
                         items={[

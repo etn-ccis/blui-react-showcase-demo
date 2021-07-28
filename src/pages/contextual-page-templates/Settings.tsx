@@ -14,6 +14,7 @@ import {
     NotificationsOff,
     Phone,
 } from '@material-ui/icons';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 const useStyles = makeStyles(() =>
     createStyles({
@@ -32,6 +33,7 @@ export const Settings: React.FC = () => {
     const [emailNotificationsSetting, setEmailNotificationsSetting] = useState(true);
     const [textNotificationsSetting, setTextNotificationsSetting] = useState(false);
     const [autoLogOutSetting, setAutoLogOutSetting] = useState(true);
+    usePageTitle('Settings');
 
     return (
         <div className={classes.container}>
