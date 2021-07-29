@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { InfoListItem } from '@pxblue/react-components';
 import { createStyles } from '@material-ui/styles';
-import { Button, Card, Switch } from '@material-ui/core';
+import { Button, Card, InputProps, Switch, TextField } from '@material-ui/core';
 import {
     AccountCircle,
     Business,
@@ -27,13 +27,23 @@ const useStyles = makeStyles(() =>
     })
 );
 
+type OnChangeHandler = InputProps['onChange'];
+
 export const Settings: React.FC = () => {
     const theme = useTheme();
     const classes = useStyles();
     const [emailNotificationsSetting, setEmailNotificationsSetting] = useState(true);
     const [textNotificationsSetting, setTextNotificationsSetting] = useState(false);
     const [autoLogOutSetting, setAutoLogOutSetting] = useState(true);
+    const [nickname, setNickname] = useState('Marsh-mallow');
     usePageTitle('Settings');
+
+    const onNicknameChange: OnChangeHandler = useCallback(
+        (event) => {
+            setNickname(event.target.value);
+        },
+        [setNickname]
+    );
 
     return (
         <div className={classes.container}>
@@ -67,6 +77,21 @@ export const Settings: React.FC = () => {
                     divider={'full'}
                 />
                 <InfoListItem title={'Marshall Sutter'} subtitle={'Name'} icon={<AccountCircle />} divider={'full'} />
+                <InfoListItem
+                    title={nickname}
+                    subtitle={'Nickname'}
+                    icon={<AccountCircle />}
+                    divider={'full'}
+                    rightComponent={
+                        <TextField
+                            id={'nickname'}
+                            variant={'outlined'}
+                            label={'Nickname'}
+                            value={nickname}
+                            onChange={onNicknameChange}
+                        />
+                    }
+                />
                 <InfoListItem title={'msutter@acmesteelco.com'} subtitle={'Email'} icon={<Email />} divider={'full'} />
                 <InfoListItem title={'+1 (724) 998-0938'} subtitle={'Phone Number'} icon={<Phone />} divider={'full'} />
                 <InfoListItem
