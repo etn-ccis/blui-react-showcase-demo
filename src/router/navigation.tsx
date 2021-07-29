@@ -10,7 +10,6 @@ import {
     PXBSurfaces,
     Settings,
     Surfaces,
-    Timeline,
 } from '../pages';
 import { Layers, Category } from '@material-ui/icons';
 import { PxblueSmall } from '@pxblue/icons-mui';
@@ -97,11 +96,11 @@ export const pageDefinitions: SimpleNavItem[] = [
                 url: '/settings',
                 component: <Settings />,
             },
-            {
-                title: 'Timeline',
-                url: '/timeline',
-                component: <Timeline />,
-            },
+            // {
+            //     title: 'Timeline',
+            //     url: '/timeline',
+            //     component: <Timeline />,
+            // },
         ],
     },
 ];
