@@ -50,7 +50,6 @@ export const NavigationDrawer: React.FC = () => {
                 onClick: item.component
                     ? (): void => {
                           history.push(fullURL);
-                          dispatch({ type: TOGGLE_DRAWER, payload: false });
                       }
                     : undefined,
                 items: item.pages ? createNavItems(item.pages, `${parentUrl}${item.url || ''}`, depth + 1) : undefined,
