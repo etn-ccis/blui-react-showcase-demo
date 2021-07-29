@@ -53,7 +53,6 @@ export const ScoreCardExample: React.FC = () => {
             icon={<Temp fontSize={'inherit'} htmlColor={colors.black[500]} />}
             label={'Temperature'}
             iconSize={48}
-            iconBackgroundColor={colors.white[50]}
             value={98}
             units={'°F'}
             fontSize={'normal'}
@@ -63,7 +62,6 @@ export const ScoreCardExample: React.FC = () => {
             icon={<Humidity fontSize={'inherit'} htmlColor={colors.blue[300]} />}
             label={'Humidity'}
             value={54}
-            iconBackgroundColor={colors.white[50]}
             units={'%'}
             iconSize={48}
             fontSize={'normal'}
