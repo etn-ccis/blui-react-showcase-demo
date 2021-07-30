@@ -13,6 +13,7 @@ import {
     TypographyExample,
     ExampleCardList,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const DataDisplay: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -27,6 +28,7 @@ export const DataDisplay: React.FC = () => {
         { label: 'Tooltip', component: <TooltipExample /> },
         { label: 'Typography', component: <TypographyExample /> },
     ];
+    usePageTitle('Material UI Data Display');
 
     return <ExampleCardList examples={examples} />;
 };

@@ -13,7 +13,7 @@ import { AppStore } from '../__types__';
 import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 
-const top = require('../assets/topology_40.png');
+const top = require('../assets/topology_40.png').default;
 
 const useStyles = makeStyles({
     iconFlip: {
@@ -50,7 +50,6 @@ export const NavigationDrawer: React.FC = () => {
                 onClick: item.component
                     ? (): void => {
                           history.push(fullURL);
-                          dispatch({ type: TOGGLE_DRAWER, payload: false });
                       }
                     : undefined,
                 items: item.pages ? createNavItems(item.pages, `${parentUrl}${item.url || ''}`, depth + 1) : undefined,

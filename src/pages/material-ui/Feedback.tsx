@@ -8,6 +8,7 @@ import {
     LinearProgressExample,
     SnackbarExample,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const Feedback: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -17,6 +18,7 @@ export const Feedback: React.FC = () => {
         { label: 'Snackbar', component: <SnackbarExample /> },
         { label: 'Backdrop', component: <BackdropExample /> },
     ];
+    usePageTitle('Material UI Feedback');
 
     return <ExampleCardList examples={examples} />;
 };

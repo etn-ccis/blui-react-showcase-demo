@@ -7,6 +7,7 @@ import {
     ExampleCardList,
     PaperExample,
 } from '../../components';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 export const Surfaces: React.FC = () => {
     const examples: ComponentExample[] = [
@@ -15,6 +16,7 @@ export const Surfaces: React.FC = () => {
         { label: 'Card', component: <CardExample /> },
         { label: 'Accordion', component: <AccordionExample /> },
     ];
+    usePageTitle('Material UI Surfaces');
 
     return <ExampleCardList examples={examples} />;
 };
