@@ -55,7 +55,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
     }, [smUp, classes, dispatch]);
 
     return (
-        <AppBar position={'sticky'} color={'primary'}>
+        <AppBar position={'sticky'} color={'primary'} style={{ zIndex: 10000 }}>
             <Toolbar>
                 <Typography variant="h6" style={{ fontWeight: 600, lineHeight: 1 }}>
                     {title}
