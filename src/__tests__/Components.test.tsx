@@ -6,21 +6,21 @@ import { store } from '../redux/store';
 import { RTLThemeProvider } from '../components/RTLProvider';
 import * as components from '../components/px-blue/data-display/index';
 
-Object.keys(components).forEach(componentName => {
+Object.keys(components).forEach((componentName) => {
     const Component = components[componentName];
     describe(`Component: ${componentName}`, () => {
-      test(`${componentName} renders examples correctly`, () => {
-        const tree = renderer
-            .create(
-                <Provider store={store}>
-                    <RTLThemeProvider>
-                        <CssBaseline />
-                        <Component />
-                    </RTLThemeProvider>
-                </Provider>
-            )
-            .toJSON();
-        expect(tree).toMatchSnapshot();
+        test(`${componentName} renders examples correctly`, () => {
+            const tree = renderer
+                .create(
+                    <Provider store={store}>
+                        <RTLThemeProvider>
+                            <CssBaseline />
+                            <Component />
+                        </RTLThemeProvider>
+                    </Provider>
+                )
+                .toJSON();
+            expect(tree).toMatchSnapshot();
+        });
     });
 });
-}); 
