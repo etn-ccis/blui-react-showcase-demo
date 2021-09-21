@@ -100,9 +100,11 @@ type EnhancedTableProps = {
 
 const EnhancedTableHead = (props: EnhancedTableProps): JSX.Element => {
     const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
-    const createSortHandler = (property: keyof Data) => (event: React.MouseEvent<unknown>): void => {
-        onRequestSort(event, property);
-    };
+    const createSortHandler =
+        (property: keyof Data) =>
+        (event: React.MouseEvent<unknown>): void => {
+            onRequestSort(event, property);
+        };
 
     return (
         <TableHead>
