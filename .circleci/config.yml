@@ -54,7 +54,7 @@ jobs:
 
 workflows:
     version: 2
-    react_library:
+    react_showcase:
         jobs:
             - build_demo
             - coverage_report:
