@@ -987,7 +987,7 @@ Array [
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-83 makeStyles-icon-143 MuiAvatar-colorDefault"
+                className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-83 makeStyles-icon-143 MuiAvatar-colorDefault"
               >
                 <svg
                   aria-hidden={true}
@@ -1043,7 +1043,7 @@ Array [
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-83 makeStyles-icon-152 MuiAvatar-colorDefault"
+                className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-83 makeStyles-icon-152 MuiAvatar-colorDefault"
               >
                 <svg
                   aria-hidden={true}
@@ -1099,7 +1099,7 @@ Array [
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-83 makeStyles-icon-161 MuiAvatar-colorDefault"
+                className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-83 makeStyles-icon-161 MuiAvatar-colorDefault"
               >
                 <svg
                   aria-hidden={true}
@@ -1157,10 +1157,14 @@ Array [
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+                  d="M0 0h24v24H0z"
+                  fill="none"
                 />
                 <path
-                  d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+                  d="M12 8.53c-.15.59-.58 2-1.29 4.33h2.61c-.67-2.15-1.05-3.37-1.13-3.66S12 8.7 12 8.53z"
+                />
+                <path
+                  d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10z"
                 />
               </svg>
             </span>

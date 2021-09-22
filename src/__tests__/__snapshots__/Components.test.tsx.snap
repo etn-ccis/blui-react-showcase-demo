@@ -330,10 +330,14 @@ Array [
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+              d="M0 0h24v24H0z"
+              fill="none"
             />
             <path
-              d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+              d="M12 8.53c-.15.59-.58 2-1.29 4.33h2.61c-.67-2.15-1.05-3.37-1.13-3.66S12 8.7 12 8.53z"
+            />
+            <path
+              d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10z"
             />
           </svg>
         </span>
@@ -589,10 +593,14 @@ Array [
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+              d="M0 0h24v24H0z"
+              fill="none"
             />
             <path
-              d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+              d="M12 8.53c-.15.59-.58 2-1.29 4.33h2.61c-.67-2.15-1.05-3.37-1.13-3.66S12 8.7 12 8.53z"
+            />
+            <path
+              d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10z"
             />
           </svg>
         </span>
@@ -810,7 +818,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-67 makeStyles-avatar-80 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-80 makeStyles-invisible-68 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -861,7 +869,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-67 makeStyles-avatar-89 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-89 makeStyles-invisible-68 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -914,7 +922,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-71 makeStyles-icon-101 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-101 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -967,7 +975,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-71 makeStyles-icon-110 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-110 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1065,7 +1073,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-67 makeStyles-avatar-123 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-123 makeStyles-invisible-68 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1121,7 +1129,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-67 makeStyles-avatar-132 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-132 makeStyles-invisible-68 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1188,7 +1196,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-67 makeStyles-avatar-141 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-141 makeStyles-invisible-68 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1241,7 +1249,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-67 makeStyles-avatar-150 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-150 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1250,10 +1258,14 @@ Array [
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+            d="M0 0h24v24H0z"
+            fill="none"
           />
           <path
-            d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+            d="M12 8.53c-.15.59-.58 2-1.29 4.33h2.61c-.67-2.15-1.05-3.37-1.13-3.66S12 8.7 12 8.53z"
+          />
+          <path
+            d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10z"
           />
         </svg>
       </div>
@@ -1297,7 +1309,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-71 makeStyles-icon-162 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-162 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1354,7 +1366,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-71 makeStyles-icon-171 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-171 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1431,7 +1443,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-71 makeStyles-icon-180 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-180 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1526,7 +1538,7 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-71 makeStyles-icon-190 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-190 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden={true}
@@ -1637,7 +1649,7 @@ Array [
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular makeStyles-icon-208 makeStyles-icon-220 MuiAvatar-colorDefault"
+          className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-208 makeStyles-icon-220 MuiAvatar-colorDefault"
         >
           <svg
             aria-hidden={true}
@@ -1810,7 +1822,7 @@ Array [
         className="makeStyles-root-252"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circular MuiAvatar-colorDefault"
+          className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circle MuiAvatar-colorDefault"
           onClick={[Function]}
         >
           PX
@@ -1829,7 +1841,7 @@ Array [
         className="makeStyles-root-252"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-253 makeStyles-customAvatar-250 MuiAvatar-circular MuiAvatar-colorDefault"
+          className="MuiAvatar-root makeStyles-avatarRoot-253 makeStyles-customAvatar-250 MuiAvatar-circle MuiAvatar-colorDefault"
           onClick={[Function]}
         >
           PX
@@ -1852,7 +1864,7 @@ Array [
         className="makeStyles-root-252"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circular MuiAvatar-colorDefault"
+          className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circle MuiAvatar-colorDefault"
           onClick={[Function]}
         >
           <svg
@@ -1900,7 +1912,7 @@ Array [
         className="makeStyles-root-252"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circular MuiAvatar-colorDefault"
+          className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circle MuiAvatar-colorDefault"
           onClick={[Function]}
         >
           PX
@@ -1949,7 +1961,7 @@ Array [
           className="makeStyles-root-252"
         >
           <div
-            className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circular MuiAvatar-colorDefault"
+            className="MuiAvatar-root makeStyles-avatarRoot-253 MuiAvatar-circle MuiAvatar-colorDefault"
             onClick={[Function]}
           >
             <svg
