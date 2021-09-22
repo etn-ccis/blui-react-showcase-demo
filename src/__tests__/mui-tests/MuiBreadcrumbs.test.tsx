@@ -2,18 +2,18 @@ import React from 'react';
 import { cleanup, render } from '@testing-library/react';
 import { CssBaseline } from '@material-ui/core';
 import { Provider } from 'react-redux';
-import { store } from '../redux/store';
-import { RTLThemeProvider } from '../components/RTLProvider';
-import { PXBAppBarExample } from '../components/px-blue/surfaces/AppBar';
+import { store } from '../../redux/store';
+import { RTLThemeProvider } from '../../components/RTLProvider';
+import { BreadcrumbsExample } from '../../components/material-ui/navigation/Breadcrumbs';
 
-describe('App bar example', () => {
+describe('Channel value example', () => {
     afterEach(cleanup);
     it('renders without crashing', () => {
         render(
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <PXBAppBarExample />
+                    <BreadcrumbsExample />
                 </RTLThemeProvider>
             </Provider>
         );

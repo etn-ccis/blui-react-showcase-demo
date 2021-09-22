@@ -2,9 +2,9 @@ import React from 'react';
 import { cleanup, render } from '@testing-library/react';
 import { CssBaseline } from '@material-ui/core';
 import { Provider } from 'react-redux';
-import { store } from '../redux/store';
-import { RTLThemeProvider } from '../components/RTLProvider';
-import { ChannelValueExample } from '../components/px-blue/data-display/ChannelValue';
+import { store } from '../../redux/store';
+import { RTLThemeProvider } from '../../components/RTLProvider';
+import { MenuExample } from '../../components/material-ui/navigation/Menu';
 
 describe('Channel value example', () => {
     afterEach(cleanup);
@@ -13,7 +13,7 @@ describe('Channel value example', () => {
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <ChannelValueExample />
+                    <MenuExample />
                 </RTLThemeProvider>
             </Provider>
         );

@@ -2,18 +2,18 @@ import React from 'react';
 import { cleanup, render } from '@testing-library/react';
 import { CssBaseline } from '@material-ui/core';
 import { Provider } from 'react-redux';
-import { store } from '../redux/store';
-import { RTLThemeProvider } from '../components/RTLProvider';
-import { ListItemTagExample } from '../components/px-blue/data-display/ListItemTag';
+import { store } from '../../redux/store';
+import { RTLThemeProvider } from '../../components/RTLProvider';
+import { MobileStepperExample } from '../../components/material-ui/navigation/MobileStepper';
 
-describe('List item tag example', () => {
+describe('Channel value example', () => {
     afterEach(cleanup);
     it('renders without crashing', () => {
         render(
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <ListItemTagExample />
+                    <MobileStepperExample />
                 </RTLThemeProvider>
             </Provider>
         );
