@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
-import { StylesProvider, jssPreset, ThemeProvider, createTheme } from '@material-ui/core/styles';
+import { StylesProvider, jssPreset, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import * as PXBThemes from '@pxblue/react-themes';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
@@ -20,7 +20,7 @@ export const RTLThemeProvider: React.FC = (props) => {
     return (
         <StylesProvider jss={jss}>
             <ThemeProvider
-                theme={createTheme(
+                theme={createMuiTheme(
                     Object.assign(theme === 'light' ? PXBThemes.blue : PXBThemes.blueDark, {
                         direction: dir,
                     })
