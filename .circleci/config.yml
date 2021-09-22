@@ -30,7 +30,7 @@ jobs:
             - run:
                   name: Unit Test
                   command: |
-                      yarn test --coverage --watchAll=false
+                      yarn test -u --coverage --watchAll=false
             - run:
                   name: Build Demo
                   command: |
