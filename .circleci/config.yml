@@ -35,7 +35,6 @@ jobs:
                   name: Unit Test
                   command: |
                       yarn test --coverage --watchAll=false
-                      no_output_timeout: 1200
             - run:
                   name: Build Demo
                   command: |
