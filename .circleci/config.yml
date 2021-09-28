@@ -5,7 +5,6 @@ jobs:
     build_demo:
         docker:
             - image: circleci/node:12.9.1-browsers
-        parallelism: 4
         steps:
             - checkout
             - restore_cache:
