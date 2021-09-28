@@ -26,7 +26,7 @@ jobs:
             - run:
                   name: Set Max Memory
                   command: |
-                      NODE_OPTIONS=--max_old_space_size=5120
+                      NODE_OPTIONS=--max_old_space_size=6144
             - run:
                   name: Lint
                   command: |
@@ -43,6 +43,11 @@ jobs:
                 root: .
                 paths:
                     - coverage
+            - run:
+                  name: Memory Usage
+                  command: |
+                      cat /sys/fs/cgroup/memory/memory.max_usage_in_bytes
+                  when: always
 
     coverage_report:
         working_directory: ~/react-showcase-demo
