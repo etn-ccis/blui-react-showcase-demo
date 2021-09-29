@@ -1,6 +1,9 @@
 import React from 'react';
-import { useTheme, Theme, Toolbar } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Toolbar from '@material-ui/core/Toolbar';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import { getBodyFiller } from '../../../utils/utils';
 import { AppBar, ThreeLiner } from '@pxblue/react-components';
 

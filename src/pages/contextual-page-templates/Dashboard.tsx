@@ -1,6 +1,12 @@
 import React from 'react';
 import * as Colors from '@pxblue/colors';
-import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useTheme from '@material-ui/core/styles/useTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import {
     Hero,
     HeroBanner,
@@ -11,17 +17,14 @@ import {
     DrawerNavGroup,
     ListItemTag,
 } from '@pxblue/react-components';
-import { List, Card, Button, useMediaQuery } from '@material-ui/core';
-import {
-    Add,
-    Remove,
-    List as ListIcon,
-    Settings,
-    MoreVert,
-    Timer,
-    TrendingUp,
-    Devices as DevicesIcon,
-} from '@material-ui/icons';
+import Add from '@material-ui/icons/Add';
+import Remove from '@material-ui/icons/Remove';
+import ListIcon from '@material-ui/icons/List';
+import Settings from '@material-ui/icons/Settings';
+import MoreVert from '@material-ui/icons/MoreVert';
+import Timer from '@material-ui/icons/Timer';
+import TrendingUp from '@material-ui/icons/TrendingUp';
+import DevicesIcon from '@material-ui/icons/Devices';
 import { Pie, Battery } from '@pxblue/react-progress-icons';
 import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@pxblue/icons-mui';
 import clsx from 'clsx';

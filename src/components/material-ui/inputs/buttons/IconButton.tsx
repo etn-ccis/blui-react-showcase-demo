@@ -1,7 +1,11 @@
 import React from 'react';
-import { useTheme, Theme, IconButton, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
-import { Delete } from '@material-ui/icons';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Delete from '@material-ui/icons/Delete';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

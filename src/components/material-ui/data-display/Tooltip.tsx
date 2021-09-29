@@ -1,6 +1,12 @@
 import React from 'react';
-import { useTheme, Theme, Tooltip, Button, Fade, Zoom } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import Tooltip from '@material-ui/core/Tooltip';
+import Button from '@material-ui/core/Button';
+import Fade from '@material-ui/core/Fade';
+import Zoom from '@material-ui/core/Zoom';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

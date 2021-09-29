@@ -1,7 +1,13 @@
 import React from 'react';
-import { useTheme, Theme, Typography, Button, MobileStepper } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
-import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import MobileStepper from '@material-ui/core/MobileStepper';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

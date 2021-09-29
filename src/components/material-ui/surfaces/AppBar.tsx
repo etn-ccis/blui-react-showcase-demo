@@ -1,7 +1,13 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, useTheme, Theme } from '@material-ui/core';
-import { Menu } from '@material-ui/icons';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import Menu from '@material-ui/icons/Menu';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

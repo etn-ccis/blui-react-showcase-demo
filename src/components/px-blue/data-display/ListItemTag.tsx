@@ -1,9 +1,12 @@
 import React from 'react';
-import { useTheme, Theme, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import { InfoListItem, ListItemTag } from '@pxblue/react-components';
 import * as colors from '@pxblue/colors';
-import { BrightnessMedium } from '@material-ui/icons';
+import BrightnessMedium from '@material-ui/icons/BrightnessMedium';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
 

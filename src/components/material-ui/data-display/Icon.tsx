@@ -1,28 +1,29 @@
 import React from 'react';
-import { useTheme, Theme, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
-import {
-    Cancel,
-    CancelOutlined,
-    CancelRounded,
-    CancelSharp,
-    CancelTwoTone,
-    Delete,
-    DeleteOutlined,
-    DeleteRounded,
-    DeleteSharp,
-    DeleteTwoTone,
-    Favorite,
-    FavoriteOutlined,
-    FavoriteRounded,
-    FavoriteSharp,
-    FavoriteTwoTone,
-    Mail,
-    MailOutlined,
-    MailRounded,
-    MailSharp,
-    MailTwoTone,
-} from '@material-ui/icons';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Cancel from '@material-ui/icons/Cancel';
+import CancelOutlined from '@material-ui/icons/CancelOutlined';
+import CancelRounded from '@material-ui/icons/CancelRounded';
+import CancelSharp from '@material-ui/icons/CancelSharp';
+import CancelTwoTone from '@material-ui/icons/CancelTwoTone';
+import Delete from '@material-ui/icons/Delete';
+import DeleteOutlined from '@material-ui/icons/DeleteOutlined';
+import DeleteRounded from '@material-ui/icons/DeleteRounded';
+import DeleteSharp from '@material-ui/icons/DeleteSharp';
+import DeleteTwoTone from '@material-ui/icons/DeleteTwoTone';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteOutlined from '@material-ui/icons/FavoriteOutlined';
+import FavoriteRounded from '@material-ui/icons/FavoriteRounded';
+import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
+import FavoriteTwoTone from '@material-ui/icons/FavoriteTwoTone';
+import Mail from '@material-ui/icons/Mail';
+import MailOutlined from '@material-ui/icons/MailOutlined';
+import MailRounded from '@material-ui/icons/MailRounded';
+import MailSharp from '@material-ui/icons/MailSharp';
+import MailTwoTone from '@material-ui/icons/MailTwoTone';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

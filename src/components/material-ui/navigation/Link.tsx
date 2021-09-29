@@ -1,5 +1,9 @@
 import React from 'react';
-import { createStyles, Link, makeStyles, Theme, useTheme } from '@material-ui/core';
+import Link from '@material-ui/core/Link';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

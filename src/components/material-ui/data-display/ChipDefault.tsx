@@ -1,7 +1,12 @@
 import React from 'react';
-import { useTheme, Theme, Typography, Chip, Avatar } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
-import { Favorite } from '@material-ui/icons';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Favorite from '@material-ui/icons/Favorite';
 import BettyWhite from '../../../assets/betty_white.jpeg';
 
 const useStyles = makeStyles((theme: Theme) =>

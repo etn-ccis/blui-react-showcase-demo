@@ -1,6 +1,12 @@
 import React from 'react';
-import { useTheme, Theme, Accordion, AccordionDetails, AccordionSummary, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme: Theme) =>

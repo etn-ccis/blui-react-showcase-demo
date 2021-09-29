@@ -1,19 +1,22 @@
 import React, { useCallback, useState } from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import { InputProps } from '@material-ui/core/Input';
+import Switch from '@material-ui/core/Switch';
+import TextField from '@material-ui/core/TextField';
+import useTheme from '@material-ui/core/styles/useTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import { InfoListItem } from '@pxblue/react-components';
-import { createStyles } from '@material-ui/styles';
-import { Button, Card, InputProps, Switch, TextField } from '@material-ui/core';
-import {
-    AccountCircle,
-    Business,
-    Email,
-    LocationOn,
-    Lock,
-    LockOpen,
-    Notifications,
-    NotificationsOff,
-    Phone,
-} from '@material-ui/icons';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import Business from '@material-ui/icons/Business';
+import Email from '@material-ui/icons/Email';
+import LocationOn from '@material-ui/icons/LocationOn';
+import Lock from '@material-ui/icons/Lock';
+import LockOpen from '@material-ui/icons/LockOpen';
+import Notifications from '@material-ui/icons/Notifications';
+import NotificationsOff from '@material-ui/icons/NotificationsOff';
+import Phone from '@material-ui/icons/Phone';
 import { usePageTitle } from '../../hooks/usePageTitle';
 
 const useStyles = makeStyles(() =>
