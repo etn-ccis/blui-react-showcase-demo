@@ -42,7 +42,8 @@
         "prettier": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "prettier:check": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --check",
         "precommit": "yarn && yarn prettier && yarn lint && yarn test",
-        "coverage": "yarn test --coverage --watchAll=false"
+        "coverage": "yarn test --coverage --watchAll=false",
+        "analyze": "source-map-explorer 'build/static/js/*.js'"
     },
     "browserslist": {
         "production": [
@@ -79,7 +80,8 @@
         "eslint-config-prettier": "^8.0.0",
         "eslint-plugin-react": "^7.0.0",
         "prettier": "^2.0.0",
-        "prop-types": "^15.7.2"
+        "prop-types": "^15.7.2",
+        "source-map-explorer": "^2.5.0"
     },
     "prettier": "@pxblue/prettier-config"
 }
