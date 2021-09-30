@@ -1,10 +1,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Menu } from '@material-ui/icons';
-import { useMediaQuery, makeStyles, Typography } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useTheme from '@material-ui/core/styles/useTheme';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Menu from '@material-ui/icons/Menu';
 import EatonFooterLogoLight from '../EatonLogoLight.png';
 import EatonFooterLogoDark from '../EatonLogoDark.png';
 import * as Colors from '@pxblue/colors';
-import { useTheme } from '@material-ui/core/styles';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Drawer, DrawerBody, DrawerNavGroup, DrawerFooter, DrawerHeader, NavItem } from '@pxblue/react-components';
 import clsx from 'clsx';

@@ -1,6 +1,11 @@
 import React from 'react';
-import { useTheme, Theme, Card, CardContent, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

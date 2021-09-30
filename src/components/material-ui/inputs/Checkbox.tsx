@@ -1,5 +1,10 @@
-import { FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
-import { FavoriteBorder, Favorite, CheckBoxOutlineBlank, CheckBox } from '@material-ui/icons';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import Favorite from '@material-ui/icons/Favorite';
+import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckBox from '@material-ui/icons/CheckBox';
 import React from 'react';
 
 export const CheckboxExample: React.FC = () => {

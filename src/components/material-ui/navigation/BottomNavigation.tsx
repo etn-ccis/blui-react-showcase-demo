@@ -1,13 +1,13 @@
-import {
-    BottomNavigation,
-    BottomNavigationAction,
-    createStyles,
-    makeStyles,
-    Theme,
-    Typography,
-    useTheme,
-} from '@material-ui/core';
-import { Favorite, LocationOn, Restore } from '@material-ui/icons';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Favorite from '@material-ui/icons/Favorite';
+import LocationOn from '@material-ui/icons/LocationOn';
+import Restore from '@material-ui/icons/Restore';
 import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>

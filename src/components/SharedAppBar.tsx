@@ -1,18 +1,20 @@
-import {
-    AppBar,
-    IconButton,
-    Tooltip,
-    makeStyles,
-    createStyles,
-    useMediaQuery,
-    Toolbar,
-    Typography,
-} from '@material-ui/core';
-import { Email, Menu, Settings, InvertColors, SwapHoriz } from '@material-ui/icons';
+import AppBar from '@material-ui/core/AppBar';
 import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import Tooltip from '@material-ui/core/Tooltip';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useTheme from '@material-ui/core/styles/useTheme';
+import Email from '@material-ui/icons/Email';
+import Menu from '@material-ui/icons/Menu';
+import Settings from '@material-ui/icons/Settings';
+import InvertColors from '@material-ui/icons/InvertColors';
+import SwapHoriz from '@material-ui/icons/SwapHoriz';
 import SendIcon from '@material-ui/icons/Send';
 import React, { useCallback } from 'react';
-import { useTheme } from '@material-ui/core/styles';
 import { Spacer, UserMenu } from '@pxblue/react-components';
 import clsx from 'clsx';
 import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';

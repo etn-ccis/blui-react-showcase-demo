@@ -1,5 +1,14 @@
-import { Breadcrumbs, createStyles, Link, makeStyles, Theme, Typography, useTheme } from '@material-ui/core';
-import { Home, NavigateNext, Whatshot } from '@material-ui/icons';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Home from '@material-ui/icons/Home';
+import NavigateNext from '@material-ui/icons/NavigateNext';
+import Whatshot from '@material-ui/icons/Whatshot';
+
 import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>

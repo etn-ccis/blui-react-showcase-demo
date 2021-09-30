@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
-import { StylesProvider, jssPreset, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import ThemeProvider from '@material-ui/styles/ThemeProvider';
+import jssPreset from '@material-ui/styles/jssPreset';
+import StylesProvider from '@material-ui/styles/StylesProvider';
 import * as PXBThemes from '@pxblue/react-themes';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';

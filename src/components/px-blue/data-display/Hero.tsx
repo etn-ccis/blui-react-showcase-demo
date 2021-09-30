@@ -1,9 +1,14 @@
 import React from 'react';
-import { useTheme, Theme, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import { ChannelValue, Hero, HeroBanner } from '@pxblue/react-components';
-import { GradeA, GradeB, Temp } from '@pxblue/icons-mui';
-import { Schedule } from '@material-ui/icons';
+import GradeA from '@pxblue/icons-mui/GradeA';
+import GradeB from '@pxblue/icons-mui/GradeB';
+import Temp from '@pxblue/icons-mui/Temp';
+import Schedule from '@material-ui/icons/Schedule';
 import * as colors from '@pxblue/colors';
 
 const useStyles = makeStyles((theme: Theme) =>

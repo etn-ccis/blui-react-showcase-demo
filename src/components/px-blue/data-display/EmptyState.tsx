@@ -1,7 +1,15 @@
 import React from 'react';
-import { useTheme, Theme, Typography, Button } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
-import { Add, Devices, LocationOff, NotListedLocation } from '@material-ui/icons';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Add from '@material-ui/icons/Add';
+import Devices from '@material-ui/icons/Devices';
+import LocationOff from '@material-ui/icons/LocationOff';
+import NotListedLocation from '@material-ui/icons/NotListedLocation';
+
 import { EmptyState } from '@pxblue/react-components';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';

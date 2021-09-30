@@ -1,6 +1,13 @@
 import React from 'react';
-import { useTheme, Theme, Typography, AppBar, Tab, Tabs, Box } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import AppBar from '@material-ui/core/AppBar';
+import Tab from '@material-ui/core/Tab';
+import Tabs from '@material-ui/core/Tabs';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

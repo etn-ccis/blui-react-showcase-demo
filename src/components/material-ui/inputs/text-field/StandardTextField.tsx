@@ -1,4 +1,9 @@
-import { createStyles, makeStyles, TextField, Theme, Typography, useTheme } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>

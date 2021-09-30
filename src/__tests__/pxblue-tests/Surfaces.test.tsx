@@ -1,5 +1,5 @@
 import React from 'react';
-import { CssBaseline } from '@material-ui/core';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { store } from '../../redux/store';

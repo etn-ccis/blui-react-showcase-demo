@@ -1,7 +1,14 @@
 import React from 'react';
-import { useTheme, Theme, Typography, Fab } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
-import { Add, Edit, Favorite, Navigation } from '@material-ui/icons';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import Typography from '@material-ui/core/Typography';
+import Fab from '@material-ui/core/Fab';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Add from '@material-ui/icons/Add';
+import Edit from '@material-ui/icons/Edit';
+import Favorite from '@material-ui/icons/Favorite';
+import Navigation from '@material-ui/icons/Navigation';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

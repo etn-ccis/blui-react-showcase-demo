@@ -1,15 +1,13 @@
-import {
-    createStyles,
-    FormControl,
-    FormHelperText,
-    InputLabel,
-    makeStyles,
-    MenuItem,
-    Select,
-    Theme,
-    Typography,
-    useTheme,
-} from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import FormControl from '@material-ui/core/FormControl';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>

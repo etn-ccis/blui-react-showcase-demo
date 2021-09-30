@@ -1,6 +1,11 @@
 import React from 'react';
-import { useTheme, Theme, Typography, LinearProgress, LinearProgressProps, Box } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import Typography from '@material-ui/core/Typography';
+import LinearProgress, { LinearProgressProps } from '@material-ui/core/LinearProgress';
+import Box from '@material-ui/core/Box';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

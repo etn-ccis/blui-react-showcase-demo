@@ -1,4 +1,9 @@
-import { createStyles, makeStyles, Theme, Typography, useTheme, Switch } from '@material-ui/core';
+import Switch from '@material-ui/core/Switch';
+import Typography from '@material-ui/core/Typography';
+import useTheme from '@material-ui/core/styles/useTheme';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import React, { useState } from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>

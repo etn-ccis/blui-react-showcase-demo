@@ -1,6 +1,10 @@
 import React from 'react';
-import { useTheme, Theme, Typography, Avatar } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import useTheme from '@material-ui/core/styles/useTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import { PxblueSmall } from '@pxblue/icons-mui';
 import BettyWhite from '../../../assets/betty_white.jpeg';
 

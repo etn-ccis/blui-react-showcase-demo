@@ -1,9 +1,12 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import useTheme from '@material-ui/core/styles/useTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import { InfoListItem, ListItemTag } from '@pxblue/react-components';
-import { createStyles } from '@material-ui/styles';
-import { Card } from '@material-ui/core';
-import { ChevronRight, Notifications, NotificationsActive } from '@material-ui/icons';
+import Card from '@material-ui/core/Card';
+import ChevronRight from '@material-ui/icons/ChevronRight';
+import Notifications from '@material-ui/icons/Notifications';
+import NotificationsActive from '@material-ui/icons/NotificationsActive';
 import * as colors from '@pxblue/colors';
 import { usePageTitle } from '../../hooks/usePageTitle';
 
