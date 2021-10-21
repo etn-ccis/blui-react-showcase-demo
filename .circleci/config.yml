@@ -32,7 +32,7 @@ jobs:
                   command: |
                       yarn lint
             - run:
-                  name: Unit Test
+                  name: Unit Test --maxWorkers=2
                   command: |
                       yarn test --coverage --watchAll=false
             - run:
