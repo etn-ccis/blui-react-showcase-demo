@@ -32,9 +32,9 @@ jobs:
                   command: |
                       yarn lint
             - run:
-                  name: Unit Test --maxWorkers=2
+                  name: Unit Test
                   command: |
-                      yarn test --coverage --watchAll=false
+                      yarn test --maxWorkers=2 --coverage --watchAll=false
             - run:
                   name: Build Demo
                   command: |
