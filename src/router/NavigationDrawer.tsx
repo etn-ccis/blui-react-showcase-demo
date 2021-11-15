@@ -8,7 +8,14 @@ import EatonFooterLogoLight from '../EatonLogoLight.png';
 import EatonFooterLogoDark from '../EatonLogoDark.png';
 import * as Colors from '@brightlayer-ui/colors';
 import { useHistory, useLocation } from 'react-router-dom';
-import { Drawer, DrawerBody, DrawerNavGroup, DrawerFooter, DrawerHeader, NavItem } from '@brightlayer-ui/react-components';
+import {
+    Drawer,
+    DrawerBody,
+    DrawerNavGroup,
+    DrawerFooter,
+    DrawerHeader,
+    NavItem,
+} from '@brightlayer-ui/react-components';
 import clsx from 'clsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { AppStore } from '../__types__';
