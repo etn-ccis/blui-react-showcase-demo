@@ -1,21 +1,21 @@
 # React Showcase Demo
 
-[![](https://img.shields.io/circleci/project/github/pxblue/react-showcase-demo/master.svg?style=flat)](https://circleci.com/gh/pxblue/react-showcase-demo/tree/master)
+[![](https://img.shields.io/circleci/project/github/brightlayer-ui/react-showcase-demo/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-showcase-demo/tree/master)
 
-This applications is a demo applications that is used to demonstrate and test various PX Blue components, resources, etc.
+This applications is a demo applications that is used to demonstrate and test various Brightlayer UI components, resources, etc.
 
 It is used as a git submodule for:
 
--   [react-component-library](https://github.com/pxblue/react-component-library)
--   [themes](https://github.com/pxblue/themes)
+-   [react-component-library](https://github.com/brightlayer-ui/react-component-library)
+-   [themes](https://github.com/brightlayer-ui/themes)
 
 It can also be run as a standalone application or used as a starting point for your own applications.
 
 It includes:
 
--   PX Blue themes and typography
+-   Brightlayer UI themes and typography
 -   Material UI components
--   PX Blue components
+-   Brightlayer UI components
 -   Right-to-Left support
 
 ## To run the project
@@ -23,7 +23,7 @@ It includes:
 Clone the repository:
 
 ```
-git clone https://github.com/pxblue/react-showcase-demo
+git clone https://github.com/brightlayer-ui/react-showcase-demo
 ```
 
 Install the dependencies:

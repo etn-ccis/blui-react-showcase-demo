@@ -10,7 +10,7 @@ import Devices from '@material-ui/icons/Devices';
 import LocationOff from '@material-ui/icons/LocationOff';
 import NotListedLocation from '@material-ui/icons/NotListedLocation';
 
-import { EmptyState } from '@pxblue/react-components';
+import { EmptyState } from '@brightlayer-ui/react-components';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';

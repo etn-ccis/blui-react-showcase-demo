@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { PXBAppBarExample } from '../../components/px-blue/surfaces/AppBar';
+import { BLUIAppBarExample } from '../../components/brightlayer-ui/surfaces/AppBar';
 
 describe('App bar example', () => {
     afterEach(cleanup);
@@ -13,7 +13,7 @@ describe('App bar example', () => {
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <PXBAppBarExample />
+                    <BLUIAppBarExample />
                 </RTLThemeProvider>
             </Provider>
         );

@@ -4,12 +4,12 @@ import useTheme from '@material-ui/core/styles/useTheme';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { ChannelValue, Hero, HeroBanner } from '@pxblue/react-components';
-import GradeA from '@pxblue/icons-mui/GradeA';
-import GradeB from '@pxblue/icons-mui/GradeB';
-import Temp from '@pxblue/icons-mui/Temp';
+import { ChannelValue, Hero, HeroBanner } from '@brightlayer-ui/react-components';
+import GradeA from '@brightlayer-ui/icons-mui/GradeA';
+import GradeB from '@brightlayer-ui/icons-mui/GradeB';
+import Temp from '@brightlayer-ui/icons-mui/Temp';
 import Schedule from '@material-ui/icons/Schedule';
-import * as colors from '@pxblue/colors';
+import * as colors from '@brightlayer-ui/colors';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

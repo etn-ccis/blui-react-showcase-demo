@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { ScoreCardExample } from '../../components/px-blue/surfaces/ScoreCard';
+import { ScoreCardExample } from '../../components/brightlayer-ui/surfaces/ScoreCard';
 
 describe('Score card example', () => {
     afterEach(cleanup);

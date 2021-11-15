@@ -12,7 +12,7 @@ import {
 } from '../../components';
 import { usePageTitle } from '../../hooks/usePageTitle';
 
-export const PXBDataDisplay: React.FC = () => {
+export const BLUIDataDisplay: React.FC = () => {
     const examples: ComponentExample[] = [
         { label: 'Channel Value', component: <ChannelValueExample /> },
         { label: 'Empty State', component: <EmptyStateExample /> },
@@ -22,7 +22,7 @@ export const PXBDataDisplay: React.FC = () => {
         { label: 'Three Liner', component: <ThreeLinerExample /> },
         { label: 'UserMenu', component: <UserMenuExample /> },
     ];
-    usePageTitle('PX Blue Data Display');
+    usePageTitle('Brightlayer UI Data Display');
 
     return <ExampleCardList examples={examples} />;
 };

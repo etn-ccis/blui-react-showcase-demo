@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import * as components from '../../components/px-blue/surfaces/index';
+import * as components from '../../components/brightlayer-ui/surfaces/index';
 
 Object.keys(components).forEach((componentName) => {
     const Component = components[componentName];

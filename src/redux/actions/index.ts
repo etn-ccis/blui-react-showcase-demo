@@ -1,4 +1,4 @@
-const PREFIX = '@@pxblue/';
+const PREFIX = '@@brightlayer-ui/';
 
 // State of the Navigation Drawer
 export const OPEN_DRAWER = `${PREFIX}OPEN_DRAWER`;

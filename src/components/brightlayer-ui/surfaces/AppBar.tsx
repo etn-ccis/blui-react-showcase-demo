@@ -5,7 +5,7 @@ import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { getBodyFiller } from '../../../utils/utils';
-import { AppBar, ThreeLiner } from '@pxblue/react-components';
+import { AppBar, ThreeLiner } from '@brightlayer-ui/react-components';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-export const PXBAppBarExample: React.FC = () => {
+export const BLUIAppBarExample: React.FC = () => {
     const theme = useTheme();
     const classes = useStyles(theme);
 

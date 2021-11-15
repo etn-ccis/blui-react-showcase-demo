@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-const getSteps = (): string[] => ['Visit pxblue.github.io', 'Find a sweet component', 'Download said component'];
+const getSteps = (): string[] => ['Visit brightlayer-ui.github.io', 'Find a sweet component', 'Download said component'];
 
 export const StepperExample: React.FC = () => {
     const theme = useTheme();

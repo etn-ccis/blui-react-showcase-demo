@@ -14,7 +14,7 @@ import './index.css';
 import { MainRouter } from './router';
 import { store } from './redux/store';
 import { RTLThemeProvider } from './components/RTLProvider';
-import '@pxblue/react-themes/open-sans';
+import '@brightlayer-ui/react-themes/open-sans';
 
 // eslint-disable-arrow-body-style
 

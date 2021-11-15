@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Colors from '@pxblue/colors';
+import * as Colors from '@brightlayer-ui/colors';
 import List from '@material-ui/core/List';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
@@ -16,7 +16,7 @@ import {
     ScoreCard,
     DrawerNavGroup,
     ListItemTag,
-} from '@pxblue/react-components';
+} from '@brightlayer-ui/react-components';
 import Add from '@material-ui/icons/Add';
 import Remove from '@material-ui/icons/Remove';
 import ListIcon from '@material-ui/icons/List';
@@ -25,8 +25,8 @@ import MoreVert from '@material-ui/icons/MoreVert';
 import Timer from '@material-ui/icons/Timer';
 import TrendingUp from '@material-ui/icons/TrendingUp';
 import DevicesIcon from '@material-ui/icons/Devices';
-import { Pie, Battery } from '@pxblue/react-progress-icons';
-import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@pxblue/icons-mui';
+import { Pie, Battery } from '@brightlayer-ui/react-progress-icons';
+import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@brightlayer-ui/icons-mui';
 import clsx from 'clsx';
 
 import top from '../../assets/topology_40.png';
