@@ -5,7 +5,7 @@ import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
 import jssPreset from '@material-ui/styles/jssPreset';
 import StylesProvider from '@material-ui/styles/StylesProvider';
-import * as PXBThemes from '@pxblue/react-themes';
+import * as BLUIThemes from '@brightlayer-ui/react-themes';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
 
@@ -24,7 +24,7 @@ export const RTLThemeProvider: React.FC = (props) => {
         <StylesProvider jss={jss}>
             <ThemeProvider
                 theme={createMuiTheme(
-                    Object.assign(theme === 'light' ? PXBThemes.blue : PXBThemes.blueDark, {
+                    Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
                         direction: dir,
                     })
                 )}

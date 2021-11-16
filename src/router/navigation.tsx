@@ -6,13 +6,13 @@ import {
     Feedback,
     Inputs,
     Navigation,
-    PXBDataDisplay,
-    PXBSurfaces,
+    BLUIDataDisplay,
+    BLUISurfaces,
     Settings,
     Surfaces,
 } from '../pages';
 import { Layers, Category } from '@material-ui/icons';
-import { PxblueSmall } from '@pxblue/icons-mui';
+import { PxblueSmall } from '@brightlayer-ui/icons-mui';
 
 export type SimpleNavItem = {
     title: string;
@@ -26,19 +26,19 @@ export type SimpleNavItem = {
 
 export const pageDefinitions: SimpleNavItem[] = [
     {
-        title: 'PX Blue Components',
-        url: '/pxblue-components',
+        title: 'Brightlayer UI Components',
+        url: '/brightlayer-ui-components',
         icon: <PxblueSmall />,
         pages: [
             {
                 title: 'Data Display',
                 url: '/data-display-components',
-                component: <PXBDataDisplay />,
+                component: <BLUIDataDisplay />,
             },
             {
                 title: 'Surfaces',
                 url: '/surface-components',
-                component: <PXBSurfaces />,
+                component: <BLUISurfaces />,
             },
         ],
     },

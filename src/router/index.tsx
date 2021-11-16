@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, useLocation, Redirect } from 'react-router-dom';
-import { DrawerLayout } from '@pxblue/react-components';
+import { DrawerLayout } from '@brightlayer-ui/react-components';
 import { NavigationDrawer } from './NavigationDrawer';
 import { SharedAppBar } from '../components/SharedAppBar';
 import { SimpleNavItem, pageDefinitions } from './navigation';

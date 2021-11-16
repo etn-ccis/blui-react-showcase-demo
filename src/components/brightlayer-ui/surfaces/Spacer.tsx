@@ -4,8 +4,8 @@ import useTheme from '@material-ui/core/styles/useTheme';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import * as colors from '@pxblue/colors';
-import { Spacer } from '@pxblue/react-components';
+import * as colors from '@brightlayer-ui/colors';
+import { Spacer } from '@brightlayer-ui/react-components';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

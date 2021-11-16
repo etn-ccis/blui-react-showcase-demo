@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { EmptyStateExample } from '../../components/px-blue/data-display/EmptyState';
+import { EmptyStateExample } from '../../components/brightlayer-ui/data-display/EmptyState';
 
 describe('Empty state example', () => {
     afterEach(cleanup);

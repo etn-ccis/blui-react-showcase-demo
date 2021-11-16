@@ -7,7 +7,7 @@ import useTheme from '@material-ui/core/styles/useTheme';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { Spacer, UserMenu } from '@pxblue/react-components';
+import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
 import Email from '@material-ui/icons/Email';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import Pets from '@material-ui/icons/Pets';
@@ -15,7 +15,7 @@ import Settings from '@material-ui/icons/Settings';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
-import * as colors from '@pxblue/colors';
+import * as colors from '@brightlayer-ui/colors';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -78,7 +78,7 @@ export const UserMenuExample: React.FC = () => {
                         Basic Usage
                     </Typography>
                     <UserMenu
-                        avatar={<Avatar>PX</Avatar>}
+                        avatar={<Avatar>UI</Avatar>}
                         menuGroups={[
                             {
                                 items: defaultMenuGroup,
@@ -93,7 +93,7 @@ export const UserMenuExample: React.FC = () => {
                         w/ Custom Colors
                     </Typography>
                     <UserMenu
-                        avatar={<Avatar classes={{ root: classes.customAvatar }}>PX</Avatar>}
+                        avatar={<Avatar classes={{ root: classes.customAvatar }}>UI</Avatar>}
                         menuGroups={[
                             {
                                 items: defaultMenuGroup,
@@ -132,7 +132,7 @@ export const UserMenuExample: React.FC = () => {
                         w/ a Menu Header
                     </Typography>
                     <UserMenu
-                        avatar={<Avatar>PX</Avatar>}
+                        avatar={<Avatar>UI</Avatar>}
                         menuGroups={[
                             {
                                 items: defaultMenuGroup,

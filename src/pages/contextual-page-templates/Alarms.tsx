@@ -2,11 +2,11 @@ import React from 'react';
 import useTheme from '@material-ui/core/styles/useTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { InfoListItem, ListItemTag } from '@pxblue/react-components';
+import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
 import Card from '@material-ui/core/Card';
 import Notifications from '@material-ui/icons/Notifications';
 import NotificationsActive from '@material-ui/icons/NotificationsActive';
-import * as colors from '@pxblue/colors';
+import * as colors from '@brightlayer-ui/colors';
 import { usePageTitle } from '../../hooks/usePageTitle';
 
 const useStyles = makeStyles(() =>

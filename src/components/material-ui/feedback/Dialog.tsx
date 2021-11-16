@@ -76,7 +76,7 @@ export const DialogExample: React.FC = () => {
                 Open Dialog
             </Button>
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>{'Is PX Blue Your Favorite Design System?'}</DialogTitle>
+                <DialogTitle>{'Is Brightlayer UI Your Favorite Design System?'}</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
                         We assume this is rhetorical, but we wanted to ask anyway. The disagree button is disabled as a
@@ -102,7 +102,7 @@ export const DialogExample: React.FC = () => {
                             <Close />
                         </IconButton>
                         <Typography variant="h6" className={classes.title}>
-                            Select Your Favorite PX Blue Component
+                            Select Your Favorite Brightlayer UI Component
                         </Typography>
                         <Button autoFocus color="inherit" onClick={handleFullDialogClose}>
                             Save

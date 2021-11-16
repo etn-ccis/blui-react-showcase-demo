@@ -7,7 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import useTheme from '@material-ui/core/styles/useTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { InfoListItem } from '@pxblue/react-components';
+import { InfoListItem } from '@brightlayer-ui/react-components';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Business from '@material-ui/icons/Business';
 import Email from '@material-ui/icons/Email';

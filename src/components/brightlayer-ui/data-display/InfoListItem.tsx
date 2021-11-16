@@ -1,8 +1,8 @@
 import React from 'react';
-import { ChannelValue, InfoListItem } from '@pxblue/react-components';
-import * as colors from '@pxblue/colors';
+import { ChannelValue, InfoListItem } from '@brightlayer-ui/react-components';
+import * as colors from '@brightlayer-ui/colors';
 import { Alarm } from '@material-ui/icons';
-import { Device, GradeA, Leaf, Temp } from '@pxblue/icons-mui';
+import { Device, GradeA, Leaf, Temp } from '@brightlayer-ui/icons-mui';
 import { AppStore } from '../../../__types__';
 import { useSelector } from 'react-redux';
 

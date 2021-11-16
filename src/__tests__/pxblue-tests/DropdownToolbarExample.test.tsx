@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { DropdownToolbarExample } from '../../components/px-blue/surfaces/DropdownToolbar';
+import { DropdownToolbarExample } from '../../components/brightlayer-ui/surfaces/DropdownToolbar';
 
 describe('App bar example', () => {
     afterEach(cleanup);

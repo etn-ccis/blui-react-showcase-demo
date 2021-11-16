@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { SpacerExample } from '../../components/px-blue/surfaces/Spacer';
+import { SpacerExample } from '../../components/brightlayer-ui/surfaces/Spacer';
 
 describe('Spacer example', () => {
     afterEach(cleanup);

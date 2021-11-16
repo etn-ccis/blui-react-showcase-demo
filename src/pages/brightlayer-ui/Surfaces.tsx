@@ -3,20 +3,20 @@ import {
     ComponentExample,
     DropdownToolbarExample,
     ExampleCardList,
-    PXBAppBarExample,
+    BLUIAppBarExample,
     ScoreCardExample,
     SpacerExample,
 } from '../../components';
 import { usePageTitle } from '../../hooks/usePageTitle';
 
-export const PXBSurfaces: React.FC = () => {
+export const BLUISurfaces: React.FC = () => {
     const examples: ComponentExample[] = [
-        { label: 'App Bar', component: <PXBAppBarExample /> },
+        { label: 'App Bar', component: <BLUIAppBarExample /> },
         { label: 'Dropdown Toolbar', component: <DropdownToolbarExample /> },
         { label: 'Score Card', component: <ScoreCardExample /> },
         { label: 'Spacer', component: <SpacerExample /> },
     ];
-    usePageTitle('PX Blue Surfaces');
+    usePageTitle('Brightlayer UI Surfaces');
 
     return <ExampleCardList examples={examples} />;
 };

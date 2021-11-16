@@ -15,10 +15,10 @@ import InvertColors from '@material-ui/icons/InvertColors';
 import SwapHoriz from '@material-ui/icons/SwapHoriz';
 import SendIcon from '@material-ui/icons/Send';
 import React, { useCallback } from 'react';
-import { Spacer, UserMenu } from '@pxblue/react-components';
 import clsx from 'clsx';
 import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';
 import { useDispatch } from 'react-redux';
+import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
 
 const useStyles = makeStyles(() =>
     createStyles({

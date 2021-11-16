@@ -5,7 +5,7 @@ import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import useTheme from '@material-ui/core/styles/useTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { PxblueSmall } from '@pxblue/icons-mui';
+import { PxblueSmall } from '@brightlayer-ui/icons-mui';
 import BettyWhite from '../../../assets/betty_white.jpeg';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -48,7 +48,7 @@ export const AvatarExample: React.FC = () => {
                         <Typography variant={'body2'} className={classes.label}>
                             Letter
                         </Typography>
-                        <Avatar>PX</Avatar>
+                        <Avatar>UI</Avatar>
                     </div>
                     <div className={classes.avatarContainer}>
                         <Typography variant={'body2'} className={classes.label}>
@@ -75,7 +75,7 @@ export const AvatarExample: React.FC = () => {
                         <Typography variant={'body2'} className={classes.label}>
                             Letter
                         </Typography>
-                        <Avatar variant={'rounded'}>PX</Avatar>
+                        <Avatar variant={'rounded'}>UI</Avatar>
                     </div>
                     <div className={classes.avatarContainer}>
                         <Typography variant={'body2'} className={classes.label}>
@@ -102,7 +102,7 @@ export const AvatarExample: React.FC = () => {
                         <Typography variant={'body2'} className={classes.label}>
                             Letter
                         </Typography>
-                        <Avatar variant={'square'}>PX</Avatar>
+                        <Avatar variant={'square'}>UI</Avatar>
                     </div>
                     <div className={classes.avatarContainer}>
                         <Typography variant={'body2'} className={classes.label}>

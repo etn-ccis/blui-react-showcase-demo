@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { UserMenuExample } from '../../components/px-blue/data-display/UserMenu';
+import { UserMenuExample } from '../../components/brightlayer-ui/data-display/UserMenu';
 
 describe('User menu example', () => {
     afterEach(cleanup);

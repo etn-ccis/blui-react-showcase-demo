@@ -5,12 +5,12 @@ import useTheme from '@material-ui/core/styles/useTheme';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import createStyles from '@material-ui/core/styles/createStyles';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { DropdownToolbar, InfoListItem } from '@pxblue/react-components';
+import { DropdownToolbar, InfoListItem } from '@brightlayer-ui/react-components';
 import Apartment from '@material-ui/icons/Apartment';
 import Business from '@material-ui/icons/Business';
 import House from '@material-ui/icons/House';
 import MenuIcon from '@material-ui/icons/Menu';
-import * as colors from '@pxblue/colors';
+import * as colors from '@brightlayer-ui/colors';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
