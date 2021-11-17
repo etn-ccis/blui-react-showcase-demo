@@ -1,38 +1,28 @@
-import React, { useState, useCallback, ChangeEvent } from 'react';
-import top from '../topology_40.png';
-import { Gavel, Help, List as ListIcon, Menu, NotificationsActive, Public, Settings } from '@material-ui/icons';
-import { Divider, MenuItem, Select, useMediaQuery, makeStyles, Typography } from '@material-ui/core';
-import { Device } from '@pxblue/icons-mui';
+import React, { useState, useCallback, useEffect } from 'react';
+import Typography from '@material-ui/core/Typography';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useTheme from '@material-ui/core/styles/useTheme';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Menu from '@material-ui/icons/Menu';
 import EatonFooterLogoLight from '../EatonLogoLight.png';
 import EatonFooterLogoDark from '../EatonLogoDark.png';
-import { useHistory } from 'react-router-dom';
-import { useTheme } from '@material-ui/core/styles';
-import * as Colors from '@pxblue/colors';
+import * as Colors from '@brightlayer-ui/colors';
+import { useHistory, useLocation } from 'react-router-dom';
 import {
-    Spacer,
     Drawer,
     DrawerBody,
     DrawerNavGroup,
     DrawerFooter,
     DrawerHeader,
-    DrawerSubheader,
-} from '@pxblue/react-components';
+    NavItem,
+} from '@brightlayer-ui/react-components';
 import clsx from 'clsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { AppStore } from '../__types__';
 import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
+import { SimpleNavItem, pageDefinitions } from './navigation';
 
-export const titleList = [
-    'Overview',
-    'Timeline',
-    'Locations',
-    'Devices',
-    'Settings',
-    'Legal',
-    'Help',
-    'Recent Locations',
-    'All Facilities',
-];
+const top = require('../assets/topology_40.png').default;
 
 const useStyles = makeStyles({
     iconFlip: {
@@ -48,38 +38,56 @@ export const NavigationDrawer: React.FC = () => {
     const theme = useTheme();
     const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
     const history = useHistory();
+    const location = useLocation();
+    const [activeRoute, setActiveRoute] = useState(location.pathname);
     const xsDown = useMediaQuery(theme.breakpoints.down('xs'));
-
-    const [location, setLocation] = useState(0);
-    const [route, setRoute] = useState(0);
-
     const rtl = direction === 'rtl';
-    const locations = ['All Locations', 'Gary Steelworks', 'Semaine Prochaine'];
 
-    const navigate = useCallback(
-        (index) => {
-            const newRoute = titleList[index];
-            setRoute(index);
-            history.push(`${newRoute.toLowerCase().replace(' ', '-')}`);
-        },
-        [history, setRoute]
-    );
+    const createNavItems = useCallback((navData: SimpleNavItem[], parentUrl: string, depth: number): NavItem[] => {
+        const convertedItems: NavItem[] = [];
+        for (let i = 0; i < navData.length; i++) {
+            const item = navData[i];
+            if (item.hidden) {
+                continue;
+            }
+            const fullURL = `${parentUrl}${item.url || ''}`;
+            convertedItems.push({
+                title: item.title,
+                subtitle: item.subtitle,
+                icon: depth === 0 ? item.icon : undefined,
+                itemID: fullURL,
+                onClick: item.component
+                    ? (): void => {
+                          history.push(fullURL);
+                      }
+                    : undefined,
+                items: item.pages ? createNavItems(item.pages, `${parentUrl}${item.url || ''}`, depth + 1) : undefined,
+            });
+        }
+        return convertedItems;
+    }, []);
+
+    useEffect(() => {
+        setActiveRoute(location.pathname);
+    }, [location.pathname]);
+
+    const [menuItems] = useState(createNavItems(pageDefinitions, '', 0));
 
     return (
         <Drawer
             open={open}
-            width={300}
+            width={332}
             ModalProps={{
                 onBackdropClick: (): void => {
                     dispatch({ type: CLOSE_DRAWER });
                 },
             }}
-            activeItem={titleList[route]}
+            activeItem={activeRoute}
+            activeItemBackgroundShape={'round'}
             variant={xsDown ? 'temporary' : 'persistent'}
         >
             <DrawerHeader
                 title={'Showcase App'}
-                subtitle={'Components in Context'}
                 backgroundColor={Colors.blue[500]}
                 fontColor={Colors.white[50]}
                 backgroundImage={top}
@@ -88,117 +96,8 @@ export const NavigationDrawer: React.FC = () => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
             />
-            <DrawerSubheader>
-                <Select
-                    value={location}
-                    onChange={(e: ChangeEvent<{ value: unknown }>): void => {
-                        setLocation(e.target.value as number);
-                    }}
-                    style={{ height: theme.spacing(7), padding: theme.spacing(2), width: '100%' }}
-                >
-                    {locations.map((loc, ind) => (
-                        <MenuItem key={`location${ind}`} value={ind}>
-                            {loc}
-                        </MenuItem>
-                    ))}
-                </Select>
-            </DrawerSubheader>
             <DrawerBody>
-                <DrawerNavGroup
-                    items={[
-                        {
-                            title: titleList[0],
-                            itemID: titleList[0],
-                            icon: <ListIcon className={clsx({ [classes.iconFlip]: rtl })} />,
-                            onClick: (): void => {
-                                navigate(0);
-                                if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                            },
-                        },
-                        {
-                            title: titleList[1],
-                            itemID: titleList[1],
-                            subtitle: '2 Alarms',
-                            icon: <NotificationsActive className={clsx({ [classes.iconFlip]: false })} />,
-                            onClick: (): void => {
-                                navigate(1);
-                                if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                            },
-                        },
-                        {
-                            title: titleList[2],
-                            itemID: titleList[2],
-                            icon: <Public className={clsx({ [classes.iconFlip]: false })} />,
-                            onClick: (): void => navigate(2),
-                            items: [
-                                {
-                                    title: titleList[7],
-                                    itemID: titleList[7],
-                                    onClick: (): void => {
-                                        navigate(7);
-                                        if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                                    },
-                                },
-                                {
-                                    title: titleList[8],
-                                    itemID: titleList[8],
-                                    onClick: (): void => {
-                                        navigate(8);
-                                        if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                                    },
-                                },
-                            ],
-                        },
-                        {
-                            title: titleList[3],
-                            itemID: titleList[3],
-                            icon: <Device className={clsx({ [classes.iconFlip]: false })} />,
-                            onClick: (): void => {
-                                navigate(3);
-                                if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                            },
-                        },
-                    ]}
-                />
-                <Spacer />
-                <Divider />
-                <DrawerNavGroup
-                    titleContent={
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 600 }}>
-                            <div>Account Configuration</div>
-                            <div>v1.0.3</div>
-                        </div>
-                    }
-                    items={[
-                        {
-                            title: titleList[4],
-                            itemID: titleList[4],
-                            icon: <Settings className={clsx({ [classes.iconFlip]: false })} />,
-                            onClick: (): void => {
-                                navigate(4);
-                                if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                            },
-                        },
-                        {
-                            title: titleList[5],
-                            itemID: titleList[5],
-                            icon: <Gavel className={clsx({ [classes.iconFlip]: false })} />,
-                            onClick: (): void => {
-                                navigate(5);
-                                if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                            },
-                        },
-                        {
-                            title: titleList[6],
-                            itemID: titleList[6],
-                            icon: <Help className={clsx({ [classes.iconFlip]: rtl })} />,
-                            onClick: (): void => {
-                                navigate(6);
-                                if (xsDown) dispatch({ type: CLOSE_DRAWER });
-                            },
-                        },
-                    ]}
-                />
+                <DrawerNavGroup items={menuItems} />
             </DrawerBody>
             <DrawerFooter>
                 <div

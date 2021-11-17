@@ -1,4 +1,4 @@
-const PREFIX = '@@pxblue/';
+const PREFIX = '@@brightlayer-ui/';
 
 // State of the Navigation Drawer
 export const OPEN_DRAWER = `${PREFIX}OPEN_DRAWER`;
@@ -14,3 +14,6 @@ export const TOGGLE_THEME = `${PREFIX}TOGGLE_THEME`;
 export const DIR_LTR = `${PREFIX}DIR_LTR`;
 export const DIR_RTL = `${PREFIX}DIR_RTL`;
 export const TOGGLE_DIR = `${PREFIX}TOGGLE_DIR`;
+
+// Page Title
+export const CHANGE_PAGE_TITLE = `${PREFIX}CHANGE_PAGE_TITLE`;

@@ -1,16 +1,12 @@
 import React from 'react';
-
-import { Add, Remove, List as ListIcon, Settings, MoreVert } from '@material-ui/icons';
-import Trend from '@material-ui/icons/TrendingUp';
-import Timer from '@material-ui/icons/Timer';
-import DevicesIcon from '@material-ui/icons/Devices';
-import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
-import { List, Card, Button } from '@material-ui/core';
-
-import * as Colors from '@pxblue/colors';
-import { Pie, Battery } from '@pxblue/react-progress-icons';
-import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@pxblue/icons-mui';
-
+import * as Colors from '@brightlayer-ui/colors';
+import List from '@material-ui/core/List';
+import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useTheme from '@material-ui/core/styles/useTheme';
+import createStyles from '@material-ui/core/styles/createStyles';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 import {
     Hero,
     HeroBanner,
@@ -20,21 +16,29 @@ import {
     ScoreCard,
     DrawerNavGroup,
     ListItemTag,
-} from '@pxblue/react-components';
-
-import top from './topology_40.png';
+} from '@brightlayer-ui/react-components';
+import Add from '@material-ui/icons/Add';
+import Remove from '@material-ui/icons/Remove';
+import ListIcon from '@material-ui/icons/List';
+import Settings from '@material-ui/icons/Settings';
+import MoreVert from '@material-ui/icons/MoreVert';
+import Timer from '@material-ui/icons/Timer';
+import TrendingUp from '@material-ui/icons/TrendingUp';
+import DevicesIcon from '@material-ui/icons/Devices';
+import { Pie, Battery } from '@brightlayer-ui/react-progress-icons';
+import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@brightlayer-ui/icons-mui';
 import clsx from 'clsx';
-import { MaterialSwitchExample } from './components/MaterialSwitchExample';
-import { MaterialTextFieldExample } from './components/MaterialTextFieldExample';
+
+import top from '../../assets/topology_40.png';
+import { usePageTitle } from '../../hooks/usePageTitle';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
         scorecard: {
             flex: '1 1 0px',
-            maxWidth: 400,
-            '&:not(:first-child)': {
-                marginLeft: theme.spacing(2),
-            },
+            width: '100%',
+            maxWidth: '416px',
+            minWidth: '350px',
         },
         listTag: {
             marginRight: theme.spacing(1),
@@ -45,14 +49,25 @@ const useStyles = makeStyles((theme) =>
     })
 );
 
-export const App: React.FC = () => {
+export const Dashboard: React.FC = () => {
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
     const classes = useStyles();
+    const mdUp = useMediaQuery(theme.breakpoints.up('md'));
+    usePageTitle('Dashboard');
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ padding: theme.spacing(), flex: 1 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div
+                style={{
+                    padding: theme.spacing(2),
+                    flex: 1,
+                    width: '80%',
+                    maxWidth: 1000,
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}
+            >
                 <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                     <ScoreCard
                         headerColor={Colors.red[500]}
@@ -97,6 +112,10 @@ export const App: React.FC = () => {
                         badgeOffset={0}
                         actionRow={<InfoListItem dense chevron title={'More'} hidePadding />}
                         classes={{ root: classes.scorecard }}
+                        style={{
+                            marginRight: mdUp ? theme.spacing(2) : 0,
+                            marginBottom: theme.spacing(2),
+                        }}
                     >
                         <List style={{ padding: '16px 0' }}>
                             <InfoListItem
@@ -153,6 +172,7 @@ export const App: React.FC = () => {
                         badgeOffset={-52}
                         actionRow={<InfoListItem dense chevron title={'View Location'} hidePadding />}
                         classes={{ root: classes.scorecard }}
+                        style={{ marginBottom: theme.spacing(2) }}
                     >
                         <List style={{ padding: '16px 0' }}>
                             <InfoListItem
@@ -179,7 +199,7 @@ export const App: React.FC = () => {
                     </ScoreCard>
                 </div>
 
-                <Card style={{ marginTop: theme.spacing(1) }}>
+                <Card style={{ maxWidth: 416 * 2 + theme.spacing(2) }}>
                     <List style={{ padding: 0 }}>
                         <HeroBanner divider>
                             <Hero
@@ -213,7 +233,7 @@ export const App: React.FC = () => {
                                     value={65}
                                     units={'%'}
                                     icon={
-                                        <Trend
+                                        <TrendingUp
                                             htmlColor={Colors.red[500]}
                                             fontSize={'inherit'}
                                             className={clsx({ [classes.iconFlip]: rtl })}
@@ -330,7 +350,7 @@ export const App: React.FC = () => {
                                     <ChannelValue
                                         fontSize={16}
                                         icon={
-                                            <Trend
+                                            <TrendingUp
                                                 htmlColor={Colors.red[500]}
                                                 className={clsx({ [classes.iconFlip]: rtl })}
                                             />
@@ -343,7 +363,13 @@ export const App: React.FC = () => {
                         />
                     </List>
                 </Card>
-                <Card style={{ marginTop: theme.spacing(1), padding: theme.spacing(3) }}>
+                <Card
+                    style={{
+                        marginTop: theme.spacing(2),
+                        padding: theme.spacing(3),
+                        maxWidth: 416 * 2 + theme.spacing(2),
+                    }}
+                >
                     <EmptyState
                         icon={<DevicesIcon fontSize={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
                         title={'No Devices'}
@@ -359,7 +385,7 @@ export const App: React.FC = () => {
                         }
                     />
                 </Card>
-                <Card style={{ marginTop: theme.spacing(1) }}>
+                <Card style={{ marginTop: theme.spacing(2), maxWidth: 416 * 2 + theme.spacing(2) }}>
                     <DrawerNavGroup
                         title={'Resources'}
                         items={[
@@ -425,8 +451,6 @@ export const App: React.FC = () => {
                         ]}
                     />
                 </Card>
-                <MaterialSwitchExample />
-                <MaterialTextFieldExample />
             </div>
         </div>
     );

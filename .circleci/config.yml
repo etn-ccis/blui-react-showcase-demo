@@ -24,13 +24,17 @@ jobs:
                   command: |
                       yarn prettier:check
             - run:
+                  name: Set Max Memory
+                  command: |
+                      NODE_OPTIONS=--max_old_space_size=6144
+            - run:
                   name: Lint
                   command: |
                       yarn lint
             - run:
                   name: Unit Test
                   command: |
-                      yarn test --coverage --watchAll=false
+                      yarn test --maxWorkers=2 --coverage --watchAll=false
             - run:
                   name: Build Demo
                   command: |
@@ -39,6 +43,11 @@ jobs:
                 root: .
                 paths:
                     - coverage
+            - run:
+                  name: Memory Usage
+                  command: |
+                      cat /sys/fs/cgroup/memory/memory.max_usage_in_bytes
+                  when: always
 
     coverage_report:
         working_directory: ~/react-showcase-demo
@@ -54,7 +63,7 @@ jobs:
 
 workflows:
     version: 2
-    react_library:
+    react_showcase:
         jobs:
             - build_demo
             - coverage_report:
