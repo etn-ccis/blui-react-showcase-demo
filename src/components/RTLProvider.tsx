@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import { createTheme } from '@material-ui/core/styles';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
 import jssPreset from '@material-ui/styles/jssPreset';
 import StylesProvider from '@material-ui/styles/StylesProvider';
@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
 
 // Configure JSS
+// @ts-ignore
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 export const RTLThemeProvider: React.FC = (props) => {
@@ -21,9 +22,10 @@ export const RTLThemeProvider: React.FC = (props) => {
     }, [dir]);
 
     return (
+        // @ts-ignore
         <StylesProvider jss={jss}>
             <ThemeProvider
-                theme={createMuiTheme(
+                theme={createTheme(
                     Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
                         direction: dir,
                     })

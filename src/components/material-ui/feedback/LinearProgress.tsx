@@ -1,6 +1,6 @@
 import React from 'react';
 import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import { Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import LinearProgress, { LinearProgressProps } from '@material-ui/core/LinearProgress';
 import Box from '@material-ui/core/Box';
