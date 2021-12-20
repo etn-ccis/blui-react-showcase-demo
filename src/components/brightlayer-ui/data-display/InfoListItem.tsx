@@ -23,10 +23,7 @@ export const InfoListItemExample: React.FC = () => {
             />
             <InfoListItem
                 title={'With an array for subtitle'}
-                subtitle={[
-                    <ChannelValue value={'50'} units={'°C'} key="cv1" />,
-                    <ChannelValue value={'55'} units={'°C'} key="cv2" />,
-                ]}
+                subtitle={['Item 1', 'Item 2', 'Item 3']}
                 subtitleSeparator={'·'}
                 icon={<Temp />}
             />
