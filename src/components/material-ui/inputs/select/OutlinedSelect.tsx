@@ -51,7 +51,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} className={classes.formControl}>
                         <InputLabel>Label</InputLabel>
-                        <Select value={age} onChange={handleChange}>
+                        <Select value={age} onChange={handleChange} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -68,7 +68,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} disabled className={classes.formControl}>
                         <InputLabel>Label</InputLabel>
-                        <Select value={age}>
+                        <Select value={age} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -85,7 +85,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} className={classes.formControl} error>
                         <InputLabel>Label</InputLabel>
-                        <Select value={age} onChange={handleChange}>
+                        <Select value={age} onChange={handleChange} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -107,7 +107,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} className={classes.formControl} color="primary">
                         <InputLabel>Label</InputLabel>
-                        <Select value={age} onChange={handleChange}>
+                        <Select value={age} onChange={handleChange} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -124,7 +124,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} disabled className={classes.formControl} color="primary">
                         <InputLabel>Label</InputLabel>
-                        <Select value={age}>
+                        <Select value={age} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -141,7 +141,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} className={classes.formControl} error color="primary">
                         <InputLabel>Label</InputLabel>
-                        <Select value={age} onChange={handleChange}>
+                        <Select value={age} onChange={handleChange} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -163,7 +163,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} className={classes.formControl} color="secondary">
                         <InputLabel>Label</InputLabel>
-                        <Select value={age} onChange={handleChange}>
+                        <Select value={age} onChange={handleChange} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -180,7 +180,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} disabled className={classes.formControl} color="secondary">
                         <InputLabel>Label</InputLabel>
-                        <Select value={age}>
+                        <Select value={age} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
@@ -197,7 +197,7 @@ export const OutlinedSelectExample: React.FC = () => {
                     </Typography>
                     <FormControl variant={'outlined'} className={classes.formControl} error color="secondary">
                         <InputLabel>Label</InputLabel>
-                        <Select value={age} onChange={handleChange}>
+                        <Select value={age} onChange={handleChange} label={'Label'}>
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
