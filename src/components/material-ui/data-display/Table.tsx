@@ -312,7 +312,7 @@ export const TableExample: React.FC = () => {
                                                 inputProps={{ 'aria-labelledby': labelId }}
                                             />
                                         </TableCell>
-                                        <TableCell component="th" id={labelId} scope="row" padding="none">
+                                        <TableCell component="th" id={labelId} scope="row">
                                             {row.name}
                                         </TableCell>
                                         <TableCell align="right">{row.calories}</TableCell>
