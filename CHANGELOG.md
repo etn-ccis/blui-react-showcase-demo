@@ -1,11 +1,5 @@
 # Changelog
 
-## v2.0.1
-
-### Changed
-
--   Updated `<TableCell>` padding for table header cells ([#34](https://github.com/brightlayer-ui/react-themes/issues/34)).
-
 ## v2.0.0
 
 ### Changed
