@@ -1,12 +1,12 @@
 import React from 'react';
 import * as Colors from '@brightlayer-ui/colors';
-import List from '@material-ui/core/List';
-import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import List from '@mui/material/List';
+import Card from '@mui/material/Card';
+import Button from '@mui/material/Button';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import {
     Hero,
     HeroBanner,
@@ -17,14 +17,14 @@ import {
     DrawerNavGroup,
     ListItemTag,
 } from '@brightlayer-ui/react-components';
-import Add from '@material-ui/icons/Add';
-import Remove from '@material-ui/icons/Remove';
-import ListIcon from '@material-ui/icons/List';
-import Settings from '@material-ui/icons/Settings';
-import MoreVert from '@material-ui/icons/MoreVert';
-import Timer from '@material-ui/icons/Timer';
-import TrendingUp from '@material-ui/icons/TrendingUp';
-import DevicesIcon from '@material-ui/icons/Devices';
+import Add from '@mui/icons-material/Add';
+import Remove from '@mui/icons-material/Remove';
+import ListIcon from '@mui/icons-material/List';
+import Settings from '@mui/icons-material/Settings';
+import MoreVert from '@mui/icons-material/MoreVert';
+import Timer from '@mui/icons-material/Timer';
+import TrendingUp from '@mui/icons-material/TrendingUp';
+import DevicesIcon from '@mui/icons-material/Devices';
 import { Pie, Battery } from '@brightlayer-ui/react-progress-icons';
 import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@brightlayer-ui/icons-mui';
 import clsx from 'clsx';
@@ -338,7 +338,7 @@ export const Dashboard: React.FC = () => {
                                         backgroundColor={theme.palette.background.default}
                                         label={'active'}
                                         fontColor={
-                                            theme.palette.type === 'light' ? Colors.blue[700] : Colors.green['500']
+                                            theme.palette.mode === 'light' ? Colors.blue[700] : Colors.green['500']
                                         }
                                         classes={{ root: classes.listTag }}
                                     />

@@ -1,9 +1,8 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import * as colors from '@brightlayer-ui/colors';
 import { Spacer } from '@brightlayer-ui/react-components';
 

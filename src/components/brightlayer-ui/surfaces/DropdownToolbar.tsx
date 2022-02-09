@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Menu from '@material-ui/core/Menu';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import AppBar from '@mui/material/AppBar';
+import Menu from '@mui/material/Menu';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import { DropdownToolbar, InfoListItem } from '@brightlayer-ui/react-components';
-import Apartment from '@material-ui/icons/Apartment';
-import Business from '@material-ui/icons/Business';
-import House from '@material-ui/icons/House';
-import MenuIcon from '@material-ui/icons/Menu';
+import Apartment from '@mui/icons-material/Apartment';
+import Business from '@mui/icons-material/Business';
+import House from '@mui/icons-material/House';
+import MenuIcon from '@mui/icons-material/Menu';
 import * as colors from '@brightlayer-ui/colors';
 
 const useStyles = makeStyles((theme: Theme) =>

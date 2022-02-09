@@ -1,13 +1,12 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Menu from '@material-ui/icons/Menu';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Menu from '@mui/icons-material/Menu';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -28,7 +27,7 @@ export const AppBarExample: React.FC = () => {
         <div>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu" size="large">
                         <Menu />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
@@ -39,7 +38,7 @@ export const AppBarExample: React.FC = () => {
 
             <AppBar position="static" color="primary" className={classes.topMargin}>
                 <Toolbar>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu" size="large">
                         <Menu />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
@@ -50,7 +49,7 @@ export const AppBarExample: React.FC = () => {
 
             <AppBar position="static" color="secondary" className={classes.topMargin}>
                 <Toolbar>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu" size="large">
                         <Menu />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
@@ -61,7 +60,7 @@ export const AppBarExample: React.FC = () => {
 
             <AppBar position="static" color="transparent" className={classes.topMargin}>
                 <Toolbar>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu" size="large">
                         <Menu />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>

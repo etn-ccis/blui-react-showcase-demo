@@ -1,13 +1,12 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import Snackbar from '@material-ui/core/Snackbar';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Close from '@material-ui/icons/Close';
-import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import Snackbar from '@mui/material/Snackbar';
+import Close from '@mui/icons-material/Close';
+import MuiAlert, { AlertProps } from '@mui/material/Alert';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

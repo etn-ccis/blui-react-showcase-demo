@@ -1,8 +1,7 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
 import MuiPickersUtilsProvider from '@material-ui/pickers/MuiPickersUtilsProvider';

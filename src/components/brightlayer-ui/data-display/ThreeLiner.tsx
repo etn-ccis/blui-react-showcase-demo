@@ -1,9 +1,9 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import { ChannelValue, ThreeLiner } from '@brightlayer-ui/react-components';
-import TrendingUp from '@material-ui/icons/TrendingUp';
+import TrendingUp from '@mui/icons-material/TrendingUp';
 import * as colors from '@brightlayer-ui/colors';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';

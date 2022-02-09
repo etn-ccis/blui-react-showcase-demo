@@ -1,13 +1,12 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import AppBar from '@material-ui/core/AppBar';
-import Tab from '@material-ui/core/Tab';
-import Tabs from '@material-ui/core/Tabs';
-import Box from '@material-ui/core/Box';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import AppBar from '@mui/material/AppBar';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import Box from '@mui/material/Box';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
