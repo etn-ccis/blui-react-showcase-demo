@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const Transition = React.forwardRef(
-    (props: TransitionProps & { children?: React.ReactElement }, ref: React.Ref<unknown>) => (
+    (props: TransitionProps & { children: React.ReactElement<any, any> }, ref: React.Ref<unknown>) => (
         <Slide direction="up" ref={ref} {...props} />
     )
 );
@@ -102,7 +102,8 @@ export const DialogExample: React.FC = () => {
                             color="inherit"
                             onClick={handleFullDialogClose}
                             aria-label="close"
-                            size="large">
+                            size="large"
+                        >
                             <Close />
                         </IconButton>
                         <Typography variant="h6" className={classes.title}>

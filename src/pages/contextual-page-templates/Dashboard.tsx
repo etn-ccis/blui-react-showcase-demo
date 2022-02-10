@@ -4,7 +4,7 @@ import List from '@mui/material/List';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, Theme } from '@mui/material/styles';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
 import {
@@ -32,7 +32,7 @@ import clsx from 'clsx';
 import top from '../../assets/topology_40.png';
 import { usePageTitle } from '../../hooks/usePageTitle';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         scorecard: {
             flex: '1 1 0px',
@@ -199,7 +199,7 @@ export const Dashboard: React.FC = () => {
                     </ScoreCard>
                 </div>
 
-                <Card style={{ maxWidth: 416 * 2 + theme.spacing(2) }}>
+                <Card style={{ maxWidth: `${416 * 2 + parseInt(theme.spacing(2))}px` }}>
                     <List style={{ padding: 0 }}>
                         <HeroBanner divider>
                             <Hero
@@ -367,7 +367,7 @@ export const Dashboard: React.FC = () => {
                     style={{
                         marginTop: theme.spacing(2),
                         padding: theme.spacing(3),
-                        maxWidth: 416 * 2 + theme.spacing(2),
+                        maxWidth: `${416 * 2 + parseInt(theme.spacing(2))}px`,
                     }}
                 >
                     <EmptyState
@@ -385,7 +385,7 @@ export const Dashboard: React.FC = () => {
                         }
                     />
                 </Card>
-                <Card style={{ marginTop: theme.spacing(2), maxWidth: 416 * 2 + theme.spacing(2) }}>
+                <Card style={{ marginTop: theme.spacing(2), maxWidth: `${416 * 2 + parseInt(theme.spacing(2))}px` }}>
                     <DrawerNavGroup
                         title={'Resources'}
                         items={[

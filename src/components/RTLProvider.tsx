@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { adaptV4Theme, createTheme } from '@mui/material/styles';
+import { adaptV4Theme, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
 import ThemeProvider from '@mui/styles/ThemeProvider';
@@ -25,9 +25,11 @@ export const RTLThemeProvider: React.FC = (props) => {
             <StyledEngineProvider injectFirst>
                 <ThemeProvider
                     theme={createTheme(
-                        adaptV4Theme(Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
-                            direction: dir,
-                        }))
+                        adaptV4Theme(
+                            Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
+                                direction: dir,
+                            })
+                        )
                     )}
                 >
                     {props.children}
