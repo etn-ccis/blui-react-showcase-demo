@@ -37,18 +37,19 @@ export const SnackbarExample: React.FC = () => {
         setOpen(true);
     };
 
-    const handleClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleClose = (event?: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
 
         setOpen(false);
     };
+
     const handleErrorClick = (): void => {
         setOpenError(true);
     };
 
-    const handleErrorClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleErrorClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -59,7 +60,7 @@ export const SnackbarExample: React.FC = () => {
         setOpenWarning(true);
     };
 
-    const handleWarningClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleWarningClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -70,7 +71,7 @@ export const SnackbarExample: React.FC = () => {
         setOpenInformation(true);
     };
 
-    const handleInformationClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleInformationClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -81,7 +82,7 @@ export const SnackbarExample: React.FC = () => {
         setOpenSuccess(true);
     };
 
-    const handleSuccessClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleSuccessClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }

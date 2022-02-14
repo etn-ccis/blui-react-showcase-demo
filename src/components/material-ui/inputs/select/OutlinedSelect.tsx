@@ -3,7 +3,7 @@ import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { useTheme, Theme } from '@mui/material/styles';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
@@ -34,8 +34,8 @@ export const OutlinedSelectExample: React.FC = () => {
     const classes = useStyles(theme);
     const [age, setAge] = React.useState('');
 
-    const handleChange = (event: React.ChangeEvent<{ value: unknown }>): void => {
-        setAge(event.target.value as string);
+    const handleChange = (event: SelectChangeEvent): void => {
+        setAge(event.target.value);
     };
 
     return (

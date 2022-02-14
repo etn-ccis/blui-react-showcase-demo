@@ -50,7 +50,8 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                 onClick={(): void => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
-                size="large">
+                size="large"
+            >
                 <Menu className={clsx({ [classes.iconFlip]: false })} />
             </IconButton>
         );
@@ -70,7 +71,8 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                         onClick={(): void => {
                             dispatch({ type: TOGGLE_THEME });
                         }}
-                        size="large">
+                        size="large"
+                    >
                         <InvertColors className={clsx({ [classes.iconFlip]: false })} />
                     </IconButton>
                 </Tooltip>
@@ -81,7 +83,8 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                         onClick={(): void => {
                             dispatch({ type: TOGGLE_DIR });
                         }}
-                        size="large">
+                        size="large"
+                    >
                         <SwapHoriz className={clsx({ [classes.iconFlip]: false })} />
                     </IconButton>
                 </Tooltip>

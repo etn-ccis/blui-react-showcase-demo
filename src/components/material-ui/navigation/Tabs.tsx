@@ -46,15 +46,15 @@ export const TabsExample: React.FC = () => {
     const [fullWidthValue, setFullWidthValue] = React.useState(0);
     const [scrollableValue, setScrollableValue] = React.useState(0);
 
-    const handleStandardChange = (event: React.ChangeEvent<Record<string, unknown>>, newValue: number): void => {
+    const handleStandardChange = (event: React.SyntheticEvent, newValue: number): void => {
         setStandardValue(newValue);
     };
 
-    const handleFullWidthChange = (event: React.ChangeEvent<Record<string, unknown>>, newValue: number): void => {
+    const handleFullWidthChange = (event: React.SyntheticEvent, newValue: number): void => {
         setFullWidthValue(newValue);
     };
 
-    const handleScrollableChange = (event: React.ChangeEvent<Record<string, unknown>>, newValue: number): void => {
+    const handleScrollableChange = (event: React.SyntheticEvent, newValue: number): void => {
         setScrollableValue(newValue);
     };
 
