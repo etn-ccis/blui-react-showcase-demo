@@ -4,7 +4,7 @@ orbs:
 jobs:
     build_demo:
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: circleci/node:14.19.0-browsers
         steps:
             - checkout
             - restore_cache:
@@ -52,7 +52,7 @@ jobs:
     coverage_report:
         working_directory: ~/react-showcase-demo
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: circleci/node:14.19.0-browsers
         steps:
             - checkout
             - attach_workspace:
