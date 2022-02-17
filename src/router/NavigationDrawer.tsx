@@ -1,9 +1,9 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import Typography from '@material-ui/core/Typography';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import useTheme from '@material-ui/core/styles/useTheme';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Menu from '@material-ui/icons/Menu';
+import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import makeStyles from '@mui/styles/makeStyles';
+import Menu from '@mui/icons-material/Menu';
 import EatonFooterLogoLight from '../EatonLogoLight.png';
 import EatonFooterLogoDark from '../EatonLogoDark.png';
 import * as Colors from '@brightlayer-ui/colors';
@@ -40,7 +40,7 @@ export const NavigationDrawer: React.FC = () => {
     const history = useHistory();
     const location = useLocation();
     const [activeRoute, setActiveRoute] = useState(location.pathname);
-    const xsDown = useMediaQuery(theme.breakpoints.down('xs'));
+    const xsDown = useMediaQuery(theme.breakpoints.down('xl'));
     const rtl = direction === 'rtl';
 
     const createNavItems = useCallback((navData: SimpleNavItem[], parentUrl: string, depth: number): NavItem[] => {

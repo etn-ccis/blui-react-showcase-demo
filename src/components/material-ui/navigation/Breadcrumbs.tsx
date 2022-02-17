@@ -1,13 +1,12 @@
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Home from '@material-ui/icons/Home';
-import NavigateNext from '@material-ui/icons/NavigateNext';
-import Whatshot from '@material-ui/icons/Whatshot';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Home from '@mui/icons-material/Home';
+import NavigateNext from '@mui/icons-material/NavigateNext';
+import Whatshot from '@mui/icons-material/Whatshot';
 
 import React from 'react';
 

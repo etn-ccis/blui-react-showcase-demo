@@ -40,9 +40,9 @@ jobs:
                   command: |
                       yarn build
             - persist_to_workspace:
-                root: .
-                paths:
-                    - coverage
+                  root: .
+                  paths:
+                      - coverage
             - run:
                   name: Memory Usage
                   command: |
@@ -56,10 +56,10 @@ jobs:
         steps:
             - checkout
             - attach_workspace:
-                at: .
+                  at: .
             - codecov/upload:
-                file: './coverage/clover.xml'
-                token: e071b5d8-7127-4351-8acd-54f56d36a39c
+                  file: './coverage/clover.xml'
+                  token: e071b5d8-7127-4351-8acd-54f56d36a39c
 
 workflows:
     version: 2
@@ -67,9 +67,9 @@ workflows:
         jobs:
             - build_demo
             - coverage_report:
-                   requires:
-                        - build_demo
-                #    filters:
-                #         branches:
-                #             only:
-                #                 - master
+                  requires:
+                      - build_demo
+                  #    filters:
+                  #         branches:
+                  #             only:
+                  #                 - master

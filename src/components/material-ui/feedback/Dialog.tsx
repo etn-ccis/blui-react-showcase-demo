@@ -1,25 +1,24 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Divider from '@material-ui/core/Divider';
-import Toolbar from '@material-ui/core/Toolbar';
-import Slide from '@material-ui/core/Slide';
-import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import { TransitionProps } from '@material-ui/core/transitions/transition';
-import Close from '@material-ui/icons/Close';
+import { useTheme, Theme } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import Divider from '@mui/material/Divider';
+import Toolbar from '@mui/material/Toolbar';
+import Slide from '@mui/material/Slide';
+import AppBar from '@mui/material/AppBar';
+import IconButton from '@mui/material/IconButton';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import { TransitionProps } from '@mui/material/transitions/transition';
+import Close from '@mui/icons-material/Close';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -43,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const Transition = React.forwardRef(
-    (props: TransitionProps & { children?: React.ReactElement }, ref: React.Ref<unknown>) => (
+    (props: TransitionProps & { children: React.ReactElement<any, any> }, ref: React.Ref<unknown>) => (
         <Slide direction="up" ref={ref} {...props} />
     )
 );
@@ -98,7 +97,13 @@ export const DialogExample: React.FC = () => {
             <Dialog fullScreen open={fullDialogOpen} onClose={handleFullDialogClose} TransitionComponent={Transition}>
                 <AppBar className={classes.appBar} color={'primary'}>
                     <Toolbar>
-                        <IconButton edge="start" color="inherit" onClick={handleFullDialogClose} aria-label="close">
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            onClick={handleFullDialogClose}
+                            aria-label="close"
+                            size="large"
+                        >
                             <Close />
                         </IconButton>
                         <Typography variant="h6" className={classes.title}>

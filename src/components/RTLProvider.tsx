@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
+import { adaptV4Theme, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
-import ThemeProvider from '@material-ui/styles/ThemeProvider';
-import jssPreset from '@material-ui/styles/jssPreset';
-import StylesProvider from '@material-ui/styles/StylesProvider';
+import ThemeProvider from '@mui/styles/ThemeProvider';
+import jssPreset from '@mui/styles/jssPreset';
+import StylesProvider from '@mui/styles/StylesProvider';
 import * as BLUIThemes from '@brightlayer-ui/react-themes';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
@@ -22,15 +22,19 @@ export const RTLThemeProvider: React.FC = (props) => {
 
     return (
         <StylesProvider jss={jss}>
-            <ThemeProvider
-                theme={createMuiTheme(
-                    Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
-                        direction: dir,
-                    })
-                )}
-            >
-                {props.children}
-            </ThemeProvider>
+            <StyledEngineProvider injectFirst>
+                <ThemeProvider
+                    theme={createTheme(
+                        adaptV4Theme(
+                            Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
+                                direction: dir,
+                            })
+                        )
+                    )}
+                >
+                    {props.children}
+                </ThemeProvider>
+            </StyledEngineProvider>
         </StylesProvider>
     );
 };

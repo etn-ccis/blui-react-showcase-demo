@@ -1,19 +1,19 @@
-import AppBar from '@material-ui/core/AppBar';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import useTheme from '@material-ui/core/styles/useTheme';
-import Email from '@material-ui/icons/Email';
-import Menu from '@material-ui/icons/Menu';
-import Settings from '@material-ui/icons/Settings';
-import InvertColors from '@material-ui/icons/InvertColors';
-import SwapHoriz from '@material-ui/icons/SwapHoriz';
-import SendIcon from '@material-ui/icons/Send';
+import AppBar from '@mui/material/AppBar';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Email from '@mui/icons-material/Email';
+import Menu from '@mui/icons-material/Menu';
+import Settings from '@mui/icons-material/Settings';
+import InvertColors from '@mui/icons-material/InvertColors';
+import SwapHoriz from '@mui/icons-material/SwapHoriz';
+import SendIcon from '@mui/icons-material/Send';
 import React, { useCallback } from 'react';
 import clsx from 'clsx';
 import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';
@@ -50,6 +50,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                 onClick={(): void => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
+                size="large"
             >
                 <Menu className={clsx({ [classes.iconFlip]: false })} />
             </IconButton>
@@ -70,6 +71,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                         onClick={(): void => {
                             dispatch({ type: TOGGLE_THEME });
                         }}
+                        size="large"
                     >
                         <InvertColors className={clsx({ [classes.iconFlip]: false })} />
                     </IconButton>
@@ -81,6 +83,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                         onClick={(): void => {
                             dispatch({ type: TOGGLE_DIR });
                         }}
+                        size="large"
                     >
                         <SwapHoriz className={clsx({ [classes.iconFlip]: false })} />
                     </IconButton>
