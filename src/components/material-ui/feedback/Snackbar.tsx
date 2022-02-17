@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Snackbar from '@mui/material/Snackbar';
 import Close from '@mui/icons-material/Close';
-import MuiAlert, { AlertProps } from '@mui/material/Alert';
+import MuiAlert from '@mui/material/Alert';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -21,8 +21,6 @@ const useStyles = makeStyles((theme: Theme) =>
         },
     })
 );
-
-const Alert = (props: AlertProps): JSX.Element => <MuiAlert elevation={6} variant="filled" {...props} />;
 
 export const SnackbarExample: React.FC = () => {
     const theme = useTheme();
@@ -128,9 +126,9 @@ export const SnackbarExample: React.FC = () => {
                 autoHideDuration={5000}
                 onClose={handleErrorClose}
             >
-                <Alert onClose={handleErrorClose} severity="error">
-                    This is an error message!
-                </Alert>
+                <MuiAlert elevation={6} variant="filled" onClose={handleErrorClose} severity="error">
+                    This is a warning message!
+                </MuiAlert>
             </Snackbar>
 
             <Button variant="outlined" color="primary" onClick={handleWarningClick} className={classes.button}>
@@ -145,9 +143,9 @@ export const SnackbarExample: React.FC = () => {
                 autoHideDuration={5000}
                 onClose={handleWarningClose}
             >
-                <Alert onClose={handleWarningClose} severity="warning">
+                <MuiAlert onClose={handleWarningClose} severity="warning">
                     This is a warning message!
-                </Alert>
+                </MuiAlert>
             </Snackbar>
 
             <Button variant="outlined" color="primary" onClick={handleInformationClick} className={classes.button}>
@@ -162,9 +160,9 @@ export const SnackbarExample: React.FC = () => {
                 autoHideDuration={5000}
                 onClose={handleInformationClose}
             >
-                <Alert onClose={handleInformationClose} severity="info">
+                <MuiAlert onClose={handleInformationClose} severity="info">
                     This is an information message!
-                </Alert>
+                </MuiAlert>
             </Snackbar>
 
             <Button variant="outlined" color="primary" onClick={handleSuccessClick} className={classes.button}>
@@ -179,9 +177,9 @@ export const SnackbarExample: React.FC = () => {
                 autoHideDuration={5000}
                 onClose={handleSuccessClose}
             >
-                <Alert onClose={handleSuccessClose} severity="success">
+                <MuiAlert onClose={handleSuccessClose} severity="success">
                     This is a success message!
-                </Alert>
+                </MuiAlert>
             </Snackbar>
         </div>
     );
