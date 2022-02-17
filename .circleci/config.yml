@@ -52,7 +52,7 @@ jobs:
     coverage_report:
         working_directory: ~/react-showcase-demo
         docker:
-            - image: circleci/node:14.0.0-browsers
+            - image: circleci/node:14.15.0-browsers
         steps:
             - checkout
             - attach_workspace:
