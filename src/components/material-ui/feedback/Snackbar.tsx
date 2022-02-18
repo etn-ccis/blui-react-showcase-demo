@@ -127,7 +127,7 @@ export const SnackbarExample: React.FC = () => {
                 onClose={handleErrorClose}
             >
                 <MuiAlert elevation={6} variant="filled" onClose={handleErrorClose} severity="error">
-                    This is a warning message!
+                    This is an error message!
                 </MuiAlert>
             </Snackbar>
 
