@@ -31,10 +31,10 @@ jobs:
                   name: Lint
                   command: |
                       yarn lint
-            - run:
-                  name: Unit Test
-                  command: |
-                      yarn test --maxWorkers=2 --coverage --watchAll=false
+            # - run:
+            #       name: Unit Test
+            #       command: |
+            #           yarn test --maxWorkers=2 --coverage --watchAll=false
             - run:
                   name: Build Demo
                   command: |
