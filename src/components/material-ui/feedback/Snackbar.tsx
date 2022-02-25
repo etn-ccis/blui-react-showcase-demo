@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { useTheme, Theme } from '@mui/material/styles';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-const Alert = (props: AlertProps): JSX.Element => <MuiAlert elevation={6} variant="filled" {...props} />;
+const Alert: React.FC<AlertProps> = forwardRef((props, ref) => (
+    <MuiAlert elevation={6} variant="filled" {...props} ref={ref} />
+));
 
 export const SnackbarExample: React.FC = () => {
     const theme = useTheme();
