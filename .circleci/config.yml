@@ -39,10 +39,10 @@ jobs:
                   name: Build Demo
                   command: |
                       yarn build
-            - persist_to_workspace:
-                  root: .
-                  paths:
-                      - coverage
+            # - persist_to_workspace:
+            #       root: .
+            #       paths:
+            #           - coverage
             - run:
                   name: Memory Usage
                   command: |
