@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void => {
+const handleClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.preventDefault();
     // eslint-disable-next-line no-console
     console.info('You clicked a breadcrumb.');
