@@ -11,6 +11,6 @@ module.exports = {
     rules: {
         '@typescript-eslint/no-empty-function': 'off',
         'no-empty-function': 'off',
-        'react/jsx-key': 'off'
-    }
+        'react/jsx-key': 'off',
+    },
 };
