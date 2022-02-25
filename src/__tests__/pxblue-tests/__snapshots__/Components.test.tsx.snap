@@ -6,90 +6,42 @@ Array [
     className="makeStyles-componentContainer-2"
   >
     <p
-      className="MuiTypography-root makeStyles-sectionTitle-1 MuiTypography-body1"
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
     >
       Basic Usage
-    </p>
-    <span
-      className="makeStyles-root-4 makeStyles-root-9"
-      data-test="wrapper"
-    >
-      <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-value-8 MuiTypography-h6 MuiTypography-colorInherit"
-        data-test="value"
-      >
-        123
-      </h6>
-    </span>
-  </div>,
-  <div
-    className="makeStyles-componentContainer-2"
-  >
-    <p
-      className="MuiTypography-root makeStyles-sectionTitle-1 MuiTypography-body1"
-    >
-      w/ Units
-    </p>
-    <span
-      className="makeStyles-root-4 makeStyles-root-10"
-      data-test="wrapper"
-    >
-      <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-value-8 MuiTypography-h6 MuiTypography-colorInherit"
-        data-test="value"
-      >
-        123
-      </h6>
-      <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-units-7 MuiTypography-h6 MuiTypography-colorInherit"
-        data-test="units"
-      >
-        hz
-      </h6>
-    </span>
-  </div>,
-  <div
-    className="makeStyles-componentContainer-2"
-  >
-    <p
-      className="MuiTypography-root makeStyles-sectionTitle-1 MuiTypography-body1"
-    >
-      w/ Icon
     </p>
     <span
       className="makeStyles-root-4 makeStyles-root-11"
       data-test="wrapper"
     >
-      <span
-        className="makeStyles-icon-5"
-        data-test="icon"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          color="#ca3c3d"
-          focusable="false"
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "inherit",
-            }
-          }
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
-          />
-        </svg>
-      </span>
       <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-value-8 MuiTypography-h6 MuiTypography-colorInherit"
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
+        data-test="value"
+      >
+        123
+      </h6>
+    </span>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+    >
+      w/ Units
+    </p>
+    <span
+      className="makeStyles-root-4 makeStyles-root-12"
+      data-test="wrapper"
+    >
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
         data-test="value"
       >
         123
       </h6>
       <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-units-7 MuiTypography-h6 MuiTypography-colorInherit"
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
         data-test="units"
       >
         hz
@@ -100,12 +52,12 @@ Array [
     className="makeStyles-componentContainer-2"
   >
     <p
-      className="MuiTypography-root makeStyles-sectionTitle-1 MuiTypography-body1"
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
     >
-      w/ Custom Font Size
+      w/ Icon
     </p>
     <span
-      className="makeStyles-root-4 makeStyles-root-12"
+      className="makeStyles-root-4 makeStyles-root-13"
       data-test="wrapper"
     >
       <span
@@ -114,8 +66,9 @@ Array [
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           color="#ca3c3d"
+          data-testid="TrendingUpIcon"
           focusable="false"
           style={
             Object {
@@ -126,18 +79,67 @@ Array [
           viewBox="0 0 24 24"
         >
           <path
-            d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+            d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
           />
         </svg>
       </span>
       <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-value-8 MuiTypography-h6 MuiTypography-colorInherit"
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
         data-test="value"
       >
         123
       </h6>
       <h6
-        className="MuiTypography-root makeStyles-text-6 makeStyles-units-7 MuiTypography-h6 MuiTypography-colorInherit"
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
+        data-test="units"
+      >
+        hz
+      </h6>
+    </span>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+    >
+      w/ Custom Font Size
+    </p>
+    <span
+      className="makeStyles-root-4 makeStyles-root-14"
+      data-test="wrapper"
+    >
+      <span
+        className="makeStyles-icon-5"
+        data-test="icon"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          color="#ca3c3d"
+          data-testid="TrendingUpIcon"
+          focusable="false"
+          style={
+            Object {
+              "display": "block",
+              "fontSize": "inherit",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+          />
+        </svg>
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
+        data-test="value"
+      >
+        123
+      </h6>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
         data-test="units"
       >
         hz
@@ -150,23 +152,24 @@ Array [
 exports[`Component: EmptyStateExample EmptyStateExample renders examples correctly 1`] = `
 Array [
   <div
-    className="makeStyles-container-13"
+    className="makeStyles-container-15"
   >
     <p
-      className="MuiTypography-root makeStyles-sectionTitle-14 MuiTypography-body1"
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
     >
       Basic Usage
     </p>
     <div
-      className="makeStyles-root-16"
+      className="makeStyles-root-18"
       data-test="frame"
     >
       <div
-        className="makeStyles-icon-17"
+        className="makeStyles-icon-19"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          data-testid="NotListedLocationIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -176,65 +179,67 @@ Array [
         </svg>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
+        className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
       >
         Location Unknown
       </h6>
     </div>
   </div>,
   <div
-    className="makeStyles-container-13"
+    className="makeStyles-container-15"
   >
     <p
-      className="MuiTypography-root makeStyles-sectionTitle-14 MuiTypography-body1"
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
     >
       w/ Description
     </p>
     <div
-      className="makeStyles-root-16"
+      className="makeStyles-root-18"
       data-test="frame"
     >
       <div
-        className="makeStyles-icon-17"
+        className="makeStyles-icon-19"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          data-testid="LocationOffIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 6.5c1.38 0 2.5 1.12 2.5 2.5 0 .74-.33 1.39-.83 1.85l3.63 3.63c.98-1.86 1.7-3.8 1.7-5.48 0-3.87-3.13-7-7-7-1.98 0-3.76.83-5.04 2.15l3.19 3.19c.46-.52 1.11-.84 1.85-.84zm4.37 9.6l-4.63-4.63-.11-.11L3.27 3 2 4.27l3.18 3.18C5.07 7.95 5 8.47 5 9c0 5.25 7 13 7 13s1.67-1.85 3.38-4.35L18.73 21 20 19.73l-3.63-3.63z"
+            d="M12 6.5c1.38 0 2.5 1.12 2.5 2.5 0 .74-.33 1.39-.83 1.85l3.63 3.63c.98-1.86 1.7-3.8 1.7-5.48 0-3.87-3.13-7-7-7-1.98 0-3.76.83-5.04 2.15l3.19 3.19c.46-.52 1.11-.84 1.85-.84zm4.37 9.6-4.63-4.63-.11-.11L3.27 3 2 4.27l3.18 3.18C5.07 7.95 5 8.47 5 9c0 5.25 7 13 7 13s1.67-1.85 3.38-4.35L18.73 21 20 19.73l-3.63-3.63z"
           />
         </svg>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
+        className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
       >
         Location Services Disabled
       </h6>
       <h6
-        className="MuiTypography-root makeStyles-description-18 MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
+        className="MuiTypography-root MuiTypography-subtitle2 makeStyles-description-20 css-hav9kw-MuiTypography-root"
       >
         Enable Location Services via Settings to receive GPS information
       </h6>
     </div>
   </div>,
   <p
-    className="MuiTypography-root makeStyles-sectionTitle-14 MuiTypography-body1"
+    className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
   >
     w/ Actions
   </p>,
   <div
-    className="makeStyles-root-16"
+    className="makeStyles-root-18"
     data-test="frame"
   >
     <div
-      className="makeStyles-icon-17"
+      className="makeStyles-icon-19"
     >
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+        data-testid="DevicesIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -244,22 +249,23 @@ Array [
       </svg>
     </div>
     <h6
-      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
+      className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
     >
       No Devices
     </h6>
     <h6
-      className="MuiTypography-root makeStyles-description-18 MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
+      className="MuiTypography-root MuiTypography-subtitle2 makeStyles-description-20 css-hav9kw-MuiTypography-root"
     >
       Check your network connection or add a new device
     </h6>
     <div
-      className="makeStyles-actions-19"
+      className="makeStyles-actions-21"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+        className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
         disabled={false}
         onBlur={[Function]}
+        onContextMenu={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -274,24 +280,21 @@ Array [
         type="button"
       >
         <span
-          className="MuiButton-label"
+          className="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
         >
-          <span
-            className="MuiButton-startIcon MuiButton-iconSizeMedium"
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="AddIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-              />
-            </svg>
-          </span>
-          Add Device
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
         </span>
+        Add Device
       </button>
     </div>
   </div>,
@@ -301,18 +304,18 @@ Array [
 exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
 Array [
   <div
-    className="makeStyles-exampleRow-20"
+    className="makeStyles-exampleRow-22"
   >
     <div
-      className="makeStyles-componentContainer-22"
+      className="makeStyles-componentContainer-24"
     >
       <p
-        className="MuiTypography-root makeStyles-label-21 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
       >
         Basic Usage
       </p>
       <div
-        className="makeStyles-root-23 makeStyles-root-27"
+        className="makeStyles-root-25 makeStyles-root-29"
         data-test="wrapper"
         style={
           Object {
@@ -321,11 +324,12 @@ Array [
         }
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-28"
+          className="makeStyles-icon-26 makeStyles-icon-30"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeAIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -338,25 +342,25 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-29"
+          className="makeStyles-values-27 makeStyles-values-31"
         />
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Efficiency
         </p>
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-22"
+      className="makeStyles-componentContainer-24"
     >
       <p
-        className="MuiTypography-root makeStyles-label-21 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
       >
         w/ Value and Units
       </p>
       <div
-        className="makeStyles-root-23 makeStyles-root-30"
+        className="makeStyles-root-25 makeStyles-root-32"
         data-test="wrapper"
         style={
           Object {
@@ -365,11 +369,12 @@ Array [
         }
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-31"
+          className="makeStyles-icon-26 makeStyles-icon-33"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeBIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -382,20 +387,20 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-32"
+          className="makeStyles-values-27 makeStyles-values-34"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-38"
+            className="makeStyles-root-35 makeStyles-root-42"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               88
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               %
@@ -403,7 +408,7 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Efficiency
         </p>
@@ -411,18 +416,18 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-exampleRow-20"
+    className="makeStyles-exampleRow-22"
   >
     <div
-      className="makeStyles-componentContainer-22"
+      className="makeStyles-componentContainer-24"
     >
       <p
-        className="MuiTypography-root makeStyles-label-21 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
       >
         w/ Channel Value Children
       </p>
       <div
-        className="makeStyles-root-23 makeStyles-root-39"
+        className="makeStyles-root-25 makeStyles-root-43"
         data-test="wrapper"
         style={
           Object {
@@ -431,11 +436,12 @@ Array [
         }
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-40"
+          className="makeStyles-icon-26 makeStyles-icon-44"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="ScheduleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -448,37 +454,37 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-41"
+          className="makeStyles-values-27 makeStyles-values-45"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-42"
+            className="makeStyles-root-35 makeStyles-root-46"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               1
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               h
             </h6>
           </span>
           <span
-            className="makeStyles-root-33 makeStyles-root-43"
+            className="makeStyles-root-35 makeStyles-root-47"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               27
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               m
@@ -486,22 +492,22 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Efficiency
         </p>
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-22"
+      className="makeStyles-componentContainer-24"
     >
       <p
-        className="MuiTypography-root makeStyles-label-21 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
       >
         w/ Icon Colors
       </p>
       <div
-        className="makeStyles-root-23 makeStyles-root-44"
+        className="makeStyles-root-25 makeStyles-root-48"
         data-test="wrapper"
         style={
           Object {
@@ -510,12 +516,13 @@ Array [
         }
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-45"
+          className="makeStyles-icon-26 makeStyles-icon-49"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
             color="#ffffff"
+            data-testid="TempIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -529,20 +536,20 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-46"
+          className="makeStyles-values-27 makeStyles-values-50"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-47"
+            className="makeStyles-root-35 makeStyles-root-51"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               38
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               °C
@@ -550,7 +557,7 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Temperature
         </p>
@@ -558,15 +565,15 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-componentContainer-22"
+    className="makeStyles-componentContainer-24"
   >
     <p
-      className="MuiTypography-root makeStyles-label-21 MuiTypography-body2"
+      className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
     >
       Within a HeroBanner
     </p>
     <div
-      className="makeStyles-root-48"
+      className="makeStyles-root-52"
       style={
         Object {
           "border": "solid 1px #eef0f0",
@@ -576,15 +583,16 @@ Array [
       }
     >
       <div
-        className="makeStyles-root-23 makeStyles-root-49"
+        className="makeStyles-root-25 makeStyles-root-53"
         data-test="wrapper"
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-50"
+          className="makeStyles-icon-26 makeStyles-icon-54"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeAIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -597,20 +605,20 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-51"
+          className="makeStyles-values-27 makeStyles-values-55"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-52"
+            className="makeStyles-root-35 makeStyles-root-56"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               95
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               %
@@ -618,21 +626,22 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Efficiency
         </p>
       </div>
       <div
-        className="makeStyles-root-23 makeStyles-root-53"
+        className="makeStyles-root-25 makeStyles-root-57"
         data-test="wrapper"
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-54"
+          className="makeStyles-icon-26 makeStyles-icon-58"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeBIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -645,20 +654,20 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-55"
+          className="makeStyles-values-27 makeStyles-values-59"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-56"
+            className="makeStyles-root-35 makeStyles-root-60"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               88
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               %
@@ -666,21 +675,22 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Efficiency
         </p>
       </div>
       <div
-        className="makeStyles-root-23 makeStyles-root-57"
+        className="makeStyles-root-25 makeStyles-root-61"
         data-test="wrapper"
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-58"
+          className="makeStyles-icon-26 makeStyles-icon-62"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="ScheduleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -693,37 +703,37 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-59"
+          className="makeStyles-values-27 makeStyles-values-63"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-60"
+            className="makeStyles-root-35 makeStyles-root-64"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               1
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               h
             </h6>
           </span>
           <span
-            className="makeStyles-root-33 makeStyles-root-61"
+            className="makeStyles-root-35 makeStyles-root-65"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               27
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               m
@@ -731,22 +741,23 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Efficiency
         </p>
       </div>
       <div
-        className="makeStyles-root-23 makeStyles-root-62"
+        className="makeStyles-root-25 makeStyles-root-66"
         data-test="wrapper"
       >
         <span
-          className="makeStyles-icon-24 makeStyles-icon-63"
+          className="makeStyles-icon-26 makeStyles-icon-67"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
             color="#ffffff"
+            data-testid="TempIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -760,20 +771,20 @@ Array [
           </svg>
         </span>
         <span
-          className="makeStyles-values-25 makeStyles-values-64"
+          className="makeStyles-values-27 makeStyles-values-68"
         >
           <span
-            className="makeStyles-root-33 makeStyles-root-65"
+            className="makeStyles-root-35 makeStyles-root-69"
             data-test="wrapper"
           >
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-value-37 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
               data-test="value"
             >
               38
             </h6>
             <h6
-              className="MuiTypography-root makeStyles-text-35 makeStyles-units-36 MuiTypography-h6 MuiTypography-colorInherit"
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
               data-test="units"
             >
               °C
@@ -781,7 +792,7 @@ Array [
           </span>
         </span>
         <p
-          className="MuiTypography-root makeStyles-label-26 MuiTypography-body1 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
         >
           Temperature
         </p>
@@ -794,15 +805,15 @@ Array [
 exports[`Component: InfoListItemExample InfoListItemExample renders examples correctly 1`] = `
 Array [
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-79 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-84 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-85"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-91"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -810,11 +821,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-80 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-85 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -825,35 +837,25 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-82 MuiListItemText-multiline"
+      className="MuiListItemText-root makeStyles-listItemText-74 makeStyles-listItemText-87 css-tlelie-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-87 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-93 css-1f0fhap-MuiTypography-root"
       >
         Basic Usage
       </span>
-      <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
-      >
-        <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-86 MuiTypography-subtitle2 MuiTypography-noWrap"
-        />
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-84 MuiTypography-body2 MuiTypography-noWrap"
-        />
-      </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-88 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-94 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-94"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-101"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -861,11 +863,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-89 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-95 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -876,37 +879,34 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-91 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-97 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-96 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-103 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-95 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-102 css-llvhl4-MuiTypography-root"
         >
           with a Subtitle
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-93 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-97 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-104 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-103"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-111"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -914,52 +914,50 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-101 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-108 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="AlarmIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+            d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
           />
         </svg>
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-100 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-107 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-105 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-113 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-104 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-112 css-llvhl4-MuiTypography-root"
         >
           with an icon
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-102 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-106 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-114 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-112"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-121"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -967,11 +965,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-110 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-118 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="TempIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -986,52 +985,49 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-109 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-117 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-114 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-123 css-1f0fhap-MuiTypography-root"
       >
         With an array for subtitle
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-113 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-122 css-llvhl4-MuiTypography-root"
         >
           Item 1
           <span
-            className="MuiTypography-root makeStyles-separator-74 MuiTypography-body1"
+            className="MuiTypography-root MuiTypography-body1 makeStyles-separator-79 css-ahj2mt-MuiTypography-root"
           >
             ·
           </span>
           Item 2
           <span
-            className="MuiTypography-root makeStyles-separator-74 MuiTypography-body1"
+            className="MuiTypography-root MuiTypography-body1 makeStyles-separator-79 css-ahj2mt-MuiTypography-root"
           >
             ·
           </span>
           Item 3
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-111 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-115 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-124 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-121"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-131"
       data-test="status-stripe"
     />
     <hr
-      className="MuiDivider-root makeStyles-divider-69 makeStyles-divider-117"
+      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-126 css-9mgopn-MuiDivider-root"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1039,11 +1035,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-116 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-125 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1054,40 +1051,37 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-118 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-127 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-123 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-133 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-122 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-132 css-llvhl4-MuiTypography-root"
         >
           with a partial divider
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-120 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-124 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-134 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-130"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-141"
       data-test="status-stripe"
     />
     <hr
-      className="MuiDivider-root makeStyles-divider-69 makeStyles-divider-126"
+      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-136 css-9mgopn-MuiDivider-root"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1095,11 +1089,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-125 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-135 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1110,32 +1105,29 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-127 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-137 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-132 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-143 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-131 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-142 css-llvhl4-MuiTypography-root"
         >
           with a full divider
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-129 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <div
-    aria-disabled={false}
-    className="MuiButtonBase-root MuiListItem-root makeStyles-root-66 makeStyles-root-133 MuiListItem-gutters MuiListItem-button"
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button makeStyles-root-70 makeStyles-root-144 css-bshv44-MuiButtonBase-root-MuiListItem-root"
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -1150,11 +1142,11 @@ Array [
     tabIndex={0}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-139"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-151"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1162,11 +1154,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-134 makeStyles-invisible-68 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-145 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1177,37 +1170,34 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-136 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-147 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-141 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-153 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-140 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-152 css-llvhl4-MuiTypography-root"
         >
           that is clickable
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-138 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </div>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-142 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-154 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-148"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-161"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1215,11 +1205,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-67 makeStyles-avatar-143 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-155 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="GradeAIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1233,37 +1224,34 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-145 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-157 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-150 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-163 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-149 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-162 css-llvhl4-MuiTypography-root"
         >
           with an avatar
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-147 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-151 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-164 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-157"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-171"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1271,11 +1259,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-155 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-168 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="LeafIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1290,37 +1279,34 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-154 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-167 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-159 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-173 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-158 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-172 css-llvhl4-MuiTypography-root"
         >
           with a background color
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-156 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-160 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-174 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-166"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-181"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1328,11 +1314,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-164 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-178 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DeviceIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1367,37 +1354,34 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-163 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-177 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-168 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-183 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-167 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-182 css-llvhl4-MuiTypography-root"
         >
           with a left component
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-165 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root makeStyles-root-66 makeStyles-root-169 MuiListItem-gutters"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-184 css-1p823my-MuiListItem-root"
     disabled={false}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-175"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-191"
       data-test="status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1405,11 +1389,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-173 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-188 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DeviceIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1424,41 +1409,38 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-172 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-187 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-177 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-193 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-176 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-192 css-llvhl4-MuiTypography-root"
         >
           with a right component
         </p>
-        <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-174 MuiTypography-body2 MuiTypography-noWrap"
-        />
       </h6>
     </div>
     <div
-      className="makeStyles-rightComponent-73"
+      className="makeStyles-rightComponent-77"
     >
       <span
-        className="makeStyles-root-178 makeStyles-root-183"
+        className="makeStyles-root-194 makeStyles-root-201"
         data-test="wrapper"
       >
         <h6
-          className="MuiTypography-root makeStyles-text-180 makeStyles-value-182 MuiTypography-h6 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-196 makeStyles-value-200 css-1qp5wg9-MuiTypography-root"
           data-test="value"
         >
           15
         </h6>
         <h6
-          className="MuiTypography-root makeStyles-text-180 makeStyles-units-181 MuiTypography-h6 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-196 makeStyles-units-199 makeStyles-suffix-198 css-1qp5wg9-MuiTypography-root"
           data-test="units"
         >
           A
@@ -1467,10 +1449,10 @@ Array [
     </div>
   </li>,
   <div
-    aria-disabled={false}
-    className="MuiButtonBase-root MuiListItem-root makeStyles-root-66 makeStyles-root-184 MuiListItem-gutters MuiListItem-button"
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button makeStyles-root-70 makeStyles-root-202 css-bshv44-MuiButtonBase-root-MuiListItem-root"
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -1485,14 +1467,14 @@ Array [
     tabIndex={0}
   >
     <div
-      className="makeStyles-statusStripe-75 makeStyles-statusStripe-190"
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-209"
       data-test="status-stripe"
     />
     <hr
-      className="MuiDivider-root makeStyles-divider-69 makeStyles-divider-186"
+      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-204 css-9mgopn-MuiDivider-root"
     />
     <div
-      className="MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
       style={
         Object {
           "minWidth": "unset",
@@ -1500,11 +1482,12 @@ Array [
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-71 makeStyles-icon-188 MuiAvatar-colorDefault"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-206 css-2s90m6-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DeviceIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1519,23 +1502,23 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-70 makeStyles-listItemText-187 MuiListItemText-multiline"
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-205 css-konndc-MuiListItemText-root"
     >
       <span
-        className="MuiTypography-root makeStyles-title-77 makeStyles-title-192 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-211 css-1f0fhap-MuiTypography-root"
       >
         Info List Item
       </span>
       <h6
-        className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
       >
         <p
-          className="MuiTypography-root makeStyles-subtitle-76 makeStyles-subtitle-191 MuiTypography-subtitle2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-210 css-llvhl4-MuiTypography-root"
         >
           with all properties
         </p>
         <p
-          className="MuiTypography-root makeStyles-info-72 makeStyles-info-189 MuiTypography-body2 MuiTypography-noWrap"
+          className="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap makeStyles-info-76 makeStyles-info-207 css-z1doim-MuiTypography-root"
         >
           more info...
         </p>
@@ -1548,33 +1531,33 @@ Array [
 exports[`Component: ListItemTagExample ListItemTagExample renders examples correctly 1`] = `
 Array [
   <div
-    className="makeStyles-exampleRow-194"
+    className="makeStyles-exampleRow-213"
   >
     <div
-      className="makeStyles-componentContainer-196"
+      className="makeStyles-componentContainer-215"
     >
       <p
-        className="MuiTypography-root makeStyles-label-195 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
       >
         Basic Usage
       </p>
       <span
-        className="MuiTypography-root makeStyles-root-197 makeStyles-root-199 makeStyles-noVariant-198 MuiTypography-overline MuiTypography-noWrap MuiTypography-displayInline"
+        className="makeStyles-root-216 makeStyles-root-218 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
         data-test="list-item-tag"
       >
         active
       </span>
     </div>
     <div
-      className="makeStyles-componentContainer-196"
+      className="makeStyles-componentContainer-215"
     >
       <p
-        className="MuiTypography-root makeStyles-label-195 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
       >
         w/ Custom Colors
       </p>
       <span
-        className="MuiTypography-root makeStyles-root-197 makeStyles-root-200 makeStyles-noVariant-198 MuiTypography-overline MuiTypography-noWrap MuiTypography-displayInline"
+        className="makeStyles-root-216 makeStyles-root-219 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
         data-test="list-item-tag"
       >
         active
@@ -1582,28 +1565,28 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-componentContainer-196"
+    className="makeStyles-componentContainer-215"
     style={
       Object {
-        "marginTop": 48,
+        "marginTop": "48px",
       }
     }
   >
     <p
-      className="MuiTypography-root makeStyles-label-195 MuiTypography-body2"
+      className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
     >
       Within an Info List Item
     </p>
     <li
-      className="MuiListItem-root makeStyles-root-201 makeStyles-root-214 MuiListItem-gutters"
+      className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-220 makeStyles-root-234 css-1p823my-MuiListItem-root"
       disabled={false}
     >
       <div
-        className="makeStyles-statusStripe-210 makeStyles-statusStripe-220"
+        className="makeStyles-statusStripe-230 makeStyles-statusStripe-241"
         data-test="status-stripe"
       />
       <div
-        className="MuiListItemAvatar-root"
+        className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
         style={
           Object {
             "minWidth": "unset",
@@ -1611,43 +1594,41 @@ Array [
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circle makeStyles-icon-206 makeStyles-icon-218 MuiAvatar-colorDefault"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-225 makeStyles-icon-238 css-2s90m6-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="BrightnessMediumIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"
+              d="M20 15.31 23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"
             />
           </svg>
         </div>
       </div>
       <div
-        className="MuiListItemText-root makeStyles-listItemText-205 makeStyles-listItemText-217 MuiListItemText-multiline"
+        className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-224 makeStyles-listItemText-237 css-konndc-MuiListItemText-root"
       >
         <span
-          className="MuiTypography-root makeStyles-title-212 makeStyles-title-222 MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-232 makeStyles-title-243 css-1f0fhap-MuiTypography-root"
         >
           Info List Item
         </span>
         <h6
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-subtitle2 MuiTypography-colorTextPrimary MuiTypography-displayBlock"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
         >
           <p
-            className="MuiTypography-root makeStyles-subtitle-211 makeStyles-subtitle-221 MuiTypography-subtitle2 MuiTypography-noWrap"
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-231 makeStyles-subtitle-242 css-llvhl4-MuiTypography-root"
           >
             with List Item Tags
           </p>
-          <p
-            className="MuiTypography-root makeStyles-info-207 makeStyles-info-219 MuiTypography-body2 MuiTypography-noWrap"
-          />
         </h6>
       </div>
       <div
-        className="makeStyles-rightComponent-208"
+        className="makeStyles-rightComponent-227"
       >
         <div
           style={
@@ -1657,19 +1638,19 @@ Array [
           }
         >
           <span
-            className="MuiTypography-root makeStyles-root-197 makeStyles-root-223 makeStyles-noVariant-198 MuiTypography-overline MuiTypography-noWrap MuiTypography-displayInline"
+            className="makeStyles-root-216 makeStyles-root-244 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
             data-test="list-item-tag"
             style={
               Object {
                 "marginLeft": 0,
-                "marginRight": 16,
+                "marginRight": "16px",
               }
             }
           >
             Build Passing
           </span>
           <span
-            className="MuiTypography-root makeStyles-root-197 makeStyles-root-224 makeStyles-noVariant-198 MuiTypography-overline MuiTypography-noWrap MuiTypography-displayInline"
+            className="makeStyles-root-216 makeStyles-root-245 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
             data-test="list-item-tag"
           >
             5 Bugs
@@ -1684,57 +1665,58 @@ Array [
 exports[`Component: ThreeLinerExample ThreeLinerExample renders examples correctly 1`] = `
 Array [
   <div
-    className="makeStyles-root-226 makeStyles-root-230"
+    className="makeStyles-root-247 makeStyles-root-251"
   >
     <div
-      className="makeStyles-title-227 makeStyles-title-231"
+      className="makeStyles-title-248 makeStyles-title-252"
     >
       Three Liner Component
     </div>
     <div
-      className="makeStyles-subtitle-228 makeStyles-subtitle-232"
+      className="makeStyles-subtitle-249 makeStyles-subtitle-253"
     >
       with basic usage
     </div>
     <div
-      className="makeStyles-info-229 makeStyles-info-233"
+      className="makeStyles-info-250 makeStyles-info-254"
     >
       ...and a third line
     </div>
   </div>,
   <div
-    className="makeStyles-root-226 makeStyles-root-234"
+    className="makeStyles-root-247 makeStyles-root-255"
     style={
       Object {
-        "marginTop": 32,
+        "marginTop": "32px",
       }
     }
   >
     <div
-      className="makeStyles-title-227 makeStyles-title-235"
+      className="makeStyles-title-248 makeStyles-title-256"
     >
       Three Liner Component
     </div>
     <div
-      className="makeStyles-subtitle-228 makeStyles-subtitle-236"
+      className="makeStyles-subtitle-249 makeStyles-subtitle-257"
     >
       with custom content
     </div>
     <div
-      className="makeStyles-info-229 makeStyles-info-237"
+      className="makeStyles-info-250 makeStyles-info-258"
     >
       <span
-        className="makeStyles-root-238 makeStyles-root-243"
+        className="makeStyles-root-259 makeStyles-root-266"
         data-test="wrapper"
       >
         <span
-          className="makeStyles-icon-239"
+          className="makeStyles-icon-260"
           data-test="icon"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
             color="#ca3c3d"
+            data-testid="TrendingUpIcon"
             focusable="false"
             style={
               Object {
@@ -1745,18 +1727,18 @@ Array [
             viewBox="0 0 24 24"
           >
             <path
-              d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+              d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
             />
           </svg>
         </span>
         <h6
-          className="MuiTypography-root makeStyles-text-240 makeStyles-value-242 MuiTypography-h6 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-261 makeStyles-value-265 css-1qp5wg9-MuiTypography-root"
           data-test="value"
         >
           123
         </h6>
         <h6
-          className="MuiTypography-root makeStyles-text-240 makeStyles-units-241 MuiTypography-h6 MuiTypography-colorInherit"
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-261 makeStyles-units-264 makeStyles-suffix-263 css-1qp5wg9-MuiTypography-root"
           data-test="units"
         >
           hz
@@ -1770,21 +1752,21 @@ Array [
 exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1`] = `
 Array [
   <div
-    className="makeStyles-exampleRow-244"
+    className="makeStyles-exampleRow-267"
   >
     <div
-      className="makeStyles-componentContainer-246"
+      className="makeStyles-componentContainer-269"
     >
       <p
-        className="MuiTypography-root makeStyles-label-245 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
       >
         Basic Usage
       </p>
       <div
-        className="makeStyles-root-250"
+        className="makeStyles-root-273"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-251 MuiAvatar-circle MuiAvatar-colorDefault"
+          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1792,18 +1774,18 @@ Array [
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-246"
+      className="makeStyles-componentContainer-269"
     >
       <p
-        className="MuiTypography-root makeStyles-label-245 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
       >
         w/ Custom Colors
       </p>
       <div
-        className="makeStyles-root-250"
+        className="makeStyles-root-273"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-251 makeStyles-customAvatar-248 MuiAvatar-circle MuiAvatar-colorDefault"
+          className="makeStyles-avatarRoot-274 makeStyles-customAvatar-271 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1812,26 +1794,27 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-exampleRow-244"
+    className="makeStyles-exampleRow-267"
   >
     <div
-      className="makeStyles-componentContainer-246"
+      className="makeStyles-componentContainer-269"
     >
       <p
-        className="MuiTypography-root makeStyles-label-245 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
       >
         w/ Non-Text Avatar
       </p>
       <div
-        className="makeStyles-root-250"
+        className="makeStyles-root-273"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-251 MuiAvatar-circle MuiAvatar-colorDefault"
+          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
           onClick={[Function]}
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PetsIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -1863,18 +1846,18 @@ Array [
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-246"
+      className="makeStyles-componentContainer-269"
     >
       <p
-        className="MuiTypography-root makeStyles-label-245 MuiTypography-body2"
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
       >
         w/ a Menu Header
       </p>
       <div
-        className="makeStyles-root-250"
+        className="makeStyles-root-273"
       >
         <div
-          className="MuiAvatar-root makeStyles-avatarRoot-251 MuiAvatar-circle MuiAvatar-colorDefault"
+          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1885,16 +1868,16 @@ Array [
   <div
     style={
       Object {
-        "marginTop": 32,
+        "marginTop": "32px",
         "width": "100%",
       }
     }
   >
     <header
-      className="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary MuiPaper-elevation4"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionRelative css-1vazdj7-MuiPaper-root-MuiAppBar-root"
     >
       <div
-        className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+        className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
         style={
           Object {
             "height": "4rem",
@@ -1904,7 +1887,7 @@ Array [
         }
       >
         <h6
-          className="MuiTypography-root MuiTypography-h6"
+          className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           UserMenu within a Toolbar
         </h6>
@@ -1920,15 +1903,16 @@ Array [
           }
         />
         <div
-          className="makeStyles-root-250"
+          className="makeStyles-root-273"
         >
           <div
-            className="MuiAvatar-root makeStyles-avatarRoot-251 MuiAvatar-circle MuiAvatar-colorDefault"
+            className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
             onClick={[Function]}
           >
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root MuiAvatar-fallback"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+              data-testid="PersonIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
