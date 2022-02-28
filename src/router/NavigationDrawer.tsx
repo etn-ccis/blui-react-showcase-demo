@@ -22,7 +22,7 @@ import { AppStore } from '../__types__';
 import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 
-const top = require('../assets/topology_40.png').default;
+const top = require('../assets/topology_40.png');
 
 const useStyles = makeStyles({
     iconFlip: {
@@ -40,7 +40,7 @@ export const NavigationDrawer: React.FC = () => {
     const history = useHistory();
     const location = useLocation();
     const [activeRoute, setActiveRoute] = useState(location.pathname);
-    const xsDown = useMediaQuery(theme.breakpoints.down('xl'));
+    const xsDown = useMediaQuery(theme.breakpoints.down('sm'));
     const rtl = direction === 'rtl';
 
     const createNavItems = useCallback((navData: SimpleNavItem[], parentUrl: string, depth: number): NavItem[] => {

@@ -37,7 +37,7 @@ export const ContainedButtonExample: React.FC = () => {
                     </Button>
                 </div>
                 <div className={classes.buttonPair}>
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" color="inherit">
                         Primary
                     </Button>
                     <Button variant="contained" color="primary" disabled>

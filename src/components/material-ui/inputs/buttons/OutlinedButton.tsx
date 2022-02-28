@@ -31,8 +31,8 @@ export const OutlinedButtonExample: React.FC = () => {
         <div className={classes.container}>
             <div className={classes.buttonContainer}>
                 <div className={classes.buttonPair}>
-                    <Button variant="outlined">Default</Button>
-                    <Button variant="outlined" disabled>
+                    <Button variant="outlined" color="inherit">Default</Button>
+                    <Button variant="outlined" color="inherit" disabled>
                         Default Disabled
                     </Button>
                 </div>
