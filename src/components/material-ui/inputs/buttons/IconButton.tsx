@@ -41,7 +41,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Default
                     </Typography>
-                    <IconButton size="large">
+                    <IconButton color="inherit" size="large">
                         <Delete />
                     </IconButton>
                 </div>
@@ -50,7 +50,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Default Disabled
                     </Typography>
-                    <IconButton disabled size="large">
+                    <IconButton color="inherit" disabled size="large">
                         <Delete />
                     </IconButton>
                 </div>

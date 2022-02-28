@@ -37,7 +37,7 @@ export const TextButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
-                    <ButtonGroup variant="text">
+                    <ButtonGroup color="inherit" variant="text">
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
@@ -47,7 +47,7 @@ export const TextButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
-                    <ButtonGroup variant="text" disabled>
+                    <ButtonGroup color="inherit" variant="text" disabled>
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>

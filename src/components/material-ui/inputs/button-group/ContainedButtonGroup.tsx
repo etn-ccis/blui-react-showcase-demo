@@ -38,7 +38,7 @@ export const ContainedButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
-                    <ButtonGroup variant="contained">
+                    <ButtonGroup color="inherit" variant="contained">
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
@@ -48,7 +48,7 @@ export const ContainedButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
-                    <ButtonGroup variant="contained" disabled>
+                    <ButtonGroup color="inherit" variant="contained" disabled>
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
