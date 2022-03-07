@@ -89,9 +89,7 @@ export const Dashboard: React.FC = () => {
                                     }
                                     label={'Temperature'}
                                     iconSize={48}
-                                    value={98}
-                                    units={'°F'}
-                                    fontSize={'normal'}
+                                    ChannelValueProps={{ value: 98, units: '°F' }}
                                 />
                                 <Hero
                                     icon={
@@ -102,10 +100,8 @@ export const Dashboard: React.FC = () => {
                                         />
                                     }
                                     label={'Humidity'}
-                                    value={54}
-                                    units={'%'}
+                                    ChannelValueProps={{ value: 54, units: '%' }}
                                     iconSize={48}
-                                    fontSize={'normal'}
                                 />
                             </HeroBanner>
                         }
@@ -163,9 +159,7 @@ export const Dashboard: React.FC = () => {
                                     iconBackgroundColor={theme.palette.background.paper}
                                     label={'Health'}
                                     iconSize={72}
-                                    value={98}
-                                    units={'%'}
-                                    fontSize={'normal'}
+                                    ChannelValueProps={{ value: 98, units: '%' }}
                                 />
                             </HeroBanner>
                         }
@@ -212,9 +206,7 @@ export const Dashboard: React.FC = () => {
                                     />
                                 }
                                 label={'Healthy'}
-                                value={96}
-                                units={'/100'}
-                                fontSize={'normal'}
+                                ChannelValueProps={{ value: 96, units: '/100' }}
                             />
                             <Hero
                                 icon={
@@ -227,11 +219,11 @@ export const Dashboard: React.FC = () => {
                                     />
                                 }
                                 label={'Load'}
-                                fontSize={'normal'}
                             >
                                 <ChannelValue
                                     value={65}
                                     units={'%'}
+                                    fontSize={20}
                                     icon={
                                         <TrendingUp
                                             htmlColor={Colors.red[500]}
@@ -250,10 +242,9 @@ export const Dashboard: React.FC = () => {
                                     />
                                 }
                                 label={'Estimated'}
-                                fontSize={'normal'}
                             >
-                                <ChannelValue value={1} units={'h'} />
-                                <ChannelValue value={26} units={'m'} />
+                                <ChannelValue value={1} units={'h'} fontSize={20} />
+                                <ChannelValue value={26} units={'m'} fontSize={20} />
                             </Hero>
                             <Hero
                                 icon={
@@ -265,11 +256,9 @@ export const Dashboard: React.FC = () => {
                                         className={clsx({ [classes.iconFlip]: rtl })}
                                     />
                                 }
-                                value={'Full'}
                                 label={'Battery'}
-                                fontSize={'normal'}
                             >
-                                <ChannelValue value={'Full'} />
+                                <ChannelValue value={'Full'} fontSize={20} />
                             </Hero>
                         </HeroBanner>
                         <InfoListItem

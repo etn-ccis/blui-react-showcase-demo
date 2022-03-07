@@ -49,8 +49,7 @@ export const HeroExample: React.FC = () => {
                     <Hero
                         icon={<GradeB fontSize={'inherit'} />}
                         label={'Efficiency'}
-                        value={'88'}
-                        units={'%'}
+                        ChannelValueProps={{ value: 88, units: '%' }}
                         style={{ flex: 1 }}
                     />
                 </div>
@@ -73,8 +72,7 @@ export const HeroExample: React.FC = () => {
                         iconBackgroundColor={colors.red[500]}
                         icon={<Temp fontSize={'inherit'} htmlColor={colors.white[50]} />}
                         label={'Temperature'}
-                        value={'38'}
-                        units={'°C'}
+                        ChannelValueProps={{ value: 38, units: '°C' }}
                         style={{ flex: 1 }}
                     />
                 </div>
@@ -84,8 +82,16 @@ export const HeroExample: React.FC = () => {
                     Within a HeroBanner
                 </Typography>
                 <HeroBanner style={{ width: 376, border: `solid 1px ${colors.gray[50]}`, borderRadius: 4 }}>
-                    <Hero icon={<GradeA fontSize={'inherit'} />} label={'Efficiency'} value={'95'} units={'%'} />
-                    <Hero icon={<GradeB fontSize={'inherit'} />} label={'Efficiency'} value={'88'} units={'%'} />
+                    <Hero
+                        icon={<GradeA fontSize={'inherit'} />}
+                        label={'Efficiency'}
+                        ChannelValueProps={{ value: '95', units: '%' }}
+                    />
+                    <Hero
+                        icon={<GradeB fontSize={'inherit'} />}
+                        label={'Efficiency'}
+                        ChannelValueProps={{ value: '88', units: '%' }}
+                    />
                     <Hero icon={<Schedule fontSize={'inherit'} />} label={'Efficiency'}>
                         <ChannelValue fontSize={'large'} value={1} units={'h'} />
                         <ChannelValue fontSize={'large'} value={27} units={'m'} />
@@ -94,8 +100,7 @@ export const HeroExample: React.FC = () => {
                         iconBackgroundColor={colors.red[500]}
                         icon={<Temp fontSize={'inherit'} htmlColor={colors.white[50]} />}
                         label={'Temperature'}
-                        value={'38'}
-                        units={'°C'}
+                        ChannelValueProps={{ value: 38, units: '°C' }}
                     />
                 </HeroBanner>
             </div>

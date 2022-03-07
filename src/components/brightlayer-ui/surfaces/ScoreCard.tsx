@@ -62,18 +62,14 @@ export const ScoreCardExample: React.FC = () => {
             icon={<Temp fontSize={'inherit'} htmlColor={colors.black[500]} />}
             label={'Temperature'}
             iconSize={48}
-            value={98}
-            units={'°F'}
-            fontSize={'normal'}
+            ChannelValueProps={{ value: 98, units: '°F', fontSize: 'normal' }}
         />,
         <Hero
             key={'hero2'}
             icon={<Humidity fontSize={'inherit'} htmlColor={colors.blue[300]} />}
             label={'Humidity'}
-            value={54}
-            units={'%'}
+            ChannelValueProps={{ value: 54, units: '%', fontSize: 'normal' }}
             iconSize={48}
-            fontSize={'normal'}
         />,
     ];
 
@@ -165,9 +161,7 @@ export const ScoreCardExample: React.FC = () => {
                             label={'Grade'}
                             iconSize={72}
                             iconBackgroundColor={isDarkMode ? colors.black[900] : colors.white[50]}
-                            value={'98'}
-                            units={'/100'}
-                            fontSize={'normal'}
+                            ChannelValueProps={{ value: 98, units: '/100', fontSize: 'normal' }}
                         />
                     </HeroBanner>
                 }
