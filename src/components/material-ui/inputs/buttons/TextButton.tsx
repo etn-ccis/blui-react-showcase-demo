@@ -32,15 +32,15 @@ export const TextButtonExample: React.FC = () => {
         <div className={classes.container}>
             <div className={classes.buttonContainer}>
                 <div className={classes.buttonPair}>
-                    <Button variant="text" color="inherit">Default</Button>
+                    <Button variant="text" color="inherit">
+                        Default
+                    </Button>
                     <Button variant="text" color="inherit" disabled>
                         Default Disabled
                     </Button>
                 </div>
                 <div className={classes.buttonPair}>
-                    <Button variant="text">
-                        Primary
-                    </Button>
+                    <Button variant="text">Primary</Button>
                     <Button variant="text" color="primary" disabled>
                         Primary Disabled
                     </Button>

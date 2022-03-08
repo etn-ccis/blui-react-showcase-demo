@@ -38,7 +38,7 @@ export const OutlinedButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
-                    <ButtonGroup  color="inherit" variant="outlined">
+                    <ButtonGroup color="inherit" variant="outlined">
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
@@ -48,7 +48,7 @@ export const OutlinedButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
-                    <ButtonGroup  color="inherit" variant="outlined" disabled>
+                    <ButtonGroup color="inherit" variant="outlined" disabled>
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>

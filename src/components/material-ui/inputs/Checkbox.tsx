@@ -22,7 +22,9 @@ export const CheckboxExample: React.FC = () => {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<Checkbox checked={state.checkedA} onChange={handleChange} name="checkedA" color="secondary" />}
+                control={
+                    <Checkbox checked={state.checkedA} onChange={handleChange} name="checkedA" color="secondary" />
+                }
                 label="Secondary"
             />
             <FormControlLabel
@@ -33,7 +35,15 @@ export const CheckboxExample: React.FC = () => {
             <FormControlLabel disabled control={<Checkbox name="checkedD" />} label="Disabled" />
             <FormControlLabel disabled control={<Checkbox checked name="checkedE" />} label="Disabled" />
             <FormControlLabel
-                control={<Checkbox checked={state.checkedF} onChange={handleChange} name="checkedF" color="secondary" indeterminate />}
+                control={
+                    <Checkbox
+                        checked={state.checkedF}
+                        onChange={handleChange}
+                        name="checkedF"
+                        color="secondary"
+                        indeterminate
+                    />
+                }
                 label="Indeterminate"
             />
             <FormControlLabel

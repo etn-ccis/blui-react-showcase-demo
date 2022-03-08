@@ -25,9 +25,9 @@ export const RTLThemeProvider: React.FC = (props) => {
             <StyledEngineProvider injectFirst>
                 <ThemeProvider
                     theme={createTheme(
-                            Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
-                                direction: dir,
-                            })
+                        Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
+                            direction: dir,
+                        })
                     )}
                 >
                     {props.children}
