@@ -32,7 +32,6 @@ export const RTLThemeProvider: React.FC = (props) => {
         prepend: true,
         stylisPlugins: dir === 'ltr' ? undefined : [rtlPlugin],
     });
-    
 
     useEffect(() => {
         document.body.dir = dir;
