@@ -2,6 +2,19 @@
     "name": "react-showcase-demo",
     "version": "2.0.0",
     "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint \"**/**/*.{ts,tsx}\"",
+        "lint:fix": "eslint \"**/**/*.{ts,tsx}\" --fix",
+        "prettier": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
+        "prettier:check": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --check",
+        "precommit": "yarn && yarn prettier && yarn lint && yarn test",
+        "coverage": "yarn test --coverage --watchAll=false",
+        "analyze": "source-map-explorer 'build/static/js/*.js'"
+    },
     "dependencies": {
         "@brightlayer-ui/colors": "^3.0.1",
         "@brightlayer-ui/icons-mui": "^3.0.0-beta.0",
@@ -43,19 +56,6 @@
         "stylis": "^4.0.13",
         "stylis-plugin-rtl": "^2.1.1",
         "typescript": "^4.0.2"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "lint": "eslint \"**/**/*.{ts,tsx}\"",
-        "lint:fix": "eslint \"**/**/*.{ts,tsx}\" --fix",
-        "prettier": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
-        "prettier:check": "prettier \"**/**/*.{ts,tsx,js,jsx,json,css,scss,html,md}\" --check",
-        "precommit": "yarn && yarn prettier && yarn lint && yarn test",
-        "coverage": "yarn test --coverage --watchAll=false",
-        "analyze": "source-map-explorer 'build/static/js/*.js'"
     },
     "browserslist": {
         "production": [
