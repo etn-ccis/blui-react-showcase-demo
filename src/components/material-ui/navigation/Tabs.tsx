@@ -1,13 +1,12 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import AppBar from '@material-ui/core/AppBar';
-import Tab from '@material-ui/core/Tab';
-import Tabs from '@material-ui/core/Tabs';
-import Box from '@material-ui/core/Box';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import AppBar from '@mui/material/AppBar';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import Box from '@mui/material/Box';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -47,15 +46,15 @@ export const TabsExample: React.FC = () => {
     const [fullWidthValue, setFullWidthValue] = React.useState(0);
     const [scrollableValue, setScrollableValue] = React.useState(0);
 
-    const handleStandardChange = (event: React.ChangeEvent<Record<string, unknown>>, newValue: number): void => {
+    const handleStandardChange = (event: React.SyntheticEvent, newValue: number): void => {
         setStandardValue(newValue);
     };
 
-    const handleFullWidthChange = (event: React.ChangeEvent<Record<string, unknown>>, newValue: number): void => {
+    const handleFullWidthChange = (event: React.SyntheticEvent, newValue: number): void => {
         setFullWidthValue(newValue);
     };
 
-    const handleScrollableChange = (event: React.ChangeEvent<Record<string, unknown>>, newValue: number): void => {
+    const handleScrollableChange = (event: React.SyntheticEvent, newValue: number): void => {
         setScrollableValue(newValue);
     };
 

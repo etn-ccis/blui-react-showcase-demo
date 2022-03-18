@@ -1,11 +1,10 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Delete from '@material-ui/icons/Delete';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Delete from '@mui/icons-material/Delete';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -42,7 +41,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Default
                     </Typography>
-                    <IconButton>
+                    <IconButton color="inherit" size="large">
                         <Delete />
                     </IconButton>
                 </div>
@@ -51,7 +50,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Default Disabled
                     </Typography>
-                    <IconButton disabled>
+                    <IconButton color="inherit" disabled size="large">
                         <Delete />
                     </IconButton>
                 </div>
@@ -61,7 +60,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Primary
                     </Typography>
-                    <IconButton color="primary">
+                    <IconButton color="primary" size="large">
                         <Delete />
                     </IconButton>
                 </div>
@@ -69,7 +68,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Primary Disabled
                     </Typography>
-                    <IconButton color="primary" disabled>
+                    <IconButton color="primary" disabled size="large">
                         <Delete />
                     </IconButton>
                 </div>
@@ -79,7 +78,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Secondary
                     </Typography>
-                    <IconButton color="secondary">
+                    <IconButton color="secondary" size="large">
                         <Delete />
                     </IconButton>
                 </div>
@@ -87,7 +86,7 @@ export const IconButtonExample: React.FC = () => {
                     <Typography variant={'body1'} className={classes.label}>
                         Secondary Disabled
                     </Typography>
-                    <IconButton color="secondary" disabled>
+                    <IconButton color="secondary" disabled size="large">
                         <Delete />
                     </IconButton>
                 </div>

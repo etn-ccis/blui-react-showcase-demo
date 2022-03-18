@@ -1,10 +1,10 @@
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import Favorite from '@material-ui/icons/Favorite';
-import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
-import CheckBox from '@material-ui/icons/CheckBox';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
+import CheckBoxOutlineBlank from '@mui/icons-material/CheckBoxOutlineBlank';
+import CheckBox from '@mui/icons-material/CheckBox';
 import React from 'react';
 
 export const CheckboxExample: React.FC = () => {
@@ -22,7 +22,9 @@ export const CheckboxExample: React.FC = () => {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<Checkbox checked={state.checkedA} onChange={handleChange} name="checkedA" />}
+                control={
+                    <Checkbox checked={state.checkedA} onChange={handleChange} name="checkedA" color="secondary" />
+                }
                 label="Secondary"
             />
             <FormControlLabel
@@ -33,7 +35,15 @@ export const CheckboxExample: React.FC = () => {
             <FormControlLabel disabled control={<Checkbox name="checkedD" />} label="Disabled" />
             <FormControlLabel disabled control={<Checkbox checked name="checkedE" />} label="Disabled" />
             <FormControlLabel
-                control={<Checkbox checked={state.checkedF} onChange={handleChange} name="checkedF" indeterminate />}
+                control={
+                    <Checkbox
+                        checked={state.checkedF}
+                        onChange={handleChange}
+                        name="checkedF"
+                        color="secondary"
+                        indeterminate
+                    />
+                }
                 label="Indeterminate"
             />
             <FormControlLabel

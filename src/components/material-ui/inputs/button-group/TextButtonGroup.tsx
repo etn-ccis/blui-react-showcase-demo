@@ -1,11 +1,10 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -38,7 +37,7 @@ export const TextButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
-                    <ButtonGroup variant="text">
+                    <ButtonGroup color="inherit" variant="text">
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
@@ -48,7 +47,7 @@ export const TextButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
-                    <ButtonGroup variant="text" disabled>
+                    <ButtonGroup color="inherit" variant="text" disabled>
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
