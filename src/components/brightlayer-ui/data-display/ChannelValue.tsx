@@ -39,13 +39,31 @@ export const ChannelValueExample: React.FC = () => {
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     Basic Usage
                 </Typography>
-                <ChannelValue value={'123'} />
+                <ChannelValue
+                    value={'123'}
+                    sx={{
+                        mt: 2,
+                        paddingLeft: '1rem',
+                        '& .BluiChannelValue-value': { pl: 1, backgroundColor: '#c00110', color: '#ee0e' },
+                    }}
+                />
             </div>
             <div className={classes.componentContainer}>
                 <Typography variant={'body1'} className={classes.sectionTitle}>
                     w/ Units
                 </Typography>
-                <ChannelValue value={'123'} units={'hz'} />
+                <ChannelValue
+                    value={'123'}
+                    units={'hz'}
+                    sx={{
+                        mt: 2,
+                        paddingLeft: '1rem',
+                        '& .BluiChannelValue-text': {
+                            backgroundColor: '#badabd',
+                            color: '#bada',
+                        },
+                    }}
+                />
             </div>
             <div className={classes.componentContainer}>
                 <Typography variant={'body1'} className={classes.sectionTitle}>
