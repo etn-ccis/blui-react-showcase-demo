@@ -1,10 +1,10 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { Alarms } from '../../pages/contextual-page-templates/Alarms';
+import { Settings } from '../../pages/contextual-page-templates/Settings';
 
 describe('App bar example', () => {
     afterEach(cleanup);
@@ -13,7 +13,7 @@ describe('App bar example', () => {
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <Alarms />
+                    <Settings />
                 </RTLThemeProvider>
             </Provider>
         );

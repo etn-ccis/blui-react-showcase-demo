@@ -1,0 +1,1929 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ChannelValueExample ChannelValueExample renders examples correctly 1`] = `
+Array [
+  <div
+    className="makeStyles-componentContainer-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+    >
+      Basic Usage
+    </p>
+    <span
+      className="makeStyles-root-4 makeStyles-root-11"
+      data-test="wrapper"
+    >
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
+        data-test="value"
+      >
+        123
+      </h6>
+    </span>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+    >
+      w/ Units
+    </p>
+    <span
+      className="makeStyles-root-4 makeStyles-root-12"
+      data-test="wrapper"
+    >
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
+        data-test="value"
+      >
+        123
+      </h6>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
+        data-test="units"
+      >
+        hz
+      </h6>
+    </span>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+    >
+      w/ Icon
+    </p>
+    <span
+      className="makeStyles-root-4 makeStyles-root-13"
+      data-test="wrapper"
+    >
+      <span
+        className="makeStyles-icon-5"
+        data-test="icon"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          color="#ca3c3d"
+          data-testid="TrendingUpIcon"
+          focusable="false"
+          style={
+            Object {
+              "display": "block",
+              "fontSize": "inherit",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+          />
+        </svg>
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
+        data-test="value"
+      >
+        123
+      </h6>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
+        data-test="units"
+      >
+        hz
+      </h6>
+    </span>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+    >
+      w/ Custom Font Size
+    </p>
+    <span
+      className="makeStyles-root-4 makeStyles-root-14"
+      data-test="wrapper"
+    >
+      <span
+        className="makeStyles-icon-5"
+        data-test="icon"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          color="#ca3c3d"
+          data-testid="TrendingUpIcon"
+          focusable="false"
+          style={
+            Object {
+              "display": "block",
+              "fontSize": "inherit",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+          />
+        </svg>
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
+        data-test="value"
+      >
+        123
+      </h6>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
+        data-test="units"
+      >
+        hz
+      </h6>
+    </span>
+  </div>,
+]
+`;
+
+exports[`Component: EmptyStateExample EmptyStateExample renders examples correctly 1`] = `
+Array [
+  <div
+    className="makeStyles-container-15"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
+    >
+      Basic Usage
+    </p>
+    <div
+      className="makeStyles-root-18"
+      data-test="frame"
+    >
+      <div
+        className="makeStyles-icon-19"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          data-testid="NotListedLocationIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm.88 13.75h-1.75V14h1.75v1.75zm0-2.87h-1.75c0-2.84 2.62-2.62 2.62-4.38 0-.96-.79-1.75-1.75-1.75s-1.75.79-1.75 1.75H8.5C8.5 6.57 10.07 5 12 5s3.5 1.57 3.5 3.5c0 2.19-2.62 2.41-2.62 4.38z"
+          />
+        </svg>
+      </div>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+      >
+        Location Unknown
+      </h6>
+    </div>
+  </div>,
+  <div
+    className="makeStyles-container-15"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
+    >
+      w/ Description
+    </p>
+    <div
+      className="makeStyles-root-18"
+      data-test="frame"
+    >
+      <div
+        className="makeStyles-icon-19"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          data-testid="LocationOffIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 6.5c1.38 0 2.5 1.12 2.5 2.5 0 .74-.33 1.39-.83 1.85l3.63 3.63c.98-1.86 1.7-3.8 1.7-5.48 0-3.87-3.13-7-7-7-1.98 0-3.76.83-5.04 2.15l3.19 3.19c.46-.52 1.11-.84 1.85-.84zm4.37 9.6-4.63-4.63-.11-.11L3.27 3 2 4.27l3.18 3.18C5.07 7.95 5 8.47 5 9c0 5.25 7 13 7 13s1.67-1.85 3.38-4.35L18.73 21 20 19.73l-3.63-3.63z"
+          />
+        </svg>
+      </div>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+      >
+        Location Services Disabled
+      </h6>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 makeStyles-description-20 css-hav9kw-MuiTypography-root"
+      >
+        Enable Location Services via Settings to receive GPS information
+      </h6>
+    </div>
+  </div>,
+  <p
+    className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
+  >
+    w/ Actions
+  </p>,
+  <div
+    className="makeStyles-root-18"
+    data-test="frame"
+  >
+    <div
+      className="makeStyles-icon-19"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+        data-testid="DevicesIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"
+        />
+      </svg>
+    </div>
+    <h6
+      className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+    >
+      No Devices
+    </h6>
+    <h6
+      className="MuiTypography-root MuiTypography-subtitle2 makeStyles-description-20 css-hav9kw-MuiTypography-root"
+    >
+      Check your network connection or add a new device
+    </h6>
+    <div
+      className="makeStyles-actions-21"
+    >
+      <button
+        className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="AddIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+        </span>
+        Add Device
+      </button>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
+Array [
+  <div
+    className="makeStyles-exampleRow-22"
+  >
+    <div
+      className="makeStyles-componentContainer-24"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+      >
+        Basic Usage
+      </p>
+      <div
+        className="makeStyles-root-25 makeStyles-root-29"
+        data-test="wrapper"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-30"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeAIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+            />
+            <path
+              d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-31"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Efficiency
+        </p>
+      </div>
+    </div>
+    <div
+      className="makeStyles-componentContainer-24"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+      >
+        w/ Value and Units
+      </p>
+      <div
+        className="makeStyles-root-25 makeStyles-root-32"
+        data-test="wrapper"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-33"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeBIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12.59h-1.33v2.61h1.38a2 2 0 001.3-.34 1.24 1.24 0 00.41-1c0-.86-.59-1.27-1.76-1.27zm1.15-1.94a1 1 0 00.39-.89.88.88 0 00-.42-.82 2.68 2.68 0 00-1.33-.25h-1.12v2.22h1.23a2.33 2.33 0 001.25-.26z"
+            />
+            <path
+              d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm3 14.18a4.3 4.3 0 01-2.69.77H8.55V7h3.12a6 6 0 013.08.61 2.09 2.09 0 011 1.92 2.42 2.42 0 01-.46 1.47 1.62 1.62 0 01-1.12.69v.07a2.21 2.21 0 011.37.79 2.61 2.61 0 01.46 1.5 2.53 2.53 0 01-1 2.13z"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-34"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-42"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              88
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              %
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Efficiency
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="makeStyles-exampleRow-22"
+  >
+    <div
+      className="makeStyles-componentContainer-24"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+      >
+        w/ Channel Value Children
+      </p>
+      <div
+        className="makeStyles-root-25 makeStyles-root-43"
+        data-test="wrapper"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-44"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="ScheduleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+            />
+            <path
+              d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-45"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-46"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              1
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              h
+            </h6>
+          </span>
+          <span
+            className="makeStyles-root-35 makeStyles-root-47"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              27
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              m
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Efficiency
+        </p>
+      </div>
+    </div>
+    <div
+      className="makeStyles-componentContainer-24"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+      >
+        w/ Icon Colors
+      </p>
+      <div
+        className="makeStyles-root-25 makeStyles-root-48"
+        data-test="wrapper"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-49"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            color="#ffffff"
+            data-testid="TempIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 17a5 5 0 11-8-4V5a3 3 0 016 0v8a5 5 0 012 4m-6-9v6.17a3 3 0 102 0V8h-2"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-50"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-51"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              38
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              °C
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Temperature
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-24"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+    >
+      Within a HeroBanner
+    </p>
+    <div
+      className="makeStyles-root-52"
+      style={
+        Object {
+          "border": "solid 1px #eef0f0",
+          "borderRadius": 4,
+          "width": 376,
+        }
+      }
+    >
+      <div
+        className="makeStyles-root-25 makeStyles-root-53"
+        data-test="wrapper"
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-54"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeAIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+            />
+            <path
+              d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-55"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-56"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              95
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              %
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Efficiency
+        </p>
+      </div>
+      <div
+        className="makeStyles-root-25 makeStyles-root-57"
+        data-test="wrapper"
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-58"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="GradeBIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12.59h-1.33v2.61h1.38a2 2 0 001.3-.34 1.24 1.24 0 00.41-1c0-.86-.59-1.27-1.76-1.27zm1.15-1.94a1 1 0 00.39-.89.88.88 0 00-.42-.82 2.68 2.68 0 00-1.33-.25h-1.12v2.22h1.23a2.33 2.33 0 001.25-.26z"
+            />
+            <path
+              d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm3 14.18a4.3 4.3 0 01-2.69.77H8.55V7h3.12a6 6 0 013.08.61 2.09 2.09 0 011 1.92 2.42 2.42 0 01-.46 1.47 1.62 1.62 0 01-1.12.69v.07a2.21 2.21 0 011.37.79 2.61 2.61 0 01.46 1.5 2.53 2.53 0 01-1 2.13z"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-59"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-60"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              88
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              %
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Efficiency
+        </p>
+      </div>
+      <div
+        className="makeStyles-root-25 makeStyles-root-61"
+        data-test="wrapper"
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-62"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="ScheduleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+            />
+            <path
+              d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-63"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-64"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              1
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              h
+            </h6>
+          </span>
+          <span
+            className="makeStyles-root-35 makeStyles-root-65"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              27
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              m
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Efficiency
+        </p>
+      </div>
+      <div
+        className="makeStyles-root-25 makeStyles-root-66"
+        data-test="wrapper"
+      >
+        <span
+          className="makeStyles-icon-26 makeStyles-icon-67"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            color="#ffffff"
+            data-testid="TempIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 17a5 5 0 11-8-4V5a3 3 0 016 0v8a5 5 0 012 4m-6-9v6.17a3 3 0 102 0V8h-2"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="makeStyles-values-27 makeStyles-values-68"
+        >
+          <span
+            className="makeStyles-root-35 makeStyles-root-69"
+            data-test="wrapper"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
+              data-test="value"
+            >
+              38
+            </h6>
+            <h6
+              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
+              data-test="units"
+            >
+              °C
+            </h6>
+          </span>
+        </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+        >
+          Temperature
+        </p>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Component: InfoListItemExample InfoListItemExample renders examples correctly 1`] = `
+Array [
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-84 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-91"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-85 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root makeStyles-listItemText-74 makeStyles-listItemText-87 css-tlelie-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-93 css-1f0fhap-MuiTypography-root"
+      >
+        Basic Usage
+      </span>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-94 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-101"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-95 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-97 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-103 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-102 css-llvhl4-MuiTypography-root"
+        >
+          with a Subtitle
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-104 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-111"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-108 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="AlarmIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-107 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-113 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-112 css-llvhl4-MuiTypography-root"
+        >
+          with an icon
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-114 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-121"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-118 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="TempIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 17a5 5 0 11-8-4V5a3 3 0 016 0v8a5 5 0 012 4m-6-9v6.17a3 3 0 102 0V8h-2"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-117 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-123 css-1f0fhap-MuiTypography-root"
+      >
+        With an array for subtitle
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-122 css-llvhl4-MuiTypography-root"
+        >
+          Item 1
+          <span
+            className="MuiTypography-root MuiTypography-body1 makeStyles-separator-79 css-ahj2mt-MuiTypography-root"
+          >
+            ·
+          </span>
+          Item 2
+          <span
+            className="MuiTypography-root MuiTypography-body1 makeStyles-separator-79 css-ahj2mt-MuiTypography-root"
+          >
+            ·
+          </span>
+          Item 3
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-124 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-131"
+      data-test="status-stripe"
+    />
+    <hr
+      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-126 css-9mgopn-MuiDivider-root"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-125 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-127 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-133 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-132 css-llvhl4-MuiTypography-root"
+        >
+          with a partial divider
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-134 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-141"
+      data-test="status-stripe"
+    />
+    <hr
+      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-136 css-9mgopn-MuiDivider-root"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-135 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-137 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-143 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-142 css-llvhl4-MuiTypography-root"
+        >
+          with a full divider
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <div
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button makeStyles-root-70 makeStyles-root-144 css-bshv44-MuiButtonBase-root-MuiListItem-root"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-151"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-145 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          data-testid="PersonIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-147 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-153 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-152 css-llvhl4-MuiTypography-root"
+        >
+          that is clickable
+        </p>
+      </h6>
+    </div>
+  </div>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-154 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-161"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-155 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="GradeAIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+          />
+          <path
+            d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-157 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-163 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-162 css-llvhl4-MuiTypography-root"
+        >
+          with an avatar
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-164 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-171"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-168 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="LeafIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66 1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5a6.22 6.22 0 001.75 3.75C7 8 17 8 17 8z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-167 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-173 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-172 css-llvhl4-MuiTypography-root"
+        >
+          with a background color
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-174 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-181"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-178 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DeviceIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 14a2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2 2 2 0 012 2zm0-10.5A1.5 1.5 0 0117.5 8h-11A1.5 1.5 0 015 6.5 1.5 1.5 0 016.5 5h11A1.5 1.5 0 0119 6.5z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "marginLeft": 0,
+          "marginRight": 16,
+        }
+      }
+    >
+      <div>
+        8:32 
+        <strong>
+          AM
+        </strong>
+      </div>
+      <div>
+        11/21/21
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-177 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-183 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-182 css-llvhl4-MuiTypography-root"
+        >
+          with a left component
+        </p>
+      </h6>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-184 css-1p823my-MuiListItem-root"
+    disabled={false}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-191"
+      data-test="status-stripe"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-188 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DeviceIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 14a2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2 2 2 0 012 2zm0-10.5A1.5 1.5 0 0117.5 8h-11A1.5 1.5 0 015 6.5 1.5 1.5 0 016.5 5h11A1.5 1.5 0 0119 6.5z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-187 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-193 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-192 css-llvhl4-MuiTypography-root"
+        >
+          with a right component
+        </p>
+      </h6>
+    </div>
+    <div
+      className="makeStyles-rightComponent-77"
+    >
+      <span
+        className="makeStyles-root-194 makeStyles-root-201"
+        data-test="wrapper"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-196 makeStyles-value-200 css-1qp5wg9-MuiTypography-root"
+          data-test="value"
+        >
+          15
+        </h6>
+        <h6
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-196 makeStyles-units-199 makeStyles-suffix-198 css-1qp5wg9-MuiTypography-root"
+          data-test="units"
+        >
+          A
+        </h6>
+      </span>
+    </div>
+  </li>,
+  <div
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button makeStyles-root-70 makeStyles-root-202 css-bshv44-MuiButtonBase-root-MuiListItem-root"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="makeStyles-statusStripe-80 makeStyles-statusStripe-209"
+      data-test="status-stripe"
+    />
+    <hr
+      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-204 css-9mgopn-MuiDivider-root"
+    />
+    <div
+      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      style={
+        Object {
+          "minWidth": "unset",
+        }
+      }
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-206 css-2s90m6-MuiAvatar-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="DeviceIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 14a2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2 2 2 0 012 2zm0-10.5A1.5 1.5 0 0117.5 8h-11A1.5 1.5 0 015 6.5 1.5 1.5 0 016.5 5h11A1.5 1.5 0 0119 6.5z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-205 css-konndc-MuiListItemText-root"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-211 css-1f0fhap-MuiTypography-root"
+      >
+        Info List Item
+      </span>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-210 css-llvhl4-MuiTypography-root"
+        >
+          with all properties
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap makeStyles-info-76 makeStyles-info-207 css-z1doim-MuiTypography-root"
+        >
+          more info...
+        </p>
+      </h6>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Component: ListItemTagExample ListItemTagExample renders examples correctly 1`] = `
+Array [
+  <div
+    className="makeStyles-exampleRow-213"
+  >
+    <div
+      className="makeStyles-componentContainer-215"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
+      >
+        Basic Usage
+      </p>
+      <span
+        className="makeStyles-root-216 makeStyles-root-218 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
+        data-test="list-item-tag"
+      >
+        active
+      </span>
+    </div>
+    <div
+      className="makeStyles-componentContainer-215"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
+      >
+        w/ Custom Colors
+      </p>
+      <span
+        className="makeStyles-root-216 makeStyles-root-219 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
+        data-test="list-item-tag"
+      >
+        active
+      </span>
+    </div>
+  </div>,
+  <div
+    className="makeStyles-componentContainer-215"
+    style={
+      Object {
+        "marginTop": "48px",
+      }
+    }
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
+    >
+      Within an Info List Item
+    </p>
+    <li
+      className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-220 makeStyles-root-234 css-1p823my-MuiListItem-root"
+      disabled={false}
+    >
+      <div
+        className="makeStyles-statusStripe-230 makeStyles-statusStripe-241"
+        data-test="status-stripe"
+      />
+      <div
+        className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+        style={
+          Object {
+            "minWidth": "unset",
+          }
+        }
+      >
+        <div
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-225 makeStyles-icon-238 css-2s90m6-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="BrightnessMediumIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 15.31 23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-224 makeStyles-listItemText-237 css-konndc-MuiListItemText-root"
+      >
+        <span
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-232 makeStyles-title-243 css-1f0fhap-MuiTypography-root"
+        >
+          Info List Item
+        </span>
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-231 makeStyles-subtitle-242 css-llvhl4-MuiTypography-root"
+          >
+            with List Item Tags
+          </p>
+        </h6>
+      </div>
+      <div
+        className="makeStyles-rightComponent-227"
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <span
+            className="makeStyles-root-216 makeStyles-root-244 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
+            data-test="list-item-tag"
+            style={
+              Object {
+                "marginLeft": 0,
+                "marginRight": "16px",
+              }
+            }
+          >
+            Build Passing
+          </span>
+          <span
+            className="makeStyles-root-216 makeStyles-root-245 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
+            data-test="list-item-tag"
+          >
+            5 Bugs
+          </span>
+        </div>
+      </div>
+    </li>
+  </div>,
+]
+`;
+
+exports[`Component: ThreeLinerExample ThreeLinerExample renders examples correctly 1`] = `
+Array [
+  <div
+    className="makeStyles-root-247 makeStyles-root-251"
+  >
+    <div
+      className="makeStyles-title-248 makeStyles-title-252"
+    >
+      Three Liner Component
+    </div>
+    <div
+      className="makeStyles-subtitle-249 makeStyles-subtitle-253"
+    >
+      with basic usage
+    </div>
+    <div
+      className="makeStyles-info-250 makeStyles-info-254"
+    >
+      ...and a third line
+    </div>
+  </div>,
+  <div
+    className="makeStyles-root-247 makeStyles-root-255"
+    style={
+      Object {
+        "marginTop": "32px",
+      }
+    }
+  >
+    <div
+      className="makeStyles-title-248 makeStyles-title-256"
+    >
+      Three Liner Component
+    </div>
+    <div
+      className="makeStyles-subtitle-249 makeStyles-subtitle-257"
+    >
+      with custom content
+    </div>
+    <div
+      className="makeStyles-info-250 makeStyles-info-258"
+    >
+      <span
+        className="makeStyles-root-259 makeStyles-root-266"
+        data-test="wrapper"
+      >
+        <span
+          className="makeStyles-icon-260"
+          data-test="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            color="#ca3c3d"
+            data-testid="TrendingUpIcon"
+            focusable="false"
+            style={
+              Object {
+                "display": "block",
+                "fontSize": "inherit",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+            />
+          </svg>
+        </span>
+        <h6
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-261 makeStyles-value-265 css-1qp5wg9-MuiTypography-root"
+          data-test="value"
+        >
+          123
+        </h6>
+        <h6
+          className="MuiTypography-root MuiTypography-h6 makeStyles-text-261 makeStyles-units-264 makeStyles-suffix-263 css-1qp5wg9-MuiTypography-root"
+          data-test="units"
+        >
+          hz
+        </h6>
+      </span>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1`] = `
+Array [
+  <div
+    className="makeStyles-exampleRow-267"
+  >
+    <div
+      className="makeStyles-componentContainer-269"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+      >
+        Basic Usage
+      </p>
+      <div
+        className="makeStyles-root-273"
+      >
+        <div
+          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          onClick={[Function]}
+        >
+          UI
+        </div>
+      </div>
+    </div>
+    <div
+      className="makeStyles-componentContainer-269"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+      >
+        w/ Custom Colors
+      </p>
+      <div
+        className="makeStyles-root-273"
+      >
+        <div
+          className="makeStyles-avatarRoot-274 makeStyles-customAvatar-271 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          onClick={[Function]}
+        >
+          UI
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="makeStyles-exampleRow-267"
+  >
+    <div
+      className="makeStyles-componentContainer-269"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+      >
+        w/ Non-Text Avatar
+      </p>
+      <div
+        className="makeStyles-root-273"
+      >
+        <div
+          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PetsIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="4.5"
+              cy="9.5"
+              r="2.5"
+            />
+            <circle
+              cx="9"
+              cy="5.5"
+              r="2.5"
+            />
+            <circle
+              cx="15"
+              cy="5.5"
+              r="2.5"
+            />
+            <circle
+              cx="19.5"
+              cy="9.5"
+              r="2.5"
+            />
+            <path
+              d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="makeStyles-componentContainer-269"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+      >
+        w/ a Menu Header
+      </p>
+      <div
+        className="makeStyles-root-273"
+      >
+        <div
+          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          onClick={[Function]}
+        >
+          UI
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "marginTop": "32px",
+        "width": "100%",
+      }
+    }
+  >
+    <header
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionRelative css-1vazdj7-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
+        style={
+          Object {
+            "height": "4rem",
+            "minHeight": "unset",
+            "padding": "0 16px",
+          }
+        }
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+        >
+          UserMenu within a Toolbar
+        </h6>
+        <div
+          className=""
+          data-test="spacer-root"
+          style={
+            Object {
+              "flex": "1 1 0px",
+              "height": "auto",
+              "width": "auto",
+            }
+          }
+        />
+        <div
+          className="makeStyles-root-273"
+        >
+          <div
+            className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+              data-testid="PersonIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>,
+]
+`;

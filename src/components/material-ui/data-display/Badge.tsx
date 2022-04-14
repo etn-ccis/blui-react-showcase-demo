@@ -1,12 +1,11 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Avatar from '@material-ui/core/Avatar';
-import Badge from '@material-ui/core/Badge';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Mail from '@material-ui/icons/Mail';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Avatar from '@mui/material/Avatar';
+import Badge from '@mui/material/Badge';
+import Mail from '@mui/icons-material/Mail';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -148,7 +147,7 @@ export const BadgeExample: React.FC = () => {
                         <Typography variant={'body2'} className={classes.label}>
                             Circle
                         </Typography>
-                        <Badge badgeContent={1} overlap={'circle'} color="primary">
+                        <Badge badgeContent={1} overlap="circular" color="primary">
                             <Avatar>
                                 <Mail />
                             </Avatar>
@@ -158,7 +157,7 @@ export const BadgeExample: React.FC = () => {
                         <Typography variant={'body2'} className={classes.label}>
                             Circle w/ Dot
                         </Typography>
-                        <Badge badgeContent={1} overlap={'circle'} variant={'dot'} color="primary">
+                        <Badge badgeContent={1} overlap="circular" variant={'dot'} color="primary">
                             <Avatar>
                                 <Mail />
                             </Avatar>

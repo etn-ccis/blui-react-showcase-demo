@@ -1,14 +1,13 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Typography from '@material-ui/core/Typography';
-import Fab from '@material-ui/core/Fab';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Add from '@material-ui/icons/Add';
-import Edit from '@material-ui/icons/Edit';
-import Favorite from '@material-ui/icons/Favorite';
-import Navigation from '@material-ui/icons/Navigation';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import Fab from '@mui/material/Fab';
+import Add from '@mui/icons-material/Add';
+import Edit from '@mui/icons-material/Edit';
+import Favorite from '@mui/icons-material/Favorite';
+import Navigation from '@mui/icons-material/Navigation';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

@@ -1,14 +1,14 @@
 import React from 'react';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import useTheme from '@material-ui/core/styles/useTheme';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
 
 import clsx from 'clsx';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         container: {
             display: 'flex',
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) =>
         },
         fullWidthExampleCard: {
             [theme.breakpoints.up('md')]: {
-                maxWidth: 416 * 2 + theme.spacing(2),
+                maxWidth: `${416 * 2 + parseInt(theme.spacing(2))}px`,
             },
         },
     })

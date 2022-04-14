@@ -1,9 +1,9 @@
 import React from 'react';
-import Link from '@material-ui/core/Link';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Link from '@mui/material/Link';
+import { useTheme, Theme } from '@mui/material/styles';
+
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void => {
+const handleClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.preventDefault();
     // eslint-disable-next-line no-console
     console.info('You clicked a link.');

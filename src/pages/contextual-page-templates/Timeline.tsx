@@ -1,12 +1,12 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
-import Card from '@material-ui/core/Card';
-import ChevronRight from '@material-ui/icons/ChevronRight';
-import Notifications from '@material-ui/icons/Notifications';
-import NotificationsActive from '@material-ui/icons/NotificationsActive';
+import Card from '@mui/material/Card';
+import ChevronRight from '@mui/icons-material/ChevronRight';
+import Notifications from '@mui/icons-material/Notifications';
+import NotificationsActive from '@mui/icons-material/NotificationsActive';
 import * as colors from '@brightlayer-ui/colors';
 import { usePageTitle } from '../../hooks/usePageTitle';
 

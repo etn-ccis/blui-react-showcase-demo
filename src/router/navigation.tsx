@@ -11,7 +11,7 @@ import {
     Settings,
     Surfaces,
 } from '../pages';
-import { Layers, Category } from '@material-ui/icons';
+import { Layers, Category } from '@mui/icons-material';
 import { PxblueSmall } from '@brightlayer-ui/icons-mui';
 
 export type SimpleNavItem = {

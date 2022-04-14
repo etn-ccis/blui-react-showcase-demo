@@ -1,20 +1,19 @@
 import React from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import { Hero, HeroBanner, InfoListItem, ScoreCard } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
 import backgroundImage from '../../../assets/topology_40.png';
-import Cloud from '@material-ui/icons/Cloud';
-import ListAlt from '@material-ui/icons/ListAlt';
-import Mail from '@material-ui/icons/Mail';
-import MoreVert from '@material-ui/icons/MoreVert';
-import Notifications from '@material-ui/icons/Notifications';
-import Search from '@material-ui/icons/Search';
+import Cloud from '@mui/icons-material/Cloud';
+import ListAlt from '@mui/icons-material/ListAlt';
+import Mail from '@mui/icons-material/Mail';
+import MoreVert from '@mui/icons-material/MoreVert';
+import Notifications from '@mui/icons-material/Notifications';
+import Search from '@mui/icons-material/Search';
 import { GradeA, Moisture as Humidity, Temp } from '@brightlayer-ui/icons-mui';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
@@ -63,18 +62,14 @@ export const ScoreCardExample: React.FC = () => {
             icon={<Temp fontSize={'inherit'} htmlColor={colors.black[500]} />}
             label={'Temperature'}
             iconSize={48}
-            value={98}
-            units={'°F'}
-            fontSize={'normal'}
+            ChannelValueProps={{ value: 98, units: '°F', fontSize: 'normal' }}
         />,
         <Hero
             key={'hero2'}
             icon={<Humidity fontSize={'inherit'} htmlColor={colors.blue[300]} />}
             label={'Humidity'}
-            value={54}
-            units={'%'}
+            ChannelValueProps={{ value: 54, units: '%', fontSize: 'normal' }}
             iconSize={48}
-            fontSize={'normal'}
         />,
     ];
 
@@ -166,9 +161,7 @@ export const ScoreCardExample: React.FC = () => {
                             label={'Grade'}
                             iconSize={72}
                             iconBackgroundColor={isDarkMode ? colors.black[900] : colors.white[50]}
-                            value={'98'}
-                            units={'/100'}
-                            fontSize={'normal'}
+                            ChannelValueProps={{ value: 98, units: '/100', fontSize: 'normal' }}
                         />
                     </HeroBanner>
                 }

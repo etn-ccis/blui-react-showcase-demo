@@ -1,11 +1,11 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import { useTheme, Theme } from '@mui/material/styles';
+
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -38,7 +38,7 @@ export const ContainedButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Active
                     </Typography>
-                    <ButtonGroup variant="contained">
+                    <ButtonGroup color="inherit" variant="contained">
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>
@@ -48,7 +48,7 @@ export const ContainedButtonGroupExample: React.FC = () => {
                     <Typography variant={'body2'} className={classes.label}>
                         Disabled
                     </Typography>
-                    <ButtonGroup variant="contained" disabled>
+                    <ButtonGroup color="inherit" variant="contained" disabled>
                         <Button>One</Button>
                         <Button>Two</Button>
                         <Button>Three</Button>

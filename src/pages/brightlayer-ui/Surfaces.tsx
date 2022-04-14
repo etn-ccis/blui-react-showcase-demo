@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     ComponentExample,
-    DropdownToolbarExample,
     ExampleCardList,
     BLUIAppBarExample,
     ScoreCardExample,
@@ -12,7 +11,6 @@ import { usePageTitle } from '../../hooks/usePageTitle';
 export const BLUISurfaces: React.FC = () => {
     const examples: ComponentExample[] = [
         { label: 'App Bar', component: <BLUIAppBarExample /> },
-        { label: 'Dropdown Toolbar', component: <DropdownToolbarExample /> },
         { label: 'Score Card', component: <ScoreCardExample /> },
         { label: 'Spacer', component: <SpacerExample /> },
     ];
