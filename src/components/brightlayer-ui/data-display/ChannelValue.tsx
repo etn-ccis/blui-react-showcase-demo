@@ -41,11 +41,6 @@ export const ChannelValueExample: React.FC = () => {
                 </Typography>
                 <ChannelValue
                     value={'123'}
-                    sx={{
-                        mt: 2,
-                        paddingLeft: '1rem',
-                        '& .BluiChannelValue-value': { pl: 1, backgroundColor: '#c00110', color: '#ee0e' },
-                    }}
                 />
             </div>
             <div className={classes.componentContainer}>
@@ -55,14 +50,6 @@ export const ChannelValueExample: React.FC = () => {
                 <ChannelValue
                     value={'123'}
                     units={'hz'}
-                    sx={{
-                        mt: 2,
-                        paddingLeft: '1rem',
-                        '& .BluiChannelValue-text': {
-                            backgroundColor: '#badabd',
-                            color: '#bada',
-                        },
-                    }}
                 />
             </div>
             <div className={classes.componentContainer}>
