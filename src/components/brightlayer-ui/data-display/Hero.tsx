@@ -34,7 +34,6 @@ export const HeroExample: React.FC = () => (
                 <Hero
                     icon={<GradeA fontSize={'inherit'} />}
                     label={'Efficiency'}
-                    sx={{ flex: 1 }}
                     style={{ flex: 1 }}
                 />
             </ComponentContainer>
