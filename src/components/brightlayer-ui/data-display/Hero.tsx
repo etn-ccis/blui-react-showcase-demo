@@ -31,11 +31,7 @@ export const HeroExample: React.FC = () => (
         <ExampleRow>
             <ComponentContainer>
                 <Label variant={'body2'}>Basic Usage</Label>
-                <Hero
-                    icon={<GradeA fontSize={'inherit'} />}
-                    label={'Efficiency'}
-                    style={{ flex: 1 }}
-                />
+                <Hero icon={<GradeA fontSize={'inherit'} />} label={'Efficiency'} style={{ flex: 1 }} />
             </ComponentContainer>
             <ComponentContainer>
                 <Label variant={'body2'}>w/ Value and Units</Label>
