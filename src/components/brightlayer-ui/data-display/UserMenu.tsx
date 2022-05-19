@@ -3,51 +3,41 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { useTheme, styled } from '@mui/material/styles';
 import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
 import Email from '@mui/icons-material/Email';
 import ExitToApp from '@mui/icons-material/ExitToApp';
 import Pets from '@mui/icons-material/Pets';
 import Settings from '@mui/icons-material/Settings';
-import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
 import * as colors from '@brightlayer-ui/colors';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(4),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        componentContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
-        },
-        iconFlip: {
-            transform: 'scaleX(-1)',
-        },
-        customAvatar: {
-            color: colors.white[50],
-            backgroundColor: colors.blue[800],
-        },
-        paper: {
-            backgroundColor: colors.white[50],
-        },
-    })
-);
+const ExampleRow = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    marginBottom: theme.spacing(4),
+}));
+
+const ComponentContainer = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1,
+}));
+
+const Label = styled(Typography)(({ theme }) => ({
+    marginBottom: theme.spacing(1),
+}));
+
+const CustomAvatar = styled(Avatar)(() => ({
+    color: colors.white[50],
+    backgroundColor: colors.blue[800],
+}));
 
 export const UserMenuExample: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles(theme);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
@@ -64,18 +54,16 @@ export const UserMenuExample: React.FC = () => {
         },
         {
             title: 'Log Out',
-            icon: <ExitToApp className={clsx({ [classes.iconFlip]: rtl })} />,
+            icon: <ExitToApp sx={rtl ? { transform: 'scaleX(-1)' } : {}} />,
             onClick: (): void => {},
         },
     ];
 
     return (
         <>
-            <div className={classes.exampleRow}>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
-                        Basic Usage
-                    </Typography>
+            <ExampleRow>
+                <ComponentContainer>
+                    <Label variant={'body2'}>Basic Usage</Label>
                     <UserMenu
                         avatar={<Avatar>UI</Avatar>}
                         menuGroups={[
@@ -86,13 +74,11 @@ export const UserMenuExample: React.FC = () => {
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </div>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
-                        w/ Custom Colors
-                    </Typography>
+                </ComponentContainer>
+                <ComponentContainer>
+                    <Label variant={'body2'}>w/ Custom Colors</Label>
                     <UserMenu
-                        avatar={<Avatar classes={{ root: classes.customAvatar }}>UI</Avatar>}
+                        avatar={<CustomAvatar>UI</CustomAvatar>}
                         menuGroups={[
                             {
                                 items: defaultMenuGroup,
@@ -100,17 +86,14 @@ export const UserMenuExample: React.FC = () => {
                                 iconColor: colors.blue[800], // @TODO: FIX ME - looks like this isn't working... this needs fixed in storybook too
                             },
                         ]}
-                        MenuProps={{ classes: { paper: classes.paper } }}
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </div>
-            </div>
-            <div className={classes.exampleRow}>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
-                        w/ Non-Text Avatar
-                    </Typography>
+                </ComponentContainer>
+            </ExampleRow>
+            <ExampleRow>
+                <ComponentContainer>
+                    <Label variant={'body2'}>w/ Non-Text Avatar</Label>
                     <UserMenu
                         avatar={
                             <Avatar>
@@ -125,11 +108,9 @@ export const UserMenuExample: React.FC = () => {
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </div>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
-                        w/ a Menu Header
-                    </Typography>
+                </ComponentContainer>
+                <ComponentContainer>
+                    <Label variant={'body2'}>w/ a Menu Header</Label>
                     <UserMenu
                         avatar={<Avatar>UI</Avatar>}
                         menuGroups={[
@@ -142,8 +123,8 @@ export const UserMenuExample: React.FC = () => {
                         menuTitle={'Menu Title'}
                         menuSubtitle={'Menu Subtitle'}
                     />
-                </div>
-            </div>
+                </ComponentContainer>
+            </ExampleRow>
             <div style={{ width: '100%', marginTop: theme.spacing(4) }}>
                 <AppBar position={'relative'} color={'primary'}>
                     <Toolbar style={{ padding: '0 16px', minHeight: 'unset', height: '4rem' }}>
