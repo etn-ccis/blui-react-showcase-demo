@@ -1,62 +1,49 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { useTheme, styled } from '@mui/material/styles';
 import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
 import BrightnessMedium from '@mui/icons-material/BrightnessMedium';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        componentContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
-        },
-    })
-);
+const ExampleRow = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    marginBottom: theme.spacing(2),
+}));
+
+const ComponentContainer = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1,
+}));
+
+const Label = styled(Typography)(({ theme }) => ({
+    marginBottom: theme.spacing(1),
+}));
 
 export const ListItemTagExample: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles(theme);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
     return (
         <>
-            <div className={classes.exampleRow}>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
-                        Basic Usage
-                    </Typography>
+            <ExampleRow>
+                <ComponentContainer>
+                    <Label variant={'body2'}>Basic Usage</Label>
                     <ListItemTag label={'active'} />
-                </div>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
-                        w/ Custom Colors
-                    </Typography>
+                </ComponentContainer>
+                <ComponentContainer>
+                    <Label variant={'body2'}>w/ Custom Colors</Label>
                     <ListItemTag label={'active'} backgroundColor={colors.red['500']} fontColor={colors.white['50']} />
-                </div>
-            </div>
-            <div className={classes.componentContainer} style={{ marginTop: theme.spacing(6) }}>
-                <Typography variant={'body2'} className={classes.label}>
-                    Within an Info List Item
-                </Typography>
+                </ComponentContainer>
+            </ExampleRow>
+            <ComponentContainer style={{ marginTop: theme.spacing(6) }}>
+                <Label variant={'body2'}>Within an Info List Item</Label>
                 <InfoListItem
                     icon={<BrightnessMedium />}
                     title={'Info List Item'}
@@ -80,7 +67,7 @@ export const ListItemTagExample: React.FC = () => {
                         </div>
                     }
                 />
-            </div>
+            </ComponentContainer>
         </>
     );
 };
