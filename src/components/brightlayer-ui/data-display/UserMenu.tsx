@@ -25,6 +25,7 @@ const ComponentContainer = styled(Box)(() => ({
     flexDirection: 'column',
     alignItems: 'center',
     flex: 1,
+    '& .paper': {},
 }));
 
 const Label = styled(Typography)(({ theme }) => ({
@@ -86,6 +87,7 @@ export const UserMenuExample: React.FC = () => {
                                 iconColor: colors.blue[800], // @TODO: FIX ME - looks like this isn't working... this needs fixed in storybook too
                             },
                         ]}
+                        MenuProps={{ classes: { paper: 'paper' } }}
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
