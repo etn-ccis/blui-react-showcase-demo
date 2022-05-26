@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import { useTheme, styled } from '@mui/material/styles';
 import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
 import Email from '@mui/icons-material/Email';
 import ExitToApp from '@mui/icons-material/ExitToApp';
@@ -14,31 +13,29 @@ import { AppStore } from '../../../__types__';
 import * as colors from '@brightlayer-ui/colors';
 import Box from '@mui/material/Box';
 
-const ExampleRow = styled(Box)(({ theme }) => ({
+const ExampleRowStyles = {
     display: 'flex',
     justifyContent: 'space-evenly',
-    marginBottom: theme.spacing(4),
-}));
+    mb: 4,
+};
 
-const ComponentContainer = styled(Box)(() => ({
+const ComponentContainerStyles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     flex: 1,
-    '& .paper': {},
-}));
+};
 
-const Label = styled(Typography)(({ theme }) => ({
-    marginBottom: theme.spacing(1),
-}));
+const LabelStyles = {
+    mb: 1,
+};
 
-const CustomAvatar = styled(Avatar)(() => ({
+const AvatarStyles = {
     color: colors.white[50],
     backgroundColor: colors.blue[800],
-}));
+};
 
 export const UserMenuExample: React.FC = () => {
-    const theme = useTheme();
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
@@ -62,9 +59,11 @@ export const UserMenuExample: React.FC = () => {
 
     return (
         <>
-            <ExampleRow>
-                <ComponentContainer>
-                    <Label variant={'body2'}>Basic Usage</Label>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Basic Usage
+                    </Typography>
                     <UserMenu
                         avatar={<Avatar>UI</Avatar>}
                         menuGroups={[
@@ -75,11 +74,13 @@ export const UserMenuExample: React.FC = () => {
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </ComponentContainer>
-                <ComponentContainer>
-                    <Label variant={'body2'}>w/ Custom Colors</Label>
+                </Box>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        w/ Custom Colors
+                    </Typography>
                     <UserMenu
-                        avatar={<CustomAvatar>UI</CustomAvatar>}
+                        avatar={<Avatar sx={AvatarStyles}>UI</Avatar>}
                         menuGroups={[
                             {
                                 items: defaultMenuGroup,
@@ -87,15 +88,16 @@ export const UserMenuExample: React.FC = () => {
                                 iconColor: colors.blue[800], // @TODO: FIX ME - looks like this isn't working... this needs fixed in storybook too
                             },
                         ]}
-                        MenuProps={{ classes: { paper: 'paper' } }}
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </ComponentContainer>
-            </ExampleRow>
-            <ExampleRow>
-                <ComponentContainer>
-                    <Label variant={'body2'}>w/ Non-Text Avatar</Label>
+                </Box>
+            </Box>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        w/ Non-Text Avatar
+                    </Typography>
                     <UserMenu
                         avatar={
                             <Avatar>
@@ -110,9 +112,11 @@ export const UserMenuExample: React.FC = () => {
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </ComponentContainer>
-                <ComponentContainer>
-                    <Label variant={'body2'}>w/ a Menu Header</Label>
+                </Box>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        w/ a Menu Header
+                    </Typography>
                     <UserMenu
                         avatar={<Avatar>UI</Avatar>}
                         menuGroups={[
@@ -125,11 +129,21 @@ export const UserMenuExample: React.FC = () => {
                         menuTitle={'Menu Title'}
                         menuSubtitle={'Menu Subtitle'}
                     />
-                </ComponentContainer>
-            </ExampleRow>
-            <div style={{ width: '100%', marginTop: theme.spacing(4) }}>
+                </Box>
+            </Box>
+            <Box sx={{ width: '100%', mt: 4 }}>
                 <AppBar position={'relative'} color={'primary'}>
-                    <Toolbar style={{ padding: '0 16px', minHeight: 'unset', height: '4rem' }}>
+                    <Toolbar
+                        sx={{
+                            pt: 0,
+                            minHeight: 'unset',
+                            height: '4rem',
+                            '&.MuiToolbar-root': {
+                                paddingLeft: 2,
+                                paddingRight: 2,
+                            },
+                        }}
+                    >
                         <Typography variant={'h6'}>UserMenu within a Toolbar</Typography>
                         <Spacer flex={1} />
                         <UserMenu
@@ -146,7 +160,7 @@ export const UserMenuExample: React.FC = () => {
                         />
                     </Toolbar>
                 </AppBar>
-            </div>
+            </Box>
         </>
     );
 };
