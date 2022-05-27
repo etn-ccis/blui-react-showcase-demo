@@ -95,6 +95,10 @@ export const NavigationDrawer: React.FC = () => {
                 onIconClick={(): void => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
+                sx={{'&.MuiToolbar-root': {
+                    paddingRight: 0,
+                    paddingLeft: 0,
+                }}}
             />
             <DrawerBody>
                 <DrawerNavGroup items={menuItems} />
