@@ -3,51 +3,39 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
 import Email from '@mui/icons-material/Email';
 import ExitToApp from '@mui/icons-material/ExitToApp';
 import Pets from '@mui/icons-material/Pets';
 import Settings from '@mui/icons-material/Settings';
-import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
 import * as colors from '@brightlayer-ui/colors';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(4),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        componentContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
-        },
-        iconFlip: {
-            transform: 'scaleX(-1)',
-        },
-        customAvatar: {
-            color: colors.white[50],
-            backgroundColor: colors.blue[800],
-        },
-        paper: {
-            backgroundColor: colors.white[50],
-        },
-    })
-);
+const ExampleRowStyles = {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    mb: 4,
+};
+
+const ComponentContainerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1,
+};
+
+const LabelStyles = {
+    mb: 1,
+};
+
+const AvatarStyles = {
+    color: colors.white[50],
+    backgroundColor: colors.blue[800],
+};
 
 export const UserMenuExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
@@ -64,16 +52,16 @@ export const UserMenuExample: React.FC = () => {
         },
         {
             title: 'Log Out',
-            icon: <ExitToApp className={clsx({ [classes.iconFlip]: rtl })} />,
+            icon: <ExitToApp sx={rtl ? { transform: 'scaleX(-1)' } : {}} />,
             onClick: (): void => {},
         },
     ];
 
     return (
         <>
-            <div className={classes.exampleRow}>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
                         Basic Usage
                     </Typography>
                     <UserMenu
@@ -86,13 +74,13 @@ export const UserMenuExample: React.FC = () => {
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </div>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
                         w/ Custom Colors
                     </Typography>
                     <UserMenu
-                        avatar={<Avatar classes={{ root: classes.customAvatar }}>UI</Avatar>}
+                        avatar={<Avatar sx={AvatarStyles}>UI</Avatar>}
                         menuGroups={[
                             {
                                 items: defaultMenuGroup,
@@ -100,15 +88,14 @@ export const UserMenuExample: React.FC = () => {
                                 iconColor: colors.blue[800], // @TODO: FIX ME - looks like this isn't working... this needs fixed in storybook too
                             },
                         ]}
-                        MenuProps={{ classes: { paper: classes.paper } }}
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </div>
-            </div>
-            <div className={classes.exampleRow}>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+            </Box>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
                         w/ Non-Text Avatar
                     </Typography>
                     <UserMenu
@@ -125,9 +112,9 @@ export const UserMenuExample: React.FC = () => {
                         onOpen={(): void => {}}
                         onClose={(): void => {}}
                     />
-                </div>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={ComponentContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
                         w/ a Menu Header
                     </Typography>
                     <UserMenu
@@ -142,11 +129,21 @@ export const UserMenuExample: React.FC = () => {
                         menuTitle={'Menu Title'}
                         menuSubtitle={'Menu Subtitle'}
                     />
-                </div>
-            </div>
-            <div style={{ width: '100%', marginTop: theme.spacing(4) }}>
+                </Box>
+            </Box>
+            <Box sx={{ width: '100%', mt: 4 }}>
                 <AppBar position={'relative'} color={'primary'}>
-                    <Toolbar style={{ padding: '0 16px', minHeight: 'unset', height: '4rem' }}>
+                    <Toolbar
+                        sx={{
+                            pt: 0,
+                            minHeight: 'unset',
+                            height: '4rem',
+                            '&.MuiToolbar-root': {
+                                paddingLeft: 2,
+                                paddingRight: 2,
+                            },
+                        }}
+                    >
                         <Typography variant={'h6'}>UserMenu within a Toolbar</Typography>
                         <Spacer flex={1} />
                         <UserMenu
@@ -163,7 +160,7 @@ export const UserMenuExample: React.FC = () => {
                         />
                     </Toolbar>
                 </AppBar>
-            </div>
+            </Box>
         </>
     );
 };
