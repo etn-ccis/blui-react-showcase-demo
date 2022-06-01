@@ -25,6 +25,10 @@ const ScoreCardStyles = {
     flex: '0 0 auto',
 };
 
+const InfoListItemStyles = {
+    height: '2.25rem',
+};
+
 export const ScoreCardExample: React.FC = () => {
     const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
     const direction = useSelector((store: AppStore) => store.app.direction);
@@ -159,7 +163,7 @@ export const ScoreCardExample: React.FC = () => {
                         title={'0 Alarms'}
                         icon={<Notifications color={'inherit'} />}
                         sx={{
-                            height: '2.25rem',
+                            ...InfoListItemStyles,
                             '& .BluiInfoListItem-title': {
                                 fontWeight: 400,
                             },
@@ -167,7 +171,7 @@ export const ScoreCardExample: React.FC = () => {
                     />
                     <InfoListItem
                         dense
-                        sx={{ height: '2.25rem' }}
+                        sx={InfoListItemStyles}
                         fontColor={isDarkMode ? colors.blue[300] : colors.blue[500]}
                         iconColor={isDarkMode ? colors.blue[300] : colors.blue[500]}
                         title={'1 Event'}
@@ -178,7 +182,7 @@ export const ScoreCardExample: React.FC = () => {
                         title={'Online'}
                         icon={<Cloud color={'inherit'} />}
                         sx={{
-                            height: '2.25rem',
+                            ...InfoListItemStyles,
                             '& .BluiInfoListItem-title': {
                                 fontWeight: 400,
                             },
