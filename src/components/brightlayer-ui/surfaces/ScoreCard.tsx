@@ -17,7 +17,7 @@ import { AppStore } from '../../../__types__';
 import Box from '@mui/material/Box';
 
 const ExampleContainerStyles = {
-    marginBottom: 2,
+    mb: 2,
 };
 
 const ScoreCardStyles = {
@@ -31,7 +31,7 @@ export const ScoreCardExample: React.FC = () => {
     const rtl = direction === 'rtl';
 
     const actionRow = (
-        <List style={{ padding: 0 }}>
+        <List sx={{ p: 0 }}>
             <InfoListItem dense chevron title={'View Location'} hidePadding onClick={(): void => {}} />
         </List>
     );
@@ -153,13 +153,13 @@ export const ScoreCardExample: React.FC = () => {
                 }
                 badgeOffset={-52}
             >
-                <List style={{ padding: '.5rem 0' }}>
+                <List sx={{ p: '.5rem 0' }}>
                     <InfoListItem
                         dense
-                        style={{ height: '2.25rem' }}
                         title={'0 Alarms'}
                         icon={<Notifications color={'inherit'} />}
                         sx={{
+                            height: '2.25rem',
                             '& .BluiInfoListItem-title': {
                                 fontWeight: 400,
                             },
@@ -167,7 +167,7 @@ export const ScoreCardExample: React.FC = () => {
                     />
                     <InfoListItem
                         dense
-                        style={{ height: '2.25rem' }}
+                        sx={{ height: '2.25rem' }}
                         fontColor={isDarkMode ? colors.blue[300] : colors.blue[500]}
                         iconColor={isDarkMode ? colors.blue[300] : colors.blue[500]}
                         title={'1 Event'}
@@ -175,10 +175,10 @@ export const ScoreCardExample: React.FC = () => {
                     />
                     <InfoListItem
                         dense
-                        style={{ height: '2.25rem' }}
                         title={'Online'}
                         icon={<Cloud color={'inherit'} />}
                         sx={{
+                            height: '2.25rem',
                             '& .BluiInfoListItem-title': {
                                 fontWeight: 400,
                             },
