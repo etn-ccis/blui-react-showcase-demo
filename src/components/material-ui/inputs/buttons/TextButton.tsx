@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Button from '@mui/material/Button';
+import { useTheme, Theme } from '@mui/material/styles';
+
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -32,15 +32,15 @@ export const TextButtonExample: React.FC = () => {
         <div className={classes.container}>
             <div className={classes.buttonContainer}>
                 <div className={classes.buttonPair}>
-                    <Button variant="text">Default</Button>
-                    <Button variant="text" disabled>
+                    <Button variant="text" color="inherit">
+                        Default
+                    </Button>
+                    <Button variant="text" color="inherit" disabled>
                         Default Disabled
                     </Button>
                 </div>
                 <div className={classes.buttonPair}>
-                    <Button variant="text" color="primary">
-                        Primary
-                    </Button>
+                    <Button variant="text">Primary</Button>
                     <Button variant="text" color="primary" disabled>
                         Primary Disabled
                     </Button>

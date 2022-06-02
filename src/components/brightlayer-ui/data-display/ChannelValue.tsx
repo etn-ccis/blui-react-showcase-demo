@@ -1,11 +1,10 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import { ChannelValue } from '@brightlayer-ui/react-components';
-import TrendingUp from '@material-ui/icons/TrendingUp';
+import TrendingUp from '@mui/icons-material/TrendingUp';
 import * as colors from '@brightlayer-ui/colors';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';

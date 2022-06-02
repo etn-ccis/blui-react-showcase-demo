@@ -1,9 +1,8 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Button from '@material-ui/core/Button';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -32,16 +31,18 @@ export const ContainedButtonExample: React.FC = () => {
         <div className={classes.container}>
             <div className={classes.buttonContainer}>
                 <div className={classes.buttonPair}>
-                    <Button variant="contained">Default</Button>
-                    <Button variant="contained" disabled>
+                    <Button variant="contained" color="inherit">
+                        Default
+                    </Button>
+                    <Button variant="contained" color="inherit" disabled>
                         Default Disabled
                     </Button>
                 </div>
                 <div className={classes.buttonPair}>
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" disableElevation>
                         Primary
                     </Button>
-                    <Button variant="contained" color="primary" disabled>
+                    <Button variant="contained" disabled>
                         Primary Disabled
                     </Button>
                 </div>

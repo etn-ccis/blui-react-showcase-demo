@@ -1,14 +1,13 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Add from '@material-ui/icons/Add';
-import Devices from '@material-ui/icons/Devices';
-import LocationOff from '@material-ui/icons/LocationOff';
-import NotListedLocation from '@material-ui/icons/NotListedLocation';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { useTheme, Theme } from '@mui/material/styles';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Add from '@mui/icons-material/Add';
+import Devices from '@mui/icons-material/Devices';
+import LocationOff from '@mui/icons-material/LocationOff';
+import NotListedLocation from '@mui/icons-material/NotListedLocation';
 
 import { EmptyState } from '@brightlayer-ui/react-components';
 import clsx from 'clsx';

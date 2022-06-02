@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChannelValue, InfoListItem } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
-import { Alarm } from '@material-ui/icons';
+import { Alarm } from '@mui/icons-material';
 import { Device, GradeA, Leaf, Temp } from '@brightlayer-ui/icons-mui';
 import { AppStore } from '../../../__types__';
 import { useSelector } from 'react-redux';
@@ -23,10 +23,7 @@ export const InfoListItemExample: React.FC = () => {
             />
             <InfoListItem
                 title={'With an array for subtitle'}
-                subtitle={[
-                    <ChannelValue value={'50'} units={'°C'} key="cv1" />,
-                    <ChannelValue value={'55'} units={'°C'} key="cv2" />,
-                ]}
+                subtitle={['Item 1', 'Item 2', 'Item 3']}
                 subtitleSeparator={'·'}
                 icon={<Temp />}
             />

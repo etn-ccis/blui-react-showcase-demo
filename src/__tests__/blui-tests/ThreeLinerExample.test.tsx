@@ -1,19 +1,19 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { HeroExample } from '../../components/brightlayer-ui/data-display/Hero';
+import { ThreeLinerExample } from '../../components/brightlayer-ui/data-display/ThreeLiner';
 
-describe('Hero example', () => {
+describe('Three liner example', () => {
     afterEach(cleanup);
     it('renders without crashing', () => {
         render(
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <HeroExample />
+                    <ThreeLinerExample />
                 </RTLThemeProvider>
             </Provider>
         );
