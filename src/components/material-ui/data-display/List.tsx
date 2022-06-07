@@ -1,25 +1,20 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import Avatar from '@mui/material/Avatar';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Folder from '@mui/icons-material/Folder';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-    })
-);
+const ContainerStyles = {
+    mb: 4,
+};
+
+const SectionTitleStyles = {
+    mb: 2,
+};
 
 const generate = (element: React.ReactElement): React.ReactElement[] =>
     [0, 1, 2].map((value) =>
@@ -28,49 +23,44 @@ const generate = (element: React.ReactElement): React.ReactElement[] =>
         })
     );
 
-export const ListExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
+export const ListExample: React.FC = () => (
+    <>
+        <Box sx={ContainerStyles}>
+            <Typography variant={'body1'} sx={SectionTitleStyles}>
+                Default
+            </Typography>
 
-    return (
-        <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Default
-                </Typography>
+            <List>
+                {generate(
+                    <ListItem>
+                        <ListItemAvatar>
+                            <Avatar>
+                                <Folder />
+                            </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Single-line item" secondary={'Secondary text'} />
+                    </ListItem>
+                )}
+            </List>
+        </Box>
 
-                <List>
-                    {generate(
-                        <ListItem>
-                            <ListItemAvatar>
-                                <Avatar>
-                                    <Folder />
-                                </Avatar>
-                            </ListItemAvatar>
-                            <ListItemText primary="Single-line item" secondary={'Secondary text'} />
-                        </ListItem>
-                    )}
-                </List>
-            </div>
+        <Box sx={ContainerStyles}>
+            <Typography variant={'body1'} sx={SectionTitleStyles}>
+                Dense
+            </Typography>
 
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Dense
-                </Typography>
-
-                <List>
-                    {generate(
-                        <ListItem dense>
-                            <ListItemAvatar>
-                                <Avatar>
-                                    <Folder />
-                                </Avatar>
-                            </ListItemAvatar>
-                            <ListItemText primary="Single-line item" secondary={'Secondary text'} />
-                        </ListItem>
-                    )}
-                </List>
-            </div>
-        </>
-    );
-};
+            <List>
+                {generate(
+                    <ListItem dense>
+                        <ListItemAvatar>
+                            <Avatar>
+                                <Folder />
+                            </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Single-line item" secondary={'Secondary text'} />
+                    </ListItem>
+                )}
+            </List>
+        </Box>
+    </>
+);
