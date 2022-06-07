@@ -1,5 +1,5 @@
 import React from 'react';
-import { Theme, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
@@ -30,7 +30,7 @@ const DividerContainerStyles = {
 };
 
 export const DividerExample: React.FC = () => {
-    const theme: Theme = useTheme();
+    const theme = useTheme();
 
     return (
         <>
