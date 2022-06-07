@@ -1,7 +1,5 @@
 import React from 'react';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { Theme, useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
@@ -17,54 +15,30 @@ import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        dividerContainer: {
-            marginBottom: theme.spacing(2),
-        },
-        verticalDividerExample: {
-            width: 'fit-content',
-            border: `1px solid ${theme.palette.divider}`,
-            borderRadius: theme.shape.borderRadius,
-            backgroundColor: theme.palette.background.paper,
-            color: theme.palette.text.secondary,
-            '& svg': {
-                margin: theme.spacing(1.5),
-            },
-            '& hr': {
-                margin: theme.spacing(0, 0.5),
-            },
-            margin: '0 auto',
-        },
-    })
-);
+const ContainerStyles = {
+    mb: 4,
+};
+
+const SectionTitleStyles = {
+    mb: 2,
+};
+
+const DividerContainerStyles = {
+    mb: 2,
+};
 
 export const DividerExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
+    const theme: Theme = useTheme();
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={ContainerStyles}>
+                <Typography variant={'body1'} sx={SectionTitleStyles}>
                     Horizontal (default)
                 </Typography>
-                <div className={classes.dividerContainer}>
+                <Box sx={DividerContainerStyles}>
                     <List>
                         <ListItem button>
                             <ListItemAvatar>
@@ -125,14 +99,31 @@ export const DividerExample: React.FC = () => {
                         </ListItem>
                         <Divider light variant={'middle'} />
                     </List>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={ContainerStyles}>
+                <Typography variant={'body1'} sx={SectionTitleStyles}>
                     Vertical
                 </Typography>
-                <div className={classes.dividerContainer}>
-                    <Grid container alignItems="center" className={classes.verticalDividerExample}>
+                <Box sx={DividerContainerStyles}>
+                    <Grid
+                        container
+                        alignItems="center"
+                        sx={{
+                            width: 'fit-content',
+                            border: `1px solid ${theme.palette.divider}`,
+                            borderRadius: `${theme.shape.borderRadius}px`,
+                            backgroundColor: theme.palette.background.paper,
+                            color: theme.palette.text.secondary,
+                            '& svg': {
+                                m: 1.5,
+                            },
+                            '& hr': {
+                                m: '0 4px',
+                            },
+                            m: '0 auto',
+                        }}
+                    >
                         <FormatAlignLeftIcon />
                         <FormatAlignCenterIcon />
                         <FormatAlignRightIcon />
@@ -141,8 +132,8 @@ export const DividerExample: React.FC = () => {
                         <FormatItalicIcon />
                         <FormatUnderlinedIcon />
                     </Grid>
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };
