@@ -18,7 +18,7 @@
     "dependencies": {
         "@brightlayer-ui/colors": "^3.0.1",
         "@brightlayer-ui/icons-mui": "^3.0.0",
-        "@brightlayer-ui/react-components": "^6.1.0-alpha.1",
+        "@brightlayer-ui/react-components": "^6.1.0-beta.1",
         "@brightlayer-ui/react-progress-icons": "^2.1.1",
         "@brightlayer-ui/react-themes": "^7.0.0",
         "@date-io/date-fns": "^2.13.1",
