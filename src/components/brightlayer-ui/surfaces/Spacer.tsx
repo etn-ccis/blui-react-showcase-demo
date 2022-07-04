@@ -42,10 +42,10 @@ export const SpacerExample: React.FC = () => (
                 <Spacer flex={1} sx={{ background: colors.blue[300] }}>
                     1
                 </Spacer>
-                <Spacer flex={1} sx={{ background: colors.yellow[300] }}>
+                <Spacer flex={2} sx={{ background: colors.yellow[300] }}>
                     2
                 </Spacer>
-                <Spacer flex={1} sx={{ background: colors.red[300] }}>
+                <Spacer flex={3} sx={{ background: colors.red[300] }}>
                     3
                 </Spacer>
             </Box>
@@ -67,10 +67,10 @@ export const SpacerExample: React.FC = () => (
                 <Spacer flex={1} sx={{ background: colors.blue[300] }}>
                     1
                 </Spacer>
-                <Spacer flex={1} sx={{ background: colors.yellow[300] }}>
+                <Spacer flex={2} sx={{ background: colors.yellow[300] }}>
                     2
                 </Spacer>
-                <Spacer flex={1} sx={{ background: colors.red[300] }}>
+                <Spacer flex={3} sx={{ background: colors.red[300] }}>
                     3
                 </Spacer>
             </Box>
