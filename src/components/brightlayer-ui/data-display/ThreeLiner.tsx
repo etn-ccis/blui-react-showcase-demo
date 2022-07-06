@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import { ChannelValue, ThreeLiner } from '@brightlayer-ui/react-components';
 import TrendingUp from '@mui/icons-material/TrendingUp';
 import * as colors from '@brightlayer-ui/colors';
@@ -7,7 +6,6 @@ import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
 
 export const ThreeLinerExample: React.FC = () => {
-    const theme = useTheme();
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
@@ -15,7 +13,7 @@ export const ThreeLinerExample: React.FC = () => {
         <>
             <ThreeLiner title={'Three Liner Component'} subtitle={'with basic usage'} info={'...and a third line'} />
             <ThreeLiner
-                style={{ marginTop: theme.spacing(4) }}
+                sx={{ mt: 4 }}
                 title={'Three Liner Component'}
                 subtitle={'with custom content'}
                 info={

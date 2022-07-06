@@ -185,7 +185,7 @@ export const SliderExample: React.FC = () => {
                 <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default w/ valueDisplayLabel on
                 </Typography>
-                <Box sx={sliderContainerStyles} style={{ marginTop: 56 }}>
+                <Box sx={{...sliderContainerStyles, mt: 7}}>
                     <Grid container spacing={2}>
                         <Grid item>
                             <VolumeDown />

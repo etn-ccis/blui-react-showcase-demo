@@ -1,6 +1,5 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useTheme, styled } from '@mui/material/styles';
 import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
 import BrightnessMedium from '@mui/icons-material/BrightnessMedium';
@@ -8,55 +7,60 @@ import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
 import Box from '@mui/material/Box';
 
-const ExampleRow = styled(Box)(({ theme }) => ({
-    display: 'flex',
-    justifyContent: 'space-evenly',
-    marginBottom: theme.spacing(2),
-}));
-
-const ComponentContainer = styled(Box)(() => ({
+const componentContainerStyles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     flex: 1,
-}));
+};
 
-const Label = styled(Typography)(({ theme }) => ({
-    marginBottom: theme.spacing(1),
-}));
+const labelStyles = {
+    mb: 1,
+};
 
 export const ListItemTagExample: React.FC = () => {
-    const theme = useTheme();
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
     return (
         <>
-            <ExampleRow>
-                <ComponentContainer>
-                    <Label variant={'body2'}>Basic Usage</Label>
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-evenly',
+                    mb: 2,
+                }}
+            >
+                <Box sx={componentContainerStyles}>
+                    <Typography sx={labelStyles} variant={'body2'}>
+                        Basic Usage
+                    </Typography>
                     <ListItemTag label={'active'} />
-                </ComponentContainer>
-                <ComponentContainer>
-                    <Label variant={'body2'}>w/ Custom Colors</Label>
+                </Box>
+                <Box sx={componentContainerStyles}>
+                    <Typography sx={labelStyles} variant={'body2'}>
+                        w/ Custom Colors
+                    </Typography>
                     <ListItemTag label={'active'} backgroundColor={colors.red['500']} fontColor={colors.white['50']} />
-                </ComponentContainer>
-            </ExampleRow>
-            <ComponentContainer style={{ marginTop: theme.spacing(6) }}>
-                <Label variant={'body2'}>Within an Info List Item</Label>
+                </Box>
+            </Box>
+            <Box sx={{ ...componentContainerStyles, mt: 6 }}>
+                <Typography sx={labelStyles} variant={'body2'}>
+                    Within an Info List Item
+                </Typography>
                 <InfoListItem
                     icon={<BrightnessMedium />}
                     title={'Info List Item'}
                     subtitle={'with List Item Tags'}
                     rightComponent={
-                        <div style={{ display: 'flex' }}>
+                        <Box sx={{ display: 'flex' }}>
                             <ListItemTag
                                 label={'Build Passing'}
                                 backgroundColor={colors.green[300]}
                                 fontColor={colors.black[900]}
-                                style={{
-                                    marginRight: rtl ? 0 : theme.spacing(2),
-                                    marginLeft: rtl ? theme.spacing(2) : 0,
+                                sx={{
+                                    mr: rtl ? 0 : 2,
+                                    ml: rtl ? 2 : 0,
                                 }}
                             />
                             <ListItemTag
@@ -64,10 +68,10 @@ export const ListItemTagExample: React.FC = () => {
                                 backgroundColor={colors.red[300]}
                                 fontColor={colors.black[900]}
                             />
-                        </div>
+                        </Box>
                     }
                 />
-            </ComponentContainer>
+            </Box>
         </>
     );
 };

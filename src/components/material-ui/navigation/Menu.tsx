@@ -25,7 +25,7 @@ export const MenuExample: React.FC = () => {
             <Button
                 sx={{
                     width: 300,
-                    margin: '0 auto',
+                    m: '0 auto',
                 }}
                 onClick={handleClick}
                 color={'primary'}
