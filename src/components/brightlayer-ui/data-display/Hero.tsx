@@ -32,7 +32,7 @@ export const HeroExample: React.FC = () => (
                 <Typography sx={labelStyles} variant={'body2'}>
                     Basic Usage
                 </Typography>
-                <Hero icon={<GradeA fontSize={'inherit'} />} label={'Efficiency'} style={{ flex: 1 }} />
+                <Hero icon={<GradeA fontSize={'inherit'} />} label={'Efficiency'} sx={{ flex: 1 }} />
             </Box>
             <Box sx={componentContainerStyles}>
                 <Typography sx={labelStyles} variant={'body2'}>
@@ -42,7 +42,7 @@ export const HeroExample: React.FC = () => (
                     icon={<GradeB fontSize={'inherit'} />}
                     label={'Efficiency'}
                     ChannelValueProps={{ value: 88, units: '%' }}
-                    style={{ flex: 1 }}
+                    sx={{ flex: 1 }}
                 />
             </Box>
         </Box>
@@ -51,7 +51,7 @@ export const HeroExample: React.FC = () => (
                 <Typography sx={labelStyles} variant={'body2'}>
                     w/ Channel Value Children
                 </Typography>
-                <Hero icon={<Schedule fontSize={'inherit'} />} label={'Efficiency'} style={{ flex: 1 }}>
+                <Hero icon={<Schedule fontSize={'inherit'} />} label={'Efficiency'} sx={{ flex: 1 }}>
                     <ChannelValue fontSize={'large'} value={1} units={'h'} />
                     <ChannelValue fontSize={'large'} value={27} units={'m'} />
                 </Hero>
@@ -65,7 +65,7 @@ export const HeroExample: React.FC = () => (
                     icon={<Temp fontSize={'inherit'} htmlColor={colors.white[50]} />}
                     label={'Temperature'}
                     ChannelValueProps={{ value: 38, units: '°C' }}
-                    style={{ flex: 1 }}
+                    sx={{ flex: 1 }}
                 />
             </Box>
         </Box>
@@ -73,7 +73,7 @@ export const HeroExample: React.FC = () => (
             <Typography sx={labelStyles} variant={'body2'}>
                 Within a HeroBanner
             </Typography>
-            <HeroBanner style={{ width: 376, border: `solid 1px ${colors.gray[50]}`, borderRadius: 4 }}>
+            <HeroBanner sx={{ width: 376, border: `solid 1px ${colors.gray[50]}`, borderRadius: 4 }}>
                 <Hero
                     icon={<GradeA fontSize={'inherit'} />}
                     label={'Efficiency'}

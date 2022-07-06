@@ -163,7 +163,7 @@ export const Alarms: React.FC = () => {
             <Card sx={{ width: '80%', my: 4, maxWidth: 1000 }}>
                 <InfoListItem
                     title={'Alarms'}
-                    style={{ color: theme.palette.primary.main }}
+                    sx={{ color: theme.palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -171,7 +171,7 @@ export const Alarms: React.FC = () => {
                 {alarmData.map((data, index) => (
                     <InfoListItem
                         key={index}
-                        leftComponent={<span style={{ width: 70 }}>{getDisplayTime(data.date)}</span>}
+                        leftComponent={<Box component='span' sx={{ width: 70 }}>{getDisplayTime(data.date)}</Box>}
                         title={`${data.type} ${data.deviceName}`}
                         subtitle={[data.subLocation, data.location]}
                         divider={index === alarmData.length - 1 ? undefined : 'partial'}
