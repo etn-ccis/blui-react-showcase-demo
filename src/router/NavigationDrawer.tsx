@@ -2,7 +2,6 @@ import React, { useState, useCallback, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import makeStyles from '@mui/styles/makeStyles';
 import Menu from '@mui/icons-material/Menu';
 import EatonFooterLogoLight from '../EatonLogoLight.png';
 import EatonFooterLogoDark from '../EatonLogoDark.png';
@@ -16,25 +15,18 @@ import {
     DrawerHeader,
     NavItem,
 } from '@brightlayer-ui/react-components';
-import clsx from 'clsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { AppStore } from '../__types__';
 import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
+import Box from '@mui/material/Box';
 
 const top = require('../assets/topology_40.png');
-
-const useStyles = makeStyles({
-    iconFlip: {
-        transform: 'scaleX(-1)',
-    },
-});
 
 export const NavigationDrawer: React.FC = () => {
     const open = useSelector((store: AppStore) => store.app.drawerOpen);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const dispatch = useDispatch();
-    const classes = useStyles();
     const theme = useTheme();
     const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
     const history = useHistory();
@@ -91,7 +83,7 @@ export const NavigationDrawer: React.FC = () => {
                 backgroundColor={Colors.blue[500]}
                 fontColor={Colors.white[50]}
                 backgroundImage={top}
-                icon={<Menu className={clsx({ [classes.iconFlip]: rtl })} />}
+                icon={<Menu sx={rtl ? { transform: 'scaleX(-1)' } : {}} />}
                 onIconClick={(): void => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
@@ -100,13 +92,13 @@ export const NavigationDrawer: React.FC = () => {
                 <DrawerNavGroup items={menuItems} />
             </DrawerBody>
             <DrawerFooter>
-                <div
-                    style={{
+                <Box
+                    sx={{
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
                         flexDirection: 'row',
-                        padding: 16,
+                        p: 16,
                     }}
                 >
                     <img
@@ -115,13 +107,13 @@ export const NavigationDrawer: React.FC = () => {
                         height={28}
                         width={'auto'}
                     />
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <Typography variant={'caption'}>
                             {`Copyright \u00A9 Eaton ${new Date().getFullYear()}`}
                         </Typography>
                         <Typography variant={'caption'}>All Rights Reserved</Typography>
-                    </div>
-                </div>
+                    </Box>
+                </Box>
             </DrawerFooter>
         </Drawer>
     );

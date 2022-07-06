@@ -4,15 +4,15 @@ import * as colors from '@brightlayer-ui/colors';
 import { Spacer } from '@brightlayer-ui/react-components';
 import Box from '@mui/material/Box';
 
-const SectionTitleStyles = {
+const sectionTitleStyles = {
     mb: 2,
 };
 
-const LabelStyles = {
+const labelStyles = {
     mb: 1,
 };
 
-const ComponentContainerStyles = {
+const componentContainerStyles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -21,11 +21,11 @@ const ComponentContainerStyles = {
 
 export const SpacerExample: React.FC = () => (
     <>
-        <Typography variant={'body1'} sx={SectionTitleStyles}>
+        <Typography variant={'body1'} sx={sectionTitleStyles}>
             w/ Flex Layout
         </Typography>
-        <Box sx={ComponentContainerStyles}>
-            <Typography variant={'body2'} sx={LabelStyles}>
+        <Box sx={componentContainerStyles}>
+            <Typography variant={'body2'} sx={labelStyles}>
                 Horizontal
             </Typography>
             <Box
@@ -50,8 +50,8 @@ export const SpacerExample: React.FC = () => (
                 </Spacer>
             </Box>
         </Box>
-        <Box sx={ComponentContainerStyles}>
-            <Typography variant={'body2'} sx={LabelStyles}>
+        <Box sx={componentContainerStyles}>
+            <Typography variant={'body2'} sx={labelStyles}>
                 Vertical
             </Typography>
             <Box
@@ -75,11 +75,11 @@ export const SpacerExample: React.FC = () => (
                 </Spacer>
             </Box>
         </Box>
-        <Typography variant={'body1'} sx={{ ...SectionTitleStyles, mt: 4 }}>
+        <Typography variant={'body1'} sx={{ ...sectionTitleStyles, mt: 4 }}>
             w/ Static Layout
         </Typography>
-        <Box sx={ComponentContainerStyles}>
-            <Typography variant={'body2'} sx={LabelStyles}>
+        <Box sx={componentContainerStyles}>
+            <Typography variant={'body2'} sx={labelStyles}>
                 Horizontal
             </Typography>
             <Box sx={{ width: '100%', height: 50, display: 'inline', color: colors.black[900], mb: 1 }}>
@@ -94,8 +94,8 @@ export const SpacerExample: React.FC = () => (
                 </Spacer>
             </Box>
         </Box>
-        <Box sx={ComponentContainerStyles}>
-            <Typography variant={'body2'} sx={LabelStyles}>
+        <Box sx={componentContainerStyles}>
+            <Typography variant={'body2'} sx={labelStyles}>
                 Vertical
             </Typography>
             <Box

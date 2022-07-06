@@ -139,8 +139,7 @@ export const UserMenuExample: React.FC = () => {
                             minHeight: 'unset',
                             height: '4rem',
                             '&.MuiToolbar-root': {
-                                paddingLeft: 2,
-                                paddingRight: 2,
+                                px: 2,
                             },
                         }}
                     >

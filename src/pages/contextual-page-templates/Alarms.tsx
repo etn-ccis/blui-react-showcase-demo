@@ -1,23 +1,12 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
 import Card from '@mui/material/Card';
 import Notifications from '@mui/icons-material/Notifications';
 import NotificationsActive from '@mui/icons-material/NotificationsActive';
 import * as colors from '@brightlayer-ui/colors';
 import { usePageTitle } from '../../hooks/usePageTitle';
-
-const useStyles = makeStyles(() =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flex: 1,
-            justifyContent: 'center',
-        },
-    })
-);
+import Box from '@mui/material/Box';
 
 export type AlarmItem = {
     alarm: 'active' | 'inactive' | 'cleared';
@@ -31,7 +20,6 @@ export type AlarmItem = {
 
 export const Alarms: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles();
     usePageTitle('Alarms');
 
     const getRandomDate = (): Date => {
@@ -165,8 +153,14 @@ export const Alarms: React.FC = () => {
     // @TODO: Add checkboxes and selected state to each of these items
 
     return (
-        <div className={classes.container}>
-            <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000, marginBottom: theme.spacing(4) }}>
+        <Box
+            sx={{
+                display: 'flex',
+                flex: 1,
+                justifyContent: 'center',
+            }}
+        >
+            <Card sx={{ width: '80%', my: 4, maxWidth: 1000 }}>
                 <InfoListItem
                     title={'Alarms'}
                     style={{ color: theme.palette.primary.main }}
@@ -201,6 +195,6 @@ export const Alarms: React.FC = () => {
                     />
                 ))}
             </Card>
-        </div>
+        </Box>
     );
 };

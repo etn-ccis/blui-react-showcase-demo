@@ -1,23 +1,17 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import AppBar from '@mui/material/AppBar';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
 
 type TabPanelProps = {
     children?: React.ReactNode;
@@ -29,19 +23,17 @@ const TabPanel = (props: TabPanelProps): JSX.Element => {
     const { children, value, index, ...other } = props;
 
     return (
-        <div role="tabpanel" hidden={value !== index} id={`simple-tabpanel-${index}`} {...other}>
+        <Box role="tabpanel" hidden={value !== index} id={`simple-tabpanel-${index}`} {...other}>
             {value === index && (
                 <Box p={3}>
                     <Typography>{children}</Typography>
                 </Box>
             )}
-        </div>
+        </Box>
     );
 };
 
 export const TabsExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [standardValue, setStandardValue] = React.useState(0);
     const [fullWidthValue, setFullWidthValue] = React.useState(0);
     const [scrollableValue, setScrollableValue] = React.useState(0);
@@ -60,8 +52,8 @@ export const TabsExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Standard Tabs
                 </Typography>
                 <AppBar position="static">
@@ -76,9 +68,9 @@ export const TabsExample: React.FC = () => {
                 <TabPanel value={standardValue} index={1}>
                     Item Two
                 </TabPanel>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Full Width Tabs
                 </Typography>
                 <AppBar position="static">
@@ -93,9 +85,9 @@ export const TabsExample: React.FC = () => {
                 <TabPanel value={fullWidthValue} index={1}>
                     Item Two
                 </TabPanel>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Scrollable Tabs
                 </Typography>
                 <AppBar position="static">
@@ -118,7 +110,7 @@ export const TabsExample: React.FC = () => {
                 <TabPanel value={scrollableValue} index={3}>
                     Item Four
                 </TabPanel>
-            </div>
+            </Box>
         </>
     );
 };

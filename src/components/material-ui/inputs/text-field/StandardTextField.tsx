@@ -1,33 +1,29 @@
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        selectContainer: {
-            marginBottom: theme.spacing(1),
-        },
-        textField: {
-            width: '100%',
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const labelStyles = {
+    mb: 1,
+};
+
+const selectContainerStyles = {
+    mb: 1,
+};
+
+const textFieldStyles = {
+    width: '100%',
+};
 
 export const StandardTextFieldExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [name, setName] = React.useState('');
 
     const handleChange = (event: React.ChangeEvent<{ value: unknown }>): void => {
@@ -36,12 +32,12 @@ export const StandardTextFieldExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default
                 </Typography>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Enabled
                     </Typography>
                     <TextField
@@ -50,11 +46,11 @@ export const StandardTextFieldExample: React.FC = () => {
                         value={name}
                         label="Name"
                         helperText={'Helper text'}
-                        className={classes.textField}
+                        sx={textFieldStyles}
                     />
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <TextField
@@ -64,11 +60,11 @@ export const StandardTextFieldExample: React.FC = () => {
                         label="Name"
                         helperText={'Helper text'}
                         disabled
-                        className={classes.textField}
+                        sx={textFieldStyles}
                     />
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Error
                     </Typography>
                     <TextField
@@ -78,16 +74,16 @@ export const StandardTextFieldExample: React.FC = () => {
                         label="Name"
                         helperText={'Helper text'}
                         error
-                        className={classes.textField}
+                        sx={textFieldStyles}
                     />
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default
                 </Typography>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Enabled
                     </Typography>
                     <TextField
@@ -96,12 +92,12 @@ export const StandardTextFieldExample: React.FC = () => {
                         value={name}
                         label="Name"
                         helperText={'Helper text'}
-                        className={classes.textField}
+                        sx={textFieldStyles}
                         color="primary"
                     />
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <TextField
@@ -111,12 +107,12 @@ export const StandardTextFieldExample: React.FC = () => {
                         label="Name"
                         helperText={'Helper text'}
                         disabled
-                        className={classes.textField}
+                        sx={textFieldStyles}
                         color="primary"
                     />
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Error
                     </Typography>
                     <TextField
@@ -126,17 +122,17 @@ export const StandardTextFieldExample: React.FC = () => {
                         label="Name"
                         helperText={'Helper text'}
                         error
-                        className={classes.textField}
+                        sx={textFieldStyles}
                         color="primary"
                     />
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default
                 </Typography>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Enabled
                     </Typography>
                     <TextField
@@ -145,12 +141,12 @@ export const StandardTextFieldExample: React.FC = () => {
                         value={name}
                         label="Name"
                         helperText={'Helper text'}
-                        className={classes.textField}
+                        sx={textFieldStyles}
                         color="secondary"
                     />
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <TextField
@@ -160,12 +156,12 @@ export const StandardTextFieldExample: React.FC = () => {
                         label="Name"
                         helperText={'Helper text'}
                         disabled
-                        className={classes.textField}
+                        sx={textFieldStyles}
                         color="secondary"
                     />
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Error
                     </Typography>
                     <TextField
@@ -175,11 +171,11 @@ export const StandardTextFieldExample: React.FC = () => {
                         label="Name"
                         helperText={'Helper text'}
                         error
-                        className={classes.textField}
+                        sx={textFieldStyles}
                         color="secondary"
                     />
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };

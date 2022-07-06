@@ -1,8 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
-import { Theme, lighten } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { useTheme, lighten } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -18,6 +15,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import DeleteIcon from '@mui/icons-material/Delete';
 import FilterListIcon from '@mui/icons-material/FilterList';
+import Box from '@mui/material/Box';
 
 type Data = {
     calories: number;
@@ -91,7 +89,6 @@ const headCells: HeadCell[] = [
 ];
 
 type EnhancedTableProps = {
-    classes: ReturnType<typeof useStyles>;
     numSelected: number;
     onRequestSort: (event: React.MouseEvent<unknown>, property: keyof Data) => void;
     onSelectAllClick: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -101,7 +98,7 @@ type EnhancedTableProps = {
 };
 
 const EnhancedTableHead = (props: EnhancedTableProps): JSX.Element => {
-    const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
+    const { onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
     const createSortHandler =
         (property: keyof Data) =>
         (event: React.MouseEvent<unknown>): void => {
@@ -132,9 +129,22 @@ const EnhancedTableHead = (props: EnhancedTableProps): JSX.Element => {
                         >
                             {headCell.label}
                             {orderBy === headCell.id ? (
-                                <span className={classes.visuallyHidden}>
+                                <Box
+                                    component="span"
+                                    sx={{
+                                        border: 0,
+                                        clip: 'rect(0 0 0 0)',
+                                        height: 1,
+                                        m: -1,
+                                        overflow: 'hidden',
+                                        p: 0,
+                                        position: 'absolute',
+                                        top: 20,
+                                        width: 1,
+                                    }}
+                                >
                                     {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
-                                </span>
+                                </Box>
                             ) : null}
                         </TableSortLabel>
                     </TableCell>
@@ -144,48 +154,43 @@ const EnhancedTableHead = (props: EnhancedTableProps): JSX.Element => {
     );
 };
 
-const useToolbarStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            paddingLeft: theme.spacing(2),
-            paddingRight: theme.spacing(1),
-        },
-        highlight:
-            theme.palette.mode === 'light'
-                ? {
-                      color: theme.palette.secondary.main,
-                      backgroundColor: lighten(theme.palette.secondary.light, 0.85),
-                  }
-                : {
-                      color: theme.palette.text.primary,
-                      backgroundColor: theme.palette.secondary.dark,
-                  },
-        title: {
-            flex: '1 1 100%',
-        },
-    })
-);
+const titleStyles = {
+    flex: '1 1 100%',
+};
 
 type EnhancedTableToolbarProps = {
     numSelected: number;
 };
 
 const EnhancedTableToolbar = (props: EnhancedTableToolbarProps): JSX.Element => {
-    const classes = useToolbarStyles();
     const { numSelected } = props;
+    const theme = useTheme();
 
     return (
         <Toolbar
-            className={clsx(classes.root, {
-                [classes.highlight]: numSelected > 0,
-            })}
+            sx={{
+                pl: 2,
+                pr: 1,
+                color:
+                    numSelected > 0
+                        ? theme.palette.mode === 'light'
+                            ? theme.palette.secondary.main
+                            : theme.palette.text.primary
+                        : undefined,
+                backgroundColor:
+                    numSelected > 0
+                        ? theme.palette.mode === 'light'
+                            ? lighten(theme.palette.secondary.light, 0.85)
+                            : theme.palette.secondary.dark
+                        : undefined,
+            }}
         >
             {numSelected > 0 ? (
-                <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
+                <Typography sx={titleStyles} color="inherit" variant="subtitle1" component="div">
                     {numSelected} selected
                 </Typography>
             ) : (
-                <Typography className={classes.title} variant="h6" id="tableTitle" component="div">
+                <Typography sx={titleStyles} variant="h6" id="tableTitle" component="div">
                     Nutrition
                 </Typography>
             )}
@@ -206,34 +211,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps): JSX.Element => 
     );
 };
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            width: '100%',
-        },
-        paper: {
-            width: '100%',
-            marginBottom: theme.spacing(2),
-        },
-        table: {
-            minWidth: 750,
-        },
-        visuallyHidden: {
-            border: 0,
-            clip: 'rect(0 0 0 0)',
-            height: 1,
-            margin: -1,
-            overflow: 'hidden',
-            padding: 0,
-            position: 'absolute',
-            top: 20,
-            width: 1,
-        },
-    })
-);
-
 export const TableExample: React.FC = () => {
-    const classes = useStyles();
     const [order, setOrder] = React.useState<Order>('asc');
     const [orderBy, setOrderBy] = React.useState<keyof Data>('calories');
     const [selected, setSelected] = React.useState<string[]>([]);
@@ -273,18 +251,28 @@ export const TableExample: React.FC = () => {
     const isSelected = (name: string): boolean => selected.indexOf(name) !== -1;
 
     return (
-        <div className={classes.root}>
-            <Paper className={classes.paper}>
+        <Box
+            sx={{
+                width: '100%',
+            }}
+        >
+            <Paper
+                sx={{
+                    width: '100%',
+                    mb: 2,
+                }}
+            >
                 <EnhancedTableToolbar numSelected={selected.length} />
                 <TableContainer>
                     <Table
-                        className={classes.table}
+                        sx={{
+                            minWidth: 750,
+                        }}
                         aria-labelledby="tableTitle"
                         size={'medium'}
                         aria-label="enhanced table"
                     >
                         <EnhancedTableHead
-                            classes={classes}
                             numSelected={selected.length}
                             order={order}
                             orderBy={orderBy}
@@ -327,6 +315,6 @@ export const TableExample: React.FC = () => {
                     </Table>
                 </TableContainer>
             </Paper>
-        </div>
+        </Box>
     );
 };
