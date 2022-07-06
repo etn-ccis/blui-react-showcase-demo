@@ -171,7 +171,11 @@ export const Alarms: React.FC = () => {
                 {alarmData.map((data, index) => (
                     <InfoListItem
                         key={index}
-                        leftComponent={<Box component='span' sx={{ width: 70 }}>{getDisplayTime(data.date)}</Box>}
+                        leftComponent={
+                            <Box component="span" sx={{ width: 70 }}>
+                                {getDisplayTime(data.date)}
+                            </Box>
+                        }
                         title={`${data.type} ${data.deviceName}`}
                         subtitle={[data.subLocation, data.location]}
                         divider={index === alarmData.length - 1 ? undefined : 'partial'}

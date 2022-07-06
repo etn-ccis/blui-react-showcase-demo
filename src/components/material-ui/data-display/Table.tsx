@@ -168,6 +168,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps): JSX.Element => 
 
     return (
         <Toolbar
+            disableGutters
             sx={{
                 pl: 2,
                 pr: 1,
