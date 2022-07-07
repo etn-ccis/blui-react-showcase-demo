@@ -10,8 +10,8 @@ export const PaperExample: React.FC = () => (
 
             '& > *': {
                 m: 1,
-                width: 14,
-                height: 14,
+                width: 112,
+                height: 112,
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',

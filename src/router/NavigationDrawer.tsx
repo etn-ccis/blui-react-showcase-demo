@@ -98,7 +98,7 @@ export const NavigationDrawer: React.FC = () => {
                         justifyContent: 'space-between',
                         alignItems: 'center',
                         flexDirection: 'row',
-                        p: 16,
+                        p: 2,
                     }}
                 >
                     <img
