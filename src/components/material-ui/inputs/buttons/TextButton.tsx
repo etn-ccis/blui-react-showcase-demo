@@ -7,8 +7,8 @@ const buttonPairStyles = {
     '& > *': {
         width: 168,
         '&.MuiButton-root': {
-            mr: 2 ,
-        }
+            mr: 2,
+        },
     },
 };
 
