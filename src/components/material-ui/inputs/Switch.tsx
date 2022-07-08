@@ -1,35 +1,30 @@
 import Switch from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        switchContainer: {
-            marginBottom: theme.spacing(1),
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-    })
-);
+const labelStyles = {
+    mb: 1,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const switchContainerStyles = {
+    mb: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+};
+
+const exampleRowStyles = {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    mb: 2,
+};
 
 export const SwitchExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [state, setState] = useState({
         checkedA: true,
         checkedB: true,
@@ -42,77 +37,77 @@ export const SwitchExample: React.FC = () => {
 
     return (
         <>
-            <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Typography variant={'body1'} sx={sectionTitleStyles}>
                 Default
             </Typography>
-            <div className={classes.exampleRow}>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+            <Box sx={exampleRowStyles}>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Active
                     </Typography>
                     <Switch checked={state.checkedA} onChange={handleChange} name="checkedA" />
-                </div>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <Switch disabled />
-                </div>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled Checked
                     </Typography>
                     <Switch disabled checked />
-                </div>
-            </div>
+                </Box>
+            </Box>
 
-            <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Typography variant={'body1'} sx={sectionTitleStyles}>
                 Primary
             </Typography>
-            <div className={classes.exampleRow}>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+            <Box sx={exampleRowStyles}>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Active
                     </Typography>
                     <Switch checked={state.checkedB} onChange={handleChange} name="checkedB" color="primary" />
-                </div>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <Switch disabled color="primary" />
-                </div>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled Checked
                     </Typography>
                     <Switch disabled checked color="primary" />
-                </div>
-            </div>
+                </Box>
+            </Box>
 
-            <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Typography variant={'body1'} sx={sectionTitleStyles}>
                 Secondary
             </Typography>
-            <div className={classes.exampleRow}>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+            <Box sx={exampleRowStyles}>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Active
                     </Typography>
                     <Switch checked={state.checkedC} onChange={handleChange} name="checkedC" color="secondary" />
-                </div>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <Switch disabled color="secondary" />
-                </div>
-                <div className={classes.switchContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={switchContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled Checked
                     </Typography>
                     <Switch disabled checked color="secondary" />
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };

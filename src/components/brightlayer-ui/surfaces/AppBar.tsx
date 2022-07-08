@@ -2,11 +2,10 @@ import React from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import { getBodyFiller } from '../../../utils/utils';
 import { AppBar, ThreeLiner } from '@brightlayer-ui/react-components';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
-const Container = styled(Box)(({ theme }) => ({
-    marginBottom: theme.spacing(2),
+const containerStyles = {
+    mb: 2,
     overflow: 'hidden',
     height: 400,
     '& .title': {},
@@ -30,58 +29,60 @@ const Container = styled(Box)(({ theme }) => ({
         '& .info': {
             fontSize: '1rem',
             fontWeight: 400,
-            marginTop: '-0.25rem',
+            mt: '-0.25rem',
         },
     },
-}));
+};
 
-const Liner = styled(ThreeLiner)(() => ({
+const linerStyles = {
     top: 0,
     position: 'relative',
-}));
+};
 
 export const BLUIAppBarExample: React.FC = () => (
     <>
-        <Container>
+        <Box sx={containerStyles}>
             <AppBar
                 classes={{ collapsed: 'collapsed', expanded: 'expanded' }}
                 scrollContainerId={'appbarBodyFiller1'}
                 position={'sticky'}
             >
                 <Toolbar>
-                    <Liner
+                    <ThreeLiner
+                        sx={linerStyles}
                         className={'liner'}
                         classes={{ title: 'title' }}
                         title={'Title'}
                         animationDuration={300}
-                    ></Liner>
+                    />
                 </Toolbar>
             </AppBar>
-            <div id="appbarBodyFiller1" style={{ height: 400, overflow: 'scroll' }}>
+            <Box id="appbarBodyFiller1" sx={{ height: 400, overflow: 'scroll' }}>
                 {getBodyFiller()}
-            </div>
-        </Container>
+            </Box>
+        </Box>
 
-        <Container>
+        <Box sx={containerStyles}>
             <AppBar
                 classes={{ collapsed: 'collapsed', expanded: 'expanded' }}
                 scrollContainerId={'appbarBodyFiller2'}
                 position={'sticky'}
             >
                 <Toolbar>
-                    <Liner
+                    <ThreeLiner
+                        sx={linerStyles}
                         className={'liner'}
                         classes={{ title: 'title', subtitle: 'subtitle', info: 'info' }}
                         title={'W/ Dynamic Content'}
                         subtitle={'Subtitle'}
                         info={'Info'}
                         animationDuration={300}
-                    ></Liner>
+                    />
                 </Toolbar>
             </AppBar>
-            <div id="appbarBodyFiller2" style={{ height: 400, overflow: 'scroll' }}>
+            <Box id="appbarBodyFiller2" sx={{ height: 400, overflow: 'scroll' }}>
                 {getBodyFiller()}
-            </div>
-        </Container>
+            </Box>
+        </Box>
     </>
 );

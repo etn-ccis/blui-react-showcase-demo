@@ -4,28 +4,19 @@ import Button from '@mui/material/Button';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Stepper from '@mui/material/Stepper';
-import { useTheme, Theme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+const containerStyles = {
+    mb: 4,
+};
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        button: {
-            marginRight: theme.spacing(1),
-        },
-        instructions: {
-            marginTop: theme.spacing(1),
-            marginBottom: theme.spacing(1),
-        },
-    })
-);
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const buttonStyles = {
+    mr: 1,
+};
 
 const getSteps = (): string[] => [
     'Visit brightlayer-ui.github.io',
@@ -34,8 +25,6 @@ const getSteps = (): string[] => [
 ];
 
 export const StepperExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [activeStep, setActiveStep] = React.useState(0);
     const [skipped, setSkipped] = React.useState(new Set<number>());
     const steps = getSteps();
@@ -80,8 +69,8 @@ export const StepperExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Horizontal Stepper
                 </Typography>
                 <Stepper activeStep={activeStep}>
@@ -101,37 +90,32 @@ export const StepperExample: React.FC = () => {
                         );
                     })}
                 </Stepper>
-                <div>
+                <Box>
                     {activeStep === steps.length ? (
-                        <div>
-                            <Button onClick={handleReset} className={classes.button}>
+                        <Box>
+                            <Button onClick={handleReset} sx={buttonStyles}>
                                 Reset
                             </Button>
-                        </div>
+                        </Box>
                     ) : (
-                        <div>
-                            <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
+                        <Box>
+                            <Button disabled={activeStep === 0} onClick={handleBack} sx={buttonStyles}>
                                 Back
                             </Button>
                             {isStepOptional(activeStep) && (
-                                <Button
-                                    variant="contained"
-                                    color="primary"
-                                    onClick={handleSkip}
-                                    className={classes.button}
-                                >
+                                <Button variant="contained" color="primary" onClick={handleSkip} sx={buttonStyles}>
                                     Skip
                                 </Button>
                             )}
-                            <Button variant="contained" color="primary" onClick={handleNext} className={classes.button}>
+                            <Button variant="contained" color="primary" onClick={handleNext} sx={buttonStyles}>
                                 {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                             </Button>
-                        </div>
+                        </Box>
                     )}
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Vertical Stepper
                 </Typography>
                 <Stepper activeStep={activeStep} orientation={'vertical'}>
@@ -151,35 +135,30 @@ export const StepperExample: React.FC = () => {
                         );
                     })}
                 </Stepper>
-                <div>
+                <Box>
                     {activeStep === steps.length ? (
-                        <div>
-                            <Button onClick={handleReset} className={classes.button}>
+                        <Box>
+                            <Button onClick={handleReset} sx={buttonStyles}>
                                 Reset
                             </Button>
-                        </div>
+                        </Box>
                     ) : (
-                        <div>
-                            <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
+                        <Box>
+                            <Button disabled={activeStep === 0} onClick={handleBack} sx={buttonStyles}>
                                 Back
                             </Button>
                             {isStepOptional(activeStep) && (
-                                <Button
-                                    variant="contained"
-                                    color="primary"
-                                    onClick={handleSkip}
-                                    className={classes.button}
-                                >
+                                <Button variant="contained" color="primary" onClick={handleSkip} sx={buttonStyles}>
                                     Skip
                                 </Button>
                             )}
-                            <Button variant="contained" color="primary" onClick={handleNext} className={classes.button}>
+                            <Button variant="contained" color="primary" onClick={handleNext} sx={buttonStyles}>
                                 {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                             </Button>
-                        </div>
+                        </Box>
                     )}
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };

@@ -5,18 +5,18 @@ import Badge from '@mui/material/Badge';
 import Mail from '@mui/icons-material/Mail';
 import Box from '@mui/material/Box';
 
-const ContainerStyles = {
+const containerStyles = {
     mb: 4,
 };
 
-const SectionTitleStyles = {
+const sectionTitleStyles = {
     mb: 2,
 };
 
-const ExampleRowStyles = {
+const exampleRowStyles = {
     display: 'flex',
     justifyContent: 'space-evenly',
-    marginBottom: 2,
+    mb: 2,
 };
 
 const LabelStyles = {
@@ -32,11 +32,11 @@ const BadgeContainerStyles = {
 
 export const BadgeExample: React.FC = () => (
     <>
-        <Box sx={ContainerStyles}>
-            <Typography variant={'body1'} sx={SectionTitleStyles}>
+        <Box sx={containerStyles}>
+            <Typography variant={'body1'} sx={sectionTitleStyles}>
                 Standard (default)
             </Typography>
-            <Box sx={ExampleRowStyles}>
+            <Box sx={exampleRowStyles}>
                 <Box sx={BadgeContainerStyles}>
                     <Typography variant={'body2'} sx={LabelStyles}>
                         Default
@@ -71,11 +71,11 @@ export const BadgeExample: React.FC = () => (
                 </Box>
             </Box>
         </Box>
-        <Box sx={ContainerStyles}>
-            <Typography variant={'body1'} sx={SectionTitleStyles}>
+        <Box sx={containerStyles}>
+            <Typography variant={'body1'} sx={sectionTitleStyles}>
                 Dot
             </Typography>
-            <Box sx={ExampleRowStyles}>
+            <Box sx={exampleRowStyles}>
                 <Box sx={BadgeContainerStyles}>
                     <Typography variant={'body2'} sx={LabelStyles}>
                         Default
@@ -110,11 +110,11 @@ export const BadgeExample: React.FC = () => (
                 </Box>
             </Box>
         </Box>
-        <Box sx={ContainerStyles}>
-            <Typography variant={'body1'} sx={SectionTitleStyles}>
+        <Box sx={containerStyles}>
+            <Typography variant={'body1'} sx={sectionTitleStyles}>
                 w/ Badge Overlap
             </Typography>
-            <Box sx={ExampleRowStyles}>
+            <Box sx={exampleRowStyles}>
                 <Box sx={BadgeContainerStyles}>
                     <Typography variant={'body2'} sx={LabelStyles}>
                         Rectangle (default)
@@ -136,7 +136,7 @@ export const BadgeExample: React.FC = () => (
                     </Badge>
                 </Box>
             </Box>
-            <Box sx={ExampleRowStyles}>
+            <Box sx={exampleRowStyles}>
                 <Box sx={BadgeContainerStyles}>
                     <Typography variant={'body2'} sx={LabelStyles}>
                         Circle

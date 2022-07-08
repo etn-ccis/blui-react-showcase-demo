@@ -134,14 +134,12 @@ export const UserMenuExample: React.FC = () => {
             <Box sx={{ width: '100%', mt: 4 }}>
                 <AppBar position={'relative'} color={'primary'}>
                     <Toolbar
+                        disableGutters
                         sx={{
                             pt: 0,
                             minHeight: 'unset',
                             height: '4rem',
-                            '&.MuiToolbar-root': {
-                                paddingLeft: 2,
-                                paddingRight: 2,
-                            },
+                            px: 2,
                         }}
                     >
                         <Typography variant={'h6'}>UserMenu within a Toolbar</Typography>
