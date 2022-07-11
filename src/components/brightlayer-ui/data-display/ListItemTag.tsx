@@ -1,60 +1,51 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
 import BrightnessMedium from '@mui/icons-material/BrightnessMedium';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        componentContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
-        },
-    })
-);
+const componentContainerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1,
+};
+
+const labelStyles = {
+    mb: 1,
+};
 
 export const ListItemTagExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
     return (
         <>
-            <div className={classes.exampleRow}>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-evenly',
+                    mb: 2,
+                }}
+            >
+                <Box sx={componentContainerStyles}>
+                    <Typography sx={labelStyles} variant={'body2'}>
                         Basic Usage
                     </Typography>
                     <ListItemTag label={'active'} />
-                </div>
-                <div className={classes.componentContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={componentContainerStyles}>
+                    <Typography sx={labelStyles} variant={'body2'}>
                         w/ Custom Colors
                     </Typography>
                     <ListItemTag label={'active'} backgroundColor={colors.red['500']} fontColor={colors.white['50']} />
-                </div>
-            </div>
-            <div className={classes.componentContainer} style={{ marginTop: theme.spacing(6) }}>
-                <Typography variant={'body2'} className={classes.label}>
+                </Box>
+            </Box>
+            <Box sx={{ ...componentContainerStyles, mt: 6 }}>
+                <Typography sx={labelStyles} variant={'body2'}>
                     Within an Info List Item
                 </Typography>
                 <InfoListItem
@@ -62,14 +53,14 @@ export const ListItemTagExample: React.FC = () => {
                     title={'Info List Item'}
                     subtitle={'with List Item Tags'}
                     rightComponent={
-                        <div style={{ display: 'flex' }}>
+                        <Box sx={{ display: 'flex' }}>
                             <ListItemTag
                                 label={'Build Passing'}
                                 backgroundColor={colors.green[300]}
                                 fontColor={colors.black[900]}
-                                style={{
-                                    marginRight: rtl ? 0 : theme.spacing(2),
-                                    marginLeft: rtl ? theme.spacing(2) : 0,
+                                sx={{
+                                    mr: rtl ? 0 : 2,
+                                    ml: rtl ? 2 : 0,
                                 }}
                             />
                             <ListItemTag
@@ -77,10 +68,10 @@ export const ListItemTagExample: React.FC = () => {
                                 backgroundColor={colors.red[300]}
                                 fontColor={colors.black[900]}
                             />
-                        </div>
+                        </Box>
                     }
                 />
-            </div>
+            </Box>
         </>
     );
 };

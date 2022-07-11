@@ -1,33 +1,30 @@
 import React from 'react';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import Typography from '@mui/material/Typography';
 import LinearProgress, { LinearProgressProps } from '@mui/material/LinearProgress';
 import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        progressContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            marginBottom: theme.spacing(2),
-            flex: 1,
-        },
-        linearProgress: {
-            width: '100%',
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const labelStyles = {
+    mb: 1,
+};
+
+const progressContainerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    mb: 2,
+    flex: 1,
+};
+
+const linearProgressStyles = {
+    width: '100%',
+};
 
 const LinearProgressWithLabel = (props: LinearProgressProps & { value: number }): JSX.Element => (
     <Box display="flex" alignItems="center">
@@ -41,8 +38,6 @@ const LinearProgressWithLabel = (props: LinearProgressProps & { value: number })
 );
 
 export const LinearProgressExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [determinateProgress, setDeterminateProgress] = React.useState(0);
     const [bufferProgress, setBufferProgress] = React.useState(0);
     const [buffer, setBuffer] = React.useState(10);
@@ -84,137 +79,125 @@ export const LinearProgressExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Indeterminate (default)
                 </Typography>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Default
                     </Typography>
-                    <LinearProgress className={classes.linearProgress} />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                    <LinearProgress sx={linearProgressStyles} />
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Primary
                     </Typography>
-                    <LinearProgress color="primary" className={classes.linearProgress} />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                    <LinearProgress color="primary" sx={linearProgressStyles} />
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Secondary
                     </Typography>
-                    <LinearProgress color="secondary" className={classes.linearProgress} />
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                    <LinearProgress color="secondary" sx={linearProgressStyles} />
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Determinate
                 </Typography>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Default
                     </Typography>
-                    <LinearProgress
-                        variant={'determinate'}
-                        value={determinateProgress}
-                        className={classes.linearProgress}
-                    />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                    <LinearProgress variant={'determinate'} value={determinateProgress} sx={linearProgressStyles} />
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Primary
                     </Typography>
                     <LinearProgress
                         color="primary"
                         variant={'determinate'}
                         value={determinateProgress}
-                        className={classes.linearProgress}
+                        sx={linearProgressStyles}
                     />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Secondary
                     </Typography>
                     <LinearProgress
                         color="secondary"
                         variant={'determinate'}
                         value={determinateProgress}
-                        className={classes.linearProgress}
+                        sx={linearProgressStyles}
                     />
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Buffer
                 </Typography>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Default
                     </Typography>
                     <LinearProgress
                         variant={'buffer'}
                         value={bufferProgress}
-                        className={classes.linearProgress}
+                        sx={linearProgressStyles}
                         valueBuffer={buffer}
                     />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Primary
                     </Typography>
                     <LinearProgress
                         color="primary"
                         variant={'buffer'}
                         value={bufferProgress}
-                        className={classes.linearProgress}
+                        sx={linearProgressStyles}
                         valueBuffer={buffer}
                     />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Secondary
                     </Typography>
                     <LinearProgress
                         color="secondary"
                         variant={'buffer'}
                         value={bufferProgress}
-                        className={classes.linearProgress}
+                        sx={linearProgressStyles}
                         valueBuffer={buffer}
                     />
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Determinate w/ Label
                 </Typography>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Default
                     </Typography>
-                    <LinearProgressWithLabel value={determinateProgress} className={classes.linearProgress} />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                    <LinearProgressWithLabel value={determinateProgress} sx={linearProgressStyles} />
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Primary
                     </Typography>
-                    <LinearProgressWithLabel
-                        color="primary"
-                        value={determinateProgress}
-                        className={classes.linearProgress}
-                    />
-                </div>
-                <div className={classes.progressContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                    <LinearProgressWithLabel color="primary" value={determinateProgress} sx={linearProgressStyles} />
+                </Box>
+                <Box sx={progressContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Secondary
                     </Typography>
-                    <LinearProgressWithLabel
-                        color="secondary"
-                        value={determinateProgress}
-                        className={classes.linearProgress}
-                    />
-                </div>
-            </div>
+                    <LinearProgressWithLabel color="secondary" value={determinateProgress} sx={linearProgressStyles} />
+                </Box>
+            </Box>
         </>
     );
 };

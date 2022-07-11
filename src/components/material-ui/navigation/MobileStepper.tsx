@@ -2,26 +2,21 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import MobileStepper from '@mui/material/MobileStepper';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { useTheme } from '@mui/material/styles';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
 
 export const MobileStepperExample: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles(theme);
     const [activeDotStep, setActiveDotStep] = React.useState(0);
     const [activeProgressStep, setActiveProgressStep] = React.useState(0);
     const [activeTextStep, setActiveTextStep] = React.useState(0);
@@ -52,8 +47,8 @@ export const MobileStepperExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Dots (default)
                 </Typography>
                 <MobileStepper
@@ -74,9 +69,9 @@ export const MobileStepperExample: React.FC = () => {
                         </Button>
                     }
                 />
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Progress
                 </Typography>
                 <MobileStepper
@@ -97,9 +92,9 @@ export const MobileStepperExample: React.FC = () => {
                         </Button>
                     }
                 />
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Text
                 </Typography>
                 <MobileStepper
@@ -120,7 +115,7 @@ export const MobileStepperExample: React.FC = () => {
                         </Button>
                     }
                 />
-            </div>
+            </Box>
         </>
     );
 };

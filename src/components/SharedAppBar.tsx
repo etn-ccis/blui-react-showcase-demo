@@ -5,8 +5,6 @@ import Tooltip from '@mui/material/Tooltip';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Email from '@mui/icons-material/Email';
 import Menu from '@mui/icons-material/Menu';
@@ -15,18 +13,9 @@ import InvertColors from '@mui/icons-material/InvertColors';
 import SwapHoriz from '@mui/icons-material/SwapHoriz';
 import SendIcon from '@mui/icons-material/Send';
 import React, { useCallback } from 'react';
-import clsx from 'clsx';
 import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';
 import { useDispatch } from 'react-redux';
 import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
-
-const useStyles = makeStyles(() =>
-    createStyles({
-        iconFlip: {
-            transform: 'scaleX(-1)',
-        },
-    })
-);
 
 type SharedAppBarProps = {
     title: string;
@@ -36,7 +25,6 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
     const dispatch = useDispatch();
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
-    const classes = useStyles();
     const smUp = useMediaQuery(theme.breakpoints.up('sm'));
     const { title = 'Showcase' } = props;
 
@@ -52,15 +40,15 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                 }}
                 size="large"
             >
-                <Menu className={clsx({ [classes.iconFlip]: false })} />
+                <Menu />
             </IconButton>
         );
-    }, [smUp, classes, dispatch]);
+    }, [smUp, dispatch]);
 
     return (
-        <AppBar position={'sticky'} color={'primary'} style={{ zIndex: 10000 }}>
+        <AppBar position={'sticky'} color={'primary'} sx={{ zIndex: 10000 }}>
             <Toolbar>
-                <Typography variant="h6" style={{ fontWeight: 600, lineHeight: 1 }}>
+                <Typography variant="h6" sx={{ fontWeight: 600, lineHeight: 1 }}>
                     {title}
                 </Typography>
                 {getNavigationIcon()}
@@ -73,7 +61,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                         }}
                         size="large"
                     >
-                        <InvertColors className={clsx({ [classes.iconFlip]: false })} />
+                        <InvertColors />
                     </IconButton>
                 </Tooltip>
                 <Spacer width={theme.spacing(1)} flex={0} />
@@ -85,7 +73,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                         }}
                         size="large"
                     >
-                        <SwapHoriz className={clsx({ [classes.iconFlip]: false })} />
+                        <SwapHoriz />
                     </IconButton>
                 </Tooltip>
                 <Spacer width={theme.spacing(1)} flex={0} />
@@ -98,11 +86,11 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                             items: [
                                 {
                                     title: 'Log Out',
-                                    icon: <SendIcon className={clsx({ [classes.iconFlip]: rtl })} />,
+                                    icon: <SendIcon sx={rtl ? { transform: 'scaleX(-1)' } : {}} />,
                                 },
                                 {
                                     title: 'Account Settings',
-                                    icon: <Settings className={clsx({ [classes.iconFlip]: false })} />,
+                                    icon: <Settings />,
                                     divider: true,
                                 },
                             ],
@@ -112,11 +100,11 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                             items: [
                                 {
                                     title: 'eatonhelp@eaton.com',
-                                    icon: <SendIcon className={clsx({ [classes.iconFlip]: rtl })} />,
+                                    icon: <SendIcon sx={rtl ? { transform: 'scaleX(-1)' } : {}} />,
                                 },
                                 {
                                     title: '1-866-905-9988',
-                                    icon: <Email className={clsx({ [classes.iconFlip]: false })} />,
+                                    icon: <Email />,
                                 },
                             ],
                         },
