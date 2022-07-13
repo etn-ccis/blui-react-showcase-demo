@@ -1,40 +1,27 @@
 import React, { useCallback, useState } from 'react';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import { InputProps } from '@material-ui/core/Input';
-import Switch from '@material-ui/core/Switch';
-import TextField from '@material-ui/core/TextField';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import { InputProps } from '@mui/material/Input';
+import Switch from '@mui/material/Switch';
+import TextField from '@mui/material/TextField';
+import { useTheme } from '@mui/material/styles';
 import { InfoListItem } from '@brightlayer-ui/react-components';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Business from '@material-ui/icons/Business';
-import Email from '@material-ui/icons/Email';
-import LocationOn from '@material-ui/icons/LocationOn';
-import Lock from '@material-ui/icons/Lock';
-import LockOpen from '@material-ui/icons/LockOpen';
-import Notifications from '@material-ui/icons/Notifications';
-import NotificationsOff from '@material-ui/icons/NotificationsOff';
-import Phone from '@material-ui/icons/Phone';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Business from '@mui/icons-material/Business';
+import Email from '@mui/icons-material/Email';
+import LocationOn from '@mui/icons-material/LocationOn';
+import Lock from '@mui/icons-material/Lock';
+import LockOpen from '@mui/icons-material/LockOpen';
+import Notifications from '@mui/icons-material/Notifications';
+import NotificationsOff from '@mui/icons-material/NotificationsOff';
+import Phone from '@mui/icons-material/Phone';
 import { usePageTitle } from '../../hooks/usePageTitle';
-
-const useStyles = makeStyles(() =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flex: 1,
-            flexDirection: 'column',
-            alignItems: 'center',
-        },
-    })
-);
+import Box from '@mui/material/Box';
 
 type OnChangeHandler = InputProps['onChange'];
 
 export const Settings: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles();
     const [emailNotificationsSetting, setEmailNotificationsSetting] = useState(true);
     const [textNotificationsSetting, setTextNotificationsSetting] = useState(false);
     const [autoLogOutSetting, setAutoLogOutSetting] = useState(true);
@@ -49,11 +36,18 @@ export const Settings: React.FC = () => {
     );
 
     return (
-        <div className={classes.container}>
-            <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000, marginBottom: theme.spacing(3) }}>
+        <Box
+            sx={{
+                display: 'flex',
+                flex: 1,
+                flexDirection: 'column',
+                alignItems: 'center',
+            }}
+        >
+            <Card sx={{ width: '80%', mt: 4, maxWidth: 1000, mb: 3 }}>
                 <InfoListItem
                     title={'Organization'}
-                    style={{ color: theme.palette.primary.main }}
+                    sx={{ color: theme.palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -71,10 +65,10 @@ export const Settings: React.FC = () => {
                     wrapTitle
                 />
             </Card>
-            <Card style={{ width: '80%', maxWidth: 1000, marginBottom: theme.spacing(4) }}>
+            <Card sx={{ width: '80%', maxWidth: 1000, mb: 4 }}>
                 <InfoListItem
                     title={'Account'}
-                    style={{ color: theme.palette.primary.main }}
+                    sx={{ color: theme.palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -144,6 +138,6 @@ export const Settings: React.FC = () => {
                     }
                 />
             </Card>
-        </div>
+        </Box>
     );
 };

@@ -1,209 +1,201 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Cancel from '@material-ui/icons/Cancel';
-import CancelOutlined from '@material-ui/icons/CancelOutlined';
-import CancelRounded from '@material-ui/icons/CancelRounded';
-import CancelSharp from '@material-ui/icons/CancelSharp';
-import CancelTwoTone from '@material-ui/icons/CancelTwoTone';
-import Delete from '@material-ui/icons/Delete';
-import DeleteOutlined from '@material-ui/icons/DeleteOutlined';
-import DeleteRounded from '@material-ui/icons/DeleteRounded';
-import DeleteSharp from '@material-ui/icons/DeleteSharp';
-import DeleteTwoTone from '@material-ui/icons/DeleteTwoTone';
-import Favorite from '@material-ui/icons/Favorite';
-import FavoriteOutlined from '@material-ui/icons/FavoriteOutlined';
-import FavoriteRounded from '@material-ui/icons/FavoriteRounded';
-import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
-import FavoriteTwoTone from '@material-ui/icons/FavoriteTwoTone';
-import Mail from '@material-ui/icons/Mail';
-import MailOutlined from '@material-ui/icons/MailOutlined';
-import MailRounded from '@material-ui/icons/MailRounded';
-import MailSharp from '@material-ui/icons/MailSharp';
-import MailTwoTone from '@material-ui/icons/MailTwoTone';
+import Typography from '@mui/material/Typography';
+import Cancel from '@mui/icons-material/Cancel';
+import CancelOutlined from '@mui/icons-material/CancelOutlined';
+import CancelRounded from '@mui/icons-material/CancelRounded';
+import CancelSharp from '@mui/icons-material/CancelSharp';
+import CancelTwoTone from '@mui/icons-material/CancelTwoTone';
+import Delete from '@mui/icons-material/Delete';
+import DeleteOutlined from '@mui/icons-material/DeleteOutlined';
+import DeleteRounded from '@mui/icons-material/DeleteRounded';
+import DeleteSharp from '@mui/icons-material/DeleteSharp';
+import DeleteTwoTone from '@mui/icons-material/DeleteTwoTone';
+import Favorite from '@mui/icons-material/Favorite';
+import FavoriteOutlined from '@mui/icons-material/FavoriteOutlined';
+import FavoriteRounded from '@mui/icons-material/FavoriteRounded';
+import FavoriteSharp from '@mui/icons-material/FavoriteSharp';
+import FavoriteTwoTone from '@mui/icons-material/FavoriteTwoTone';
+import Mail from '@mui/icons-material/Mail';
+import MailOutlined from '@mui/icons-material/MailOutlined';
+import MailRounded from '@mui/icons-material/MailRounded';
+import MailSharp from '@mui/icons-material/MailSharp';
+import MailTwoTone from '@mui/icons-material/MailTwoTone';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        iconContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
-        },
-    })
-);
-
-export const IconExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
-
-    return (
-        <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Mail
-                </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Filled
-                        </Typography>
-                        <Mail />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Outlined
-                        </Typography>
-                        <MailOutlined />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Rounded
-                        </Typography>
-                        <MailRounded />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Two-tone
-                        </Typography>
-                        <MailTwoTone />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Sharp
-                        </Typography>
-                        <MailSharp />
-                    </div>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Favorite
-                </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Filled
-                        </Typography>
-                        <Favorite />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Outlined
-                        </Typography>
-                        <FavoriteOutlined />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Rounded
-                        </Typography>
-                        <FavoriteRounded />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Two-tone
-                        </Typography>
-                        <FavoriteTwoTone />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Sharp
-                        </Typography>
-                        <FavoriteSharp />
-                    </div>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Delete
-                </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Filled
-                        </Typography>
-                        <Delete />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Outlined
-                        </Typography>
-                        <DeleteOutlined />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Rounded
-                        </Typography>
-                        <DeleteRounded />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Two-tone
-                        </Typography>
-                        <DeleteTwoTone />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Sharp
-                        </Typography>
-                        <DeleteSharp />
-                    </div>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
-                    Cancel
-                </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Filled
-                        </Typography>
-                        <Cancel />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Outlined
-                        </Typography>
-                        <CancelOutlined />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Rounded
-                        </Typography>
-                        <CancelRounded />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Two-tone
-                        </Typography>
-                        <CancelTwoTone />
-                    </div>
-                    <div className={classes.iconContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
-                            Sharp
-                        </Typography>
-                        <CancelSharp />
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+const ContainerStyles = {
+    mb: 4,
 };
+
+const SectionTitleStyles = {
+    mb: 2,
+};
+
+const ExampleRowStyles = {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    mb: 2,
+};
+
+const LabelStyles = {
+    mb: 1,
+};
+
+const IconContainerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1,
+};
+
+export const IconExample: React.FC = () => (
+    <>
+        <Box sx={ContainerStyles}>
+            <Typography variant={'body1'} sx={SectionTitleStyles}>
+                Mail
+            </Typography>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Filled
+                    </Typography>
+                    <Mail />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Outlined
+                    </Typography>
+                    <MailOutlined />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Rounded
+                    </Typography>
+                    <MailRounded />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Two-tone
+                    </Typography>
+                    <MailTwoTone />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Sharp
+                    </Typography>
+                    <MailSharp />
+                </Box>
+            </Box>
+        </Box>
+        <Box sx={ContainerStyles}>
+            <Typography variant={'body1'} sx={SectionTitleStyles}>
+                Favorite
+            </Typography>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Filled
+                    </Typography>
+                    <Favorite />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Outlined
+                    </Typography>
+                    <FavoriteOutlined />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Rounded
+                    </Typography>
+                    <FavoriteRounded />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Two-tone
+                    </Typography>
+                    <FavoriteTwoTone />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Sharp
+                    </Typography>
+                    <FavoriteSharp />
+                </Box>
+            </Box>
+        </Box>
+        <Box sx={ContainerStyles}>
+            <Typography variant={'body1'} sx={SectionTitleStyles}>
+                Delete
+            </Typography>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Filled
+                    </Typography>
+                    <Delete />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Outlined
+                    </Typography>
+                    <DeleteOutlined />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Rounded
+                    </Typography>
+                    <DeleteRounded />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Two-tone
+                    </Typography>
+                    <DeleteTwoTone />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Sharp
+                    </Typography>
+                    <DeleteSharp />
+                </Box>
+            </Box>
+        </Box>
+        <Box sx={ContainerStyles}>
+            <Typography variant={'body1'} sx={SectionTitleStyles}>
+                Cancel
+            </Typography>
+            <Box sx={ExampleRowStyles}>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Filled
+                    </Typography>
+                    <Cancel />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Outlined
+                    </Typography>
+                    <CancelOutlined />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Rounded
+                    </Typography>
+                    <CancelRounded />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Two-tone
+                    </Typography>
+                    <CancelTwoTone />
+                </Box>
+                <Box sx={IconContainerStyles}>
+                    <Typography variant={'body2'} sx={LabelStyles}>
+                        Sharp
+                    </Typography>
+                    <CancelSharp />
+                </Box>
+            </Box>
+        </Box>
+    </>
+);

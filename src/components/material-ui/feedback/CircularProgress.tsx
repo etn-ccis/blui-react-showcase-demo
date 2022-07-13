@@ -1,36 +1,32 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import CircularProgress, { CircularProgressProps } from '@material-ui/core/CircularProgress';
-import Box from '@material-ui/core/Box';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        progressContainer: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            flex: 1,
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const exampleRowStyles = {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    mb: 2,
+};
+
+const labelStyles = {
+    mb: 1,
+};
+
+const progressContainerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1,
+};
 
 const CircularProgressWithLabel = (props: CircularProgressProps & { value: number }): JSX.Element => (
     <Box position="relative" display="inline-flex">
@@ -53,9 +49,6 @@ const CircularProgressWithLabel = (props: CircularProgressProps & { value: numbe
 );
 
 export const CircularProgressExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
-
     const [progress, setProgress] = React.useState(0);
 
     React.useEffect(() => {
@@ -70,81 +63,81 @@ export const CircularProgressExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Indeterminate (default)
                 </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                <Box sx={exampleRowStyles}>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Default
                         </Typography>
                         <CircularProgress />
-                    </div>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                    </Box>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Primary
                         </Typography>
                         <CircularProgress color="primary" />
-                    </div>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                    </Box>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Secondary
                         </Typography>
                         <CircularProgress color="secondary" />
-                    </div>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                    </Box>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Determinate
                 </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                <Box sx={exampleRowStyles}>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Default
                         </Typography>
                         <CircularProgress variant={'determinate'} value={progress} />
-                    </div>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                    </Box>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Primary
                         </Typography>
                         <CircularProgress color="primary" variant={'determinate'} value={progress} />
-                    </div>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                    </Box>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Secondary
                         </Typography>
                         <CircularProgress color="secondary" variant={'determinate'} value={progress} />
-                    </div>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                    </Box>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Determinate w/ Label
                 </Typography>
-                <div className={classes.exampleRow}>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                <Box sx={exampleRowStyles}>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Default
                         </Typography>
                         <CircularProgressWithLabel value={progress} />
-                    </div>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                    </Box>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Primary
                         </Typography>
                         <CircularProgressWithLabel color="primary" value={progress} />
-                    </div>
-                    <div className={classes.progressContainer}>
-                        <Typography variant={'body2'} className={classes.label}>
+                    </Box>
+                    <Box sx={progressContainerStyles}>
+                        <Typography variant={'body2'} sx={labelStyles}>
                             Secondary
                         </Typography>
                         <CircularProgressWithLabel color="secondary" value={progress} />
-                    </div>
-                </div>
-            </div>
+                    </Box>
+                </Box>
+            </Box>
         </>
     );
 };

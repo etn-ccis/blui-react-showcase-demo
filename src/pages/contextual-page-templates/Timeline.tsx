@@ -1,24 +1,13 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme } from '@mui/material/styles';
 import { InfoListItem, ListItemTag } from '@brightlayer-ui/react-components';
-import Card from '@material-ui/core/Card';
-import ChevronRight from '@material-ui/icons/ChevronRight';
-import Notifications from '@material-ui/icons/Notifications';
-import NotificationsActive from '@material-ui/icons/NotificationsActive';
+import Card from '@mui/material/Card';
+import ChevronRight from '@mui/icons-material/ChevronRight';
+import Notifications from '@mui/icons-material/Notifications';
+import NotificationsActive from '@mui/icons-material/NotificationsActive';
 import * as colors from '@brightlayer-ui/colors';
 import { usePageTitle } from '../../hooks/usePageTitle';
-
-const useStyles = makeStyles(() =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flex: 1,
-            justifyContent: 'center',
-        },
-    })
-);
+import Box from '@mui/material/Box';
 
 export type TimelineItem = {
     alarm: 'active' | 'inactive' | 'cleared';
@@ -32,7 +21,6 @@ export type TimelineItem = {
 
 export const Timeline: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles();
     usePageTitle('Timeline');
 
     const getRandomDate = (): Date => {
@@ -156,11 +144,17 @@ export const Timeline: React.FC = () => {
     //  add date to items older than "yesterday"
 
     return (
-        <div className={classes.container}>
-            <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000, marginBottom: theme.spacing(4) }}>
+        <Box
+            sx={{
+                display: 'flex',
+                flex: 1,
+                justifyContent: 'center',
+            }}
+        >
+            <Card sx={{ width: '80%', my: 4, maxWidth: 1000 }}>
                 <InfoListItem
                     title={'Timeline'}
-                    style={{ color: theme.palette.primary.main }}
+                    sx={{ color: theme.palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -168,7 +162,11 @@ export const Timeline: React.FC = () => {
                 {timelineData.map((data, index) => (
                     <InfoListItem
                         key={index}
-                        leftComponent={<span style={{ width: 70 }}>{getDisplayTime(data.date)}</span>}
+                        leftComponent={
+                            <Box component="span" sx={{ width: 70 }}>
+                                {getDisplayTime(data.date)}
+                            </Box>
+                        }
                         title={`${data.type} ${data.deviceName}`}
                         subtitle={[data.subLocation, data.location]}
                         divider={index === timelineData.length - 1 ? undefined : 'partial'}
@@ -184,7 +182,7 @@ export const Timeline: React.FC = () => {
                             data.badge ? (
                                 <>
                                     <ListItemTag label={'active'} backgroundColor={theme.palette.error.main} />
-                                    <ChevronRight style={{ marginLeft: theme.spacing(3) }} />
+                                    <ChevronRight sx={{ ml: 3 }} />
                                 </>
                             ) : (
                                 <ChevronRight />
@@ -193,6 +191,6 @@ export const Timeline: React.FC = () => {
                     />
                 ))}
             </Card>
-        </div>
+        </Box>
     );
 };

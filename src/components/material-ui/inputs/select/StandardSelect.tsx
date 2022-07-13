@@ -1,55 +1,50 @@
-import Typography from '@material-ui/core/Typography';
-import FormControl from '@material-ui/core/FormControl';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import FormControl from '@mui/material/FormControl';
+import FormHelperText from '@mui/material/FormHelperText';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import React from 'react';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        selectContainer: {
-            marginBottom: theme.spacing(1),
-        },
-        formControl: {
-            width: '100%',
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const labelStyles = {
+    mb: 1,
+};
+
+const selectContainerStyles = {
+    mb: 1,
+};
+
+const formControlStyles = {
+    width: '100%',
+};
 
 export const StandardSelectExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [age, setAge] = React.useState('');
 
-    const handleChange = (event: React.ChangeEvent<{ value: unknown }>): void => {
-        setAge(event.target.value as string);
+    const handleChange = (event: SelectChangeEvent): void => {
+        setAge(event.target.value);
     };
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default
                 </Typography>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Enabled
                     </Typography>
-                    <FormControl variant={'standard'} className={classes.formControl}>
+                    <FormControl variant={'standard'} sx={formControlStyles}>
                         <InputLabel>Label</InputLabel>
                         <Select value={age} onChange={handleChange}>
                             <MenuItem value="">
@@ -61,12 +56,12 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Helper text</FormHelperText>
                     </FormControl>
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
-                    <FormControl variant={'standard'} disabled className={classes.formControl}>
+                    <FormControl variant={'standard'} disabled sx={formControlStyles}>
                         <InputLabel>Label</InputLabel>
                         <Select value={age}>
                             <MenuItem value="">
@@ -78,12 +73,12 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Helper text</FormHelperText>
                     </FormControl>
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Error
                     </Typography>
-                    <FormControl variant={'standard'} className={classes.formControl} error>
+                    <FormControl variant={'standard'} sx={formControlStyles} error>
                         <InputLabel>Label</InputLabel>
                         <Select value={age} onChange={handleChange}>
                             <MenuItem value="">
@@ -95,17 +90,17 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Error text</FormHelperText>
                     </FormControl>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Primary
                 </Typography>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Enabled
                     </Typography>
-                    <FormControl variant={'standard'} className={classes.formControl} color="primary">
+                    <FormControl variant={'standard'} sx={formControlStyles} color="primary">
                         <InputLabel>Label</InputLabel>
                         <Select value={age} onChange={handleChange}>
                             <MenuItem value="">
@@ -117,12 +112,12 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Helper text</FormHelperText>
                     </FormControl>
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
-                    <FormControl variant={'standard'} disabled className={classes.formControl} color="primary">
+                    <FormControl variant={'standard'} disabled sx={formControlStyles} color="primary">
                         <InputLabel>Label</InputLabel>
                         <Select value={age}>
                             <MenuItem value="">
@@ -134,12 +129,12 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Helper text</FormHelperText>
                     </FormControl>
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Error
                     </Typography>
-                    <FormControl variant={'standard'} className={classes.formControl} error color="primary">
+                    <FormControl variant={'standard'} sx={formControlStyles} error color="primary">
                         <InputLabel>Label</InputLabel>
                         <Select value={age} onChange={handleChange}>
                             <MenuItem value="">
@@ -151,17 +146,17 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Error text</FormHelperText>
                     </FormControl>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Secondary
                 </Typography>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Enabled
                     </Typography>
-                    <FormControl variant={'standard'} className={classes.formControl} color="secondary">
+                    <FormControl variant={'standard'} sx={formControlStyles} color="secondary">
                         <InputLabel>Label</InputLabel>
                         <Select value={age} onChange={handleChange}>
                             <MenuItem value="">
@@ -173,12 +168,12 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Helper text</FormHelperText>
                     </FormControl>
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
-                    <FormControl variant={'standard'} disabled className={classes.formControl} color="secondary">
+                    <FormControl variant={'standard'} disabled sx={formControlStyles} color="secondary">
                         <InputLabel>Label</InputLabel>
                         <Select value={age}>
                             <MenuItem value="">
@@ -190,12 +185,12 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Helper text</FormHelperText>
                     </FormControl>
-                </div>
-                <div className={classes.selectContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={selectContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Error
                     </Typography>
-                    <FormControl variant={'standard'} className={classes.formControl} error color="secondary">
+                    <FormControl variant={'standard'} sx={formControlStyles} error color="secondary">
                         <InputLabel>Label</InputLabel>
                         <Select value={age} onChange={handleChange}>
                             <MenuItem value="">
@@ -207,8 +202,8 @@ export const StandardSelectExample: React.FC = () => {
                         </Select>
                         <FormHelperText>Error text</FormHelperText>
                     </FormControl>
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };

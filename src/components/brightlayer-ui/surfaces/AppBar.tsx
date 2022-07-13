@@ -1,95 +1,88 @@
 import React from 'react';
-import Toolbar from '@material-ui/core/Toolbar';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Toolbar from '@mui/material/Toolbar';
 import { getBodyFiller } from '../../../utils/utils';
 import { AppBar, ThreeLiner } from '@brightlayer-ui/react-components';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(2),
-            overflow: 'hidden',
-            height: 400,
-        },
-        title: {},
-        subtitle: {},
-        info: {},
-        liner: {
-            top: 0,
-            position: 'relative',
-        },
-        expanded: {
-            '& $liner': {
-                top: 64,
-            },
-        },
-        collapsed: {
-            '& $title': {
-                fontSize: '1.25rem',
-                fontWeight: 600,
-            },
-            '& $subtitle': {
-                fontSize: 0,
-            },
-            '& $info': {
-                fontSize: '1rem',
-                fontWeight: 400,
-                marginTop: '-0.25rem',
-            },
-        },
-    })
-);
+const containerStyles = {
+    mb: 2,
+    overflow: 'hidden',
+    height: 400,
+    '& .title': {},
+    '& .subtitle': {},
+    '& .info': {},
 
-export const BLUIAppBarExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
+    '& .expanded': {
+        '& .liner': {
+            top: 64,
+        },
+    },
 
-    return (
-        <>
-            <div className={classes.container}>
-                <AppBar
-                    classes={{ collapsed: classes.collapsed, expanded: classes.expanded }}
-                    scrollContainerId={'appbarBodyFiller1'}
-                    position={'sticky'}
-                >
-                    <Toolbar>
-                        <ThreeLiner
-                            title={'Title'}
-                            animationDuration={300}
-                            classes={{ title: classes.title }}
-                            className={classes.liner}
-                        ></ThreeLiner>
-                    </Toolbar>
-                </AppBar>
-                <div id="appbarBodyFiller1" style={{ height: 400, overflow: 'scroll' }}>
-                    {getBodyFiller()}
-                </div>
-            </div>
-
-            <div className={classes.container}>
-                <AppBar
-                    classes={{ collapsed: classes.collapsed, expanded: classes.expanded }}
-                    scrollContainerId={'appbarBodyFiller2'}
-                    position={'sticky'}
-                >
-                    <Toolbar>
-                        <ThreeLiner
-                            title={'W/ Dynamic Content'}
-                            subtitle={'Subtitle'}
-                            info={'Info'}
-                            animationDuration={300}
-                            classes={{ title: classes.title, subtitle: classes.subtitle, info: classes.info }}
-                            className={classes.liner}
-                        ></ThreeLiner>
-                    </Toolbar>
-                </AppBar>
-                <div id="appbarBodyFiller2" style={{ height: 400, overflow: 'scroll' }}>
-                    {getBodyFiller()}
-                </div>
-            </div>
-        </>
-    );
+    '& .collapsed': {
+        '& .title': {
+            fontSize: '1.25rem',
+            fontWeight: 600,
+        },
+        '& .subtitle': {
+            fontSize: 0,
+        },
+        '& .info': {
+            fontSize: '1rem',
+            fontWeight: 400,
+            mt: '-0.25rem',
+        },
+    },
 };
+
+const linerStyles = {
+    top: 0,
+    position: 'relative',
+};
+
+export const BLUIAppBarExample: React.FC = () => (
+    <>
+        <Box sx={containerStyles}>
+            <AppBar
+                classes={{ collapsed: 'collapsed', expanded: 'expanded' }}
+                scrollContainerId={'appbarBodyFiller1'}
+                position={'sticky'}
+            >
+                <Toolbar>
+                    <ThreeLiner
+                        sx={linerStyles}
+                        className={'liner'}
+                        classes={{ title: 'title' }}
+                        title={'Title'}
+                        animationDuration={300}
+                    />
+                </Toolbar>
+            </AppBar>
+            <Box id="appbarBodyFiller1" sx={{ height: 400, overflow: 'scroll' }}>
+                {getBodyFiller()}
+            </Box>
+        </Box>
+
+        <Box sx={containerStyles}>
+            <AppBar
+                classes={{ collapsed: 'collapsed', expanded: 'expanded' }}
+                scrollContainerId={'appbarBodyFiller2'}
+                position={'sticky'}
+            >
+                <Toolbar>
+                    <ThreeLiner
+                        sx={linerStyles}
+                        className={'liner'}
+                        classes={{ title: 'title', subtitle: 'subtitle', info: 'info' }}
+                        title={'W/ Dynamic Content'}
+                        subtitle={'Subtitle'}
+                        info={'Info'}
+                        animationDuration={300}
+                    />
+                </Toolbar>
+            </AppBar>
+            <Box id="appbarBodyFiller2" sx={{ height: 400, overflow: 'scroll' }}>
+                {getBodyFiller()}
+            </Box>
+        </Box>
+    </>
+);

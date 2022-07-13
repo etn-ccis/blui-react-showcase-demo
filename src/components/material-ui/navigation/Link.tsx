@@ -1,49 +1,38 @@
 import React from 'react';
-import Link from '@material-ui/core/Link';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import Link from '@mui/material/Link';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flexDirection: 'column',
-        },
-        link: {
-            marginBottom: theme.spacing(2),
-        },
-    })
-);
+const linkStyles = {
+    mb: 2,
+};
 
-const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void => {
+const handleClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.preventDefault();
     // eslint-disable-next-line no-console
     console.info('You clicked a link.');
 };
 
-export const LinkExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
-
-    return (
-        <div className={classes.container}>
-            <Link onClick={handleClick} href="/" className={classes.link}>
-                Default
-            </Link>
-            <Link onClick={handleClick} href="/" color={'primary'} className={classes.link}>
-                Primary
-            </Link>
-            <Link onClick={handleClick} href="/" color={'secondary'} className={classes.link}>
-                Secondary
-            </Link>
-            <Link onClick={handleClick} href="/" color={'textPrimary'} className={classes.link}>
-                Text Primary
-            </Link>
-            <Link onClick={handleClick} href="/" color={'textSecondary'} className={classes.link}>
-                Text Secondary
-            </Link>
-        </div>
-    );
-};
+export const LinkExample: React.FC = () => (
+    <Box
+        sx={{
+            display: 'flex',
+            flexDirection: 'column',
+        }}
+    >
+        <Link onClick={handleClick} href="/" sx={linkStyles}>
+            Default
+        </Link>
+        <Link onClick={handleClick} href="/" color={'primary'} sx={linkStyles}>
+            Primary
+        </Link>
+        <Link onClick={handleClick} href="/" color={'secondary'} sx={linkStyles}>
+            Secondary
+        </Link>
+        <Link onClick={handleClick} href="/" color={'textPrimary'} sx={linkStyles}>
+            Text Primary
+        </Link>
+        <Link onClick={handleClick} href="/" color={'textSecondary'} sx={linkStyles}>
+            Text Secondary
+        </Link>
+    </Box>
+);

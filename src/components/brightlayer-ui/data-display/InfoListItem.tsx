@@ -1,10 +1,11 @@
 import React from 'react';
 import { ChannelValue, InfoListItem } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
-import { Alarm } from '@material-ui/icons';
+import { Alarm } from '@mui/icons-material';
 import { Device, GradeA, Leaf, Temp } from '@brightlayer-ui/icons-mui';
 import { AppStore } from '../../../__types__';
 import { useSelector } from 'react-redux';
+import Box from '@mui/material/Box';
 
 export const InfoListItemExample: React.FC = () => {
     const direction = useSelector((store: AppStore) => store.app.direction);
@@ -23,10 +24,7 @@ export const InfoListItemExample: React.FC = () => {
             />
             <InfoListItem
                 title={'With an array for subtitle'}
-                subtitle={[
-                    <ChannelValue value={'50'} units={'°C'} key="cv1" />,
-                    <ChannelValue value={'55'} units={'°C'} key="cv2" />,
-                ]}
+                subtitle={['Item 1', 'Item 2', 'Item 3']}
                 subtitleSeparator={'·'}
                 icon={<Temp />}
             />
@@ -58,19 +56,19 @@ export const InfoListItemExample: React.FC = () => {
                 subtitle={'with a left component'}
                 icon={<Device />}
                 leftComponent={
-                    <div
-                        style={{
+                    <Box
+                        sx={{
                             display: 'flex',
                             flexDirection: 'column',
-                            marginRight: !rtl ? 16 : 0,
-                            marginLeft: rtl ? 16 : 0,
+                            mr: !rtl ? 2 : 0,
+                            ml: rtl ? 2 : 0,
                         }}
                     >
                         <div>
                             8:32 <strong>AM</strong>
                         </div>
                         <div>11/21/21</div>
-                    </div>
+                    </Box>
                 }
             />
             <InfoListItem

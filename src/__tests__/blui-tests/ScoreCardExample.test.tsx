@@ -1,19 +1,19 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { ChannelValueExample } from '../../components/brightlayer-ui/data-display/ChannelValue';
+import { ScoreCardExample } from '../../components/brightlayer-ui/surfaces/ScoreCard';
 
-describe('Channel value example', () => {
+describe('Score card example', () => {
     afterEach(cleanup);
     it('renders without crashing', () => {
         render(
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <ChannelValueExample />
+                    <ScoreCardExample />
                 </RTLThemeProvider>
             </Provider>
         );

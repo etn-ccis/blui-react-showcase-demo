@@ -1,66 +1,53 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Add from '@material-ui/icons/Add';
-import Devices from '@material-ui/icons/Devices';
-import LocationOff from '@material-ui/icons/LocationOff';
-import NotListedLocation from '@material-ui/icons/NotListedLocation';
-
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Add from '@mui/icons-material/Add';
+import Devices from '@mui/icons-material/Devices';
+import LocationOff from '@mui/icons-material/LocationOff';
+import NotListedLocation from '@mui/icons-material/NotListedLocation';
 import { EmptyState } from '@brightlayer-ui/react-components';
-import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        iconFlip: {
-            transform: 'scaleX(-1)',
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
 
 export const EmptyStateExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography sx={sectionTitleStyles} variant={'body1'}>
                     Basic Usage
                 </Typography>
                 <EmptyState
-                    icon={<NotListedLocation fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                    icon={<NotListedLocation fontSize={'inherit'} sx={rtl ? { transform: 'scaleX(-1)' } : {}} />}
                     title={'Location Unknown'}
                 />
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography sx={sectionTitleStyles} variant={'body1'}>
                     w/ Description
                 </Typography>
                 <EmptyState
-                    icon={<LocationOff fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                    icon={<LocationOff fontSize={'inherit'} sx={rtl ? { transform: 'scaleX(-1)' } : {}} />}
                     title={'Location Services Disabled'}
                     description={'Enable Location Services via Settings to receive GPS information'}
                 />
-            </div>
-            <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Typography sx={sectionTitleStyles} variant={'body1'}>
                 w/ Actions
             </Typography>
             <EmptyState
-                icon={<Devices fontSize={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                icon={<Devices fontSize={'inherit'} sx={rtl ? { transform: 'scaleX(-1)' } : {}} />}
                 title={'No Devices'}
                 description={'Check your network connection or add a new device'}
                 actions={

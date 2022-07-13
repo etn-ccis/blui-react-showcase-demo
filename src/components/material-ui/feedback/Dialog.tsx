@@ -1,56 +1,35 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Divider from '@material-ui/core/Divider';
-import Toolbar from '@material-ui/core/Toolbar';
-import Slide from '@material-ui/core/Slide';
-import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import { TransitionProps } from '@material-ui/core/transitions/transition';
-import Close from '@material-ui/icons/Close';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import Divider from '@mui/material/Divider';
+import Toolbar from '@mui/material/Toolbar';
+import Slide from '@mui/material/Slide';
+import AppBar from '@mui/material/AppBar';
+import IconButton from '@mui/material/IconButton';
+import { TransitionProps } from '@mui/material/transitions/transition';
+import Close from '@mui/icons-material/Close';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-        },
-        button: {
-            marginBottom: theme.spacing(2),
-            width: 300,
-        },
-        appBar: {
-            position: 'relative',
-        },
-        title: {
-            marginLeft: theme.spacing(2.5),
-            flex: 1,
-        },
-    })
-);
+const buttonStyles = {
+    mb: 2,
+    width: 300,
+};
 
 const Transition = React.forwardRef(
-    (props: TransitionProps & { children?: React.ReactElement }, ref: React.Ref<unknown>) => (
+    (props: TransitionProps & { children: React.ReactElement<any, any> }, ref: React.Ref<unknown>) => (
         <Slide direction="up" ref={ref} {...props} />
     )
 );
 
 export const DialogExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [open, setOpen] = React.useState(false);
     const [fullDialogOpen, setFullDialogOpen] = React.useState(false);
 
@@ -71,8 +50,14 @@ export const DialogExample: React.FC = () => {
     };
 
     return (
-        <div className={classes.container}>
-            <Button variant="outlined" color="primary" onClick={handleClickOpen} className={classes.button}>
+        <Box
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+            }}
+        >
+            <Button variant="outlined" color="primary" onClick={handleClickOpen} sx={buttonStyles}>
                 Open Dialog
             </Button>
             <Dialog open={open} onClose={handleClose}>
@@ -92,16 +77,27 @@ export const DialogExample: React.FC = () => {
                     </Button>
                 </DialogActions>
             </Dialog>
-            <Button variant="outlined" color="primary" onClick={handleFullDialogClickOpen} className={classes.button}>
+            <Button variant="outlined" color="primary" onClick={handleFullDialogClickOpen} sx={buttonStyles}>
                 Open Full Screen Dialog
             </Button>
             <Dialog fullScreen open={fullDialogOpen} onClose={handleFullDialogClose} TransitionComponent={Transition}>
-                <AppBar className={classes.appBar} color={'primary'}>
+                <AppBar
+                    sx={{
+                        position: 'relative',
+                    }}
+                    color={'primary'}
+                >
                     <Toolbar>
-                        <IconButton edge="start" color="inherit" onClick={handleFullDialogClose} aria-label="close">
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            onClick={handleFullDialogClose}
+                            aria-label="close"
+                            size="large"
+                        >
                             <Close />
                         </IconButton>
-                        <Typography variant="h6" className={classes.title}>
+                        <Typography variant="h6" sx={{ ml: 2.5, flex: 1 }}>
                             Select Your Favorite Brightlayer UI Component
                         </Typography>
                         <Button autoFocus color="inherit" onClick={handleFullDialogClose}>
@@ -132,6 +128,6 @@ export const DialogExample: React.FC = () => {
                     </ListItem>
                 </List>
             </Dialog>
-        </div>
+        </Box>
     );
 };

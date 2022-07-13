@@ -4,7 +4,7 @@ orbs:
 jobs:
     build_demo:
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: cimg/node:14.19.0-browsers
         steps:
             - checkout
             - restore_cache:
@@ -31,18 +31,18 @@ jobs:
                   name: Lint
                   command: |
                       yarn lint
-            - run:
-                  name: Unit Test
-                  command: |
-                      yarn test --maxWorkers=2 --coverage --watchAll=false
+            # - run:
+            #       name: Unit Test
+            #       command: |
+            #           yarn test --maxWorkers=2 --coverage --watchAll=false
             - run:
                   name: Build Demo
                   command: |
                       yarn build
-            - persist_to_workspace:
-                root: .
-                paths:
-                    - coverage
+            # - persist_to_workspace:
+            #       root: .
+            #       paths:
+            #           - coverage
             - run:
                   name: Memory Usage
                   command: |
@@ -52,14 +52,14 @@ jobs:
     coverage_report:
         working_directory: ~/react-showcase-demo
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: cimg/node:14.19.0-browsers
         steps:
             - checkout
             - attach_workspace:
-                at: .
+                  at: .
             - codecov/upload:
-                file: './coverage/clover.xml'
-                token: e071b5d8-7127-4351-8acd-54f56d36a39c
+                  file: './coverage/clover.xml'
+                  token: e071b5d8-7127-4351-8acd-54f56d36a39c
 
 workflows:
     version: 2
@@ -67,9 +67,9 @@ workflows:
         jobs:
             - build_demo
             - coverage_report:
-                   requires:
-                        - build_demo
-                #    filters:
-                #         branches:
-                #             only:
-                #                 - master
+                  requires:
+                      - build_demo
+                  #    filters:
+                  #         branches:
+                  #             only:
+                  #                 - master

@@ -1,33 +1,21 @@
-import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import Snackbar from '@material-ui/core/Snackbar';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Close from '@material-ui/icons/Close';
-import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
+import React, { forwardRef } from 'react';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import Snackbar from '@mui/material/Snackbar';
+import Close from '@mui/icons-material/Close';
+import MuiAlert, { AlertProps } from '@mui/material/Alert';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-        },
-        button: {
-            marginBottom: theme.spacing(2),
-            width: 300,
-        },
-    })
-);
+const buttonStyles = {
+    mb: 2,
+    width: 300,
+};
 
-const Alert = (props: AlertProps): JSX.Element => <MuiAlert elevation={6} variant="filled" {...props} />;
+const Alert: React.FC<AlertProps> = forwardRef((props, ref) => (
+    <MuiAlert elevation={6} variant="filled" {...props} ref={ref} />
+));
 
 export const SnackbarExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [open, setOpen] = React.useState(false);
     const [openError, setOpenError] = React.useState(false);
     const [openWarning, setOpenWarning] = React.useState(false);
@@ -38,18 +26,19 @@ export const SnackbarExample: React.FC = () => {
         setOpen(true);
     };
 
-    const handleClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleClose = (event?: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
 
         setOpen(false);
     };
+
     const handleErrorClick = (): void => {
         setOpenError(true);
     };
 
-    const handleErrorClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleErrorClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -60,7 +49,7 @@ export const SnackbarExample: React.FC = () => {
         setOpenWarning(true);
     };
 
-    const handleWarningClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleWarningClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -71,7 +60,7 @@ export const SnackbarExample: React.FC = () => {
         setOpenInformation(true);
     };
 
-    const handleInformationClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleInformationClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -82,7 +71,7 @@ export const SnackbarExample: React.FC = () => {
         setOpenSuccess(true);
     };
 
-    const handleSuccessClose = (event: React.SyntheticEvent | React.MouseEvent, reason?: string): void => {
+    const handleSuccessClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
@@ -91,8 +80,8 @@ export const SnackbarExample: React.FC = () => {
     };
 
     return (
-        <div className={classes.container}>
-            <Button variant="outlined" color="primary" onClick={handleClick} className={classes.button}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <Button variant="outlined" color="primary" onClick={handleClick} sx={buttonStyles}>
                 Open Simple Snackbar
             </Button>
             <Snackbar
@@ -116,7 +105,7 @@ export const SnackbarExample: React.FC = () => {
                 }
             />
 
-            <Button variant="outlined" color="primary" onClick={handleErrorClick} className={classes.button}>
+            <Button variant="outlined" color="primary" onClick={handleErrorClick} sx={buttonStyles}>
                 Open Error Snackbar
             </Button>
             <Snackbar
@@ -133,7 +122,7 @@ export const SnackbarExample: React.FC = () => {
                 </Alert>
             </Snackbar>
 
-            <Button variant="outlined" color="primary" onClick={handleWarningClick} className={classes.button}>
+            <Button variant="outlined" color="primary" onClick={handleWarningClick} sx={buttonStyles}>
                 Open Warning Snackbar
             </Button>
             <Snackbar
@@ -150,7 +139,7 @@ export const SnackbarExample: React.FC = () => {
                 </Alert>
             </Snackbar>
 
-            <Button variant="outlined" color="primary" onClick={handleInformationClick} className={classes.button}>
+            <Button variant="outlined" color="primary" onClick={handleInformationClick} sx={buttonStyles}>
                 Open Information Snackbar
             </Button>
             <Snackbar
@@ -167,7 +156,7 @@ export const SnackbarExample: React.FC = () => {
                 </Alert>
             </Snackbar>
 
-            <Button variant="outlined" color="primary" onClick={handleSuccessClick} className={classes.button}>
+            <Button variant="outlined" color="primary" onClick={handleSuccessClick} sx={buttonStyles}>
                 Open Success Snackbar
             </Button>
             <Snackbar
@@ -183,6 +172,6 @@ export const SnackbarExample: React.FC = () => {
                     This is a success message!
                 </Alert>
             </Snackbar>
-        </div>
+        </Box>
     );
 };

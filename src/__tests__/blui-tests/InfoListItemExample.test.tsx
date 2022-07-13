@@ -1,19 +1,19 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
-import { DropdownToolbarExample } from '../../components/brightlayer-ui/surfaces/DropdownToolbar';
+import { InfoListItemExample } from '../../components/brightlayer-ui/data-display/InfoListItem';
 
-describe('App bar example', () => {
+describe('Info list item example', () => {
     afterEach(cleanup);
     it('renders without crashing', () => {
         render(
             <Provider store={store}>
                 <RTLThemeProvider>
                     <CssBaseline />
-                    <DropdownToolbarExample />
+                    <InfoListItemExample />
                 </RTLThemeProvider>
             </Provider>
         );

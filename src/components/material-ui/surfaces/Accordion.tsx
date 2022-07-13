@@ -1,81 +1,71 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Typography from '@mui/material/Typography';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import { styled } from '@mui/material/styles';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
+const Heading = styled(Typography)(({ theme }) => ({
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: 'regular',
+}));
+
+export const AccordionExample: React.FC = () => (
+    <Box
+        sx={{
             width: '100%',
-        },
-        heading: {
-            fontSize: theme.typography.pxToRem(15),
-            fontWeight: theme.typography.fontWeightRegular,
-        },
-    })
+        }}
+    >
+        <Accordion defaultExpanded>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Heading>Default Expanded Accordion</Heading>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                </Typography>
+            </AccordionDetails>
+        </Accordion>
+        <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Heading>Another Accordion</Heading>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                </Typography>
+            </AccordionDetails>
+        </Accordion>
+        <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Heading>One More Accordion</Heading>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                </Typography>
+            </AccordionDetails>
+        </Accordion>
+        <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Heading>...And Another</Heading>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                </Typography>
+            </AccordionDetails>
+        </Accordion>
+        <Accordion disabled>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Heading>Disabled Accordion</Heading>
+            </AccordionSummary>
+        </Accordion>
+    </Box>
 );
-
-export const AccordionExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
-
-    return (
-        <div className={classes.container}>
-            <Accordion defaultExpanded>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>Default Expanded Accordion</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>Another Accordion</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>One More Accordion</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>...And Another</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion disabled>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>Disabled Accordion</Typography>
-                </AccordionSummary>
-            </Accordion>
-        </div>
-    );
-};

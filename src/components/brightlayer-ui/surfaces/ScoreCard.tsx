@@ -1,52 +1,41 @@
 import React from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import { Hero, HeroBanner, InfoListItem, ScoreCard } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
 import backgroundImage from '../../../assets/topology_40.png';
-import Cloud from '@material-ui/icons/Cloud';
-import ListAlt from '@material-ui/icons/ListAlt';
-import Mail from '@material-ui/icons/Mail';
-import MoreVert from '@material-ui/icons/MoreVert';
-import Notifications from '@material-ui/icons/Notifications';
-import Search from '@material-ui/icons/Search';
+import Cloud from '@mui/icons-material/Cloud';
+import ListAlt from '@mui/icons-material/ListAlt';
+import Mail from '@mui/icons-material/Mail';
+import MoreVert from '@mui/icons-material/MoreVert';
+import Notifications from '@mui/icons-material/Notifications';
+import Search from '@mui/icons-material/Search';
 import { GradeA, Moisture as Humidity, Temp } from '@brightlayer-ui/icons-mui';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
-import clsx from 'clsx';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        exampleContainer: {
-            marginBottom: theme.spacing(2),
-        },
-        scoreCard: {
-            width: '100%',
-            flex: '0 0 auto',
-        },
-        title: {
-            fontWeight: 400,
-        },
-        iconFlip: {
-            transform: 'scaleX(-1)',
-        },
-    })
-);
+const ExampleContainerStyles = {
+    mb: 2,
+};
+
+const ScoreCardStyles = {
+    width: '100%',
+    flex: '0 0 auto',
+};
+
+const InfoListItemStyles = {
+    height: '2.25rem',
+};
 
 export const ScoreCardExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 
     const actionRow = (
-        <List style={{ padding: 0 }}>
+        <List sx={{ p: 0 }}>
             <InfoListItem dense chevron title={'View Location'} hidePadding onClick={(): void => {}} />
         </List>
     );
@@ -63,36 +52,32 @@ export const ScoreCardExample: React.FC = () => {
             icon={<Temp fontSize={'inherit'} htmlColor={colors.black[500]} />}
             label={'Temperature'}
             iconSize={48}
-            value={98}
-            units={'°F'}
-            fontSize={'normal'}
+            ChannelValueProps={{ value: 98, units: '°F', fontSize: 'normal' }}
         />,
         <Hero
             key={'hero2'}
             icon={<Humidity fontSize={'inherit'} htmlColor={colors.blue[300]} />}
             label={'Humidity'}
-            value={54}
-            units={'%'}
+            ChannelValueProps={{ value: 54, units: '%', fontSize: 'normal' }}
             iconSize={48}
-            fontSize={'normal'}
         />,
     ];
 
     return (
         <>
-            <div className={classes.exampleContainer}>
-                <ScoreCard className={classes.scoreCard} headerTitle={'Basic Usage'}>
+            <Box sx={ExampleContainerStyles}>
+                <ScoreCard sx={ScoreCardStyles} headerTitle={'Basic Usage'}>
                     <List>
                         <ListItem>
                             <ListItemText primary={'Body Content'} />
                         </ListItem>
                     </List>
                 </ScoreCard>
-            </div>
+            </Box>
 
-            <div className={classes.exampleContainer}>
+            <Box sx={ExampleContainerStyles}>
                 <ScoreCard
-                    className={classes.scoreCard}
+                    sx={ScoreCardStyles}
                     headerTitle={'Custom Header'}
                     headerSubtitle={'Subtitle'}
                     headerInfo={'4 Devices'}
@@ -106,11 +91,11 @@ export const ScoreCardExample: React.FC = () => {
                         </ListItem>
                     </List>
                 </ScoreCard>
-            </div>
+            </Box>
 
-            <div className={classes.exampleContainer}>
+            <Box sx={ExampleContainerStyles}>
                 <ScoreCard
-                    className={classes.scoreCard}
+                    sx={ScoreCardStyles}
                     headerTitle={'w/ Actions'}
                     headerSubtitle={'High Humidity Alarm'}
                     headerInfo={'4 Devices'}
@@ -126,11 +111,11 @@ export const ScoreCardExample: React.FC = () => {
                         </ListItem>
                     </List>
                 </ScoreCard>
-            </div>
+            </Box>
 
-            <div className={classes.exampleContainer}>
+            <Box sx={ExampleContainerStyles}>
                 <ScoreCard
-                    className={classes.scoreCard}
+                    sx={ScoreCardStyles}
                     headerTitle={'Substation 3'}
                     headerSubtitle={'High Humidity Alarm'}
                     headerInfo={'4 Devices'}
@@ -148,10 +133,10 @@ export const ScoreCardExample: React.FC = () => {
                         </ListItem>
                     </List>
                 </ScoreCard>
-            </div>
+            </Box>
 
             <ScoreCard
-                className={classes.scoreCard}
+                sx={ScoreCardStyles}
                 headerTitle={'Substation 3'}
                 headerSubtitle={'Normal'}
                 headerInfo={'4 Devices'}
@@ -166,36 +151,42 @@ export const ScoreCardExample: React.FC = () => {
                             label={'Grade'}
                             iconSize={72}
                             iconBackgroundColor={isDarkMode ? colors.black[900] : colors.white[50]}
-                            value={'98'}
-                            units={'/100'}
-                            fontSize={'normal'}
+                            ChannelValueProps={{ value: 98, units: '/100', fontSize: 'normal' }}
                         />
                     </HeroBanner>
                 }
                 badgeOffset={-52}
             >
-                <List style={{ padding: '.5rem 0' }}>
+                <List sx={{ p: '.5rem 0' }}>
                     <InfoListItem
                         dense
-                        style={{ height: '2.25rem' }}
                         title={'0 Alarms'}
                         icon={<Notifications color={'inherit'} />}
-                        classes={{ title: classes.title }}
+                        sx={{
+                            ...InfoListItemStyles,
+                            '& .BluiInfoListItem-title': {
+                                fontWeight: 400,
+                            },
+                        }}
                     />
                     <InfoListItem
                         dense
-                        style={{ height: '2.25rem' }}
+                        sx={InfoListItemStyles}
                         fontColor={isDarkMode ? colors.blue[300] : colors.blue[500]}
                         iconColor={isDarkMode ? colors.blue[300] : colors.blue[500]}
                         title={'1 Event'}
-                        icon={<ListAlt color={'inherit'} className={clsx({ [classes.iconFlip]: rtl })} />}
+                        icon={<ListAlt color={'inherit'} sx={rtl ? { transform: 'scaleX(-1)' } : {}} />}
                     />
                     <InfoListItem
                         dense
-                        style={{ height: '2.25rem' }}
                         title={'Online'}
                         icon={<Cloud color={'inherit'} />}
-                        classes={{ title: classes.title }}
+                        sx={{
+                            ...InfoListItemStyles,
+                            '& .BluiInfoListItem-title': {
+                                fontWeight: 400,
+                            },
+                        }}
                     />
                 </List>
             </ScoreCard>

@@ -1,12 +1,10 @@
 import React from 'react';
 import * as Colors from '@brightlayer-ui/colors';
-import List from '@material-ui/core/List';
-import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import List from '@mui/material/List';
+import Card from '@mui/material/Card';
+import Button from '@mui/material/Button';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 import {
     Hero,
     HeroBanner,
@@ -17,50 +15,42 @@ import {
     DrawerNavGroup,
     ListItemTag,
 } from '@brightlayer-ui/react-components';
-import Add from '@material-ui/icons/Add';
-import Remove from '@material-ui/icons/Remove';
-import ListIcon from '@material-ui/icons/List';
-import Settings from '@material-ui/icons/Settings';
-import MoreVert from '@material-ui/icons/MoreVert';
-import Timer from '@material-ui/icons/Timer';
-import TrendingUp from '@material-ui/icons/TrendingUp';
-import DevicesIcon from '@material-ui/icons/Devices';
+import Add from '@mui/icons-material/Add';
+import Remove from '@mui/icons-material/Remove';
+import ListIcon from '@mui/icons-material/List';
+import Settings from '@mui/icons-material/Settings';
+import MoreVert from '@mui/icons-material/MoreVert';
+import Timer from '@mui/icons-material/Timer';
+import TrendingUp from '@mui/icons-material/TrendingUp';
+import DevicesIcon from '@mui/icons-material/Devices';
 import { Pie, Battery } from '@brightlayer-ui/react-progress-icons';
 import { GradeA, Leaf, CurrentCircled, VoltageCircled, Temp, Moisture as Humidity } from '@brightlayer-ui/icons-mui';
-import clsx from 'clsx';
-
 import top from '../../assets/topology_40.png';
 import { usePageTitle } from '../../hooks/usePageTitle';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme) =>
-    createStyles({
-        scorecard: {
-            flex: '1 1 0px',
-            width: '100%',
-            maxWidth: '416px',
-            minWidth: '350px',
-        },
-        listTag: {
-            marginRight: theme.spacing(1),
-        },
-        iconFlip: {
-            transform: 'scaleX(-1)',
-        },
-    })
-);
+const scorecardStyles = {
+    flex: '1 1 0px',
+    width: '100%',
+    maxWidth: '416px',
+    minWidth: '350px',
+};
+
+const listTagStyles = {
+    mr: 1,
+};
 
 export const Dashboard: React.FC = () => {
     const theme = useTheme();
     const rtl = theme.direction === 'rtl';
-    const classes = useStyles();
     const mdUp = useMediaQuery(theme.breakpoints.up('md'));
     usePageTitle('Dashboard');
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div
-                style={{
-                    padding: theme.spacing(2),
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <Box
+                sx={{
+                    p: 2,
                     flex: 1,
                     width: '80%',
                     maxWidth: 1000,
@@ -68,7 +58,7 @@ export const Dashboard: React.FC = () => {
                     flexDirection: 'column',
                 }}
             >
-                <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
                     <ScoreCard
                         headerColor={Colors.red[500]}
                         headerBackgroundImage={top}
@@ -76,69 +66,49 @@ export const Dashboard: React.FC = () => {
                         headerSubtitle={'High Humidity Alarm'}
                         headerInfo={'4 Devices'}
                         headerFontColor={Colors.white[50]}
-                        actionItems={[<MoreVert key={'action1'} className={clsx({ [classes.iconFlip]: rtl })} />]}
+                        actionItems={[<MoreVert key={'action1'} sx={rtl ? { transform: 'scaleX(-1)' } : {}} />]}
                         badge={
-                            <HeroBanner style={{ minWidth: 210 }}>
+                            <HeroBanner sx={{ minWidth: 210 }}>
                                 <Hero
-                                    icon={
-                                        <Temp
-                                            fontSize={'inherit'}
-                                            htmlColor={Colors.gray[500]}
-                                            className={clsx({ [classes.iconFlip]: false })}
-                                        />
-                                    }
+                                    icon={<Temp fontSize={'inherit'} htmlColor={Colors.gray[500]} />}
                                     label={'Temperature'}
                                     iconSize={48}
-                                    value={98}
-                                    units={'°F'}
-                                    fontSize={'normal'}
+                                    ChannelValueProps={{ value: 98, units: '°F' }}
                                 />
                                 <Hero
-                                    icon={
-                                        <Humidity
-                                            fontSize={'inherit'}
-                                            htmlColor={Colors.blue[300]}
-                                            className={clsx({ [classes.iconFlip]: false })}
-                                        />
-                                    }
+                                    icon={<Humidity fontSize={'inherit'} htmlColor={Colors.blue[300]} />}
                                     label={'Humidity'}
-                                    value={54}
-                                    units={'%'}
+                                    ChannelValueProps={{ value: 54, units: '%' }}
                                     iconSize={48}
-                                    fontSize={'normal'}
                                 />
                             </HeroBanner>
                         }
                         badgeOffset={0}
                         actionRow={<InfoListItem dense chevron title={'More'} hidePadding />}
-                        classes={{ root: classes.scorecard }}
-                        style={{
-                            marginRight: mdUp ? theme.spacing(2) : 0,
-                            marginBottom: theme.spacing(2),
-                        }}
+                        sx={{ ...scorecardStyles, mr: mdUp ? 2 : 0, mb: 2 }}
                     >
-                        <List style={{ padding: '16px 0' }}>
+                        <List sx={{ p: '16px 0' }}>
                             <InfoListItem
                                 dense
-                                style={{ height: 36 }}
+                                sx={{ height: 36 }}
                                 fontColor={Colors.red[500]}
                                 iconColor={Colors.red[500]}
                                 title={'1 Alarm'}
-                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                                icon={<Leaf color={'inherit'} />}
                             />
                             <InfoListItem
                                 dense
-                                style={{ height: 36 }}
+                                sx={{ height: 36 }}
                                 fontColor={Colors.blue[500]}
                                 iconColor={Colors.blue[500]}
                                 title={'1 Event'}
-                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                                icon={<Leaf color={'inherit'} />}
                             />
                             <InfoListItem
                                 dense
-                                style={{ height: 36 }}
+                                sx={{ height: 36 }}
                                 title={'Online'}
-                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                                icon={<Leaf color={'inherit'} />}
                             />
                         </List>
                     </ScoreCard>
@@ -149,72 +119,54 @@ export const Dashboard: React.FC = () => {
                         headerSubtitle={'Normal'}
                         headerInfo={'4 Devices'}
                         headerFontColor={Colors.white[50]}
-                        actionItems={[<MoreVert key={'action1'} className={clsx({ [classes.iconFlip]: false })} />]}
+                        actionItems={[<MoreVert key={'action1'} />]}
                         badge={
                             <HeroBanner>
                                 <Hero
-                                    icon={
-                                        <GradeA
-                                            fontSize={'inherit'}
-                                            htmlColor={Colors.green[500]}
-                                            className={clsx({ [classes.iconFlip]: false })}
-                                        />
-                                    }
+                                    icon={<GradeA fontSize={'inherit'} htmlColor={Colors.green[500]} />}
                                     iconBackgroundColor={theme.palette.background.paper}
                                     label={'Health'}
                                     iconSize={72}
-                                    value={98}
-                                    units={'%'}
-                                    fontSize={'normal'}
+                                    ChannelValueProps={{ value: 98, units: '%' }}
                                 />
                             </HeroBanner>
                         }
                         badgeOffset={-52}
                         actionRow={<InfoListItem dense chevron title={'View Location'} hidePadding />}
-                        classes={{ root: classes.scorecard }}
-                        style={{ marginBottom: theme.spacing(2) }}
+                        sx={{ ...scorecardStyles, mb: 2 }}
                     >
-                        <List style={{ padding: '16px 0' }}>
+                        <List sx={{ p: '16px 0' }}>
                             <InfoListItem
                                 dense
-                                style={{ height: 36 }}
+                                sx={{ height: 36 }}
                                 title={'0 Alarms'}
-                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                                icon={<Leaf color={'inherit'} />}
                             />
                             <InfoListItem
                                 dense
-                                style={{ height: 36 }}
+                                sx={{ height: 36 }}
                                 fontColor={Colors.blue[500]}
                                 iconColor={Colors.blue[500]}
                                 title={'1 Event'}
-                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                                icon={<Leaf color={'inherit'} />}
                             />
                             <InfoListItem
                                 dense
-                                style={{ height: 36 }}
+                                sx={{ height: 36 }}
                                 title={'Online'}
-                                icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                                icon={<Leaf color={'inherit'} />}
                             />
                         </List>
                     </ScoreCard>
-                </div>
+                </Box>
 
-                <Card style={{ maxWidth: 416 * 2 + theme.spacing(2) }}>
-                    <List style={{ padding: 0 }}>
+                <Card sx={{ maxWidth: `${416 * 2 + 16}px` }}>
+                    <List sx={{ p: 0 }}>
                         <HeroBanner divider>
                             <Hero
-                                icon={
-                                    <GradeA
-                                        fontSize={'inherit'}
-                                        color={'inherit'}
-                                        htmlColor={Colors.green[500]}
-                                        className={clsx({ [classes.iconFlip]: false })}
-                                    />
-                                }
+                                icon={<GradeA fontSize={'inherit'} color={'inherit'} htmlColor={Colors.green[500]} />}
                                 label={'Healthy'}
-                                value={96}
-                                units={'/100'}
-                                fontSize={'normal'}
+                                ChannelValueProps={{ value: 96, units: '/100' }}
                             />
                             <Hero
                                 icon={
@@ -223,37 +175,26 @@ export const Dashboard: React.FC = () => {
                                         percent={65}
                                         size={36}
                                         // @ts-ignore until we publish the updated type definitions
-                                        className={clsx({ [classes.iconFlip]: false })}
                                     />
                                 }
                                 label={'Load'}
-                                fontSize={'normal'}
                             >
                                 <ChannelValue
                                     value={65}
                                     units={'%'}
+                                    fontSize={20}
                                     icon={
                                         <TrendingUp
                                             htmlColor={Colors.red[500]}
                                             fontSize={'inherit'}
-                                            className={clsx({ [classes.iconFlip]: rtl })}
+                                            sx={rtl ? { transform: 'scaleX(-1)' } : {}}
                                         />
                                     }
                                 />
                             </Hero>
-                            <Hero
-                                icon={
-                                    <Timer
-                                        fontSize={'inherit'}
-                                        color={'inherit'}
-                                        className={clsx({ [classes.iconFlip]: false })}
-                                    />
-                                }
-                                label={'Estimated'}
-                                fontSize={'normal'}
-                            >
-                                <ChannelValue value={1} units={'h'} />
-                                <ChannelValue value={26} units={'m'} />
+                            <Hero icon={<Timer fontSize={'inherit'} color={'inherit'} />} label={'Estimated'}>
+                                <ChannelValue value={1} units={'h'} fontSize={20} />
+                                <ChannelValue value={26} units={'m'} fontSize={20} />
                             </Hero>
                             <Hero
                                 icon={
@@ -262,14 +203,12 @@ export const Dashboard: React.FC = () => {
                                         percent={100}
                                         size={36}
                                         // @ts-ignore until we publish the updated type definitions
-                                        className={clsx({ [classes.iconFlip]: rtl })}
+                                        sx={rtl ? { transform: 'scaleX(-1)' } : {}}
                                     />
                                 }
-                                value={'Full'}
                                 label={'Battery'}
-                                fontSize={'normal'}
                             >
-                                <ChannelValue value={'Full'} />
+                                <ChannelValue value={'Full'} fontSize={20} />
                             </Hero>
                         </HeroBanner>
                         <InfoListItem
@@ -278,7 +217,7 @@ export const Dashboard: React.FC = () => {
                             divider={'full'}
                             statusColor={Colors.green[500]}
                             subtitleSeparator={'/'}
-                            icon={<Leaf color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                            icon={<Leaf color={'inherit'} />}
                             iconAlign={'center'}
                             rightComponent={<ChannelValue fontSize={16} value={'Online, ESS+'} />}
                         />
@@ -287,7 +226,7 @@ export const Dashboard: React.FC = () => {
                             divider={'full'}
                             avatar
                             subtitle={['Phase A', 'Phase B', 'Phase C']}
-                            icon={<VoltageCircled className={clsx({ [classes.iconFlip]: false })} />}
+                            icon={<VoltageCircled />}
                             rightComponent={
                                 <span>
                                     <ChannelValue fontSize={16} value={478} units={'V'} />,{' '}
@@ -303,21 +242,21 @@ export const Dashboard: React.FC = () => {
                             statusColor={Colors.red[500]}
                             fontColor={Colors.red[500]}
                             subtitle={['Phase A', 'Phase B', 'Phase C']}
-                            icon={<VoltageCircled color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                            icon={<VoltageCircled color={'inherit'} />}
                             rightComponent={
-                                <div style={{ display: 'flex', alignItems: 'center', color: Colors.red[500] }}>
-                                    <ListItemTag label={'monitored'} classes={{ root: classes.listTag }} />
+                                <Box sx={{ display: 'flex', alignItems: 'center', color: Colors.red[500] }}>
+                                    <ListItemTag label={'monitored'} sx={listTagStyles} />
                                     <ChannelValue fontSize={16} value={480} units={'V'} />,{' '}
                                     <ChannelValue fontSize={16} value={480} units={'V'} />,{' '}
                                     <ChannelValue fontSize={16} value={480} units={'V'} />
-                                </div>
+                                </Box>
                             }
                         />
                         <InfoListItem
                             dense
                             title={'Output Current'}
                             divider={'full'}
-                            icon={<CurrentCircled color={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                            icon={<CurrentCircled color={'inherit'} />}
                             iconAlign={'center'}
                             rightComponent={
                                 <span>
@@ -330,72 +269,68 @@ export const Dashboard: React.FC = () => {
                         <InfoListItem
                             dense
                             title={'Temperature'}
-                            icon={<Temp className={clsx({ [classes.iconFlip]: false })} />}
+                            icon={<Temp />}
                             iconAlign={'center'}
                             rightComponent={
-                                <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                     <ListItemTag
                                         backgroundColor={theme.palette.background.default}
                                         label={'active'}
                                         fontColor={
-                                            theme.palette.type === 'light' ? Colors.blue[700] : Colors.green['500']
+                                            theme.palette.mode === 'light' ? Colors.blue[700] : Colors.green['500']
                                         }
-                                        classes={{ root: classes.listTag }}
+                                        sx={listTagStyles}
                                     />
                                     <ListItemTag
                                         label={'OVERHEAT'}
                                         backgroundColor={Colors.red['500']}
-                                        classes={{ root: classes.listTag }}
+                                        sx={listTagStyles}
                                     />
                                     <ChannelValue
                                         fontSize={16}
                                         icon={
                                             <TrendingUp
                                                 htmlColor={Colors.red[500]}
-                                                className={clsx({ [classes.iconFlip]: rtl })}
+                                                sx={rtl ? { transform: 'scaleX(-1)' } : {}}
                                             />
                                         }
                                         value={68}
                                         units={'°F'}
                                     />
-                                </div>
+                                </Box>
                             }
                         />
                     </List>
                 </Card>
                 <Card
-                    style={{
-                        marginTop: theme.spacing(2),
-                        padding: theme.spacing(3),
-                        maxWidth: 416 * 2 + theme.spacing(2),
+                    sx={{
+                        mt: 2,
+                        p: 3,
+                        maxWidth: `${416 * 2 + 16}px`,
                     }}
                 >
                     <EmptyState
-                        icon={<DevicesIcon fontSize={'inherit'} className={clsx({ [classes.iconFlip]: false })} />}
+                        icon={<DevicesIcon fontSize={'inherit'} />}
                         title={'No Devices'}
                         description={'Contact your local admin for details'}
                         actions={
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                startIcon={<Add className={clsx({ [classes.iconFlip]: false })} />}
-                            >
+                            <Button variant="contained" color="primary" startIcon={<Add />}>
                                 Add Device
                             </Button>
                         }
                     />
                 </Card>
-                <Card style={{ marginTop: theme.spacing(2), maxWidth: 416 * 2 + theme.spacing(2) }}>
+                <Card sx={{ mt: 2, maxWidth: `${416 * 2 + 16}px` }}>
                     <DrawerNavGroup
                         title={'Resources'}
                         items={[
                             {
                                 title: 'Guides',
                                 itemID: 'Guides',
-                                icon: <DevicesIcon className={clsx({ [classes.iconFlip]: false })} />,
+                                icon: <DevicesIcon />,
                                 rightComponent: <ListItemTag label={'new'} />,
-                                expandIcon: <Add className={clsx({ [classes.iconFlip]: false })} />,
-                                collapseIcon: <Remove className={clsx({ [classes.iconFlip]: false })} />,
+                                expandIcon: <Add />,
+                                collapseIcon: <Remove />,
                                 items: [
                                     {
                                         title: 'Installation Manual',
@@ -420,7 +355,7 @@ export const Dashboard: React.FC = () => {
                             {
                                 title: 'Quality Control',
                                 itemID: 'Quality Control',
-                                icon: <Settings className={clsx({ [classes.iconFlip]: false })} />,
+                                icon: <Settings />,
                                 items: [
                                     {
                                         title: 'Training',
@@ -435,7 +370,7 @@ export const Dashboard: React.FC = () => {
                             {
                                 title: 'Report',
                                 itemID: 'Report',
-                                icon: <ListIcon className={clsx({ [classes.iconFlip]: rtl })} />,
+                                icon: <ListIcon sx={rtl ? { transform: 'scaleX(-1)' } : {}} />,
                                 divider: false,
                                 items: [
                                     {
@@ -451,7 +386,7 @@ export const Dashboard: React.FC = () => {
                         ]}
                     />
                 </Card>
-            </div>
-        </div>
+            </Box>
+        </Box>
     );
 };

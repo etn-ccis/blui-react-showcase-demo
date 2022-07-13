@@ -1,34 +1,28 @@
-import Typography from '@material-ui/core/Typography';
-import Slider from '@material-ui/core/Slider';
-import Grid from '@material-ui/core/Grid';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import useTheme from '@material-ui/core/styles/useTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import VolumeDown from '@material-ui/icons/VolumeDown';
-import VolumeUp from '@material-ui/icons/VolumeUp';
+import Typography from '@mui/material/Typography';
+import Slider from '@mui/material/Slider';
+import Grid from '@mui/material/Grid';
+import VolumeDown from '@mui/icons-material/VolumeDown';
+import VolumeUp from '@mui/icons-material/VolumeUp';
 import React from 'react';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        sliderContainer: {
-            marginBottom: theme.spacing(1),
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
+
+const labelStyles = {
+    mb: 1,
+};
+
+const sliderContainerStyles = {
+    mb: 1,
+};
 
 export const SliderExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [defaultValue, setDefaultValue] = React.useState<number>(30);
     const [default2Value, setDefault2Value] = React.useState<number>(30);
     const [primaryValue, setPrimaryValue] = React.useState<number>(30);
@@ -52,12 +46,12 @@ export const SliderExample: React.FC = () => {
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default
                 </Typography>
-                <div className={classes.sliderContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={sliderContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Active
                     </Typography>
                     <Grid container spacing={2}>
@@ -71,9 +65,9 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-                <div className={classes.sliderContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={sliderContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <Grid container spacing={2}>
@@ -87,14 +81,14 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Primary w/ marks
                 </Typography>
-                <div className={classes.sliderContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={sliderContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Active
                     </Typography>
                     <Grid container spacing={2}>
@@ -116,9 +110,9 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-                <div className={classes.sliderContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={sliderContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <Grid container spacing={2}>
@@ -132,14 +126,14 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Secondary w/ valueLabelDisplay auto
                 </Typography>
-                <div className={classes.sliderContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                <Box sx={sliderContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Active
                     </Typography>
                     <Grid container spacing={2}>
@@ -161,9 +155,9 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-                <div className={classes.sliderContainer}>
-                    <Typography variant={'body2'} className={classes.label}>
+                </Box>
+                <Box sx={sliderContainerStyles}>
+                    <Typography variant={'body2'} sx={labelStyles}>
                         Disabled
                     </Typography>
                     <Grid container spacing={2}>
@@ -185,13 +179,13 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     Default w/ valueDisplayLabel on
                 </Typography>
-                <div className={classes.sliderContainer} style={{ marginTop: 56 }}>
+                <Box sx={{ ...sliderContainerStyles, mt: 7 }}>
                     <Grid container spacing={2}>
                         <Grid item>
                             <VolumeDown />
@@ -203,8 +197,8 @@ export const SliderExample: React.FC = () => {
                             <VolumeUp />
                         </Grid>
                     </Grid>
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };

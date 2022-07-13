@@ -1,71 +1,44 @@
 import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Grid from '@material-ui/core/Grid';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
+import { useTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import Divider from '@mui/material/Divider';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Grid from '@mui/material/Grid';
 import { PxblueSmall } from '@brightlayer-ui/icons-mui';
-import FormatAlignLeftIcon from '@material-ui/icons/FormatAlignLeft';
-import FormatAlignCenterIcon from '@material-ui/icons/FormatAlignCenter';
-import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
-import FormatBoldIcon from '@material-ui/icons/FormatBold';
-import FormatItalicIcon from '@material-ui/icons/FormatItalic';
-import FormatUnderlinedIcon from '@material-ui/icons/FormatUnderlined';
+import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft';
+import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
+import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-        exampleRow: {
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            marginBottom: theme.spacing(2),
-        },
-        label: {
-            marginBottom: theme.spacing(1),
-        },
-        dividerContainer: {
-            marginBottom: theme.spacing(2),
-        },
-        verticalDividerExample: {
-            width: 'fit-content',
-            border: `1px solid ${theme.palette.divider}`,
-            borderRadius: theme.shape.borderRadius,
-            backgroundColor: theme.palette.background.paper,
-            color: theme.palette.text.secondary,
-            '& svg': {
-                margin: theme.spacing(1.5),
-            },
-            '& hr': {
-                margin: theme.spacing(0, 0.5),
-            },
-            margin: '0 auto',
-        },
-    })
-);
+const ContainerStyles = {
+    mb: 4,
+};
+
+const SectionTitleStyles = {
+    mb: 2,
+};
+
+const DividerContainerStyles = {
+    mb: 2,
+};
 
 export const DividerExample: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles(theme);
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={ContainerStyles}>
+                <Typography variant={'body1'} sx={SectionTitleStyles}>
                     Horizontal (default)
                 </Typography>
-                <div className={classes.dividerContainer}>
+                <Box sx={DividerContainerStyles}>
                     <List>
                         <ListItem button>
                             <ListItemAvatar>
@@ -126,14 +99,31 @@ export const DividerExample: React.FC = () => {
                         </ListItem>
                         <Divider light variant={'middle'} />
                     </List>
-                </div>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+                </Box>
+            </Box>
+            <Box sx={ContainerStyles}>
+                <Typography variant={'body1'} sx={SectionTitleStyles}>
                     Vertical
                 </Typography>
-                <div className={classes.dividerContainer}>
-                    <Grid container alignItems="center" className={classes.verticalDividerExample}>
+                <Box sx={DividerContainerStyles}>
+                    <Grid
+                        container
+                        alignItems="center"
+                        sx={{
+                            width: 'fit-content',
+                            border: `1px solid ${theme.palette.divider}`,
+                            borderRadius: `${theme.shape.borderRadius}px`,
+                            backgroundColor: theme.palette.background.paper,
+                            color: theme.palette.text.secondary,
+                            '& svg': {
+                                m: 1.5,
+                            },
+                            '& hr': {
+                                m: '0 4px',
+                            },
+                            m: '0 auto',
+                        }}
+                    >
                         <FormatAlignLeftIcon />
                         <FormatAlignCenterIcon />
                         <FormatAlignRightIcon />
@@ -142,8 +132,8 @@ export const DividerExample: React.FC = () => {
                         <FormatItalicIcon />
                         <FormatUnderlinedIcon />
                     </Grid>
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     );
 };

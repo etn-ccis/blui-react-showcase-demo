@@ -1,25 +1,17 @@
-import React from 'react';
-import useTheme from '@material-ui/core/styles/useTheme';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import createStyles from '@material-ui/core/styles/createStyles';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import 'date-fns';
-import DateFnsUtils from '@date-io/date-fns';
-import MuiPickersUtilsProvider from '@material-ui/pickers/MuiPickersUtilsProvider';
-import { KeyboardTimePicker } from '@material-ui/pickers/TimePicker';
-import { KeyboardDatePicker } from '@material-ui/pickers/DatePicker';
+import React, { ReactElement } from 'react';
+import TextField from '@mui/material/TextField';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import DatePicker from '@mui/lab/DatePicker';
+import MobileDatePicker from '@mui/lab/MobileDatePicker';
+import MobileTimePicker from '@mui/lab/MobileTimePicker';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        dateTimeContainer: {
-            marginBottom: theme.spacing(1),
-        },
-    })
-);
+const dateTimeContainerStyles = {
+    mb: 2,
+};
 
 export const DateTimeExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [selectedDate, setSelectedDate] = React.useState<Date | null>(new Date('2021-01-24T00:00:00'));
 
     const handleDateChange = (date: Date | null): void => {
@@ -27,38 +19,31 @@ export const DateTimeExample: React.FC = () => {
     };
 
     return (
-        <MuiPickersUtilsProvider utils={DateFnsUtils}>
-            <div className={classes.dateTimeContainer}>
-                <KeyboardDatePicker
-                    disableToolbar
-                    variant="inline"
-                    format="MM/dd/yyyy"
-                    margin="normal"
-                    id="date-picker-inline"
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <Box sx={dateTimeContainerStyles}>
+                <DatePicker
                     label="Date picker inline"
                     value={selectedDate}
                     onChange={handleDateChange}
+                    renderInput={(params): ReactElement => <TextField {...params} />}
                 />
-            </div>
-            <div className={classes.dateTimeContainer}>
-                <KeyboardDatePicker
-                    margin="normal"
-                    id="date-picker-dialog"
+            </Box>
+            <Box sx={dateTimeContainerStyles}>
+                <MobileDatePicker
                     label="Date picker dialog"
-                    format="MM/dd/yyyy"
                     value={selectedDate}
                     onChange={handleDateChange}
+                    renderInput={(params): ReactElement => <TextField {...params} />}
                 />
-            </div>
-            <div className={classes.dateTimeContainer}>
-                <KeyboardTimePicker
-                    margin="normal"
-                    id="time-picker"
+            </Box>
+            <Box sx={dateTimeContainerStyles}>
+                <MobileTimePicker
                     label="Time picker"
                     value={selectedDate}
                     onChange={handleDateChange}
+                    renderInput={(params): ReactElement => <TextField {...params} />}
                 />
-            </div>
-        </MuiPickersUtilsProvider>
+            </Box>
+        </LocalizationProvider>
     );
 };
