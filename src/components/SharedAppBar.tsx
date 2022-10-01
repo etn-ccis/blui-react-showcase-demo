@@ -40,7 +40,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                 }}
                 size="large"
                 edge={'start'}
-                sx={{mr: 2.5}}
+                sx={{ mr: 2.5 }}
             >
                 <Menu />
             </IconButton>
