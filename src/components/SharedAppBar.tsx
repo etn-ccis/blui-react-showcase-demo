@@ -39,6 +39,8 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
                 size="large"
+                edge={'start'}
+                sx={{mr: 2.5}}
             >
                 <Menu />
             </IconButton>
@@ -48,10 +50,10 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
     return (
         <AppBar position={'sticky'} color={'primary'} sx={{ zIndex: 10000 }}>
             <Toolbar>
+                {getNavigationIcon()}
                 <Typography variant="h6" sx={{ fontWeight: 600, lineHeight: 1 }}>
                     {title}
                 </Typography>
-                {getNavigationIcon()}
                 <Spacer flex={1} />
                 <Tooltip title={'Toggle Theme'} aria-label={'toggle the theme of the current showcase'}>
                     <IconButton
