@@ -39,6 +39,8 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                     dispatch({ type: TOGGLE_DRAWER });
                 }}
                 size="large"
+                edge={'start'}
+                sx={{mr: 2.5}}
             >
                 <Menu />
             </IconButton>
