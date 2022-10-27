@@ -15,7 +15,7 @@ import {
     DrawerFooter,
     DrawerHeader,
     NavItem,
-    DrawerNavItem
+    DrawerNavItem,
 } from '@brightlayer-ui/react-components';
 import clsx from 'clsx';
 import { useSelector, useDispatch } from 'react-redux';
@@ -101,7 +101,7 @@ export const NavigationDrawer: React.FC = () => {
                 <DrawerNavGroup items={menuItems} />
             </DrawerBody>
             <DrawerFooter>
-            <DrawerNavItem itemID="itemId" title="Drawer Nav Item Test" />
+                <DrawerNavItem itemID="itemId" title="Drawer Nav Item Test" />
 
                 <div
                     style={{
