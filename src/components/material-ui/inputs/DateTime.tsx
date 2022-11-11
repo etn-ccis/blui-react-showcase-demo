@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useTheme, Theme } from '@mui/material/styles';
-import TextField from '@mui/material/TextField';
+import TextField, { TextFieldProps } from '@mui/material/TextField';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DatePicker from '@mui/lab/DatePicker';
@@ -33,7 +33,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Date picker inline"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params): ReactElement => <TextField {...params} />}
+                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
                 />
             </div>
             <div className={classes.dateTimeContainer}>
@@ -41,7 +41,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Date picker dialog"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params): ReactElement => <TextField {...params} />}
+                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
                 />
             </div>
             <div className={classes.dateTimeContainer}>
@@ -49,7 +49,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Time picker"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params): ReactElement => <TextField {...params} />}
+                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
                 />
             </div>
         </LocalizationProvider>
