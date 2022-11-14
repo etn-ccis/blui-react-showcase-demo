@@ -1,10 +1,7 @@
 import React, { ReactElement } from 'react';
 import TextField, { TextFieldProps } from '@mui/material/TextField';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import DatePicker from '@mui/lab/DatePicker';
-import MobileDatePicker from '@mui/lab/MobileDatePicker';
-import MobileTimePicker from '@mui/lab/MobileTimePicker';
+import { LocalizationProvider, DatePicker, MobileDatePicker, MobileTimePicker } from '@mui/x-date-pickers';
 import Box from '@mui/material/Box';
 
 const dateTimeContainerStyles = {
