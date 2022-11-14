@@ -17,6 +17,7 @@ import { RTLThemeProvider } from './components/RTLProvider';
 import '@brightlayer-ui/react-themes/open-sans';
 
 const container = document.getElementById('root');
+/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */
 const root = createRoot(container!);
 
 root.render(
