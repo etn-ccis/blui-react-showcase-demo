@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import TextField, { TextFieldProps } from '@mui/material/TextField';
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers';
 import DatePicker from '@mui/lab/DatePicker';
 import MobileDatePicker from '@mui/lab/MobileDatePicker';
 import MobileTimePicker from '@mui/lab/MobileTimePicker';
