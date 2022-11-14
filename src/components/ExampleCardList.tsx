@@ -1,34 +1,9 @@
 import React from 'react';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
-
-import clsx from 'clsx';
-
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            display: 'flex',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-            margin: theme.spacing(1),
-        },
-        exampleCard: {
-            margin: theme.spacing(1),
-            width: '100%',
-            maxWidth: '416px',
-            minWidth: '350px',
-        },
-        fullWidthExampleCard: {
-            [theme.breakpoints.up('md')]: {
-                maxWidth: `${416 * 2 + parseInt(theme.spacing(2))}px`,
-            },
-        },
-    })
-);
+import Box from '@mui/material/Box';
 
 export type ComponentExample = {
     label: string;
@@ -42,20 +17,34 @@ export type ExampleCardListProps = {
 
 export const ExampleCardList = (props: ExampleCardListProps): JSX.Element => {
     const theme = useTheme();
-    const classes = useStyles(theme);
     const { examples } = props;
 
     return (
-        <div className={classes.container}>
+        <Box
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
+                m: 1,
+            }}
+        >
             {examples.map((example: ComponentExample) => (
                 <Card
                     key={example.label}
-                    className={clsx([classes.exampleCard, example.fullWidth ? classes.fullWidthExampleCard : ''])}
+                    sx={{
+                        m: 1,
+                        width: '100%',
+                        maxWidth: '416px',
+                        minWidth: '350px',
+                        [theme.breakpoints.up('md')]: {
+                            maxWidth: example.fullWidth ? `${416 * 2 + 16}px` : undefined,
+                        },
+                    }}
                 >
                     <CardHeader title={example.label} />
                     <CardContent>{example.component}</CardContent>
                 </Card>
             ))}
-        </div>
+        </Box>
     );
 };

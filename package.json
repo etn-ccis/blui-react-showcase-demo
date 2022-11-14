@@ -16,9 +16,9 @@
         "analyze": "source-map-explorer 'build/static/js/*.js'"
     },
     "dependencies": {
-        "@brightlayer-ui/colors": "^3.0.1",
+        "@brightlayer-ui/colors": "^3.1.1",
         "@brightlayer-ui/icons-mui": "^3.0.0",
-        "@brightlayer-ui/react-components": "^6.0.0",
+        "@brightlayer-ui/react-components": "^6.1.0",
         "@brightlayer-ui/react-progress-icons": "^2.1.1",
         "@brightlayer-ui/react-themes": "^7.0.0",
         "@date-io/date-fns": "^2.13.1",
@@ -49,7 +49,7 @@
         "react-dom": "^18.0.0",
         "react-redux": "^7.2.1",
         "react-router-dom": "^5.1.2",
-        "react-scripts": "^5.0.0",
+        "react-scripts": "^5.0.1",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
         "stylis": "^4.0.13",
@@ -73,7 +73,7 @@
         ]
     },
     "devDependencies": {
-        "@brightlayer-ui/eslint-config": "^3.0.0",
+        "@brightlayer-ui/eslint-config": "^3.0.1",
         "@brightlayer-ui/prettier-config": "^1.0.3",
         "@testing-library/jest-dom": "^5.11.0",
         "@testing-library/react": "^13.0.0",
@@ -89,7 +89,8 @@
         "enzyme": "^3.11.0",
         "eslint": "^8.9.0",
         "eslint-config-prettier": "^8.4.0",
-        "eslint-plugin-react": "^7.29.0",
+        "eslint-plugin-react": "~7.29.2",
+        "firebase-tools": "^11.0.1",
         "prettier": "^2.0.0",
         "prop-types": "^15.7.2",
         "source-map-explorer": "^2.5.0"

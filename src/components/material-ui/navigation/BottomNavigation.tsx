@@ -1,35 +1,28 @@
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Typography from '@mui/material/Typography';
-import { useTheme, Theme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import Favorite from '@mui/icons-material/Favorite';
 import LocationOn from '@mui/icons-material/LocationOn';
 import Restore from '@mui/icons-material/Restore';
 import React from 'react';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        container: {
-            marginBottom: theme.spacing(4),
-        },
-        sectionTitle: {
-            marginBottom: theme.spacing(2),
-        },
-    })
-);
+const containerStyles = {
+    mb: 4,
+};
+
+const sectionTitleStyles = {
+    mb: 2,
+};
 
 export const BottomNavigationExample: React.FC = () => {
-    const theme = useTheme();
-    const classes = useStyles(theme);
     const [value, setValue] = React.useState(0);
     const [valueSansLabel, setValueSansLabel] = React.useState(0);
 
     return (
         <>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     w/ Labels
                 </Typography>
                 <BottomNavigation
@@ -43,9 +36,9 @@ export const BottomNavigationExample: React.FC = () => {
                     <BottomNavigationAction label="Favorites" icon={<Favorite />} />
                     <BottomNavigationAction label="Nearby" icon={<LocationOn />} />
                 </BottomNavigation>
-            </div>
-            <div className={classes.container}>
-                <Typography variant={'body1'} className={classes.sectionTitle}>
+            </Box>
+            <Box sx={containerStyles}>
+                <Typography variant={'body1'} sx={sectionTitleStyles}>
                     without Labels
                 </Typography>
                 <BottomNavigation
@@ -58,7 +51,7 @@ export const BottomNavigationExample: React.FC = () => {
                     <BottomNavigationAction label="Favorites" icon={<Favorite />} />
                     <BottomNavigationAction label="Nearby" icon={<LocationOn />} />
                 </BottomNavigation>
-            </div>
+            </Box>
         </>
     );
 };
