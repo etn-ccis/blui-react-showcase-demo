@@ -17,7 +17,7 @@ const jss = create({
     plugins: [...jssPreset().plugins, rtl()],
 });
 
-export const RTLThemeProvider: React.FC = (props) => {
+export const RTLThemeProvider = (props: any): JSX.Element => {
     const dir = useSelector((store: AppStore) => store.app.direction);
     const theme = useSelector((store: AppStore) => store.app.theme);
 

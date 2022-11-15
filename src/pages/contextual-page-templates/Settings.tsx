@@ -29,7 +29,7 @@ export const Settings: React.FC = () => {
     usePageTitle('Settings');
 
     const onNicknameChange: OnChangeHandler = useCallback(
-        (event) => {
+        (event: any) => {
             setNickname(event.target.value);
         },
         [setNickname]
