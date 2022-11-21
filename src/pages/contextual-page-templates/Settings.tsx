@@ -5,8 +5,6 @@ import { InputProps } from '@mui/material/Input';
 import Switch from '@mui/material/Switch';
 import TextField from '@mui/material/TextField';
 import { useTheme } from '@mui/material/styles';
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import { InfoListItem } from '@brightlayer-ui/react-components';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Business from '@mui/icons-material/Business';
@@ -18,23 +16,12 @@ import Notifications from '@mui/icons-material/Notifications';
 import NotificationsOff from '@mui/icons-material/NotificationsOff';
 import Phone from '@mui/icons-material/Phone';
 import { usePageTitle } from '../../hooks/usePageTitle';
-
-const useStyles = makeStyles(() =>
-    createStyles({
-        container: {
-            display: 'flex',
-            flex: 1,
-            flexDirection: 'column',
-            alignItems: 'center',
-        },
-    })
-);
+import Box from '@mui/material/Box';
 
 type OnChangeHandler = InputProps['onChange'];
 
 export const Settings: React.FC = () => {
     const theme = useTheme();
-    const classes = useStyles();
     const [emailNotificationsSetting, setEmailNotificationsSetting] = useState(true);
     const [textNotificationsSetting, setTextNotificationsSetting] = useState(false);
     const [autoLogOutSetting, setAutoLogOutSetting] = useState(true);
@@ -49,11 +36,18 @@ export const Settings: React.FC = () => {
     );
 
     return (
-        <div className={classes.container}>
-            <Card style={{ width: '80%', marginTop: theme.spacing(4), maxWidth: 1000, marginBottom: theme.spacing(3) }}>
+        <Box
+            sx={{
+                display: 'flex',
+                flex: 1,
+                flexDirection: 'column',
+                alignItems: 'center',
+            }}
+        >
+            <Card sx={{ width: '80%', mt: 4, maxWidth: 1000, mb: 3 }}>
                 <InfoListItem
                     title={'Organization'}
-                    style={{ color: theme.palette.primary.main }}
+                    sx={{ color: theme.palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -71,10 +65,10 @@ export const Settings: React.FC = () => {
                     wrapTitle
                 />
             </Card>
-            <Card style={{ width: '80%', maxWidth: 1000, marginBottom: theme.spacing(4) }}>
+            <Card sx={{ width: '80%', maxWidth: 1000, mb: 4 }}>
                 <InfoListItem
                     title={'Account'}
-                    style={{ color: theme.palette.primary.main }}
+                    sx={{ color: theme.palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -144,6 +138,6 @@ export const Settings: React.FC = () => {
                     }
                 />
             </Card>
-        </div>
+        </Box>
     );
 };
