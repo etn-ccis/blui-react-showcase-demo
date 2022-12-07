@@ -1126,25 +1126,25 @@
   optionalDependencies:
     eslint-plugin-react "^7.28.0"
 
-"@brightlayer-ui/icons-mui@^3.0.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/icons-mui/-/icons-mui-3.2.0.tgz#6ef097d8786875891ebdfd5aff0b823181adadbe"
-  integrity sha512-EanLzuY9a7zlSBbw5uBKiM+QGAKdyqdrfdV3VTTdRnXeA9bZny6l8Boqh2pXYaEJYlimNEoxMW3BBBEK2SmoMg==
+"@brightlayer-ui/icons-mui@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/icons-mui/-/icons-mui-3.3.0.tgz#07bb066d57ca34e94caf96a77472e4a032b80377"
+  integrity sha512-BAmD+AVYvY5SaNN8+rN/EfMk16KEZnqqP2PklI4eDO7QQj7xNd8hBMWyrb2o/nJs0ZdRo1vXeW8eiyTYhFRYRg==
 
 "@brightlayer-ui/prettier-config@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@brightlayer-ui/prettier-config/-/prettier-config-1.0.3.tgz#e40a7ae7435c6fd5118acbf249080e0aa81e93af"
   integrity sha512-EYm3+V7Qd+oYEF+8FadsXAZqXryEHHbGnrV1BMp9selhABjceqUqXPVE4Sn3SKWQdBNJ3En2A3EzgrzRbvRTaw==
 
-"@brightlayer-ui/react-components@^6.1.0":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/react-components/-/react-components-6.1.1.tgz#97fa7bd09f18339833be066d03726fe916585126"
-  integrity sha512-cRQ87jkRGZ6p4pwWovxYO5/nE+lGq2bbmaXKs7ZYekFl29eZcD/HGkgfCeHoDXTDFTaWQDg3MHyX1JE1RI/gsA==
+"@brightlayer-ui/react-components@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/react-components/-/react-components-6.1.2.tgz#a57892fe71ecaa90261b7b91a7df1a8f014d88a4"
+  integrity sha512-0zGt9iHnzstTHsiIV22ZZUpWbx6teYoK5n+D35TBC2dteOfcM2Sh9YuZflLttHYNowSbS/BavNGqxDSL4xYkXg==
   dependencies:
     "@brightlayer-ui/colors" "^3.1.1"
-    "@emotion/css" "^11.9.0"
+    "@emotion/css" "^11.10.5"
     "@seznam/compose-react-refs" "^1.0.6"
-    color "^4.2.1"
+    color "^4.2.3"
 
 "@brightlayer-ui/react-progress-icons@^2.1.1":
   version "2.1.1"
@@ -1155,10 +1155,10 @@
     color "^3.1.2"
     react-jss "^10.4.0"
 
-"@brightlayer-ui/react-themes@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/react-themes/-/react-themes-7.0.0.tgz#0f00a7d464461fa7ea23be72ed8b820bf356b52d"
-  integrity sha512-5osYg/eb/6/Ct2BaX50ZMEx/6ob1F6TWXiMZn01sHOpDvjJ+f5W/LaOy6488xVN0J4wRhPBAnCZztzqAFGxYXA==
+"@brightlayer-ui/react-themes@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/react-themes/-/react-themes-7.1.0.tgz#09519522ab192cdb16c47c2d15ccd238d0fc8c5e"
+  integrity sha512-zAESyIZJmGAcRDHwX2nB26gsloQ53Kx9FGb4I4bPdDf3Ragbaio/Is03/3CRCim5qCVwjcDqq/iy4iDqg1Q9BQ==
   dependencies:
     "@brightlayer-ui/colors" "^3.0.0"
     "@fontsource/open-sans" "^4.2.2"
@@ -1356,7 +1356,7 @@
     "@emotion/weak-memoize" "^0.3.0"
     stylis "4.1.3"
 
-"@emotion/css@^11.9.0":
+"@emotion/css@^11.10.5", "@emotion/css@^11.9.0":
   version "11.10.5"
   resolved "https://registry.yarnpkg.com/@emotion/css/-/css-11.10.5.tgz#ca01bb83ce60517bc3a5c01d27ccf552fed84d9d"
   integrity sha512-maJy0wG82hWsiwfJpc3WrYsyVwUbdu+sdIseKUB+/OLjB8zgc3tqkT6eO0Yt0AhIkJwGGnmMY/xmQwEAgQ4JHA==
@@ -4494,7 +4494,7 @@ color@^3.1.2, color@^3.1.3:
     color-convert "^1.9.3"
     color-string "^1.6.0"
 
-color@^4.2.1:
+color@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
   integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
