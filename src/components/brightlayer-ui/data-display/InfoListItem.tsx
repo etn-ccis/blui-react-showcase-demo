@@ -6,6 +6,7 @@ import { Device, GradeA, Leaf, Temp } from '@brightlayer-ui/icons-mui';
 import { AppStore } from '../../../__types__';
 import { useSelector } from 'react-redux';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 export const InfoListItemExample: React.FC = () => {
     const direction = useSelector((store: AppStore) => store.app.direction);
@@ -13,6 +14,23 @@ export const InfoListItemExample: React.FC = () => {
 
     return (
         <>
+            <InfoListItem
+                title={
+                    <Box>
+                        <Typography noWrap>Title</Typography>
+                    </Box>
+                }
+                subtitle={[
+                    <Box key="sub1">
+                        <Typography noWrap>Sub</Typography>
+                    </Box>,
+                ]}
+                info={[
+                    <Box key="info1">
+                        <Typography noWrap>Info</Typography>
+                    </Box>,
+                ]}
+            />
             <InfoListItem title={'Basic Usage'} />
             <InfoListItem title={'Info List Item'} subtitle={'with a Subtitle'} />
             <InfoListItem
