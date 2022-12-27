@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChannelValue, InfoListItem } from '@brightlayer-ui/react-components';
+import { ChannelValue, InfoListItem, DrawerNavItem } from '@brightlayer-ui/react-components';
 import * as colors from '@brightlayer-ui/colors';
 import { Alarm } from '@mui/icons-material';
 import { Device, GradeA, Leaf, Temp } from '@brightlayer-ui/icons-mui';
@@ -13,6 +13,13 @@ export const InfoListItemExample: React.FC = () => {
 
     return (
         <>
+            <DrawerNavItem
+                title="Drawer Nav Item"
+                itemID="navItem"
+                chevron
+                chevronColor="green"
+                rightComponent={<ChannelValue value={'15'} units={'A'} />}
+            />
             <InfoListItem title={'Basic Usage'} />
             <InfoListItem title={'Info List Item'} subtitle={'with a Subtitle'} />
             <InfoListItem
@@ -75,6 +82,8 @@ export const InfoListItemExample: React.FC = () => {
                 title={'Info List Item'}
                 subtitle={'with a right component'}
                 icon={<Device />}
+                chevron
+                chevronColor="red"
                 rightComponent={<ChannelValue value={'15'} units={'A'} />}
             />
             <InfoListItem
