@@ -1,13 +1,12 @@
 # React Showcase Demo
 
-[![](https://img.shields.io/circleci/project/github/brightlayer-ui/react-showcase-demo/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-showcase-demo/tree/master) [![codecov](https://codecov.io/gh/brightlayer-ui/react-showcase-demo/branch/master/graph/badge.svg?token=DNI4Z1LUL3)](https://codecov.io/gh/brightlayer-ui/react-showcase-demo)
+[![](https://img.shields.io/circleci/build/github/etn-ccis/blui-react-showcase-demo/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-showcase-demo/tree/master) [![codecov](https://codecov.io/gh/brightlayer-ui/react-showcase-demo/branch/master/graph/badge.svg?token=DNI4Z1LUL3)](https://codecov.io/gh/brightlayer-ui/react-showcase-demo)
 
 This applications is a demo applications that is used to demonstrate and test various Brightlayer UI components, resources, etc.
 
 It is used as a git submodule for:
 
--   [react-component-library](https://github.com/brightlayer-ui/react-component-library)
--   [themes](https://github.com/brightlayer-ui/themes)
+-   [react-component-library](https://github.com/etn-ccis/blui-react-component-library)
 
 It can also be run as a standalone application or used as a starting point for your own applications.
 
@@ -23,7 +22,7 @@ It includes:
 Clone the repository:
 
 ```
-git clone https://github.com/brightlayer-ui/react-showcase-demo
+git clone https://github.com/etn-ccis/blui-react-showcase-demo
 ```
 
 Install the dependencies:
