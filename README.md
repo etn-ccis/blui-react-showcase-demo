@@ -7,8 +7,9 @@ This applications is a demo applications that is used to demonstrate and test va
 It is used as a git submodule for:
 
 -   [react-component-library](https://github.com/etn-ccis/blui-react-component-library)
+-   [themes](https://github.com/etn-ccis/blui-react-themes)
 
-It can also be run as a standalone application or used as a starting point for your own applications.
+    It can also be run as a standalone application or used as a starting point for your own applications.
 
 It includes:
 
