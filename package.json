@@ -33,7 +33,7 @@
         "@mui/lab": "^5.0.0-alpha.76",
         "@mui/material": "^5.4.1",
         "@mui/private-theming": "^5.4.1",
-        "@mui/styled-engine": "^5.4.1",
+        "@mui/styled-engine": "^5.11.0",
         "@mui/styled-engine-sc": "^5.4.1",
         "@mui/styles": "^5.4.1",
         "@mui/system": "^5.4.1",
