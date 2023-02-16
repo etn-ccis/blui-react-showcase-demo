@@ -38,7 +38,7 @@ export const BackdropExample: React.FC = () => {
             {/* @TODO: FIX: Backdrop doesn't cover the drawer */}
             <Backdrop
                 sx={{
-                    zIndex: 1201,
+                    zIndex: 1301,
                 }}
                 open={open}
                 onClick={handleClose}
