@@ -45,15 +45,14 @@ export const MainRouter: React.FC = () => {
                 sx={(): SystemStyleObject => ({
                     display: 'block',
                     '& .BluiDrawerLayout-drawer': {
-
                         zIndex: 'modal',
                     },
                     '& .MuiAppBar-root': {
-
                         zIndex: 'modal',
                     },
                 })}
-                drawer={<NavigationDrawer />}>
+                drawer={<NavigationDrawer />}
+            >
                 <SharedAppBar title={title} />
                 <Switch>
                     {buildRoutes(pageDefinitions, '')}
