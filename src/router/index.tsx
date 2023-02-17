@@ -6,7 +6,6 @@ import { SharedAppBar } from '../components/SharedAppBar';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
-import { SystemStyleObject } from '@mui/system';
 
 const buildRoutes = (routes: SimpleNavItem[], url: string): JSX.Element[] => {
     let ret: any[] = [];
@@ -42,7 +41,7 @@ export const MainRouter: React.FC = () => {
         <Router>
             <ScrollToTop />
             <DrawerLayout
-                sx={(): SystemStyleObject => ({
+                sx={{
                     display: 'block',
                     '& .BluiDrawerLayout-drawer': {
                         zIndex: 'modal',
@@ -50,7 +49,7 @@ export const MainRouter: React.FC = () => {
                     '& .MuiAppBar-root': {
                         zIndex: 'modal',
                     },
-                })}
+                }}
                 drawer={<NavigationDrawer />}
             >
                 <SharedAppBar title={title} />
