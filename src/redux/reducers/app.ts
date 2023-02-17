@@ -15,7 +15,7 @@ import {
 const initialAppState: AppState = {
     theme: 'light',
     direction: 'ltr',
-    drawerOpen: false,
+    drawerOpen: true,
     pageTitle: 'Showcase',
 };
 export const AppReducer = (state = initialAppState, action: any): AppState => {
