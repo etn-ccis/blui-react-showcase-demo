@@ -7,7 +7,6 @@ permissions:
   contents: read
 
 jobs:
-  if: ${{ github.actor != 'dependabot[bot]' }}
   pr-labeler:
       permissions:
       contents: read
