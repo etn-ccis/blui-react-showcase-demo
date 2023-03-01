@@ -3,11 +3,18 @@ on:
   pull_request:
     types: [opened]
 
+permissions:
+  contents: read
+
 jobs:
+  if: ${{ github.actor != 'dependabot[bot]' }}
   pr-labeler:
+      permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: TimonVS/pr-labeler-action@v3
+      - uses: TimonVS/pr-labeler-action@v4
         with:
           configuration-path: .github/pr-labeler.yml
         env:
