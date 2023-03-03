@@ -1,6 +1,6 @@
-name: PR Labeler
+name: Pull Request Labeler
 on:
-  pull_request_target:
+  pull_request:
     types: [opened]
 
 permissions:
@@ -9,8 +9,8 @@ permissions:
 jobs:
   pr-labeler:
     permissions:
-      contents: read # for TimonVS/pr-labeler-action to read config file
-      pull-requests: write # for TimonVS/pr-labeler-action to add labels in PR
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: TimonVS/pr-labeler-action@v4
