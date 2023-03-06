@@ -3,8 +3,8 @@
 
 name: Deploy to Firebase Hosting on PR
 'on': pull_request
-  branches:
-    - '!dependabot/*'
+  branches-ignore:
+    - 'dependabot/*'
 jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
