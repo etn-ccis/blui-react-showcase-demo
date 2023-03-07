@@ -1,4 +1,4 @@
-# React Showcase Demo
+## React Showcase Demo
 
 [![](https://img.shields.io/circleci/build/github/etn-ccis/blui-react-showcase-demo/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-showcase-demo/tree/master) [![codecov](https://codecov.io/gh/etn-ccis/blui-react-showcase-demo/branch/master/graph/badge.svg?token=DNI4Z1LUL3)](https://codecov.io/gh/etn-ccis/blui-react-showcase-demo)
 
