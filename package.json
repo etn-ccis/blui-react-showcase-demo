@@ -23,7 +23,7 @@
         "@brightlayer-ui/react-themes": "^7.1.0",
         "@date-io/date-fns": "^2.13.1",
         "@emotion/css": "^11.9.0",
-        "@emotion/react": "^11.7.1",
+        "@emotion/react": "^11.10.6",
         "@emotion/styled": "^11.6.0",
         "@mui/base": "^5.0.0-alpha.75",
         "@mui/codemod": "^5.4.1",
