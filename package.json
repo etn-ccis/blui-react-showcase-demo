@@ -41,7 +41,7 @@
         "@mui/x-date-pickers": "^5.0.8",
         "@types/jest": "^27.4.1",
         "@types/node": "^18.14.2",
-        "clsx": "^1.1.1",
+        "clsx": "^2.0.0",
         "date-fns": "^2.22.1",
         "jss-rtl": "^0.3.0",
         "prop-types": "^15.7.2",
