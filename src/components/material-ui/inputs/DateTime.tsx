@@ -1,10 +1,7 @@
 import React, { ReactElement } from 'react';
-import TextField from '@mui/material/TextField';
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import DatePicker from '@mui/lab/DatePicker';
-import MobileDatePicker from '@mui/lab/MobileDatePicker';
-import MobileTimePicker from '@mui/lab/MobileTimePicker';
+import TextField, { TextFieldProps } from '@mui/material/TextField';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider, DatePicker, MobileDatePicker, MobileTimePicker } from '@mui/x-date-pickers';
 import Box from '@mui/material/Box';
 
 const dateTimeContainerStyles = {
@@ -25,7 +22,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Date picker inline"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params): ReactElement => <TextField {...params} />}
+                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
                 />
             </Box>
             <Box sx={dateTimeContainerStyles}>
@@ -33,7 +30,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Date picker dialog"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params): ReactElement => <TextField {...params} />}
+                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
                 />
             </Box>
             <Box sx={dateTimeContainerStyles}>
@@ -41,7 +38,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Time picker"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params): ReactElement => <TextField {...params} />}
+                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
                 />
             </Box>
         </LocalizationProvider>

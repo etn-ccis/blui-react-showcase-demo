@@ -6,7 +6,7 @@
  This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
  **/
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import * as serviceWorker from './serviceWorker';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Provider } from 'react-redux';
@@ -16,16 +16,17 @@ import { store } from './redux/store';
 import { RTLThemeProvider } from './components/RTLProvider';
 import '@brightlayer-ui/react-themes/open-sans';
 
-// eslint-disable-arrow-body-style
+const container = document.getElementById('root');
+/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */
+const root = createRoot(container!);
 
-ReactDOM.render(
+root.render(
     <Provider store={store}>
         <RTLThemeProvider>
             <CssBaseline />
             <MainRouter />
         </RTLThemeProvider>
-    </Provider>,
-    document.getElementById('root')
+    </Provider>
 );
 
 // If you want your app to work offline and load faster, you can change

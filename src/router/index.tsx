@@ -40,7 +40,18 @@ export const MainRouter: React.FC = () => {
     return (
         <Router>
             <ScrollToTop />
-            <DrawerLayout drawer={<NavigationDrawer />}>
+            <DrawerLayout
+                sx={{
+                    display: 'block',
+                    '& .BluiDrawerLayout-drawer': {
+                        zIndex: 'modal',
+                    },
+                    '& .MuiAppBar-root': {
+                        zIndex: 'modal',
+                    },
+                }}
+                drawer={<NavigationDrawer />}
+            >
                 <SharedAppBar title={title} />
                 <Switch>
                     {buildRoutes(pageDefinitions, '')}
