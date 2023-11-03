@@ -1242,14 +1242,14 @@
     color "^3.1.2"
     react-jss "^10.4.0"
 
-"@brightlayer-ui/react-themes@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/react-themes/-/react-themes-7.1.0.tgz#09519522ab192cdb16c47c2d15ccd238d0fc8c5e"
-  integrity sha512-zAESyIZJmGAcRDHwX2nB26gsloQ53Kx9FGb4I4bPdDf3Ragbaio/Is03/3CRCim5qCVwjcDqq/iy4iDqg1Q9BQ==
+"@brightlayer-ui/react-themes@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/react-themes/-/react-themes-7.2.0.tgz#03985faba940dc3d94e2eb0d22a0e8f6a7a2b738"
+  integrity sha512-maNTWF4gck4nTUnh86p/7wFn6qQrdNgKYv+/XVGBR/fYceUcjeik5yFdJ9AlHzOFBp+WrsqnG+qr7yC6Q1iKQQ==
   dependencies:
     "@brightlayer-ui/colors" "^3.0.0"
-    "@fontsource/open-sans" "^4.2.2"
-    color "^3.1.3"
+    "@fontsource/open-sans" "^5.0.3"
+    color "^4.2.3"
 
 "@brightlayer-ui/types@^2.0.0":
   version "2.0.0"
@@ -1586,10 +1586,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/open-sans@^4.2.2":
-  version "4.5.13"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.13.tgz#2c99e4c055d129a75f14c11b77d040282e0388b8"
-  integrity sha512-/UzqP7ZFk145XAq8KG4pvFPP7UQhtreDGXgqXZjagCDreKxcrhwn/x7DYz9rPcycWkLUVApIybcoczGZiM0cRg==
+"@fontsource/open-sans@^5.0.3":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-5.0.17.tgz#eeac8add319f07d868c21d45fc729919fc05579a"
+  integrity sha512-4mIAJ/1B9pltG7NhxqReeu46L1+j/eAgwWmvjXh+FhsgcgsboQDrfn9wtUP2PWB7/JrMA4Hd9N/4qAN6kJSdyg==
 
 "@gar/promisify@^1.1.3":
   version "1.1.3"
