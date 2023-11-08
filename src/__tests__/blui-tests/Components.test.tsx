@@ -6,8 +6,8 @@ import { store } from '../../redux/store';
 import { RTLThemeProvider } from '../../components/RTLProvider';
 import * as components from '../../components/brightlayer-ui/data-display/index';
 
-Object.keys(components).forEach(componentName => {
-  const Component = components[componentName as keyof typeof components];
+Object.keys(components).forEach((componentName) => {
+    const Component = components[componentName as keyof typeof components];
     describe(`Component: ${componentName}`, () => {
         test(`${componentName} renders examples correctly`, () => {
             const tree = renderer
