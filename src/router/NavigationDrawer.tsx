@@ -21,7 +21,7 @@ import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 import Box from '@mui/material/Box';
 
-const top = require('../assets/topology_40.png');
+import top from '../assets/topology_40.png';
 
 export const NavigationDrawer: React.FC = () => {
     const open = useSelector((store: AppStore) => store.app.drawerOpen);

@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box';
-import React from 'react';
 
 export const getBodyFiller = (): JSX.Element => (
     <Box sx={{ p: 2 }}>
