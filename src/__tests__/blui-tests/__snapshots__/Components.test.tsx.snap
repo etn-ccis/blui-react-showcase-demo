@@ -262,7 +262,7 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
       className="BluiEmptyState-actions MuiBox-root cssltr-1pwaef6"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium cssltr-sefoad-MuiButtonBase-root-MuiButton-root"
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary cssltr-sefoad-MuiButtonBase-root-MuiButton-root"
         disabled={false}
         onBlur={[Function]}
         onContextMenu={[Function]}
@@ -280,7 +280,7 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
         type="button"
       >
         <span
-          className="MuiButton-startIcon MuiButton-iconSizeMedium cssltr-1i9zzfd-MuiButton-startIcon"
+          className="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium cssltr-1i9zzfd-MuiButton-startIcon"
         >
           <svg
             aria-hidden={true}
@@ -795,7 +795,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-ejrzzf-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-15yhly0-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -837,7 +837,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-ejrzzf-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-15yhly0-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -888,7 +888,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-isomqn-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-7z2i6z-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -939,7 +939,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-17czwj0-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1yf928a-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1010,7 +1010,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-ejrzzf-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-15yhly0-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1065,7 +1065,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-ejrzzf-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-15yhly0-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1134,7 +1134,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-ejrzzf-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-15yhly0-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
@@ -1186,7 +1186,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1ekbs9l-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1e3g2wb-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1240,7 +1240,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-isomqn-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-7z2i6z-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1295,7 +1295,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-17czwj0-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1yf928a-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1363,7 +1363,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-17czwj0-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1yf928a-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1461,7 +1461,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-isomqn-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-7z2i6z-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
@@ -1569,7 +1569,7 @@ exports[`Component: ListItemTagExample ListItemTagExample renders examples corre
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-17czwj0-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1yf928a-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
@@ -1726,7 +1726,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-175cdj3-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1bcihy5-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1745,7 +1745,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-gytqvt-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1o1252h-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1768,7 +1768,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-175cdj3-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1bcihy5-MuiAvatar-root"
           onClick={[Function]}
         >
           <svg
@@ -1817,7 +1817,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-175cdj3-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1bcihy5-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1847,7 +1847,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
           className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
         >
           <div
-            className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-175cdj3-MuiAvatar-root"
+            className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1bcihy5-MuiAvatar-root"
             onClick={[Function]}
           >
             <svg
