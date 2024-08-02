@@ -1,4 +1,4 @@
-# React Showcase Demo
+## React Showcase Demo
 
 [![Build](https://github.com/etn-ccis/blui-react-showcase-demo/actions/workflows/blui-ci.yml/badge.svg?branch=master)](https://github.com/etn-ccis/blui-react-showcase-demo/actions/workflows/blui-ci.yml) [![codecov](https://codecov.io/gh/etn-ccis/blui-react-showcase-demo/branch/master/graph/badge.svg?token=DNI4Z1LUL3)](https://codecov.io/gh/etn-ccis/blui-react-showcase-demo)
 
