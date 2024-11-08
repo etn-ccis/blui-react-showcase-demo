@@ -40,8 +40,8 @@ export const MainRouter: React.FC = () => {
     const { mode, setMode } = useColorScheme();
 
     useEffect(() => {
-        setMode('light')
-    },[])
+        setMode('light');
+    }, []);
 
     return (
         <Router>

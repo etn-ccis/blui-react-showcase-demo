@@ -130,7 +130,7 @@ const EnhancedTableHead = (props: EnhancedTableProps): JSX.Element => {
                             {headCell.label}
                             {orderBy === headCell.id ? (
                                 <Box
-                                    component="span"
+                                    // component="span"
                                     sx={{
                                         border: 0,
                                         clip: 'rect(0 0 0 0)',

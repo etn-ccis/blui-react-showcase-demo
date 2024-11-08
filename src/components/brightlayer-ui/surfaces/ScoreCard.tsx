@@ -31,7 +31,7 @@ const InfoListItemStyles = {
 };
 
 export const ScoreCardExample: React.FC = () => {
-    const {mode} = useColorScheme();
+    const { mode } = useColorScheme();
     const isDarkMode = mode === 'light' ? false : true;
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';

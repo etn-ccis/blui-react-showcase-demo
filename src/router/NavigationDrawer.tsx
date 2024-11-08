@@ -24,7 +24,7 @@ import Box from '@mui/material/Box';
 import top from '../assets/topology_40.png';
 
 export const NavigationDrawer: React.FC = () => {
-    const {mode} = useColorScheme();
+    const { mode } = useColorScheme();
     const isDarkMode = mode === 'light' ? false : true;
     const open = useSelector((store: AppStore) => store.app.drawerOpen);
     const direction = useSelector((store: AppStore) => store.app.direction);

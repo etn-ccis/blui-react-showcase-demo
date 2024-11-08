@@ -10,8 +10,8 @@ import { create } from 'jss';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
-import type {} from '@mui/material/themeCssVarsAugmentation'
-
+import type {} from '@mui/material/themeCssVarsAugmentation';
+import { blueThemes } from '@brightlayer-ui/react-themes';
 document.body.setAttribute('dir', 'rtl');
 
 const jss = create({
@@ -36,12 +36,9 @@ export const RTLThemeProvider = (props: any): JSX.Element => {
     useEffect(() => {
         document.body.dir = dir;
     }, [dir]);
-    
+
     return (
-        <ThemeProvider
-        theme={BLUIThemes.blueThemes}
-        defaultMode='light'
-        >
+        <ThemeProvider theme={blueThemes} defaultMode="light">
             <CacheProvider value={dir === 'ltr' ? cacheLtr : cacheRtl}>
                 <StylesProvider jss={jss}>{props.children}</StylesProvider>
             </CacheProvider>

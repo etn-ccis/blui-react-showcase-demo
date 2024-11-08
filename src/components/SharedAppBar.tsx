@@ -66,11 +66,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                 </Typography>
                 <Spacer flex={1} />
                 <Tooltip title={'Toggle Theme'} aria-label={'toggle the theme of the current showcase'}>
-                    <IconButton
-                        color={'inherit'}
-                        onClick={() => toggleThemeMode()}
-                        size="large"
-                    >
+                    <IconButton color={'inherit'} onClick={() => toggleThemeMode()} size="large">
                         <InvertColors />
                     </IconButton>
                 </Tooltip>
