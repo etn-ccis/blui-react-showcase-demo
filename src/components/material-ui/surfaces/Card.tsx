@@ -19,7 +19,7 @@ const usageSentenceStyles = {
 export const CardExample: React.FC = () => {
     const bullet = (
         <Box
-            // component="span"
+            component="span"
             sx={{
                 display: 'inline-block',
                 m: '0 2px',

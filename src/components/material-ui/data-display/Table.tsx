@@ -172,18 +172,15 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps): JSX.Element => 
             sx={{
                 pl: 2,
                 pr: 1,
-                color:
-                    numSelected > 0
-                        ? theme.palette.mode === 'light'
-                            ? theme.palette.secondary.main
-                            : theme.palette.text.primary
-                        : undefined,
+                color: numSelected > 0 ? (theme.vars || theme).palette.secondary.main : undefined,
                 backgroundColor:
-                    numSelected > 0
-                        ? theme.palette.mode === 'light'
-                            ? lighten(theme.palette.secondary.light, 0.85)
-                            : theme.palette.secondary.dark
-                        : undefined,
+                    numSelected > 0 ? lighten((theme.vars || theme).palette.secondary.light, 0.85) : undefined,
+                ...(numSelected > 0
+                    ? theme.applyStyles('dark', {
+                          color: (theme.vars || theme).palette.text.primary,
+                          backgroundColor: (theme.vars || theme).palette.secondary.dark,
+                      })
+                    : {}),
             }}
         >
             {numSelected > 0 ? (

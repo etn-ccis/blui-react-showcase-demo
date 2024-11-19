@@ -19,7 +19,16 @@ import '@brightlayer-ui/react-themes/open-sans';
 const container = document.getElementById('root');
 /* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */
 const root = createRoot(container!);
-
+declare global {
+    namespace React {
+        interface DOMAttributes<T> {
+            placeholder?: string | undefined;
+            onPointerEnterCapture?: React.PointerEventHandler<T> | undefined;
+            onPointerLeaveCapture?: any;
+        }
+    }
+}
+ 
 root.render(
     <React.StrictMode>
         <Provider store={store}>

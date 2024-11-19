@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import jssPreset from '@mui/styles/jssPreset';
 import StylesProvider from '@mui/styles/StylesProvider';
-import * as BLUIThemes from '@brightlayer-ui/react-themes';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
 import rtl from 'jss-rtl';

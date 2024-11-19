@@ -49,11 +49,9 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
 
     const { mode, setMode } = useColorScheme();
 
-    const toggleThemeMode = () => {
+    const toggleThemeMode = (): void => {
         if (setMode) {
             setMode(mode === 'light' ? 'dark' : 'light');
-        } else {
-            console.log('setMode is undefined');
         }
     };
 

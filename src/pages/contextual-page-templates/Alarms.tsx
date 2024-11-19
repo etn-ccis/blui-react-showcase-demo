@@ -143,7 +143,7 @@ export const Alarms: React.FC = () => {
     const getBadgeColor = (badge: string): string => {
         switch (badge) {
             case 'active':
-                return theme.palette.error.main;
+                return theme.palette.error.main;     // @TODO: Change it to (theme.vars || theme).palette.error.main
             case 'new':
             default:
                 return theme.palette.primary.main;
@@ -163,7 +163,7 @@ export const Alarms: React.FC = () => {
             <Card sx={{ width: '80%', my: 4, maxWidth: 1000 }}>
                 <InfoListItem
                     title={'Alarms'}
-                    sx={{ color: theme.palette.primary.main }}
+                    sx={{ color: (theme.vars || theme).palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}

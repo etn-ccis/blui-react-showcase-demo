@@ -124,7 +124,7 @@ export const Dashboard: React.FC = () => {
                             <HeroBanner>
                                 <Hero
                                     icon={<GradeA fontSize={'inherit'} htmlColor={Colors.green[500]} />}
-                                    iconBackgroundColor={theme.palette.background.paper}
+                                    iconBackgroundColor={(theme.vars || theme).palette.background.paper}
                                     label={'Health'}
                                     iconSize={72}
                                     ChannelValueProps={{ value: 98, units: '%' }}
@@ -274,10 +274,10 @@ export const Dashboard: React.FC = () => {
                             rightComponent={
                                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                     <ListItemTag
-                                        backgroundColor={theme.palette.background.default}
+                                        backgroundColor={(theme.vars || theme).palette.background.default}
                                         label={'active'}
                                         fontColor={
-                                            theme.palette.mode === 'light' ? Colors.blue[700] : Colors.green['500']
+                                            theme.applyStyles('dark', { color: Colors.green[500] }).color as string || Colors.blue[700]
                                         }
                                         sx={listTagStyles}
                                     />

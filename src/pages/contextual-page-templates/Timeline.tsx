@@ -154,7 +154,7 @@ export const Timeline: React.FC = () => {
             <Card sx={{ width: '80%', my: 4, maxWidth: 1000 }}>
                 <InfoListItem
                     title={'Timeline'}
-                    sx={{ color: theme.palette.primary.main }}
+                    sx={{ color: (theme.vars || theme).palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}

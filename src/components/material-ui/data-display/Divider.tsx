@@ -111,10 +111,10 @@ export const DividerExample: React.FC = () => {
                         alignItems="center"
                         sx={{
                             width: 'fit-content',
-                            border: `1px solid ${theme.palette.divider}`,
-                            borderRadius: `${theme.shape.borderRadius}px`,
-                            backgroundColor: theme.palette.background.paper,
-                            color: theme.palette.text.secondary,
+                            border: `1px solid ${(theme.vars || theme).palette.divider}`,
+                            borderRadius: `${(theme.vars || theme).shape.borderRadius}px`,
+                            backgroundColor: (theme.vars || theme).palette.background.paper,
+                            color: (theme.vars || theme).palette.text.secondary,
                             '& svg': {
                                 m: 1.5,
                             },

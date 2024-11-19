@@ -37,7 +37,7 @@ const ScrollToTop = (): null => {
 
 export const MainRouter: React.FC = () => {
     const title = useSelector((state: AppStore) => state.app.pageTitle);
-    const { mode, setMode } = useColorScheme();
+    const { setMode } = useColorScheme();
 
     useEffect(() => {
         setMode('light');
