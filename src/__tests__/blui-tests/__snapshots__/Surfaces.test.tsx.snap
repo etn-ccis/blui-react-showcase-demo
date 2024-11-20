@@ -6,7 +6,7 @@ exports[`Component: BLUIAppBarExample BLUIAppBarExample renders examples correct
     className="MuiBox-root cssltr-fvxjzt"
   >
     <header
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky BluiAppBar-root Mui-expanded expanded cssltr-nx5hj5-MuiPaper-root-MuiAppBar-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky BluiAppBar-root expanded cssltr-nx5hj5-MuiPaper-root-MuiAppBar-root"
       data-testid="blui-appbar-root"
       style={
         {
@@ -22,14 +22,9 @@ exports[`Component: BLUIAppBarExample BLUIAppBarExample renders examples correct
       >
         <div
           className="BluiThreeLiner-root liner MuiBox-root cssltr-uqb9nc"
-          classes={
-            {
-              "title": "title",
-            }
-          }
         >
           <div
-            className="BluiThreeLiner-title title MuiBox-root cssltr-e9ah7v"
+            className="BluiThreeLiner-title title title MuiBox-root cssltr-e9ah7v"
           >
             Title
           </div>
@@ -57,7 +52,7 @@ exports[`Component: BLUIAppBarExample BLUIAppBarExample renders examples correct
     className="MuiBox-root cssltr-fvxjzt"
   >
     <header
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky BluiAppBar-root Mui-expanded expanded cssltr-nx5hj5-MuiPaper-root-MuiAppBar-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky BluiAppBar-root expanded cssltr-nx5hj5-MuiPaper-root-MuiAppBar-root"
       data-testid="blui-appbar-root"
       style={
         {
@@ -73,26 +68,19 @@ exports[`Component: BLUIAppBarExample BLUIAppBarExample renders examples correct
       >
         <div
           className="BluiThreeLiner-root liner MuiBox-root cssltr-uqb9nc"
-          classes={
-            {
-              "info": "info",
-              "subtitle": "subtitle",
-              "title": "title",
-            }
-          }
         >
           <div
-            className="BluiThreeLiner-title title MuiBox-root cssltr-e9ah7v"
+            className="BluiThreeLiner-title title title MuiBox-root cssltr-e9ah7v"
           >
             W/ Dynamic Content
           </div>
           <div
-            className="BluiThreeLiner-subtitle subtitle MuiBox-root cssltr-1666yuc"
+            className="BluiThreeLiner-subtitle subtitle subtitle MuiBox-root cssltr-1666yuc"
           >
             Subtitle
           </div>
           <div
-            className="BluiThreeLiner-info info MuiBox-root cssltr-9q8ecb"
+            className="BluiThreeLiner-info info info MuiBox-root cssltr-9q8ecb"
           >
             Info
           </div>
@@ -129,7 +117,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
       }
     >
       <div
-        className="BluiScoreCard-header MuiBox-root cssltr-1vm5ien"
+        className="BluiScoreCard-header MuiBox-root cssltr-4ekqjb"
         data-testid="blui-score-card-header"
       >
         <div
@@ -191,7 +179,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
       }
     >
       <div
-        className="BluiScoreCard-header MuiBox-root cssltr-mam46"
+        className="BluiScoreCard-header MuiBox-root cssltr-4ekqjb"
         data-testid="blui-score-card-header"
       >
         <div
@@ -268,7 +256,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
       }
     >
       <div
-        className="BluiScoreCard-header MuiBox-root cssltr-mam46"
+        className="BluiScoreCard-header MuiBox-root cssltr-4ekqjb"
         data-testid="blui-score-card-header"
       >
         <div
@@ -387,7 +375,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
         className="MuiList-root MuiList-padding cssltr-12kkqz5-MuiList-root"
       >
         <li
-          className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-1fmyo93-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-1lt4ou4-MuiListItem-root"
           onClick={[Function]}
         >
           <div
@@ -406,7 +394,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
           </div>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium BluiInfoListItem-chevron cssltr-1jm4sjb-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium BluiInfoListItem-chevron cssltr-1587uyb-MuiSvgIcon-root"
             data-testid="ChevronRightIcon"
             focusable="false"
             role="button"
@@ -434,7 +422,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
       }
     >
       <div
-        className="BluiScoreCard-header MuiBox-root cssltr-mam46"
+        className="BluiScoreCard-header MuiBox-root cssltr-4ekqjb"
         data-testid="blui-score-card-header"
       >
         <div
@@ -517,16 +505,14 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
         >
           <div
             className="BluiHeroBanner-root MuiBox-root cssltr-srjk1z"
-            classes={{}}
             data-testid="blui-hero-banner-root"
           >
             <div
-              className="BluiHero-root MuiBox-root cssltr-2a12sz"
-              classes={{}}
+              className="BluiHero-root MuiBox-root cssltr-bocl9p"
               data-testid="blui-hero-root"
             >
               <div
-                className="BluiHero-icon MuiBox-root cssltr-1tmkfrg"
+                className="BluiHero-icon MuiBox-root cssltr-17a4wol"
               >
                 <svg
                   aria-hidden={true}
@@ -546,13 +532,11 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
                 </svg>
               </div>
               <span
-                className="BluiHero-values cssltr-v1bge9"
+                className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
               >
                 <span
-                  className="BluiChannelValue-root cssltr-v74076"
-                  color="inherit"
+                  className="BluiChannelValue-root MuiBox-root cssltr-whg9xq"
                   data-testid="blui-channel-value-root"
-                  fontSize="normal"
                 >
                   <h6
                     className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -578,12 +562,11 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               </p>
             </div>
             <div
-              className="BluiHero-root MuiBox-root cssltr-2a12sz"
-              classes={{}}
+              className="BluiHero-root MuiBox-root cssltr-bocl9p"
               data-testid="blui-hero-root"
             >
               <div
-                className="BluiHero-icon MuiBox-root cssltr-1tmkfrg"
+                className="BluiHero-icon MuiBox-root cssltr-17a4wol"
               >
                 <svg
                   aria-hidden={true}
@@ -603,13 +586,11 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
                 </svg>
               </div>
               <span
-                className="BluiHero-values cssltr-v1bge9"
+                className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
               >
                 <span
-                  className="BluiChannelValue-root cssltr-v74076"
-                  color="inherit"
+                  className="BluiChannelValue-root MuiBox-root cssltr-whg9xq"
                   data-testid="blui-channel-value-root"
-                  fontSize="normal"
                 >
                   <h6
                     className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -644,7 +625,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
         className="MuiList-root MuiList-padding cssltr-12kkqz5-MuiList-root"
       >
         <li
-          className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-1fmyo93-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-1lt4ou4-MuiListItem-root"
           onClick={[Function]}
         >
           <div
@@ -663,7 +644,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
           </div>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium BluiInfoListItem-chevron cssltr-1jm4sjb-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium BluiInfoListItem-chevron cssltr-1587uyb-MuiSvgIcon-root"
             data-testid="ChevronRightIcon"
             focusable="false"
             role="button"
@@ -688,7 +669,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
     }
   >
     <div
-      className="BluiScoreCard-header MuiBox-root cssltr-1vm5ien"
+      className="BluiScoreCard-header MuiBox-root cssltr-4ekqjb"
       data-testid="blui-score-card-header"
     >
       <div
@@ -765,7 +746,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-w8i9qu-MuiAvatar-root"
+                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
               >
                 <svg
                   aria-hidden={true}
@@ -807,7 +788,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1rsioro-MuiAvatar-root"
+                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-8yxl6e-MuiAvatar-root"
               >
                 <svg
                   aria-hidden={true}
@@ -849,7 +830,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-w8i9qu-MuiAvatar-root"
+                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
               >
                 <svg
                   aria-hidden={true}
@@ -883,16 +864,14 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
       >
         <div
           className="BluiHeroBanner-root MuiBox-root cssltr-srjk1z"
-          classes={{}}
           data-testid="blui-hero-banner-root"
         >
           <div
-            className="BluiHero-root MuiBox-root cssltr-2a12sz"
-            classes={{}}
+            className="BluiHero-root MuiBox-root cssltr-bocl9p"
             data-testid="blui-hero-root"
           >
             <div
-              className="BluiHero-icon MuiBox-root cssltr-ca2ftl"
+              className="BluiHero-icon MuiBox-root cssltr-1ehupy8"
             >
               <svg
                 aria-hidden={true}
@@ -911,13 +890,11 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               </svg>
             </div>
             <span
-              className="BluiHero-values cssltr-v1bge9"
+              className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
             >
               <span
-                className="BluiChannelValue-root cssltr-v74076"
-                color="inherit"
+                className="BluiChannelValue-root MuiBox-root cssltr-whg9xq"
                 data-testid="blui-channel-value-root"
-                fontSize="normal"
               >
                 <h6
                   className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -952,7 +929,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
       className="MuiList-root MuiList-padding cssltr-12kkqz5-MuiList-root"
     >
       <li
-        className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-1fmyo93-MuiListItem-root"
+        className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-1lt4ou4-MuiListItem-root"
         onClick={[Function]}
       >
         <div
@@ -971,7 +948,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
         </div>
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium BluiInfoListItem-chevron cssltr-1jm4sjb-MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium BluiInfoListItem-chevron cssltr-1587uyb-MuiSvgIcon-root"
           data-testid="ChevronRightIcon"
           focusable="false"
           role="button"
@@ -1009,21 +986,18 @@ exports[`Component: SpacerExample SpacerExample renders examples correctly 1`] =
     >
       <div
         className="BluiSpacer-root MuiBox-root cssltr-zrkb6b"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         1
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-4ikeoe"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         2
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-ihz316"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         3
@@ -1044,21 +1018,18 @@ exports[`Component: SpacerExample SpacerExample renders examples correctly 1`] =
     >
       <div
         className="BluiSpacer-root MuiBox-root cssltr-zrkb6b"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         1
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-4ikeoe"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         2
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-ihz316"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         3
@@ -1085,21 +1056,18 @@ exports[`Component: SpacerExample SpacerExample renders examples correctly 1`] =
     >
       <div
         className="BluiSpacer-root MuiBox-root cssltr-1cb72ie"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         1
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-p8ehs9"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         2
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-eqp6ib"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         3
@@ -1120,21 +1088,18 @@ exports[`Component: SpacerExample SpacerExample renders examples correctly 1`] =
     >
       <div
         className="BluiSpacer-root MuiBox-root cssltr-jg34ma"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         1
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-vpradr"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         2
       </div>
       <div
         className="BluiSpacer-root MuiBox-root cssltr-zxma3v"
-        classes={{}}
         data-testid="blui-spacer-root"
       >
         3

@@ -277,7 +277,8 @@ export const Dashboard: React.FC = () => {
                                         backgroundColor={(theme.vars || theme).palette.background.default}
                                         label={'active'}
                                         fontColor={
-                                            theme.applyStyles('dark', { color: Colors.green[500] }).color as string || Colors.blue[700]
+                                            (theme.applyStyles('dark', { color: Colors.green[500] }).color as string) ||
+                                            Colors.blue[700]
                                         }
                                         sx={listTagStyles}
                                     />

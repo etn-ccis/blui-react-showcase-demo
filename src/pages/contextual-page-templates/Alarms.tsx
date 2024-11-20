@@ -143,7 +143,7 @@ export const Alarms: React.FC = () => {
     const getBadgeColor = (badge: string): string => {
         switch (badge) {
             case 'active':
-                return theme.palette.error.main;     // @TODO: Change it to (theme.vars || theme).palette.error.main
+                return theme.palette.error.main; // @TODO: Change it to (theme.vars || theme).palette.error.main
             case 'new':
             default:
                 return theme.palette.primary.main;
