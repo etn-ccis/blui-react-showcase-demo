@@ -746,7 +746,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
+                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-oxxdyt-MuiAvatar-root"
               >
                 <svg
                   aria-hidden={true}
@@ -788,7 +788,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-8yxl6e-MuiAvatar-root"
+                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1rsioro-MuiAvatar-root"
               >
                 <svg
                   aria-hidden={true}
@@ -830,7 +830,7 @@ exports[`Component: ScoreCardExample ScoreCardExample renders examples correctly
               }
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
+                className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-oxxdyt-MuiAvatar-root"
               >
                 <svg
                   aria-hidden={true}
