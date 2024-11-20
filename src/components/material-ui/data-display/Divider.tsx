@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Grid from '@mui/material/Grid';
@@ -16,6 +15,7 @@ import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
 import Box from '@mui/material/Box';
+import ListItemButton from '@mui/material/ListItemButton';
 
 const ContainerStyles = {
     mb: 4,
@@ -40,64 +40,64 @@ export const DividerExample: React.FC = () => {
                 </Typography>
                 <Box sx={DividerContainerStyles}>
                     <List>
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemAvatar>
                                 <Avatar>
                                     <PxblueSmall />
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary="Full Width Divider" />
-                        </ListItem>
+                        </ListItemButton>
                         <Divider />
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemAvatar>
                                 <Avatar>
                                     <PxblueSmall />
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary="Light Full Width Divider" />
-                        </ListItem>
-                        <Divider light />
+                        </ListItemButton>
+                        <Divider sx={{ opacity: 0.6 }} />
                     </List>
                     <List>
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemAvatar>
                                 <Avatar>
                                     <PxblueSmall />
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary="Inset Divider" />
-                        </ListItem>
+                        </ListItemButton>
                         <Divider variant={'inset'} />
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemAvatar>
                                 <Avatar>
                                     <PxblueSmall />
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary="Light Inset Divider" />
-                        </ListItem>
-                        <Divider light variant={'inset'} />
+                        </ListItemButton>
+                        <Divider sx={{ opacity: 0.6 }} variant={'inset'} />
                     </List>
                     <List>
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemAvatar>
                                 <Avatar>
                                     <PxblueSmall />
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary="Middle Divider" />
-                        </ListItem>
+                        </ListItemButton>
                         <Divider variant={'middle'} />
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemAvatar>
                                 <Avatar>
                                     <PxblueSmall />
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary="Light Middle Divider" />
-                        </ListItem>
-                        <Divider light variant={'middle'} />
+                        </ListItemButton>
+                        <Divider sx={{ opacity: 0.6 }} variant={'middle'} />
                     </List>
                 </Box>
             </Box>

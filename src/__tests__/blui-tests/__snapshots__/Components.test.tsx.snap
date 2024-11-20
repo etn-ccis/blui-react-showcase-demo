@@ -12,10 +12,8 @@ exports[`Component: ChannelValueExample ChannelValueExample renders examples cor
       Basic Usage
     </p>
     <span
-      className="BluiChannelValue-root cssltr-kek565"
-      color="inherit"
+      className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
       data-testid="blui-channel-value-root"
-      fontSize="inherit"
     >
       <h6
         className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -36,10 +34,8 @@ exports[`Component: ChannelValueExample ChannelValueExample renders examples cor
       w/ Units
     </p>
     <span
-      className="BluiChannelValue-root cssltr-kek565"
-      color="inherit"
+      className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
       data-testid="blui-channel-value-root"
-      fontSize="inherit"
     >
       <h6
         className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -67,10 +63,8 @@ exports[`Component: ChannelValueExample ChannelValueExample renders examples cor
       w/ Icon
     </p>
     <span
-      className="BluiChannelValue-root cssltr-kek565"
-      color="inherit"
+      className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
       data-testid="blui-channel-value-root"
-      fontSize="inherit"
     >
       <span
         className="BluiChannelValue-icon cssltr-1oqvg4e"
@@ -121,10 +115,8 @@ exports[`Component: ChannelValueExample ChannelValueExample renders examples cor
       w/ Custom Font Size
     </p>
     <span
-      className="BluiChannelValue-root cssltr-c8a5as"
-      color="inherit"
+      className="BluiChannelValue-root MuiBox-root cssltr-th3vuf"
       data-testid="blui-channel-value-root"
-      fontSize={24}
     >
       <span
         className="BluiChannelValue-icon cssltr-1oqvg4e"
@@ -180,11 +172,11 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
       Basic Usage
     </p>
     <div
-      className="BluiEmptyState-root MuiBox-root cssltr-lyk9sl"
+      className="BluiEmptyState-root MuiBox-root cssltr-1n1qj8a"
       data-testid="blui-empty-state-root"
     >
       <div
-        className="BluiEmptyState-icon MuiBox-root cssltr-xipz7o"
+        className="BluiEmptyState-icon MuiBox-root cssltr-1qeq0w3"
       >
         <svg
           aria-hidden={true}
@@ -199,7 +191,7 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
         </svg>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 BluiEmptyState-title cssltr-5d0866-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h6 cssltr-5d0866-MuiTypography-root"
         style={{}}
       >
         Location Unknown
@@ -216,11 +208,11 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
       w/ Description
     </p>
     <div
-      className="BluiEmptyState-root MuiBox-root cssltr-lyk9sl"
+      className="BluiEmptyState-root MuiBox-root cssltr-1n1qj8a"
       data-testid="blui-empty-state-root"
     >
       <div
-        className="BluiEmptyState-icon MuiBox-root cssltr-xipz7o"
+        className="BluiEmptyState-icon MuiBox-root cssltr-1qeq0w3"
       >
         <svg
           aria-hidden={true}
@@ -235,13 +227,13 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
         </svg>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 BluiEmptyState-title cssltr-5d0866-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h6 cssltr-5d0866-MuiTypography-root"
         style={{}}
       >
         Location Services Disabled
       </h6>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 BluiEmptyState-description cssltr-1pp0zv-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 BluiEmptyState-description cssltr-1seh92d-MuiTypography-root"
         style={{}}
       >
         Enable Location Services via Settings to receive GPS information
@@ -255,11 +247,11 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
     w/ Actions
   </p>,
   <div
-    className="BluiEmptyState-root MuiBox-root cssltr-lyk9sl"
+    className="BluiEmptyState-root MuiBox-root cssltr-1n1qj8a"
     data-testid="blui-empty-state-root"
   >
     <div
-      className="BluiEmptyState-icon MuiBox-root cssltr-xipz7o"
+      className="BluiEmptyState-icon MuiBox-root cssltr-1qeq0w3"
     >
       <svg
         aria-hidden={true}
@@ -274,13 +266,13 @@ exports[`Component: EmptyStateExample EmptyStateExample renders examples correct
       </svg>
     </div>
     <h6
-      className="MuiTypography-root MuiTypography-h6 BluiEmptyState-title cssltr-5d0866-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-h6 cssltr-5d0866-MuiTypography-root"
       style={{}}
     >
       No Devices
     </h6>
     <h6
-      className="MuiTypography-root MuiTypography-subtitle2 BluiEmptyState-description cssltr-1pp0zv-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-subtitle2 BluiEmptyState-description cssltr-1seh92d-MuiTypography-root"
       style={{}}
     >
       Check your network connection or add a new device
@@ -343,12 +335,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         Basic Usage
       </p>
       <div
-        className="BluiHero-root MuiBox-root cssltr-n0deun"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-xrulrs"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
+          className="BluiHero-icon MuiBox-root cssltr-14pgf5l"
         >
           <svg
             aria-hidden={true}
@@ -366,7 +357,7 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         />
         <p
           className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
@@ -386,12 +377,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         w/ Value and Units
       </p>
       <div
-        className="BluiHero-root MuiBox-root cssltr-n0deun"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-xrulrs"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
+          className="BluiHero-icon MuiBox-root cssltr-14pgf5l"
         >
           <svg
             aria-hidden={true}
@@ -409,13 +399,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-kek565"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
             data-testid="blui-channel-value-root"
-            fontSize="inherit"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -455,12 +443,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         w/ Channel Value Children
       </p>
       <div
-        className="BluiHero-root MuiBox-root cssltr-n0deun"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-xrulrs"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
+          className="BluiHero-icon MuiBox-root cssltr-14pgf5l"
         >
           <svg
             aria-hidden={true}
@@ -478,13 +465,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-1dtyrv9"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1ej03bs"
             data-testid="blui-channel-value-root"
-            fontSize="large"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -502,10 +487,8 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
             </h6>
           </span>
           <span
-            className="BluiChannelValue-root cssltr-1dtyrv9"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1ej03bs"
             data-testid="blui-channel-value-root"
-            fontSize="large"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -541,12 +524,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         w/ Icon Colors
       </p>
       <div
-        className="BluiHero-root MuiBox-root cssltr-n0deun"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-xrulrs"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-13sdyqh"
+          className="BluiHero-icon MuiBox-root cssltr-1lsp8cs"
         >
           <svg
             aria-hidden={true}
@@ -566,13 +548,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-kek565"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
             data-testid="blui-channel-value-root"
-            fontSize="inherit"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -610,16 +590,14 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
     </p>
     <div
       className="BluiHeroBanner-root MuiBox-root cssltr-1ehwgtw"
-      classes={{}}
       data-testid="blui-hero-banner-root"
     >
       <div
-        className="BluiHero-root MuiBox-root cssltr-2a12sz"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-bocl9p"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
+          className="BluiHero-icon MuiBox-root cssltr-14pgf5l"
         >
           <svg
             aria-hidden={true}
@@ -637,13 +615,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-kek565"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
             data-testid="blui-channel-value-root"
-            fontSize="inherit"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -669,12 +645,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         </p>
       </div>
       <div
-        className="BluiHero-root MuiBox-root cssltr-2a12sz"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-bocl9p"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
+          className="BluiHero-icon MuiBox-root cssltr-14pgf5l"
         >
           <svg
             aria-hidden={true}
@@ -692,13 +667,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-kek565"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
             data-testid="blui-channel-value-root"
-            fontSize="inherit"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -724,12 +697,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         </p>
       </div>
       <div
-        className="BluiHero-root MuiBox-root cssltr-2a12sz"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-bocl9p"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
+          className="BluiHero-icon MuiBox-root cssltr-14pgf5l"
         >
           <svg
             aria-hidden={true}
@@ -747,13 +719,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-1dtyrv9"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1ej03bs"
             data-testid="blui-channel-value-root"
-            fontSize="large"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -771,10 +741,8 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
             </h6>
           </span>
           <span
-            className="BluiChannelValue-root cssltr-1dtyrv9"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1ej03bs"
             data-testid="blui-channel-value-root"
-            fontSize="large"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -800,12 +768,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
         </p>
       </div>
       <div
-        className="BluiHero-root MuiBox-root cssltr-2a12sz"
-        classes={{}}
+        className="BluiHero-root MuiBox-root cssltr-bocl9p"
         data-testid="blui-hero-root"
       >
         <div
-          className="BluiHero-icon MuiBox-root cssltr-13sdyqh"
+          className="BluiHero-icon MuiBox-root cssltr-1lsp8cs"
         >
           <svg
             aria-hidden={true}
@@ -825,13 +792,11 @@ exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
           </svg>
         </div>
         <span
-          className="BluiHero-values cssltr-v1bge9"
+          className="BluiHero-values MuiBox-root cssltr-1lgzb0a"
         >
           <span
-            className="BluiChannelValue-root cssltr-kek565"
-            color="inherit"
+            className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
             data-testid="blui-channel-value-root"
-            fontSize="inherit"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -879,7 +844,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1s0dv2i-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1lfrp4s-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -921,7 +886,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1s0dv2i-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1lfrp4s-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -950,7 +915,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with a Subtitle
@@ -974,7 +939,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-qwpipe-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1igajn5-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1003,7 +968,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with an icon
@@ -1027,7 +992,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-w8i9qu-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1060,7 +1025,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           Item 1
@@ -1102,7 +1067,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1s0dv2i-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1lfrp4s-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1131,7 +1096,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with a partial divider
@@ -1159,7 +1124,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1s0dv2i-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1lfrp4s-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1188,7 +1153,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with a full divider
@@ -1197,7 +1162,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-gssocr-MuiListItem-root"
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-uacsow-MuiListItem-root"
     onClick={[Function]}
   >
     <div
@@ -1230,7 +1195,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1s0dv2i-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-1lfrp4s-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
@@ -1259,7 +1224,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
           style={{}}
         >
           <div
-            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
             style={{}}
           >
             that is clickable
@@ -1284,7 +1249,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-30136s-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-uzru2t-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1316,7 +1281,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with an avatar
@@ -1340,7 +1305,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-qwpipe-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1igajn5-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1373,7 +1338,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1cimvb7-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1lym8w5-MuiTypography-root"
           style={{}}
         >
           with a background color
@@ -1397,7 +1362,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-w8i9qu-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1443,7 +1408,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with a left component
@@ -1467,7 +1432,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-w8i9qu-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
@@ -1500,7 +1465,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         style={{}}
       >
         <div
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
           style={{}}
         >
           with a right component
@@ -1511,10 +1476,8 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
       className="BluiInfoListItem-rightComponent MuiBox-root cssltr-7i4b71"
     >
       <span
-        className="BluiChannelValue-root cssltr-kek565"
-        color="inherit"
+        className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
         data-testid="blui-channel-value-root"
-        fontSize="inherit"
       >
         <h6
           className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
@@ -1571,7 +1534,7 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-qwpipe-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1igajn5-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
@@ -1604,13 +1567,13 @@ exports[`Component: InfoListItemExample InfoListItemExample renders examples cor
           style={{}}
         >
           <div
-            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1cimvb7-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1lym8w5-MuiTypography-root"
             style={{}}
           >
             with all properties
           </div>
           <div
-            className="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap BluiInfoListItem-info cssltr-1wq5f0m-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap BluiInfoListItem-info cssltr-v85ucy-MuiTypography-root"
             style={{}}
           >
             more info...
@@ -1637,7 +1600,7 @@ exports[`Component: ListItemTagExample ListItemTagExample renders examples corre
         Basic Usage
       </p>
       <span
-        className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-kimbzh-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-txwxd6-MuiTypography-root"
         data-testid="blui-list-item-tag"
         style={{}}
       >
@@ -1654,7 +1617,7 @@ exports[`Component: ListItemTagExample ListItemTagExample renders examples corre
         w/ Custom Colors
       </p>
       <span
-        className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-1lxi61j-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-16rhlxd-MuiTypography-root"
         data-testid="blui-list-item-tag"
         style={{}}
       >
@@ -1687,7 +1650,7 @@ exports[`Component: ListItemTagExample ListItemTagExample renders examples corre
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-w8i9qu-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-y3kntj-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
@@ -1716,7 +1679,7 @@ exports[`Component: ListItemTagExample ListItemTagExample renders examples corre
           style={{}}
         >
           <div
-            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1inmcri-MuiTypography-root"
             style={{}}
           >
             with List Item Tags
@@ -1730,14 +1693,14 @@ exports[`Component: ListItemTagExample ListItemTagExample renders examples corre
           className="MuiBox-root cssltr-k008qs"
         >
           <span
-            className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-nvgyxm-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-wufuvy-MuiTypography-root"
             data-testid="blui-list-item-tag"
             style={{}}
           >
             Build Passing
           </span>
           <span
-            className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-1flv5ll-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-16e8zyu-MuiTypography-root"
             data-testid="blui-list-item-tag"
             style={{}}
           >
@@ -1788,10 +1751,8 @@ exports[`Component: ThreeLinerExample ThreeLinerExample renders examples correct
       className="BluiThreeLiner-info MuiBox-root cssltr-9q8ecb"
     >
       <span
-        className="BluiChannelValue-root cssltr-kek565"
-        color="inherit"
+        className="BluiChannelValue-root MuiBox-root cssltr-1flyiuq"
         data-testid="blui-channel-value-root"
-        fontSize="inherit"
       >
         <span
           className="BluiChannelValue-icon cssltr-1oqvg4e"
@@ -1854,7 +1815,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-6qsmld-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1874,7 +1835,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1io021o-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-k0u9oz-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1898,7 +1859,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-6qsmld-MuiAvatar-root"
           onClick={[Function]}
         >
           <svg
@@ -1948,7 +1909,7 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-6qsmld-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1979,14 +1940,13 @@ exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1
         </h6>
         <div
           className="BluiSpacer-root MuiBox-root cssltr-jxy7be"
-          classes={{}}
           data-testid="blui-spacer-root"
         />
         <div
           className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
         >
           <div
-            className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
+            className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-6qsmld-MuiAvatar-root"
             onClick={[Function]}
           >
             <svg

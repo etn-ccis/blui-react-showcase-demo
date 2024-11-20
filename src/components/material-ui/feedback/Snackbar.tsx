@@ -11,9 +11,9 @@ const buttonStyles = {
     width: 300,
 };
 
-const Alert: React.FC<AlertProps> = forwardRef((props, ref) => (
+const Alert = forwardRef<HTMLDivElement, AlertProps>((props, ref) => (
     <MuiAlert elevation={6} variant="filled" {...props} ref={ref} />
-));
+)) as React.ForwardRefExoticComponent<AlertProps & React.RefAttributes<HTMLDivElement>>;
 
 export const SnackbarExample: React.FC = () => {
     const [open, setOpen] = React.useState(false);

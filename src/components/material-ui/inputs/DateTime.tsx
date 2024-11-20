@@ -1,5 +1,4 @@
-import React, { ReactElement } from 'react';
-import TextField, { TextFieldProps } from '@mui/material/TextField';
+import React from 'react';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider, DatePicker, MobileDatePicker, MobileTimePicker } from '@mui/x-date-pickers';
 import Box from '@mui/material/Box';
@@ -22,7 +21,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Date picker inline"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
+                    slotProps={{ textField: { variant: 'outlined' } }}
                 />
             </Box>
             <Box sx={dateTimeContainerStyles}>
@@ -30,7 +29,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Date picker dialog"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
+                    slotProps={{ textField: { variant: 'outlined' } }}
                 />
             </Box>
             <Box sx={dateTimeContainerStyles}>
@@ -38,7 +37,7 @@ export const DateTimeExample: React.FC = () => {
                     label="Time picker"
                     value={selectedDate}
                     onChange={handleDateChange}
-                    renderInput={(params: TextFieldProps): ReactElement => <TextField {...params} />}
+                    slotProps={{ textField: { variant: 'outlined' } }}
                 />
             </Box>
         </LocalizationProvider>
