@@ -15,6 +15,7 @@ import { GradeA, Moisture as Humidity, Temp } from '@brightlayer-ui/icons-mui';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../../__types__';
 import Box from '@mui/material/Box';
+import { useColorScheme } from '@mui/material';
 
 const ExampleContainerStyles = {
     mb: 2,
@@ -30,7 +31,8 @@ const InfoListItemStyles = {
 };
 
 export const ScoreCardExample: React.FC = () => {
-    const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
+    const { mode } = useColorScheme();
+    const isDarkMode = mode === 'light' ? false : true;
     const direction = useSelector((store: AppStore) => store.app.direction);
     const rtl = direction === 'rtl';
 

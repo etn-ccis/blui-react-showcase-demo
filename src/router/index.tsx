@@ -6,6 +6,7 @@ import { SharedAppBar } from '../components/SharedAppBar';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
+import { useColorScheme } from '@mui/material';
 
 const buildRoutes = (routes: SimpleNavItem[], url: string): JSX.Element[] => {
     let ret: any[] = [];
@@ -36,6 +37,11 @@ const ScrollToTop = (): null => {
 
 export const MainRouter: React.FC = () => {
     const title = useSelector((state: AppStore) => state.app.pageTitle);
+    const { setMode } = useColorScheme();
+
+    useEffect(() => {
+        setMode('light');
+    }, []);
 
     return (
         <Router>

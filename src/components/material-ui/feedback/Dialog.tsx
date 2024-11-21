@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -17,6 +16,7 @@ import IconButton from '@mui/material/IconButton';
 import { TransitionProps } from '@mui/material/transitions/transition';
 import Close from '@mui/icons-material/Close';
 import Box from '@mui/material/Box';
+import ListItemButton from '@mui/material/ListItemButton';
 
 const buttonStyles = {
     mb: 2,
@@ -106,26 +106,26 @@ export const DialogExample: React.FC = () => {
                     </Toolbar>
                 </AppBar>
                 <List>
-                    <ListItem button>
+                    <ListItemButton>
                         <ListItemText
                             primary="AppBar"
                             secondary="An extension of the default AppBar from Material UI that can be resized / collapsed as the page is scrolled"
                         />
-                    </ListItem>
+                    </ListItemButton>
                     <Divider />
-                    <ListItem button>
+                    <ListItemButton>
                         <ListItemText
                             primary="ChannelValue"
                             secondary="A component used to display...a channel value (and units)"
                         />
-                    </ListItem>
+                    </ListItemButton>
                     <Divider />
-                    <ListItem button>
+                    <ListItemButton>
                         <ListItemText
                             primary="EmptyState"
                             secondary="A component that can be used as a placeholder when no data is present"
                         />
-                    </ListItem>
+                    </ListItemButton>
                 </List>
             </Dialog>
         </Box>

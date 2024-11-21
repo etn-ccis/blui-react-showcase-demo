@@ -47,7 +47,7 @@ export const Settings: React.FC = () => {
             <Card sx={{ width: '80%', mt: 4, maxWidth: 1000, mb: 3 }}>
                 <InfoListItem
                     title={'Organization'}
-                    sx={{ color: theme.palette.primary.main }}
+                    sx={{ color: (theme.vars || theme).palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -68,7 +68,7 @@ export const Settings: React.FC = () => {
             <Card sx={{ width: '80%', maxWidth: 1000, mb: 4 }}>
                 <InfoListItem
                     title={'Account'}
-                    sx={{ color: theme.palette.primary.main }}
+                    sx={{ color: (theme.vars || theme).palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
