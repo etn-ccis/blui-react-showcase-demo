@@ -30,7 +30,7 @@ declare global {
             selected?: string | undefined;
             placeholder?: string | undefined;
             onPointerEnterCapture?: React.PointerEventHandler<T> | undefined;
-            onPointerLeaveCapture?: any;
+            onPointerLeaveCapture?: React.PointerEventHandler<T> | undefined;
         }
     }
 }
