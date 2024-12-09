@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme, lighten } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -174,7 +174,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps): JSX.Element => 
                 pr: 1,
                 color: numSelected > 0 ? (theme.vars || theme).palette.secondary.main : undefined,
                 backgroundColor:
-                    numSelected > 0 ? lighten((theme.vars || theme).palette.secondary.light, 0.85) : undefined,
+                    numSelected > 0 ? `rgba(${(theme.vars || theme).palette.secondary.light} / 0.85)` : undefined,
                 ...(numSelected > 0
                     ? theme.applyStyles('dark', {
                           color: (theme.vars || theme).palette.text.primary,
