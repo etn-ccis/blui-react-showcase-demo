@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme, lighten } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
