@@ -29,8 +29,8 @@ declare global {
             disabled?: string | undefined;
             selected?: string | undefined;
             placeholder?: string | undefined;
-            onPointerEnterCapture?: React.PointerEventHandler<T> | undefined;
-            onPointerLeaveCapture?: React.PointerEventHandler<T> | undefined;
+            onPointerEnterCapture?: string | undefined;
+            onPointerLeaveCapture?: string | undefined;
         }
     }
 }
