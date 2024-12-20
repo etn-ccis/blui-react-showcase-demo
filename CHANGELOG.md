@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.0.0
+
+### Changed
+
+-   Updated to latest version of MUI 6, components and themes
+
 ## v2.0.0
 
 ### Changed
