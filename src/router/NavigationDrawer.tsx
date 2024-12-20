@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { useColorScheme, useTheme } from '@mui/material/styles';
 import Menu from '@mui/icons-material/Menu';
 import EatonFooterLogoLight from '../EatonLogoLight.png';
 import EatonFooterLogoDark from '../EatonLogoDark.png';
@@ -21,14 +21,15 @@ import { CLOSE_DRAWER, TOGGLE_DRAWER } from '../redux/actions';
 import { SimpleNavItem, pageDefinitions } from './navigation';
 import Box from '@mui/material/Box';
 
-const top = require('../assets/topology_40.png');
+import top from '../assets/topology_40.png';
 
 export const NavigationDrawer: React.FC = () => {
+    const { mode } = useColorScheme();
+    const isDarkMode = mode === 'light' ? false : true;
     const open = useSelector((store: AppStore) => store.app.drawerOpen);
     const direction = useSelector((store: AppStore) => store.app.direction);
     const dispatch = useDispatch();
     const theme = useTheme();
-    const isDarkMode = useSelector((store: AppStore) => store.app.theme) === 'light' ? false : true;
     const history = useHistory();
     const location = useLocation();
     const [activeRoute, setActiveRoute] = useState(location.pathname);

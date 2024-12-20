@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import jssPreset from '@mui/styles/jssPreset';
 import StylesProvider from '@mui/styles/StylesProvider';
-import * as BLUIThemes from '@brightlayer-ui/react-themes';
 import { useSelector } from 'react-redux';
 import { AppStore } from '../__types__';
 import rtl from 'jss-rtl';
@@ -10,7 +9,8 @@ import { create } from 'jss';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
-
+import type {} from '@mui/material/themeCssVarsAugmentation';
+import { blueThemes } from '@brightlayer-ui/react-themes';
 document.body.setAttribute('dir', 'rtl');
 
 const jss = create({
@@ -19,7 +19,6 @@ const jss = create({
 
 export const RTLThemeProvider = (props: any): JSX.Element => {
     const dir = useSelector((store: AppStore) => store.app.direction);
-    const theme = useSelector((store: AppStore) => store.app.theme);
 
     const cacheRtl = createCache({
         key: dir === 'rtl' ? 'cssrtl' : 'cssltr',
@@ -38,13 +37,7 @@ export const RTLThemeProvider = (props: any): JSX.Element => {
     }, [dir]);
 
     return (
-        <ThemeProvider
-            theme={createTheme(
-                Object.assign(theme === 'light' ? BLUIThemes.blue : BLUIThemes.blueDark, {
-                    direction: dir,
-                })
-            )}
-        >
+        <ThemeProvider theme={{...blueThemes, direction: dir}} defaultMode="light">
             <CacheProvider value={dir === 'ltr' ? cacheLtr : cacheRtl}>
                 <StylesProvider jss={jss}>{props.children}</StylesProvider>
             </CacheProvider>

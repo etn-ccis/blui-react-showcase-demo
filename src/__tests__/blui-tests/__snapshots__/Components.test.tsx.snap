@@ -1,77 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component: ChannelValueExample ChannelValueExample renders examples correctly 1`] = `
-Array [
+[
   <div
-    className="makeStyles-componentContainer-2"
+    className="MuiBox-root cssltr-189xxzd"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+      style={{}}
     >
       Basic Usage
     </p>
     <span
-      className="makeStyles-root-4 makeStyles-root-11"
-      data-test="wrapper"
+      className="BluiChannelValue-root cssltr-kek565"
+      color="inherit"
+      data-testid="blui-channel-value-root-test"
+      fontSize="inherit"
     >
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
-        data-test="value"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+        data-testid="blui-channel-value-value"
+        style={{}}
       >
         123
       </h6>
     </span>
   </div>,
   <div
-    className="makeStyles-componentContainer-2"
+    className="MuiBox-root cssltr-189xxzd"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+      style={{}}
     >
       w/ Units
     </p>
     <span
-      className="makeStyles-root-4 makeStyles-root-12"
-      data-test="wrapper"
+      className="BluiChannelValue-root cssltr-kek565"
+      color="inherit"
+      data-testid="blui-channel-value-root-test"
+      fontSize="inherit"
     >
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
-        data-test="value"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+        data-testid="blui-channel-value-value"
+        style={{}}
       >
         123
       </h6>
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
-        data-test="units"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+        data-testid="blui-channel-value-units"
+        style={{}}
       >
         hz
       </h6>
     </span>
   </div>,
   <div
-    className="makeStyles-componentContainer-2"
+    className="MuiBox-root cssltr-189xxzd"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+      style={{}}
     >
       w/ Icon
     </p>
     <span
-      className="makeStyles-root-4 makeStyles-root-13"
-      data-test="wrapper"
+      className="BluiChannelValue-root cssltr-kek565"
+      color="inherit"
+      data-testid="blui-channel-value-root-test"
+      fontSize="inherit"
     >
       <span
-        className="makeStyles-icon-5"
-        data-test="icon"
+        className="BluiChannelValue-icon cssltr-1oqvg4e"
+        data-testid="blui-channel-value-icon"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
           color="#ca3c3d"
           data-testid="TrendingUpIcon"
           focusable="false"
           style={
-            Object {
+            {
               "display": "block",
               "fontSize": "inherit",
             }
@@ -84,43 +96,48 @@ Array [
         </svg>
       </span>
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
-        data-test="value"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+        data-testid="blui-channel-value-value"
+        style={{}}
       >
         123
       </h6>
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
-        data-test="units"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+        data-testid="blui-channel-value-units"
+        style={{}}
       >
         hz
       </h6>
     </span>
   </div>,
   <div
-    className="makeStyles-componentContainer-2"
+    className="MuiBox-root cssltr-189xxzd"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-1 css-ahj2mt-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+      style={{}}
     >
       w/ Custom Font Size
     </p>
     <span
-      className="makeStyles-root-4 makeStyles-root-14"
-      data-test="wrapper"
+      className="BluiChannelValue-root cssltr-c8a5as"
+      color="inherit"
+      data-testid="blui-channel-value-root-test"
+      fontSize={24}
     >
       <span
-        className="makeStyles-icon-5"
-        data-test="icon"
+        className="BluiChannelValue-icon cssltr-1oqvg4e"
+        data-testid="blui-channel-value-icon"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
           color="#ca3c3d"
           data-testid="TrendingUpIcon"
           focusable="false"
           style={
-            Object {
+            {
               "display": "block",
               "fontSize": "inherit",
             }
@@ -133,14 +150,16 @@ Array [
         </svg>
       </span>
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-value-10 css-1qp5wg9-MuiTypography-root"
-        data-test="value"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+        data-testid="blui-channel-value-value"
+        style={{}}
       >
         123
       </h6>
       <h6
-        className="MuiTypography-root MuiTypography-h6 makeStyles-text-6 makeStyles-units-9 makeStyles-suffix-8 css-1qp5wg9-MuiTypography-root"
-        data-test="units"
+        className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+        data-testid="blui-channel-value-units"
+        style={{}}
       >
         hz
       </h6>
@@ -150,119 +169,127 @@ Array [
 `;
 
 exports[`Component: EmptyStateExample EmptyStateExample renders examples correctly 1`] = `
-Array [
+[
   <div
-    className="makeStyles-container-15"
+    className="MuiBox-root cssltr-s9vo95"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+      style={{}}
     >
       Basic Usage
     </p>
     <div
-      className="makeStyles-root-18"
-      data-test="frame"
+      className="BluiEmptyState-root MuiBox-root cssltr-lyk9sl"
+      data-testid="blui-empty-state-root"
     >
       <div
-        className="makeStyles-icon-19"
+        className="BluiEmptyState-icon MuiBox-root cssltr-xipz7o"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
           data-testid="NotListedLocationIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm.88 13.75h-1.75V14h1.75v1.75zm0-2.87h-1.75c0-2.84 2.62-2.62 2.62-4.38 0-.96-.79-1.75-1.75-1.75s-1.75.79-1.75 1.75H8.5C8.5 6.57 10.07 5 12 5s3.5 1.57 3.5 3.5c0 2.19-2.62 2.41-2.62 4.38z"
+            d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7m.88 13.75h-1.75V14h1.75zm0-2.87h-1.75c0-2.84 2.62-2.62 2.62-4.38 0-.96-.79-1.75-1.75-1.75s-1.75.79-1.75 1.75H8.5C8.5 6.57 10.07 5 12 5s3.5 1.57 3.5 3.5c0 2.19-2.62 2.41-2.62 4.38"
           />
         </svg>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h6 BluiEmptyState-title cssltr-5d0866-MuiTypography-root"
+        style={{}}
       >
         Location Unknown
       </h6>
     </div>
   </div>,
   <div
-    className="makeStyles-container-15"
+    className="MuiBox-root cssltr-s9vo95"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+      style={{}}
     >
       w/ Description
     </p>
     <div
-      className="makeStyles-root-18"
-      data-test="frame"
+      className="BluiEmptyState-root MuiBox-root cssltr-lyk9sl"
+      data-testid="blui-empty-state-root"
     >
       <div
-        className="makeStyles-icon-19"
+        className="BluiEmptyState-icon MuiBox-root cssltr-xipz7o"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
           data-testid="LocationOffIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 6.5c1.38 0 2.5 1.12 2.5 2.5 0 .74-.33 1.39-.83 1.85l3.63 3.63c.98-1.86 1.7-3.8 1.7-5.48 0-3.87-3.13-7-7-7-1.98 0-3.76.83-5.04 2.15l3.19 3.19c.46-.52 1.11-.84 1.85-.84zm4.37 9.6-4.63-4.63-.11-.11L3.27 3 2 4.27l3.18 3.18C5.07 7.95 5 8.47 5 9c0 5.25 7 13 7 13s1.67-1.85 3.38-4.35L18.73 21 20 19.73l-3.63-3.63z"
+            d="M12 6.5c1.38 0 2.5 1.12 2.5 2.5 0 .74-.33 1.39-.83 1.85l3.63 3.63c.98-1.86 1.7-3.8 1.7-5.48 0-3.87-3.13-7-7-7-1.98 0-3.76.83-5.04 2.15l3.19 3.19c.46-.52 1.11-.84 1.85-.84m4.37 9.6-4.63-4.63-.11-.11L3.27 3 2 4.27l3.18 3.18C5.07 7.95 5 8.47 5 9c0 5.25 7 13 7 13s1.67-1.85 3.38-4.35L18.73 21 20 19.73z"
           />
         </svg>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h6 BluiEmptyState-title cssltr-5d0866-MuiTypography-root"
+        style={{}}
       >
         Location Services Disabled
       </h6>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 makeStyles-description-20 css-hav9kw-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 BluiEmptyState-description cssltr-1pp0zv-MuiTypography-root"
+        style={{}}
       >
         Enable Location Services via Settings to receive GPS information
       </h6>
     </div>
   </div>,
   <p
-    className="MuiTypography-root MuiTypography-body1 makeStyles-sectionTitle-16 css-ahj2mt-MuiTypography-root"
+    className="MuiTypography-root MuiTypography-body1 cssltr-1o3p94-MuiTypography-root"
+    style={{}}
   >
     w/ Actions
   </p>,
   <div
-    className="makeStyles-root-18"
-    data-test="frame"
+    className="BluiEmptyState-root MuiBox-root cssltr-lyk9sl"
+    data-testid="blui-empty-state-root"
   >
     <div
-      className="makeStyles-icon-19"
+      className="BluiEmptyState-icon MuiBox-root cssltr-xipz7o"
     >
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
         data-testid="DevicesIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
         <path
-          d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"
+          d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1m-1 9h-4v-7h4z"
         />
       </svg>
     </div>
     <h6
-      className="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-h6 BluiEmptyState-title cssltr-5d0866-MuiTypography-root"
+      style={{}}
     >
       No Devices
     </h6>
     <h6
-      className="MuiTypography-root MuiTypography-subtitle2 makeStyles-description-20 css-hav9kw-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-subtitle2 BluiEmptyState-description cssltr-1pp0zv-MuiTypography-root"
+      style={{}}
     >
       Check your network connection or add a new device
     </h6>
     <div
-      className="makeStyles-actions-21"
+      className="BluiEmptyState-actions MuiBox-root cssltr-1pwaef6"
     >
       <button
-        className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary cssltr-1984pf9-MuiButtonBase-root-MuiButton-root"
         disabled={false}
         onBlur={[Function]}
         onContextMenu={[Function]}
@@ -280,17 +307,17 @@ Array [
         type="button"
       >
         <span
-          className="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+          className="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium cssltr-ov1jpo-MuiButton-startIcon"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
             data-testid="AddIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
             />
           </svg>
         </span>
@@ -302,113 +329,113 @@ Array [
 `;
 
 exports[`Component: HeroExample HeroExample renders examples correctly 1`] = `
-Array [
+[
   <div
-    className="makeStyles-exampleRow-22"
+    className="MuiBox-root cssltr-19acs8r"
   >
     <div
-      className="makeStyles-componentContainer-24"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         Basic Usage
       </p>
       <div
-        className="makeStyles-root-25 makeStyles-root-29"
-        data-test="wrapper"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
+        className="BluiHero-root MuiBox-root cssltr-n0deun"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-30"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-            data-testid="GradeAIcon"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
+            data-testid="SvgGradeAIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+              d="m12 8.53-1.29 4.33h2.61L12 8.53Z"
             />
             <path
-              d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+              d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm2.55 15-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28Z"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-31"
+          className="BluiHero-values cssltr-v1bge9"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Efficiency
         </p>
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-24"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         w/ Value and Units
       </p>
       <div
-        className="makeStyles-root-25 makeStyles-root-32"
-        data-test="wrapper"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
+        className="BluiHero-root MuiBox-root cssltr-n0deun"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-33"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-            data-testid="GradeBIcon"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
+            data-testid="SvgGradeBIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 12.59h-1.33v2.61h1.38a2 2 0 001.3-.34 1.24 1.24 0 00.41-1c0-.86-.59-1.27-1.76-1.27zm1.15-1.94a1 1 0 00.39-.89.88.88 0 00-.42-.82 2.68 2.68 0 00-1.33-.25h-1.12v2.22h1.23a2.33 2.33 0 001.25-.26z"
+              d="M12 12.59h-1.33v2.61h1.38a2 2 0 0 0 1.3-.34 1.24 1.24 0 0 0 .41-1c0-.86-.59-1.27-1.76-1.27ZM13.15 10.65a1 1 0 0 0 .39-.89.88.88 0 0 0-.42-.82 2.68 2.68 0 0 0-1.33-.25h-1.12v2.22h1.23a2.33 2.33 0 0 0 1.25-.26Z"
             />
             <path
-              d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm3 14.18a4.3 4.3 0 01-2.69.77H8.55V7h3.12a6 6 0 013.08.61 2.09 2.09 0 011 1.92 2.42 2.42 0 01-.46 1.47 1.62 1.62 0 01-1.12.69v.07a2.21 2.21 0 011.37.79 2.61 2.61 0 01.46 1.5 2.53 2.53 0 01-1 2.13z"
+              d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3 14.18a4.3 4.3 0 0 1-2.69.77H8.55V7h3.12a6 6 0 0 1 3.08.61 2.09 2.09 0 0 1 1 1.92 2.42 2.42 0 0 1-.46 1.47 1.62 1.62 0 0 1-1.12.69v.07a2.21 2.21 0 0 1 1.37.79 2.61 2.61 0 0 1 .46 1.5 2.53 2.53 0 0 1-1 2.13Z"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-34"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-42"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-kek565"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="inherit"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               88
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-bjtx5z-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               %
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Efficiency
         </p>
@@ -416,148 +443,156 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-exampleRow-22"
+    className="MuiBox-root cssltr-19acs8r"
   >
     <div
-      className="makeStyles-componentContainer-24"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         w/ Channel Value Children
       </p>
       <div
-        className="makeStyles-root-25 makeStyles-root-43"
-        data-test="wrapper"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
+        className="BluiHero-root MuiBox-root cssltr-n0deun"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-44"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
             data-testid="ScheduleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2M12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8"
             />
             <path
               d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-45"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-46"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-1dtyrv9"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="large"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               1
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               h
             </h6>
           </span>
           <span
-            className="makeStyles-root-35 makeStyles-root-47"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-1dtyrv9"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="large"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               27
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               m
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Efficiency
         </p>
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-24"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         w/ Icon Colors
       </p>
       <div
-        className="makeStyles-root-25 makeStyles-root-48"
-        data-test="wrapper"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
+        className="BluiHero-root MuiBox-root cssltr-n0deun"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-49"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-13sdyqh"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
             color="#ffffff"
-            data-testid="TempIcon"
+            data-testid="SvgTempIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M17 17a5 5 0 11-8-4V5a3 3 0 016 0v8a5 5 0 012 4m-6-9v6.17a3 3 0 102 0V8h-2"
+              d="M17 17a5 5 0 1 1-8-4V5a3 3 0 0 1 6 0v8a5 5 0 0 1 2 4m-6-9v6.17a3 3 0 1 0 2 0V8h-2"
             />
             <path
               d="M0 0h24v24H0z"
               fill="none"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-50"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-51"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-kek565"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="inherit"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               38
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-bjtx5z-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               °C
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Temperature
         </p>
@@ -565,234 +600,258 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-componentContainer-24"
+    className="MuiBox-root cssltr-11uhf22"
   >
     <p
-      className="MuiTypography-root MuiTypography-body2 makeStyles-label-23 css-e784if-MuiTypography-root"
+      className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+      style={{}}
     >
       Within a HeroBanner
     </p>
     <div
-      className="makeStyles-root-52"
-      style={
-        Object {
-          "border": "solid 1px #eef0f0",
-          "borderRadius": 4,
-          "width": 376,
-        }
-      }
+      className="BluiHeroBanner-root MuiBox-root cssltr-1ehwgtw"
+      classes={{}}
+      data-testid="blui-hero-banner-root"
     >
       <div
-        className="makeStyles-root-25 makeStyles-root-53"
-        data-test="wrapper"
+        className="BluiHero-root MuiBox-root cssltr-2a12sz"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-54"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-            data-testid="GradeAIcon"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
+            data-testid="SvgGradeAIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+              d="m12 8.53-1.29 4.33h2.61L12 8.53Z"
             />
             <path
-              d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+              d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm2.55 15-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28Z"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-55"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-56"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-kek565"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="inherit"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               95
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-bjtx5z-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               %
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Efficiency
         </p>
       </div>
       <div
-        className="makeStyles-root-25 makeStyles-root-57"
-        data-test="wrapper"
+        className="BluiHero-root MuiBox-root cssltr-2a12sz"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-58"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-            data-testid="GradeBIcon"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
+            data-testid="SvgGradeBIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 12.59h-1.33v2.61h1.38a2 2 0 001.3-.34 1.24 1.24 0 00.41-1c0-.86-.59-1.27-1.76-1.27zm1.15-1.94a1 1 0 00.39-.89.88.88 0 00-.42-.82 2.68 2.68 0 00-1.33-.25h-1.12v2.22h1.23a2.33 2.33 0 001.25-.26z"
+              d="M12 12.59h-1.33v2.61h1.38a2 2 0 0 0 1.3-.34 1.24 1.24 0 0 0 .41-1c0-.86-.59-1.27-1.76-1.27ZM13.15 10.65a1 1 0 0 0 .39-.89.88.88 0 0 0-.42-.82 2.68 2.68 0 0 0-1.33-.25h-1.12v2.22h1.23a2.33 2.33 0 0 0 1.25-.26Z"
             />
             <path
-              d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm3 14.18a4.3 4.3 0 01-2.69.77H8.55V7h3.12a6 6 0 013.08.61 2.09 2.09 0 011 1.92 2.42 2.42 0 01-.46 1.47 1.62 1.62 0 01-1.12.69v.07a2.21 2.21 0 011.37.79 2.61 2.61 0 01.46 1.5 2.53 2.53 0 01-1 2.13z"
+              d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3 14.18a4.3 4.3 0 0 1-2.69.77H8.55V7h3.12a6 6 0 0 1 3.08.61 2.09 2.09 0 0 1 1 1.92 2.42 2.42 0 0 1-.46 1.47 1.62 1.62 0 0 1-1.12.69v.07a2.21 2.21 0 0 1 1.37.79 2.61 2.61 0 0 1 .46 1.5 2.53 2.53 0 0 1-1 2.13Z"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-59"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-60"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-kek565"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="inherit"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               88
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-bjtx5z-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               %
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Efficiency
         </p>
       </div>
       <div
-        className="makeStyles-root-25 makeStyles-root-61"
-        data-test="wrapper"
+        className="BluiHero-root MuiBox-root cssltr-2a12sz"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-62"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-1okws1c"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
             data-testid="ScheduleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2M12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8"
             />
             <path
               d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-63"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-64"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-1dtyrv9"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="large"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               1
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               h
             </h6>
           </span>
           <span
-            className="makeStyles-root-35 makeStyles-root-65"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-1dtyrv9"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="large"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               27
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 makeStyles-suffix-39 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               m
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Efficiency
         </p>
       </div>
       <div
-        className="makeStyles-root-25 makeStyles-root-66"
-        data-test="wrapper"
+        className="BluiHero-root MuiBox-root cssltr-2a12sz"
+        classes={{}}
+        data-testid="blui-hero-root"
       >
-        <span
-          className="makeStyles-icon-26 makeStyles-icon-67"
+        <div
+          className="BluiHero-icon MuiBox-root cssltr-13sdyqh"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit cssltr-8hoymy-MuiSvgIcon-root"
             color="#ffffff"
-            data-testid="TempIcon"
+            data-testid="SvgTempIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M17 17a5 5 0 11-8-4V5a3 3 0 016 0v8a5 5 0 012 4m-6-9v6.17a3 3 0 102 0V8h-2"
+              d="M17 17a5 5 0 1 1-8-4V5a3 3 0 0 1 6 0v8a5 5 0 0 1 2 4m-6-9v6.17a3 3 0 1 0 2 0V8h-2"
             />
             <path
               d="M0 0h24v24H0z"
               fill="none"
             />
           </svg>
-        </span>
+        </div>
         <span
-          className="makeStyles-values-27 makeStyles-values-68"
+          className="BluiHero-values cssltr-v1bge9"
         >
           <span
-            className="makeStyles-root-35 makeStyles-root-69"
-            data-test="wrapper"
+            className="BluiChannelValue-root cssltr-kek565"
+            color="inherit"
+            data-testid="blui-channel-value-root-test"
+            fontSize="inherit"
           >
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-value-41 css-1qp5wg9-MuiTypography-root"
-              data-test="value"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+              data-testid="blui-channel-value-value"
+              style={{}}
             >
               38
             </h6>
             <h6
-              className="MuiTypography-root MuiTypography-h6 makeStyles-text-37 makeStyles-units-40 css-1qp5wg9-MuiTypography-root"
-              data-test="units"
+              className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-bjtx5z-MuiTypography-root"
+              data-testid="blui-channel-value-units"
+              style={{}}
             >
               °C
             </h6>
           </span>
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 makeStyles-label-28 css-1mdftu-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 BluiHero-label cssltr-1pn5hg5-MuiTypography-root"
+          style={{}}
         >
           Temperature
         </p>
@@ -803,29 +862,28 @@ Array [
 `;
 
 exports[`Component: InfoListItemExample InfoListItemExample renders examples correctly 1`] = `
-Array [
+[
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-84 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-91"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-85 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-uvgcnl-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback cssltr-pamvpt-MuiSvgIcon-root-MuiAvatar-fallback"
           data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -837,37 +895,37 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root makeStyles-listItemText-74 makeStyles-listItemText-87 css-tlelie-MuiListItemText-root"
+      className="MuiListItemText-root BluiInfoListItem-listItemText cssltr-xwie0g-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-93 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Basic Usage
-      </span>
+      </div>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-94 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-101"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-95 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-uvgcnl-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback cssltr-pamvpt-MuiSvgIcon-root-MuiAvatar-fallback"
           data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -879,103 +937,107 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-97 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-103 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-102 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with a Subtitle
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-104 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-111"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-108 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-190o4rq-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
           data-testid="AlarmIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+            d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9m0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7"
           />
         </svg>
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-107 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-113 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-112 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with an icon
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-114 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-121"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-118 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1t134mf-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="TempIcon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+          data-testid="SvgTempIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M17 17a5 5 0 11-8-4V5a3 3 0 016 0v8a5 5 0 012 4m-6-9v6.17a3 3 0 102 0V8h-2"
+            d="M17 17a5 5 0 1 1-8-4V5a3 3 0 0 1 6 0v8a5 5 0 0 1 2 4m-6-9v6.17a3 3 0 1 0 2 0V8h-2"
           />
           <path
             d="M0 0h24v24H0z"
@@ -985,61 +1047,66 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-117 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-123 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         With an array for subtitle
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-122 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           Item 1
           <span
-            className="MuiTypography-root MuiTypography-body1 makeStyles-separator-79 css-ahj2mt-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-body1 BluiInfoListItem-separator cssltr-iyit4j-MuiTypography-root"
+            style={{}}
           >
             ·
           </span>
           Item 2
           <span
-            className="MuiTypography-root MuiTypography-body1 makeStyles-separator-79 css-ahj2mt-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-body1 BluiInfoListItem-separator cssltr-iyit4j-MuiTypography-root"
+            style={{}}
           >
             ·
           </span>
           Item 3
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-124 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-131"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <hr
-      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-126 css-9mgopn-MuiDivider-root"
+      className="MuiDivider-root MuiDivider-fullWidth BluiInfoListItem-divider cssltr-ulpajt-MuiDivider-root"
+      divider="partial"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-125 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-uvgcnl-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback cssltr-pamvpt-MuiSvgIcon-root-MuiAvatar-fallback"
           data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -1051,49 +1118,52 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-127 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-133 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-132 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with a partial divider
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-134 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-141"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <hr
-      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-136 css-9mgopn-MuiDivider-root"
+      className="MuiDivider-root MuiDivider-fullWidth BluiInfoListItem-divider cssltr-1uyn2y8-MuiDivider-root"
+      divider="full"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-135 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-uvgcnl-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback cssltr-pamvpt-MuiSvgIcon-root-MuiAvatar-fallback"
           data-testid="PersonIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -1105,171 +1175,182 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-137 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-143 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-142 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with a full divider
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
-  <div
-    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button makeStyles-root-70 makeStyles-root-144 css-bshv44-MuiButtonBase-root-MuiListItem-root"
-    onBlur={[Function]}
-    onClick={[Function]}
-    onContextMenu={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-151"
-      data-test="status-stripe"
-    />
-    <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
-      style={
-        Object {
-          "minWidth": "unset",
-        }
-      }
-    >
-      <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-145 makeStyles-invisible-72 css-2s90m6-MuiAvatar-root"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
-          data-testid="PersonIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-          />
-        </svg>
-      </div>
-    </div>
-    <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-147 css-konndc-MuiListItemText-root"
-    >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-153 css-1f0fhap-MuiTypography-root"
-      >
-        Info List Item
-      </span>
-      <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-152 css-llvhl4-MuiTypography-root"
-        >
-          that is clickable
-        </p>
-      </h6>
-    </div>
-  </div>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-154 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-gssocr-MuiListItem-root"
+    onClick={[Function]}
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-161"
-      data-test="status-stripe"
+      className="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters BluiInfoListItem-listItemButtonRoot cssltr-1idtt9z-MuiButtonBase-root-MuiListItemButton-root"
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+        data-testid="blui-status-stripe"
+      />
+      <div
+        className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
+        style={
+          {
+            "minWidth": "unset",
+          }
+        }
+      >
+        <div
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-uvgcnl-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback cssltr-pamvpt-MuiSvgIcon-root-MuiAvatar-fallback"
+            data-testid="PersonIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
+      >
+        <div
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+          style={{}}
+        >
+          Info List Item
+        </div>
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+          style={{}}
+        >
+          <div
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+            style={{}}
+          >
+            that is clickable
+          </div>
+        </h6>
+      </div>
+    </div>
+  </li>,
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
+  >
+    <div
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-17dni3x"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-avatar-71 makeStyles-avatar-155 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-avatar cssltr-g2yfwq-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="GradeAIcon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+          data-testid="SvgGradeAIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 8.53l-1.29 4.33h2.61L12 8.53z"
+            d="m12 8.53-1.29 4.33h2.61L12 8.53Z"
           />
           <path
-            d="M12 2a10 10 0 100 20 10 10 0 000-20zm2.55 15l-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28z"
+            d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm2.55 15-.73-2.38h-3.64L9.45 17H7.17L10.7 7h2.59l3.54 10h-2.28Z"
           />
         </svg>
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-157 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-163 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-162 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with an avatar
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-164 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-2r4qsg-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-171"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-168 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-190o4rq-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="LeafIcon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+          data-testid="SvgLeafIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66 1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5a6.22 6.22 0 001.75 3.75C7 8 17 8 17 8z"
+            d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66 1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5a6.22 6.22 0 0 0 1.75 3.75C7 8 17 8 17 8Z"
           />
           <path
             d="M0 0h24v24H0z"
@@ -1279,52 +1360,54 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-167 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-173 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-1lstdvk-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-172 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1cimvb7-MuiTypography-root"
+          style={{}}
         >
           with a background color
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-174 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-181"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-178 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1t134mf-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="DeviceIcon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+          data-testid="SvgDeviceIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 14a2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2 2 2 0 012 2zm0-10.5A1.5 1.5 0 0117.5 8h-11A1.5 1.5 0 015 6.5 1.5 1.5 0 016.5 5h11A1.5 1.5 0 0119 6.5z"
+            d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 14a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2Zm0-10.5A1.5 1.5 0 0 1 17.5 8h-11A1.5 1.5 0 0 1 5 6.5 1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5Z"
           />
           <path
             d="M0 0h24v24H0z"
@@ -1334,14 +1417,7 @@ Array [
       </div>
     </div>
     <div
-      style={
-        Object {
-          "display": "flex",
-          "flexDirection": "column",
-          "marginLeft": 0,
-          "marginRight": 16,
-        }
-      }
+      className="MuiBox-root cssltr-9lap5z"
     >
       <div>
         8:32 
@@ -1354,52 +1430,54 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-177 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-69duay-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-183 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-182 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with a left component
-        </p>
+        </div>
       </h6>
     </div>
   </li>,
   <li
-    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-70 makeStyles-root-184 css-1p823my-MuiListItem-root"
-    disabled={false}
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-191"
-      data-test="status-stripe"
+      className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+      data-testid="blui-status-stripe"
     />
     <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+      className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
       style={
-        Object {
+        {
           "minWidth": "unset",
         }
       }
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-188 css-2s90m6-MuiAvatar-root"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1t134mf-MuiAvatar-root"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="DeviceIcon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+          data-testid="SvgDeviceIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 14a2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2 2 2 0 012 2zm0-10.5A1.5 1.5 0 0117.5 8h-11A1.5 1.5 0 015 6.5 1.5 1.5 0 016.5 5h11A1.5 1.5 0 0119 6.5z"
+            d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 14a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2Zm0-10.5A1.5 1.5 0 0 1 17.5 8h-11A1.5 1.5 0 0 1 5 6.5 1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5Z"
           />
           <path
             d="M0 0h24v24H0z"
@@ -1409,249 +1487,259 @@ Array [
       </div>
     </div>
     <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-187 css-konndc-MuiListItemText-root"
+      className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
     >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-193 css-1f0fhap-MuiTypography-root"
+      <div
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+        style={{}}
       >
         Info List Item
-      </span>
+      </div>
       <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+        style={{}}
       >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-192 css-llvhl4-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+          style={{}}
         >
           with a right component
-        </p>
+        </div>
       </h6>
     </div>
     <div
-      className="makeStyles-rightComponent-77"
+      className="BluiInfoListItem-rightComponent MuiBox-root cssltr-7i4b71"
     >
       <span
-        className="makeStyles-root-194 makeStyles-root-201"
-        data-test="wrapper"
+        className="BluiChannelValue-root cssltr-kek565"
+        color="inherit"
+        data-testid="blui-channel-value-root-test"
+        fontSize="inherit"
       >
         <h6
-          className="MuiTypography-root MuiTypography-h6 makeStyles-text-196 makeStyles-value-200 css-1qp5wg9-MuiTypography-root"
-          data-test="value"
+          className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+          data-testid="blui-channel-value-value"
+          style={{}}
         >
           15
         </h6>
         <h6
-          className="MuiTypography-root MuiTypography-h6 makeStyles-text-196 makeStyles-units-199 makeStyles-suffix-198 css-1qp5wg9-MuiTypography-root"
-          data-test="units"
+          className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+          data-testid="blui-channel-value-units"
+          style={{}}
         >
           A
         </h6>
       </span>
     </div>
   </li>,
-  <div
-    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button makeStyles-root-70 makeStyles-root-202 css-bshv44-MuiButtonBase-root-MuiListItem-root"
-    onBlur={[Function]}
+  <li
+    className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-tf2p8h-MuiListItem-root"
     onClick={[Function]}
-    onContextMenu={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    role="button"
-    tabIndex={0}
   >
     <div
-      className="makeStyles-statusStripe-80 makeStyles-statusStripe-209"
-      data-test="status-stripe"
-    />
-    <hr
-      className="MuiDivider-root MuiDivider-fullWidth makeStyles-divider-73 makeStyles-divider-204 css-9mgopn-MuiDivider-root"
-    />
-    <div
-      className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
-      style={
-        Object {
-          "minWidth": "unset",
-        }
-      }
+      className="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters BluiInfoListItem-listItemButtonRoot cssltr-1idtt9z-MuiButtonBase-root-MuiListItemButton-root"
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
     >
       <div
-        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-75 makeStyles-icon-206 css-2s90m6-MuiAvatar-root"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="DeviceIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 14a2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2 2 2 0 012 2zm0-10.5A1.5 1.5 0 0117.5 8h-11A1.5 1.5 0 015 6.5 1.5 1.5 0 016.5 5h11A1.5 1.5 0 0119 6.5z"
-          />
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-        </svg>
-      </div>
-    </div>
-    <div
-      className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-74 makeStyles-listItemText-205 css-konndc-MuiListItemText-root"
-    >
-      <span
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-82 makeStyles-title-211 css-1f0fhap-MuiTypography-root"
-      >
-        Info List Item
-      </span>
-      <h6
-        className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-81 makeStyles-subtitle-210 css-llvhl4-MuiTypography-root"
-        >
-          with all properties
-        </p>
-        <p
-          className="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap makeStyles-info-76 makeStyles-info-207 css-z1doim-MuiTypography-root"
-        >
-          more info...
-        </p>
-      </h6>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Component: ListItemTagExample ListItemTagExample renders examples correctly 1`] = `
-Array [
-  <div
-    className="makeStyles-exampleRow-213"
-  >
-    <div
-      className="makeStyles-componentContainer-215"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
-      >
-        Basic Usage
-      </p>
-      <span
-        className="makeStyles-root-216 makeStyles-root-218 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
-        data-test="list-item-tag"
-      >
-        active
-      </span>
-    </div>
-    <div
-      className="makeStyles-componentContainer-215"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
-      >
-        w/ Custom Colors
-      </p>
-      <span
-        className="makeStyles-root-216 makeStyles-root-219 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
-        data-test="list-item-tag"
-      >
-        active
-      </span>
-    </div>
-  </div>,
-  <div
-    className="makeStyles-componentContainer-215"
-    style={
-      Object {
-        "marginTop": "48px",
-      }
-    }
-  >
-    <p
-      className="MuiTypography-root MuiTypography-body2 makeStyles-label-214 css-e784if-MuiTypography-root"
-    >
-      Within an Info List Item
-    </p>
-    <li
-      className="MuiListItem-root MuiListItem-gutters MuiListItem-padding makeStyles-root-220 makeStyles-root-234 css-1p823my-MuiListItem-root"
-      disabled={false}
-    >
-      <div
-        className="makeStyles-statusStripe-230 makeStyles-statusStripe-241"
-        data-test="status-stripe"
+        className="BluiInfoListItem-statusStripe MuiBox-root cssltr-8ijhf4"
+        data-testid="blui-status-stripe"
+      />
+      <hr
+        className="MuiDivider-root MuiDivider-fullWidth BluiInfoListItem-divider cssltr-1uyn2y8-MuiDivider-root"
+        divider="full"
       />
       <div
-        className="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+        className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
         style={
-          Object {
+          {
             "minWidth": "unset",
           }
         }
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault makeStyles-icon-225 makeStyles-icon-238 css-2s90m6-MuiAvatar-root"
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-190o4rq-MuiAvatar-root"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="BrightnessMediumIcon"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+            data-testid="SvgDeviceIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M20 15.31 23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"
+              d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 14a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2Zm0-10.5A1.5 1.5 0 0 1 17.5 8h-11A1.5 1.5 0 0 1 5 6.5 1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5Z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
             />
           </svg>
         </div>
       </div>
       <div
-        className="MuiListItemText-root MuiListItemText-multiline makeStyles-listItemText-224 makeStyles-listItemText-237 css-konndc-MuiListItemText-root"
+        className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
       >
-        <span
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap makeStyles-title-232 makeStyles-title-243 css-1f0fhap-MuiTypography-root"
+        <div
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-1lstdvk-MuiTypography-root"
+          style={{}}
         >
           Info List Item
-        </span>
+        </div>
         <h6
-          className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary css-lqlpsx-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+          style={{}}
         >
-          <p
-            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap makeStyles-subtitle-231 makeStyles-subtitle-242 css-llvhl4-MuiTypography-root"
+          <div
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-1cimvb7-MuiTypography-root"
+            style={{}}
+          >
+            with all properties
+          </div>
+          <div
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap BluiInfoListItem-info cssltr-1wq5f0m-MuiTypography-root"
+            style={{}}
+          >
+            more info...
+          </div>
+        </h6>
+      </div>
+    </div>
+  </li>,
+]
+`;
+
+exports[`Component: ListItemTagExample ListItemTagExample renders examples correctly 1`] = `
+[
+  <div
+    className="MuiBox-root cssltr-19acs8r"
+  >
+    <div
+      className="MuiBox-root cssltr-11uhf22"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
+      >
+        Basic Usage
+      </p>
+      <span
+        className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-kimbzh-MuiTypography-root"
+        data-testid="blui-list-item-tag"
+        style={{}}
+      >
+        active
+      </span>
+    </div>
+    <div
+      className="MuiBox-root cssltr-11uhf22"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
+      >
+        w/ Custom Colors
+      </p>
+      <span
+        className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-1lxi61j-MuiTypography-root"
+        data-testid="blui-list-item-tag"
+        style={{}}
+      >
+        active
+      </span>
+    </div>
+  </div>,
+  <div
+    className="MuiBox-root cssltr-1j0fys8"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+      style={{}}
+    >
+      Within an Info List Item
+    </p>
+    <li
+      className="MuiListItem-root MuiListItem-gutters MuiListItem-padding BluiInfoListItem-root cssltr-wtsp7t-MuiListItem-root"
+    >
+      <div
+        className="BluiInfoListItem-statusStripe MuiBox-root cssltr-flm5nj"
+        data-testid="blui-status-stripe"
+      />
+      <div
+        className="MuiListItemAvatar-root cssltr-1ulznza-MuiListItemAvatar-root"
+        style={
+          {
+            "minWidth": "unset",
+          }
+        }
+      >
+        <div
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault BluiInfoListItem-icon cssltr-1t134mf-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
+            data-testid="BrightnessMediumIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 15.31 23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline BluiInfoListItem-listItemText cssltr-1b4bdpg-MuiListItemText-root"
+      >
+        <div
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap BluiInfoListItem-title cssltr-mz6b5d-MuiTypography-root"
+          style={{}}
+        >
+          Info List Item
+        </div>
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle2 MuiListItemText-secondary cssltr-1homunf-MuiTypography-root"
+          style={{}}
+        >
+          <div
+            className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap BluiInfoListItem-subtitle cssltr-jvutuj-MuiTypography-root"
+            style={{}}
           >
             with List Item Tags
-          </p>
+          </div>
         </h6>
       </div>
       <div
-        className="makeStyles-rightComponent-227"
+        className="BluiInfoListItem-rightComponent MuiBox-root cssltr-7i4b71"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-            }
-          }
+          className="MuiBox-root cssltr-k008qs"
         >
           <span
-            className="makeStyles-root-216 makeStyles-root-244 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
-            data-test="list-item-tag"
-            style={
-              Object {
-                "marginLeft": 0,
-                "marginRight": "16px",
-              }
-            }
+            className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-nvgyxm-MuiTypography-root"
+            data-testid="blui-list-item-tag"
+            style={{}}
           >
             Build Passing
           </span>
           <span
-            className="makeStyles-root-216 makeStyles-root-245 makeStyles-noVariant-217 MuiTypography-root MuiTypography-overline MuiTypography-noWrap css-1oiltsr-MuiTypography-root"
-            data-test="list-item-tag"
+            className="MuiTypography-root MuiTypography-overline MuiTypography-noWrap BluiListItemTag-root BluiListItemTag-noVariant cssltr-1flv5ll-MuiTypography-root"
+            data-testid="blui-list-item-tag"
+            style={{}}
           >
             5 Bugs
           </span>
@@ -1663,63 +1751,60 @@ Array [
 `;
 
 exports[`Component: ThreeLinerExample ThreeLinerExample renders examples correctly 1`] = `
-Array [
+[
   <div
-    className="makeStyles-root-247 makeStyles-root-251"
+    className="BluiThreeLiner-root MuiBox-root cssltr-1f10uqu"
   >
     <div
-      className="makeStyles-title-248 makeStyles-title-252"
+      className="BluiThreeLiner-title MuiBox-root cssltr-e9ah7v"
     >
       Three Liner Component
     </div>
     <div
-      className="makeStyles-subtitle-249 makeStyles-subtitle-253"
+      className="BluiThreeLiner-subtitle MuiBox-root cssltr-1666yuc"
     >
       with basic usage
     </div>
     <div
-      className="makeStyles-info-250 makeStyles-info-254"
+      className="BluiThreeLiner-info MuiBox-root cssltr-9q8ecb"
     >
       ...and a third line
     </div>
   </div>,
   <div
-    className="makeStyles-root-247 makeStyles-root-255"
-    style={
-      Object {
-        "marginTop": "32px",
-      }
-    }
+    className="BluiThreeLiner-root MuiBox-root cssltr-w9ediz"
   >
     <div
-      className="makeStyles-title-248 makeStyles-title-256"
+      className="BluiThreeLiner-title MuiBox-root cssltr-e9ah7v"
     >
       Three Liner Component
     </div>
     <div
-      className="makeStyles-subtitle-249 makeStyles-subtitle-257"
+      className="BluiThreeLiner-subtitle MuiBox-root cssltr-1666yuc"
     >
       with custom content
     </div>
     <div
-      className="makeStyles-info-250 makeStyles-info-258"
+      className="BluiThreeLiner-info MuiBox-root cssltr-9q8ecb"
     >
       <span
-        className="makeStyles-root-259 makeStyles-root-266"
-        data-test="wrapper"
+        className="BluiChannelValue-root cssltr-kek565"
+        color="inherit"
+        data-testid="blui-channel-value-root-test"
+        fontSize="inherit"
       >
         <span
-          className="makeStyles-icon-260"
-          data-test="icon"
+          className="BluiChannelValue-icon cssltr-1oqvg4e"
+          data-testid="blui-channel-value-icon"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
             color="#ca3c3d"
             data-testid="TrendingUpIcon"
             focusable="false"
             style={
-              Object {
+              {
                 "display": "block",
                 "fontSize": "inherit",
               }
@@ -1732,14 +1817,16 @@ Array [
           </svg>
         </span>
         <h6
-          className="MuiTypography-root MuiTypography-h6 makeStyles-text-261 makeStyles-value-265 css-1qp5wg9-MuiTypography-root"
-          data-test="value"
+          className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-value cssltr-l646db-MuiTypography-root"
+          data-testid="blui-channel-value-value"
+          style={{}}
         >
           123
         </h6>
         <h6
-          className="MuiTypography-root MuiTypography-h6 makeStyles-text-261 makeStyles-units-264 makeStyles-suffix-263 css-1qp5wg9-MuiTypography-root"
-          data-test="units"
+          className="MuiTypography-root MuiTypography-h6 BluiChannelValue-text BluiChannelValue-units cssltr-1ri615v-MuiTypography-root"
+          data-testid="blui-channel-value-units"
+          style={{}}
         >
           hz
         </h6>
@@ -1750,23 +1837,24 @@ Array [
 `;
 
 exports[`Component: UserMenuExample UserMenuExample renders examples correctly 1`] = `
-Array [
+[
   <div
-    className="makeStyles-exampleRow-267"
+    className="MuiBox-root cssltr-1msnhnv"
   >
     <div
-      className="makeStyles-componentContainer-269"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         Basic Usage
       </p>
       <div
-        className="makeStyles-root-273"
+        className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1774,18 +1862,19 @@ Array [
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-269"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         w/ Custom Colors
       </p>
       <div
-        className="makeStyles-root-273"
+        className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="makeStyles-avatarRoot-274 makeStyles-customAvatar-271 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-1io021o-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1794,26 +1883,27 @@ Array [
     </div>
   </div>,
   <div
-    className="makeStyles-exampleRow-267"
+    className="MuiBox-root cssltr-1msnhnv"
   >
     <div
-      className="makeStyles-componentContainer-269"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         w/ Non-Text Avatar
       </p>
       <div
-        className="makeStyles-root-273"
+        className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
           onClick={[Function]}
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cssltr-4uxqju-MuiSvgIcon-root"
             data-testid="PetsIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -1839,25 +1929,26 @@ Array [
               r="2.5"
             />
             <path
-              d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"
+              d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32q-.165-.06-.33-.09c-.25-.04-.52-.04-.78-.04s-.53 0-.79.05q-.165.03-.33.09c-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8"
             />
           </svg>
         </div>
       </div>
     </div>
     <div
-      className="makeStyles-componentContainer-269"
+      className="MuiBox-root cssltr-11uhf22"
     >
       <p
-        className="MuiTypography-root MuiTypography-body2 makeStyles-label-268 css-e784if-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body2 cssltr-1ghgj5l-MuiTypography-root"
+        style={{}}
       >
         w/ a Menu Header
       </p>
       <div
-        className="makeStyles-root-273"
+        className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
       >
         <div
-          className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+          className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
           onClick={[Function]}
         >
           UI
@@ -1866,52 +1957,41 @@ Array [
     </div>
   </div>,
   <div
-    style={
-      Object {
-        "marginTop": "32px",
-        "width": "100%",
-      }
-    }
+    className="MuiBox-root cssltr-wex2i"
   >
     <header
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionRelative css-1vazdj7-MuiPaper-root-MuiAppBar-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionRelative cssltr-7kin0t-MuiPaper-root-MuiAppBar-root"
+      style={
+        {
+          "--Paper-overlay": "var(--mui-overlays-4)",
+          "--Paper-shadow": "var(--mui-shadows-4)",
+        }
+      }
     >
       <div
-        className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
-        style={
-          Object {
-            "height": "4rem",
-            "minHeight": "unset",
-            "padding": "0 16px",
-          }
-        }
+        className="MuiToolbar-root MuiToolbar-regular cssltr-i5fino-MuiToolbar-root"
       >
         <h6
-          className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h6 cssltr-16nny7v-MuiTypography-root"
+          style={{}}
         >
           UserMenu within a Toolbar
         </h6>
         <div
-          className=""
-          data-test="spacer-root"
-          style={
-            Object {
-              "flex": "1 1 0px",
-              "height": "auto",
-              "width": "auto",
-            }
-          }
+          className="BluiSpacer-root MuiBox-root cssltr-jxy7be"
+          classes={{}}
+          data-testid="blui-spacer-root"
         />
         <div
-          className="makeStyles-root-273"
+          className="BluiUserMenu-root MuiBox-root cssltr-1c73i31"
         >
           <div
-            className="makeStyles-avatarRoot-274 MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+            className="MuiAvatar-root BluiUserMenu-avatarRoot MuiAvatar-circular MuiAvatar-colorDefault cssltr-rtzpse-MuiAvatar-root"
             onClick={[Function]}
           >
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback cssltr-pamvpt-MuiSvgIcon-root-MuiAvatar-fallback"
               data-testid="PersonIcon"
               focusable="false"
               viewBox="0 0 24 24"

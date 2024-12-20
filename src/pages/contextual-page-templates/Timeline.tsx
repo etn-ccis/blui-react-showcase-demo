@@ -154,7 +154,7 @@ export const Timeline: React.FC = () => {
             <Card sx={{ width: '80%', my: 4, maxWidth: 1000 }}>
                 <InfoListItem
                     title={'Timeline'}
-                    sx={{ color: theme.palette.primary.main }}
+                    sx={{ color: (theme.vars || theme).palette.primary.main }}
                     hidePadding
                     dense
                     divider={'full'}
@@ -162,11 +162,7 @@ export const Timeline: React.FC = () => {
                 {timelineData.map((data, index) => (
                     <InfoListItem
                         key={index}
-                        leftComponent={
-                            <Box component="span" sx={{ width: 70 }}>
-                                {getDisplayTime(data.date)}
-                            </Box>
-                        }
+                        leftComponent={<Box sx={{ width: 70 }}>{getDisplayTime(data.date)}</Box>}
                         title={`${data.type} ${data.deviceName}`}
                         subtitle={[data.subLocation, data.location]}
                         divider={index === timelineData.length - 1 ? undefined : 'partial'}

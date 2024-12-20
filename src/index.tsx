@@ -5,9 +5,10 @@
 
  This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
  **/
+/* eslint-disable */
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import * as serviceWorker from './serviceWorker';
+// import * as {serviceWorker} from './serviceWorker';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Provider } from 'react-redux';
 import './index.css';
@@ -17,19 +18,36 @@ import { RTLThemeProvider } from './components/RTLProvider';
 import '@brightlayer-ui/react-themes/open-sans';
 
 const container = document.getElementById('root');
+
 /* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */
 const root = createRoot(container!);
+/* eslint-disable */
+declare global {
+    namespace React {
+        interface DOMAttributes<T> {
+            component?: string | undefined;
+            disabled?: string | undefined;
+            selected?: string | undefined;
+            placeholder?: string | undefined;
+            onPointerEnterCapture?: string | undefined;
+            onPointerLeaveCapture?: string | undefined;
+        }
+    }
+}
+/* eslint-disable */
 
 root.render(
-    <Provider store={store}>
-        <RTLThemeProvider>
-            <CssBaseline />
-            <MainRouter />
-        </RTLThemeProvider>
-    </Provider>
+    <React.StrictMode>
+        <Provider store={store}>
+            <RTLThemeProvider>
+                <CssBaseline />
+                <MainRouter />
+            </RTLThemeProvider>
+        </Provider>
+    </React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();

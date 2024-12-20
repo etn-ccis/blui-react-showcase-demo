@@ -4,7 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
+import { useColorScheme, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Email from '@mui/icons-material/Email';
 import Menu from '@mui/icons-material/Menu';
@@ -13,7 +13,7 @@ import InvertColors from '@mui/icons-material/InvertColors';
 import SwapHoriz from '@mui/icons-material/SwapHoriz';
 import SendIcon from '@mui/icons-material/Send';
 import React, { useCallback } from 'react';
-import { TOGGLE_DIR, TOGGLE_THEME, TOGGLE_DRAWER } from '../redux/actions';
+import { TOGGLE_DIR, TOGGLE_DRAWER } from '../redux/actions';
 import { useDispatch } from 'react-redux';
 import { Spacer, UserMenu } from '@brightlayer-ui/react-components';
 
@@ -47,6 +47,14 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
         );
     }, [smUp, dispatch]);
 
+    const { mode, setMode } = useColorScheme();
+
+    const toggleThemeMode = (): void => {
+        if (setMode) {
+            setMode(mode === 'light' ? 'dark' : 'light');
+        }
+    };
+
     return (
         <AppBar position={'sticky'} color={'primary'} sx={{ zIndex: 10000 }}>
             <Toolbar>
@@ -56,13 +64,7 @@ export const SharedAppBar = (props: SharedAppBarProps): JSX.Element => {
                 </Typography>
                 <Spacer flex={1} />
                 <Tooltip title={'Toggle Theme'} aria-label={'toggle the theme of the current showcase'}>
-                    <IconButton
-                        color={'inherit'}
-                        onClick={(): void => {
-                            dispatch({ type: TOGGLE_THEME });
-                        }}
-                        size="large"
-                    >
+                    <IconButton color={'inherit'} onClick={() => toggleThemeMode()} size="large">
                         <InvertColors />
                     </IconButton>
                 </Tooltip>
