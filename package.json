@@ -34,7 +34,7 @@
         "@mui/lab": "^6.0.0-beta.14",
         "@mui/material": "^6.1.4",
         "@mui/private-theming": "^6.1.4",
-        "@mui/styled-engine": "^6.1.4",
+        "@mui/styled-engine": "^6.3.0",
         "@mui/styled-engine-sc": "^6.1.4",
         "@mui/styles": "^6.1.4",
         "@mui/system": "^6.1.4",
