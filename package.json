@@ -31,7 +31,7 @@
         "@mui/docs": "^6.1.4",
         "@mui/envinfo": "^2.0.28",
         "@mui/icons-material": "^6.1.4",
-        "@mui/lab": "^6.0.0-beta.14",
+        "@mui/lab": "^7.0.0-beta.10",
         "@mui/material": "^6.1.4",
         "@mui/private-theming": "^6.4.6",
         "@mui/styled-engine": "^6.3.0",
