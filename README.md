@@ -2,6 +2,10 @@
 
 [![Build](https://github.com/etn-ccis/blui-react-showcase-demo/actions/workflows/blui-ci.yml/badge.svg?branch=master)](https://github.com/etn-ccis/blui-react-showcase-demo/actions/workflows/blui-ci.yml) [![codecov](https://codecov.io/gh/etn-ccis/blui-react-showcase-demo/branch/master/graph/badge.svg?token=DNI4Z1LUL3)](https://codecov.io/gh/etn-ccis/blui-react-showcase-demo)
 
+> **Important Migration Notice:**
+>
+> This repository has been migrated to a monorepo to consolidate all the React libraries developed by Brightlayer UI team into a single workspace. Future development and updates will now occur in [this location](https://github.com/etn-ccis/blui-react/tree/dev/apps/showcase). Please update your bookmarks and contribute to the monorepo for the latest changes.
+
 This applications is a demo applications that is used to demonstrate and test various Brightlayer UI components, resources, etc.
 
 It is used as a git submodule for:
